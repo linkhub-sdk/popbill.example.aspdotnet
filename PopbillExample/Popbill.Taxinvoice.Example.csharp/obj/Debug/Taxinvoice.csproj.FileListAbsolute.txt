@@ -1,2 +1,0 @@
-C:\popbill.example.dotnet.web\PopbillExample\Popbill.Taxinvoice.Example.csharp\obj\Debug\ResolveAssemblyReference.cache
-C:\popbill.example.dotnet.web\PopbillExample\Popbill.Taxinvoice.Example.csharp\obj\Debug\Popbill.Taxinvoice.dll

@@ -1,9 +1,0 @@
-C:\popbill.example.dotnet.web\PopbillExample\Popbill.Taxinvoice.Example.csharp\obj\Debug\ResolveAssemblyReference.cache
-C:\popbill.example.dotnet.web\PopbillExample\Popbill.Taxinvoice.Example.csharp\bin\Popbill.Taxinvoice.Example.csharp.dll
-C:\popbill.example.dotnet.web\PopbillExample\Popbill.Taxinvoice.Example.csharp\bin\Popbill.Taxinvoice.Example.csharp.pdb
-C:\popbill.example.dotnet.web\PopbillExample\Popbill.Taxinvoice.Example.csharp\bin\Popbill.dll
-C:\popbill.example.dotnet.web\PopbillExample\Popbill.Taxinvoice.Example.csharp\bin\Linkhub.dll
-C:\popbill.example.dotnet.web\PopbillExample\Popbill.Taxinvoice.Example.csharp\bin\Linkhub.pdb
-C:\popbill.example.dotnet.web\PopbillExample\Popbill.Taxinvoice.Example.csharp\bin\Popbill.pdb
-C:\popbill.example.dotnet.web\PopbillExample\Popbill.Taxinvoice.Example.csharp\obj\Debug\Popbill.Taxinvoice.Example.csharp.dll
-C:\popbill.example.dotnet.web\PopbillExample\Popbill.Taxinvoice.Example.csharp\obj\Debug\Popbill.Taxinvoice.Example.csharp.pdb
