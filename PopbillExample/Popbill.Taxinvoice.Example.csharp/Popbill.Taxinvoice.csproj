@@ -53,24 +53,104 @@
     <Reference Include="System.Web.Mobile" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Example\attachStatement.aspx" />
+    <Content Include="Example\cancelIssue.aspx" />
+    <Content Include="Example\accept.aspx" />
+    <Content Include="Example\attachFile.aspx" />
+    <Content Include="Example\cancelRequest.aspx" />
+    <Content Include="Example\cancelSend.aspx" />
     <Content Include="Example\checkID.aspx" />
     <Content Include="Example\checkIsMember.aspx" />
-    <Content Include="Common.aspx" />
+    <Content Include="Default.aspx" />
     <Content Include="Example.css" />
+    <Content Include="Example\checkMgtKeyInUse.aspx" />
+    <Content Include="Example\delete.aspx" />
+    <Content Include="Example\deleteFile.aspx" />
+    <Content Include="Example\deny.aspx" />
+    <Content Include="Example\detachStatement.aspx" />
     <Content Include="Example\getBalance.aspx" />
+    <Content Include="Example\getCertificateExpireDate.aspx" />
     <Content Include="Example\getCorpInfo.aspx" />
+    <Content Include="Example\getDetailInfo.aspx" />
+    <Content Include="Example\getEmailPublicKeys.aspx" />
+    <Content Include="Example\getEPrintURL.aspx" />
+    <Content Include="Example\getFiles.aspx" />
+    <Content Include="Example\getInfo.aspx" />
+    <Content Include="Example\getInfos.aspx" />
+    <Content Include="Example\getMailURL.aspx" />
+    <Content Include="Example\getMassPrintURL.aspx" />
     <Content Include="Example\getPartnerBalance.aspx" />
     <Content Include="Example\getPopbillURL.aspx" />
+    <Content Include="Example\getPopUpURL.aspx" />
+    <Content Include="Example\getPrintURL.aspx" />
+    <Content Include="Example\getUnitCost.aspx" />
+    <Content Include="Example\geturl.aspx" />
     <Content Include="Example\joinMember.aspx" />
     <Content Include="Example\getChargeInfo.aspx" />
     <Content Include="Example\listContact.aspx" />
     <Content Include="Example\registContact.aspx" />
+    <Content Include="Example\registIssue.aspx" />
+    <Content Include="Example\request.aspx" />
+    <Content Include="Example\sendemail.aspx" />
+    <Content Include="Example\sendfax.aspx" />
+    <Content Include="Example\sendsms.aspx" />
+    <Content Include="Example\update.aspx" />
     <Content Include="Example\updateContact.aspx" />
     <Content Include="Example\updateCorpInfo.aspx" />
+    <Content Include="Example\getLogs.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Example\register.aspx" />
+    <Content Include="Example\search.aspx" />
+    <Content Include="Example\send.aspx" />
+    <Content Include="Example\issue.aspx" />
+    <Content Include="Example\refuse.aspx" />
+    <Content Include="Example\sendToNTS.aspx" />
+    <Content Include="test.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Example\attachStatement.aspx.cs">
+      <DependentUpon>attachStatement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\attachStatement.aspx.designer.cs">
+      <DependentUpon>attachStatement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\cancelIssue.aspx.cs">
+      <DependentUpon>cancelIssue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\cancelIssue.aspx.designer.cs">
+      <DependentUpon>cancelIssue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\accept.aspx.cs">
+      <DependentUpon>accept.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\accept.aspx.designer.cs">
+      <DependentUpon>accept.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\attachFile.aspx.cs">
+      <DependentUpon>attachFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\attachFile.aspx.designer.cs">
+      <DependentUpon>attachFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\cancelRequest.aspx.cs">
+      <DependentUpon>cancelRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\cancelRequest.aspx.designer.cs">
+      <DependentUpon>cancelRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\cancelSend.aspx.cs">
+      <DependentUpon>cancelSend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\cancelSend.aspx.designer.cs">
+      <DependentUpon>cancelSend.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Example\checkID.aspx.cs">
       <DependentUpon>checkID.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -85,12 +165,47 @@
     <Compile Include="Example\checkIsMember.aspx.designer.cs">
       <DependentUpon>checkIsMember.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Common.aspx.cs">
-      <DependentUpon>Common.aspx</DependentUpon>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Common.aspx.designer.cs">
-      <DependentUpon>Common.aspx</DependentUpon>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\checkMgtKeyInUse.aspx.cs">
+      <DependentUpon>checkMgtKeyInUse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\checkMgtKeyInUse.aspx.designer.cs">
+      <DependentUpon>checkMgtKeyInUse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\delete.aspx.cs">
+      <DependentUpon>delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\delete.aspx.designer.cs">
+      <DependentUpon>delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\deleteFile.aspx.cs">
+      <DependentUpon>deleteFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\deleteFile.aspx.designer.cs">
+      <DependentUpon>deleteFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\deny.aspx.cs">
+      <DependentUpon>deny.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\deny.aspx.designer.cs">
+      <DependentUpon>deny.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\detachStatement.aspx.cs">
+      <DependentUpon>detachStatement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\detachStatement.aspx.designer.cs">
+      <DependentUpon>detachStatement.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\getBalance.aspx.cs">
       <DependentUpon>getBalance.aspx</DependentUpon>
@@ -99,12 +214,75 @@
     <Compile Include="Example\getBalance.aspx.designer.cs">
       <DependentUpon>getBalance.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Example\getCertificateExpireDate.aspx.cs">
+      <DependentUpon>getCertificateExpireDate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getCertificateExpireDate.aspx.designer.cs">
+      <DependentUpon>getCertificateExpireDate.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Example\getCorpInfo.aspx.cs">
       <DependentUpon>getCorpInfo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Example\getCorpInfo.aspx.designer.cs">
       <DependentUpon>getCorpInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getDetailInfo.aspx.cs">
+      <DependentUpon>getDetailInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getDetailInfo.aspx.designer.cs">
+      <DependentUpon>getDetailInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getEmailPublicKeys.aspx.cs">
+      <DependentUpon>getEmailPublicKeys.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getEmailPublicKeys.aspx.designer.cs">
+      <DependentUpon>getEmailPublicKeys.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getEPrintURL.aspx.cs">
+      <DependentUpon>getEPrintURL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getEPrintURL.aspx.designer.cs">
+      <DependentUpon>getEPrintURL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getFiles.aspx.cs">
+      <DependentUpon>getFiles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getFiles.aspx.designer.cs">
+      <DependentUpon>getFiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getInfo.aspx.cs">
+      <DependentUpon>getInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getInfo.aspx.designer.cs">
+      <DependentUpon>getInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getInfos.aspx.cs">
+      <DependentUpon>getInfos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getInfos.aspx.designer.cs">
+      <DependentUpon>getInfos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getMailURL.aspx.cs">
+      <DependentUpon>getMailURL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getMailURL.aspx.designer.cs">
+      <DependentUpon>getMailURL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getMassPrintURL.aspx.cs">
+      <DependentUpon>getMassPrintURL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getMassPrintURL.aspx.designer.cs">
+      <DependentUpon>getMassPrintURL.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\getPartnerBalance.aspx.cs">
       <DependentUpon>getPartnerBalance.aspx</DependentUpon>
@@ -119,6 +297,34 @@
     </Compile>
     <Compile Include="Example\getPopbillURL.aspx.designer.cs">
       <DependentUpon>getPopbillURL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getPopUpURL.aspx.cs">
+      <DependentUpon>getPopUpURL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getPopUpURL.aspx.designer.cs">
+      <DependentUpon>getPopUpURL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getPrintURL.aspx.cs">
+      <DependentUpon>getPrintURL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getPrintURL.aspx.designer.cs">
+      <DependentUpon>getPrintURL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getUnitCost.aspx.cs">
+      <DependentUpon>getUnitCost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getUnitCost.aspx.designer.cs">
+      <DependentUpon>getUnitCost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\geturl.aspx.cs">
+      <DependentUpon>geturl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\geturl.aspx.designer.cs">
+      <DependentUpon>geturl.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\joinMember.aspx.cs">
       <DependentUpon>joinMember.aspx</DependentUpon>
@@ -148,6 +354,48 @@
     <Compile Include="Example\registContact.aspx.designer.cs">
       <DependentUpon>registContact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Example\registIssue.aspx.cs">
+      <DependentUpon>registIssue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\registIssue.aspx.designer.cs">
+      <DependentUpon>registIssue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\request.aspx.cs">
+      <DependentUpon>request.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\request.aspx.designer.cs">
+      <DependentUpon>request.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\sendemail.aspx.cs">
+      <DependentUpon>sendemail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\sendemail.aspx.designer.cs">
+      <DependentUpon>sendemail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\sendfax.aspx.cs">
+      <DependentUpon>sendfax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\sendfax.aspx.designer.cs">
+      <DependentUpon>sendfax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\sendsms.aspx.cs">
+      <DependentUpon>sendsms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\sendsms.aspx.designer.cs">
+      <DependentUpon>sendsms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\update.aspx.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\update.aspx.designer.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Example\updateContact.aspx.cs">
       <DependentUpon>updateContact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -155,8 +403,22 @@
     <Compile Include="Example\updateContact.aspx.designer.cs">
       <DependentUpon>updateContact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Example\getLogs.aspx.cs">
+      <DependentUpon>getLogs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getLogs.aspx.designer.cs">
+      <DependentUpon>getLogs.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Example\issue.aspx.cs">
+      <DependentUpon>issue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\issue.aspx.designer.cs">
+      <DependentUpon>issue.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Example\updateCorpInfo.aspx.cs">
@@ -165,6 +427,41 @@
     </Compile>
     <Compile Include="Example\updateCorpInfo.aspx.designer.cs">
       <DependentUpon>updateCorpInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\search.aspx.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\search.aspx.designer.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\send.aspx.cs">
+      <DependentUpon>send.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\send.aspx.designer.cs">
+      <DependentUpon>send.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\refuse.aspx.cs">
+      <DependentUpon>refuse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\refuse.aspx.designer.cs">
+      <DependentUpon>refuse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\sendToNTS.aspx.cs">
+      <DependentUpon>sendToNTS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\sendToNTS.aspx.designer.cs">
+      <DependentUpon>sendToNTS.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -191,7 +488,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>49516</DevelopmentServerPort>
+          <DevelopmentServerPort>52163</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

@@ -18,7 +18,6 @@ namespace Popbill.Taxinvoice.Example
         public String code = null;
         public String message = null;
 
-
         protected void Page_Load(object sender, EventArgs e)
         {
 

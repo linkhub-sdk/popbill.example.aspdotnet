@@ -30,36 +30,5 @@ namespace Popbill.Taxinvoice
             //연동환경 설정값, 개발용(true), 상업용(false)
             taxinvoiceService.IsTest = true;
         }
-
-        
-        protected void Session_Start(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void Application_BeginRequest(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void Application_AuthenticateRequest(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void Application_Error(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void Session_End(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void Application_End(object sender, EventArgs e)
-        {
-
-        }
     }
 }
