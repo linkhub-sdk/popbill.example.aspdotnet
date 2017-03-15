@@ -18,11 +18,15 @@ namespace Popbill.Taxinvoice.Example
     {
         public String code = null;
         public String message = null;
-
         public List<EmailPublicKey> KeyList = null;
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            /**
+            * 대용량 연계사업자 유통메일주소 목록을 반환합니다.
+            */
+
+            // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
             try

@@ -20,13 +20,22 @@ namespace Popbill.Taxinvoice
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            /**
+            * 공급받는자에게 요청받은 역발행 세금계산서를 [거부]처리 합니다.
+            * - 세금계산서의 문서관리번호를 재사용하기 위해서는 삭제 (Delete API) 를
+            *   호출하여 [삭제] 처리해야 합니다.
+            */
+
+            // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
+            // 팝빌회원 아이디
             String testUserID = "testkorea";
 
-            // 세금계산서 발행유형
+            // 세금계산서 발행유형, SELL-매출, BUY-매입, TRUSTEE-위수탁
             MgtKeyType KeyType = MgtKeyType.SELL;
 
+            // 세금계산서 문서관리번호
             String mgtKey = "20170314-05";
 
             // 메모 

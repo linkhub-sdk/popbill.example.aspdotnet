@@ -21,8 +21,15 @@ namespace Popbill.Taxinvoice.Example
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            /**
+            * 1건의 세금계산서를 즉시발행 처리합니다.
+            * - 세금계산서 항목별 정보는 "[전자세금계산서 API 연동매뉴얼] > 4.1. (세금)계산서구성"을 참조하시기 바랍니다.
+            */
+
+            // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
+            // 세금계산서 문서관리번호
             String mgtKey = "20170314-02";
 
             // 지연발행 강제여부
@@ -274,7 +281,6 @@ namespace Popbill.Taxinvoice.Example
 
             taxinvoice.addContactList.Add(addContact2);
 
-            
 
             try
             {

@@ -20,27 +20,31 @@ namespace Popbill.Taxinvoice.Example
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            /**
+            * 파트너의 연동회원으로 회원가입을 요청합니다.
+            */
 
+            // 파트너 링크아이디
             String LinkID = "TESTER";
 
             JoinForm joinInfo = new JoinForm();
 
-            //링크아이디
+            // 링크아이디
             joinInfo.LinkID = LinkID;
 
-            //사업자번호 "-" 제외
+            // 사업자번호 "-" 제외
             joinInfo.CorpNum = "1231212312";
 
-            //대표자명 
+            // 대표자명 
             joinInfo.CEOName = "대표자성명";
 
-            //상호
+            // 상호
             joinInfo.CorpName = "상호";
 
-            //주소
+            // 주소
             joinInfo.Addr = "주소";
 
-            //업태
+            // 업태
             joinInfo.BizType = "업태";
 
             // 종목

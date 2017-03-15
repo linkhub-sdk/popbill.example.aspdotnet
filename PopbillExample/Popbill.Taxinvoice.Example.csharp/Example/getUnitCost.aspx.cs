@@ -21,6 +21,11 @@ namespace Popbill.Taxinvoice.Example
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            /**
+            * 전자세금계산서 1건당 발행단가를 확인합니다.
+            */
+
+            // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
             try

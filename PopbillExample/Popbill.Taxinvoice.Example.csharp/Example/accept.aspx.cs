@@ -20,16 +20,23 @@ namespace Popbill.Taxinvoice.Example
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            /**
+            * 1건의 발행예정 세금계산서를 [승인] 처리합니다.
+            */
+
+            // 팝빌회원 사업자번호, '-' 제외 10자리 
             String testCorpNum = "1234567890";
 
+            // 팝빌회원 아이디
             String testUserID = "testkorea";
 
             // 세금계산서 발행유형 
             MgtKeyType KeyType = MgtKeyType.SELL;
 
+            // 세금계산서 문서관리번호
             String mgtKey = "20170314-05";
 
-            // 메모 
+            // 메모
             string memo = "발행예정 승인 메모";
 
             try

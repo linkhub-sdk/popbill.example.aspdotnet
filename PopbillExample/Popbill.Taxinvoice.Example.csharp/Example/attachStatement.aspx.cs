@@ -20,14 +20,20 @@ namespace Popbill.Taxinvoice.Example
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            /**
+            * 세금계산서에 1건의 전자명세서를 첨부합니다.
+            */
+
+            // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
-            // 세금계산서 발행유형 
+            // 세금계산서 발행유형, SELL-매출, BUY-매입, TRUSTEE-위수탁
             MgtKeyType KeyType = MgtKeyType.SELL;
 
+            // 세금계산서 문서관리번호
             String mgtKey = "20170314-05";
 
-            // 첨부할 명세서 종류 코드
+            // 첨부할 명세서 코드 - 121(거래명세서), 122(청구서), 123(견적서) 124(발주서), 125(입금표), 126(영수증)
             int DocItemCode = 121;
 
             // 첨부할 명세서 관리번호
@@ -36,6 +42,7 @@ namespace Popbill.Taxinvoice.Example
             try
             {
                 Response response = Global.taxinvoiceService.AttachStatement(testCorpNum, KeyType, mgtKey, DocItemCode, DocMgtKey);
+
                 code = response.code.ToString();
                 message = response.message;
             }

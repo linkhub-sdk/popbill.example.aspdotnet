@@ -20,12 +20,20 @@ namespace Popbill.Taxinvoice.Example
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            /**
+            * 연동회원의 담당자 정보를 수정합니다.
+            */
+
+            // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
+            // 팝빌회원 아이디
             String testUserID = "testkorea";
+
 
             Contact contactInfo = new Contact();
 
+            // 아이디
             contactInfo.id = "testkorea";
 
             // 담당자명 

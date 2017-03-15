@@ -17,18 +17,29 @@ namespace Popbill.Taxinvoice.Example
     {
         public String code = null;
         public String message = null;
+
         protected void Page_Load(object sender, EventArgs e)
         {
+            /**
+            * 세금계산서에 첨부파일을 등록합니다.
+            * - [임시저장] 상태의 세금계산서만 파일을 첨부할수 있습니다.
+            * - 첨부파일은 최대 5개까지 등록할 수 있습니다.
+            */
+
+            // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
+            // 팝빌회원 아이디
             String testUserID = "testkorea";
 
-            String mgtKey = "20170314-05";
-
-            // 세금계산서 발행유형 
+            // 세금계산서 발행유형, SELL-매출, BUY-매입, TRUSTEE-위수탁
             MgtKeyType KeyType = MgtKeyType.SELL;
 
-            String strFileName = "test.jpg";
+            // 세금계산서 문서관리번호
+            String mgtKey = "20170315-01";
+
+            // 첨부파일 경로
+            String strFileName = "C:/popbill.example.aspdotnet/PopbillExample/test.jpg";
 
             try
             {

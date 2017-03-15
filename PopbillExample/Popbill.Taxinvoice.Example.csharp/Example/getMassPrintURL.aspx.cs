@@ -22,11 +22,18 @@ namespace Popbill.Taxinvoice.Example
         
         protected void Page_Load(object sender, EventArgs e)
         {
+            /**
+            * 대량의 세금계산서 인쇄팝업 URL을 반환합니다. (최대 100건)
+            * - 보안정책으로 인해 반환된 URL의 유효시간은 30초입니다.
+            */
+
+            // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
+            // 팝빌회원 아이디
             String testUserID = "testkorea";
 
-            // 세금계산서 발행유형 
+            // 세금계산서 발행유형, SELL-매출, BUY-매입, TRUSTEE-위수탁
             MgtKeyType KeyType = MgtKeyType.SELL;
 
             List<string> MgtKeyList = new List<string>();
