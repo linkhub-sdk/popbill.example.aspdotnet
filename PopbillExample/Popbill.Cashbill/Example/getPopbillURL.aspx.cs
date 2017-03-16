@@ -11,7 +11,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-namespace Popbill.Statement.Example
+namespace Popbill.Cashbill.Example
 {
     public partial class getPopbillURL : System.Web.UI.Page
     {
@@ -22,7 +22,7 @@ namespace Popbill.Statement.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 팝빌 관련 기본 URL (포인트충전/ 팝빌 로그인) 을 반환합니다.
+            * 팝빌 관련 기본 URL(포인트충전/ 로그인) 을 반환합니다.
             * 반환된 URL은 보안정책에 따라 30초의 유효시간을 갖습니다.
             */
 
@@ -38,7 +38,7 @@ namespace Popbill.Statement.Example
 
             try
             {
-                url = Global.statementService.GetPopbillURL(testCorpNum, testUserID, TOGO);
+                url = Global.cashbillService.GetPopbillURL(testCorpNum, testUserID, TOGO);
             }
             catch (PopbillException ex)
             {

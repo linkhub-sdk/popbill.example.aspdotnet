@@ -11,19 +11,17 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-namespace Popbill.Statement.Example
+namespace Popbill.Cashbill.Example
 {
-    public partial class getPopbillURL : System.Web.UI.Page
+    public partial class updateCorpInfo : System.Web.UI.Page
     {
         public String code = null;
         public String message = null;
-        public String url  = null;
 
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 팝빌 관련 기본 URL (포인트충전/ 팝빌 로그인) 을 반환합니다.
-            * 반환된 URL은 보안정책에 따라 30초의 유효시간을 갖습니다.
+            * 연동회원의 회사정보를 수정합니다
             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
@@ -32,19 +30,36 @@ namespace Popbill.Statement.Example
             // 팝빌회원 아이디
             String testUserID = "testkorea";
 
-            // [LOGIN] : 팝빌 로그인 URL
-            // [CHRG] : 포인트충전 URL
-            String TOGO = "CHRG";
+
+            CorpInfo corpInfo = new CorpInfo();
+
+            // 대표자성명
+            corpInfo.ceoname = "대표자명 테스트";
+
+            // 상호
+            corpInfo.corpName = "업체명";
+
+            // 주소
+            corpInfo.addr = "주소정보 수정";
+
+            // 업태 
+            corpInfo.bizType = "업태정보 수정";
+
+            // 종목
+            corpInfo.bizClass = "종목 수정";
 
             try
             {
-                url = Global.statementService.GetPopbillURL(testCorpNum, testUserID, TOGO);
+                Response response = Global.cashbillService.UpdateCorpInfo(testCorpNum, corpInfo, testUserID);
+                code = response.code.ToString();
+                message = response.message;
             }
             catch (PopbillException ex)
             {
                 code = ex.code.ToString();
                 message = ex.Message;
             }
+
         }
     }
 }

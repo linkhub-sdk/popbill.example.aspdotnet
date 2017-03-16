@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Linq;
@@ -11,34 +12,32 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-namespace Popbill.Statement.Example
+namespace Popbill.Cashbill.Example
 {
-    public partial class getPopbillURL : System.Web.UI.Page
+    public partial class getLogs : System.Web.UI.Page
     {
-        public String code = null;
-        public String message = null;
-        public String url  = null;
+        public String code;
+        public String message;
+        public List<CashbillLog> logList;
 
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 팝빌 관련 기본 URL (포인트충전/ 팝빌 로그인) 을 반환합니다.
-            * 반환된 URL은 보안정책에 따라 30초의 유효시간을 갖습니다.
+            * 현금영수증 상태 변경이력을 확인합니다.
+            * - 상태 변경이력 확인(GetLogs API) 응답항목에 대한 자세한 정보는
+            *   "[현금영수증 API 연동매뉴얼] > 3.4.4 상태 변경이력 확인"
+            *   을 참조하시기 바랍니다.
             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
-            // 팝빌회원 아이디
-            String testUserID = "testkorea";
-
-            // [LOGIN] : 팝빌 로그인 URL
-            // [CHRG] : 포인트충전 URL
-            String TOGO = "CHRG";
+            // 현금영수증 문서관리번호
+            String mgtKey = "20170316-02";
 
             try
             {
-                url = Global.statementService.GetPopbillURL(testCorpNum, testUserID, TOGO);
+                logList = Global.cashbillService.GetLogs(testCorpNum, mgtKey);
             }
             catch (PopbillException ex)
             {

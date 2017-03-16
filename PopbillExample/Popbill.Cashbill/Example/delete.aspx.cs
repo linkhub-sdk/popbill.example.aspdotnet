@@ -11,19 +11,19 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-namespace Popbill.Statement.Example
+namespace Popbill.Cashbill.Example
 {
-    public partial class getPopbillURL : System.Web.UI.Page
+    public partial class delete : System.Web.UI.Page
     {
-        public String code = null;
-        public String message = null;
-        public String url  = null;
+        public String code;
+        public String message;
 
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 팝빌 관련 기본 URL (포인트충전/ 팝빌 로그인) 을 반환합니다.
-            * 반환된 URL은 보안정책에 따라 30초의 유효시간을 갖습니다.
+            * 1건의 현금영수증을 삭제합니다.
+            * - 현금영수증을 삭제하면 사용된 문서관리번호(mgtKey)를 재사용할 수 있습니다.
+            * - 삭제가능한 문서 상태 : [임시저장], [발행취소]
             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
@@ -32,13 +32,15 @@ namespace Popbill.Statement.Example
             // 팝빌회원 아이디
             String testUserID = "testkorea";
 
-            // [LOGIN] : 팝빌 로그인 URL
-            // [CHRG] : 포인트충전 URL
-            String TOGO = "CHRG";
+            // 현금영수증 문서관리번호
+            String mgtKey = "20170316-01";
 
             try
             {
-                url = Global.statementService.GetPopbillURL(testCorpNum, testUserID, TOGO);
+                Response response = Global.cashbillService.Delete(testCorpNum, mgtKey, testUserID);
+
+                code = response.code.ToString();
+                message = response.message;
             }
             catch (PopbillException ex)
             {
