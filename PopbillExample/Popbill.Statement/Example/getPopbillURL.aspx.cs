@@ -11,18 +11,19 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-namespace Popbill.Taxinvoice.Example
+namespace Popbill.Statement.Example
 {
-    public partial class getCorpInfo : System.Web.UI.Page
+    public partial class getPopbillURL : System.Web.UI.Page
     {
         public String code = null;
         public String message = null;
-        public CorpInfo corpInfo = null;
+        public String url  = null;
 
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 연동회원의 회사정보를 확인합니다
+            * 팝빌 관련 기본 URL(공인인증서 등록/ 포인트충전/ 로그인) 을 반환합니다.
+            * 반환된 URL은 보안정책에 따라 30초의 유효시간을 갖습니다.
             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
@@ -31,9 +32,13 @@ namespace Popbill.Taxinvoice.Example
             // 팝빌회원 아이디
             String testUserID = "testkorea";
 
+            // [LOGIN] : 팝빌 로그인 URL
+            // [CHRG] : 포인트충전 URL
+            String TOGO = "CHRG";
+
             try
             {
-                corpInfo = Global.taxinvoiceService.GetCorpInfo(testCorpNum, testUserID);
+                url = Global.statementService.GetPopbillURL(testCorpNum, testUserID, TOGO);
             }
             catch (PopbillException ex)
             {

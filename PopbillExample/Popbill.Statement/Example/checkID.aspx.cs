@@ -11,29 +11,28 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-namespace Popbill.Taxinvoice.Example
+namespace Popbill.Statement.Example
 {
-    public partial class getCorpInfo : System.Web.UI.Page
+    public partial class checkID : System.Web.UI.Page
     {
         public String code = null;
         public String message = null;
-        public CorpInfo corpInfo = null;
 
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 연동회원의 회사정보를 확인합니다
+            * 팝빌 회원아이디 중복여부를 확인합니다.
             */
 
-            // 팝빌회원 사업자번호, '-' 제외 10자리
-            String testCorpNum = "1234567890";
-
-            // 팝빌회원 아이디
-            String testUserID = "testkorea";
+            // 조회할 아이디
+            String targetID = "testkorea";
 
             try
             {
-                corpInfo = Global.taxinvoiceService.GetCorpInfo(testCorpNum, testUserID);
+                Response response = Global.statementService.CheckID(targetID);
+
+                code = response.code.ToString();
+                message = response.message;
             }
             catch (PopbillException ex)
             {

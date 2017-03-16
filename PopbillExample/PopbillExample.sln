@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linkhub", "..\Linkhub\Linkh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Popbill", "..\Popbill\Popbill.csproj", "{57F03B3E-C713-443A-AC04-90291B429204}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Popbill.Statement", "Popbill.Statement\Popbill.Statement.csproj", "{FCC54411-6D52-4B9A-BF4A-A5D3A2713A61}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{57F03B3E-C713-443A-AC04-90291B429204}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57F03B3E-C713-443A-AC04-90291B429204}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57F03B3E-C713-443A-AC04-90291B429204}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCC54411-6D52-4B9A-BF4A-A5D3A2713A61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCC54411-6D52-4B9A-BF4A-A5D3A2713A61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCC54411-6D52-4B9A-BF4A-A5D3A2713A61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCC54411-6D52-4B9A-BF4A-A5D3A2713A61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
