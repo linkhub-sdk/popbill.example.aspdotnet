@@ -4,7 +4,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>5e0ab710-f70b-4e72-8e88-a2cf2fd67858</ProjectGuid>
+    <ProjectGuid>{4455DC3D-0EB5-4ADA-8921-C8C68CDEBA19}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -54,6 +54,23 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
+    <Content Include="Example.css" />
+    <Content Include="Example\checkCorpNum.aspx" />
+    <Content Include="Example\checkCorpNums.aspx" />
+    <Content Include="Example\checkID.aspx" />
+    <Content Include="Example\checkIsMember.aspx" />
+    <Content Include="Example\getBalance.aspx" />
+    <Content Include="Example\getChargeInfo.aspx" />
+    <Content Include="Example\getCorpInfo.aspx" />
+    <Content Include="Example\getPartnerBalance.aspx" />
+    <Content Include="Example\getPopbillURL.aspx" />
+    <Content Include="Example\getUnitCost.aspx" />
+    <Content Include="Example\joinMember.aspx" />
+    <Content Include="Example\listContact.aspx" />
+    <Content Include="Example\registContact.aspx" />
+    <Content Include="Example\updateContact.aspx" />
+    <Content Include="Example\updateCorpInfo.aspx" />
+    <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -64,7 +81,121 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Example\checkCorpNum.aspx.cs">
+      <DependentUpon>checkCorpNum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\checkCorpNum.aspx.designer.cs">
+      <DependentUpon>checkCorpNum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\checkCorpNums.aspx.cs">
+      <DependentUpon>checkCorpNums.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\checkCorpNums.aspx.designer.cs">
+      <DependentUpon>checkCorpNums.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\checkID.aspx.cs">
+      <DependentUpon>checkID.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\checkID.aspx.designer.cs">
+      <DependentUpon>checkID.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\checkIsMember.aspx.cs">
+      <DependentUpon>checkIsMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\checkIsMember.aspx.designer.cs">
+      <DependentUpon>checkIsMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getBalance.aspx.cs">
+      <DependentUpon>getBalance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getBalance.aspx.designer.cs">
+      <DependentUpon>getBalance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getChargeInfo.aspx.cs">
+      <DependentUpon>getChargeInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getChargeInfo.aspx.designer.cs">
+      <DependentUpon>getChargeInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getCorpInfo.aspx.cs">
+      <DependentUpon>getCorpInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getCorpInfo.aspx.designer.cs">
+      <DependentUpon>getCorpInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getPartnerBalance.aspx.cs">
+      <DependentUpon>getPartnerBalance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getPartnerBalance.aspx.designer.cs">
+      <DependentUpon>getPartnerBalance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getPopbillURL.aspx.cs">
+      <DependentUpon>getPopbillURL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getPopbillURL.aspx.designer.cs">
+      <DependentUpon>getPopbillURL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getUnitCost.aspx.cs">
+      <DependentUpon>getUnitCost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getUnitCost.aspx.designer.cs">
+      <DependentUpon>getUnitCost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\joinMember.aspx.cs">
+      <DependentUpon>joinMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\joinMember.aspx.designer.cs">
+      <DependentUpon>joinMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\listContact.aspx.cs">
+      <DependentUpon>listContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\listContact.aspx.designer.cs">
+      <DependentUpon>listContact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\registContact.aspx.cs">
+      <DependentUpon>registContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\registContact.aspx.designer.cs">
+      <DependentUpon>registContact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\updateContact.aspx.cs">
+      <DependentUpon>updateContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\updateContact.aspx.designer.cs">
+      <DependentUpon>updateContact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\updateCorpInfo.aspx.cs">
+      <DependentUpon>updateCorpInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\updateCorpInfo.aspx.designer.cs">
+      <DependentUpon>updateCorpInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Popbill\Popbill.csproj">
+      <Project>{57F03B3E-C713-443A-AC04-90291B429204}</Project>
+      <Name>Popbill</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -84,7 +215,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>57866</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>
