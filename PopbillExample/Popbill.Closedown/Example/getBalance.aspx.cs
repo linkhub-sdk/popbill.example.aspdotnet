@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Linq;
@@ -12,25 +11,30 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-namespace Popbill.Fax.Example
+namespace Popbill.Closedown.Example
 {
-    public partial class getFaxResult : System.Web.UI.Page
+    public partial class getBalance : System.Web.UI.Page
     {
-        public String code;
-        public String message;
-        public List<FaxResult> result;
+        public String code = null;
+        public String message = null;
+        public String remainPoint = null;
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            /**
+            * 연동회원의 잔여포인트를 확인합니다.
+            * - 과금방식이 파트너과금인 경우 파트너 잔여포인트(GetPartnerBalance API) 함수를
+            *   통해 확인하시기 바랍니다.
+            */
+
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
-            // 팩스전송 요청시 발급받은 접수번호
-            String receiptNum = "017032013534100001";
-            
             try
             {
-                result = Global.faxService.GetFaxResult(testCorpNum, receiptNum);
+                double response = Global.closedownService.GetBalance(testCorpNum);
+
+                remainPoint = response.ToString();
             }
             catch (PopbillException ex)
             {

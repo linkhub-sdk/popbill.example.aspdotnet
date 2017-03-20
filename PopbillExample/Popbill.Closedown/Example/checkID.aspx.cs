@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Linq;
@@ -12,25 +11,28 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-namespace Popbill.Fax.Example
+namespace Popbill.Closedown.Example
 {
-    public partial class getFaxResult : System.Web.UI.Page
+    public partial class checkID : System.Web.UI.Page
     {
-        public String code;
-        public String message;
-        public List<FaxResult> result;
+        public String code = null;
+        public String message = null;
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            // 팝빌회원 사업자번호, '-' 제외 10자리
-            String testCorpNum = "1234567890";
+            /**
+            * 팝빌 회원아이디 중복여부를 확인합니다.
+            */
 
-            // 팩스전송 요청시 발급받은 접수번호
-            String receiptNum = "017032013534100001";
-            
+            // 조회할 아이디
+            String targetID = "testkorea";
+
             try
             {
-                result = Global.faxService.GetFaxResult(testCorpNum, receiptNum);
+                Response response = Global.closedownService.CheckID(targetID);
+
+                code = response.code.ToString();
+                message = response.message;
             }
             catch (PopbillException ex)
             {

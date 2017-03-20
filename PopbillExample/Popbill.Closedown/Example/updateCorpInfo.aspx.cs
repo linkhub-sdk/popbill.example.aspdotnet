@@ -11,18 +11,17 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-namespace Popbill.Fax.Example
+namespace Popbill.Closedown.Example
 {
-    public partial class cancelReserve : System.Web.UI.Page
+    public partial class updateCorpInfo : System.Web.UI.Page
     {
-        public String code;
-        public String message;
+        public String code = null;
+        public String message = null;
 
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 예약전송 팩스요청건을 취소합니다.
-            * - 예약전송 취소는 예약전송시간 10분전까지 가능합니다.
+            * 연동회원의 회사정보를 수정합니다
             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
@@ -31,12 +30,27 @@ namespace Popbill.Fax.Example
             // 팝빌회원 아이디
             String testUserID = "testkorea";
 
-            // 팩스전송 요청시 발급받은 접수번호
-            String receiptNum = "017032013534100001";
-                        
+
+            CorpInfo corpInfo = new CorpInfo();
+
+            // 대표자성명
+            corpInfo.ceoname = "대표자명 테스트";
+
+            // 상호
+            corpInfo.corpName = "업체명";
+
+            // 주소
+            corpInfo.addr = "주소정보 수정";
+
+            // 업태 
+            corpInfo.bizType = "업태정보 수정";
+
+            // 종목
+            corpInfo.bizClass = "종목 수정";
+
             try
             {
-                Response response = Global.faxService.CancelReserve(testCorpNum, receiptNum, testUserID);
+                Response response = Global.closedownService.UpdateCorpInfo(testCorpNum, corpInfo, testUserID);
                 code = response.code.ToString();
                 message = response.message;
             }
@@ -45,6 +59,7 @@ namespace Popbill.Fax.Example
                 code = ex.code.ToString();
                 message = ex.Message;
             }
+
         }
     }
 }
