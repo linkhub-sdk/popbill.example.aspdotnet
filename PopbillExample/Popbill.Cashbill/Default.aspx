@@ -9,7 +9,7 @@
 </head>
 	<body>
 		<div id="content">
-			<p class="heading1">팝빌 현금영수증 SDK PHP 5.X Example.</p>
+			<p class="heading1">팝빌 현금영수증 SDK ASP.NET Example.</p>
 			<br/>
 			<fieldset class="fieldset1">
 				<legend>팝빌 기본 API</legend>

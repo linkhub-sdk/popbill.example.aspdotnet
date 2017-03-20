@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="getChargeInfo.aspx.cs" Inherits="Popbill.Cashbill.Example.getChargeInfo" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="getChargeInfo.aspx.cs" Inherits="Popbill.Message.Example.getCorpInfo" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>팝빌 현금영수증 SDK ASP.NET Example</title>
+    <title>팝빌 문자 SDK ASP.NET Example</title>
     <link href="../Example.css" rel="stylesheet" type="text/css" />
 </head>
 	<body>
@@ -18,9 +18,11 @@
 						<li>Response.code : <%=code %> </li>
 						<li>Response.message : <%= message %></li>
 					<% } else {	%>
-						<li>unitCost (발행단가) : <%= chrgInfo.unitCost %></li>
-						<li>chargeMethod (과금유형) : <%= chrgInfo.chargeMethod %></li>
-						<li>rateSystem (과금제도) : <%= chrgInfo.rateSystem %></li>
+						<li>ceoname (대표자 성명) : <%=corpInfo.ceoname %></li>
+						<li>corpName (상호) : <%=corpInfo.corpName %></li>
+						<li>addr (주소) : <%=corpInfo.addr %></li>
+						<li>bizType (업태) : <%=corpInfo.bizType %></li>
+						<li>bizClass (종목) : <%=corpInfo.bizClass %></li>
 					<% } %>
 				</ul>
 			</fieldset>

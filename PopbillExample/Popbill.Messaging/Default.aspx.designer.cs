@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Popbill.Cashbill.Example {
+namespace Popbill.Messaging {
     
     
-    public partial class getChargeInfo {
+    public partial class _Default {
     }
 }

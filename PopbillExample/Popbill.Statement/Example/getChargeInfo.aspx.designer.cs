@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Popbill.ㄴ.Example {
+namespace Popbill.Statement.Example {
     
     
-    public partial class getPartnerBalance {
+    public partial class getChargeInfo {
     }
 }

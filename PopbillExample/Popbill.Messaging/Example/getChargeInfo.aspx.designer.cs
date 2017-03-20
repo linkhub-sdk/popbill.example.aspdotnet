@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Popbill.Cashbill.Example {
+namespace Popbill.Message.Example {
     
     
     public partial class getChargeInfo {

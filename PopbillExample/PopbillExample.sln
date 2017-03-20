@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Popbill.Statement", "Popbil
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Popbill.Cashbill", "Popbill.Cashbill\Popbill.Cashbill.csproj", "{406CA10B-F227-4093-ABD4-D117C56C4298}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Popbill.Message", "Popbill.Messaging\Popbill.Message.csproj", "{5ECA3192-FC0C-428C-AFF9-B78B98984E6A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{406CA10B-F227-4093-ABD4-D117C56C4298}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{406CA10B-F227-4093-ABD4-D117C56C4298}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{406CA10B-F227-4093-ABD4-D117C56C4298}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5ECA3192-FC0C-428C-AFF9-B78B98984E6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ECA3192-FC0C-428C-AFF9-B78B98984E6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ECA3192-FC0C-428C-AFF9-B78B98984E6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ECA3192-FC0C-428C-AFF9-B78B98984E6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
