@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Popbill.Closedown", "Popbil
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Popbill.HomeTax.Taxinvoice", "Popbill.HomeTax.Taxinvoice\Popbill.HomeTax.Taxinvoice.csproj", "{BA4E9634-98CF-4A61-80E3-7914EA5DC197}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Popbill.HomeTax.Cashbill", "Popbill.HomeTax.Cashbill\Popbill.HomeTax.Cashbill.csproj", "{47786537-07CB-420A-A958-F0787C97A955}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,10 @@ Global
 		{BA4E9634-98CF-4A61-80E3-7914EA5DC197}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA4E9634-98CF-4A61-80E3-7914EA5DC197}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA4E9634-98CF-4A61-80E3-7914EA5DC197}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47786537-07CB-420A-A958-F0787C97A955}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47786537-07CB-420A-A958-F0787C97A955}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47786537-07CB-420A-A958-F0787C97A955}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47786537-07CB-420A-A958-F0787C97A955}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
