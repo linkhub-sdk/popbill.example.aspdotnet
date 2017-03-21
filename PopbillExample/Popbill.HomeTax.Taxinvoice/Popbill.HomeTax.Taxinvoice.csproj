@@ -1,0 +1,284 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BA4E9634-98CF-4A61-80E3-7914EA5DC197}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Popbill.HomeTax.Taxinvoice</RootNamespace>
+    <AssemblyName>Popbill.HomeTax.Taxinvoice</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Example.css" />
+    <Content Include="Example\checkID.aspx" />
+    <Content Include="Example\checkIsMember.aspx" />
+    <Content Include="Example\getBalance.aspx" />
+    <Content Include="Example\getCertificatePopUpURL.aspx" />
+    <Content Include="Example\getChargeInfo.aspx" />
+    <Content Include="Example\getCorpInfo.aspx" />
+    <Content Include="Example\getFlatRatePopUpURL.aspx" />
+    <Content Include="Example\getFlatRateState.aspx" />
+    <Content Include="Example\getJobState.aspx" />
+    <Content Include="Example\getPartnerBalance.aspx" />
+    <Content Include="Example\getPopbillURL.aspx" />
+    <Content Include="Example\getTaxinvoice.aspx" />
+    <Content Include="Example\joinMember.aspx" />
+    <Content Include="Example\listActiveJob.aspx" />
+    <Content Include="Example\listContact.aspx" />
+    <Content Include="Example\registContact.aspx" />
+    <Content Include="Example\requestJob.aspx" />
+    <Content Include="Example\search.aspx" />
+    <Content Include="Example\summary.aspx" />
+    <Content Include="Example\updateContact.aspx" />
+    <Content Include="Example\updateCorpInfo.aspx" />
+    <Content Include="Example\getCertificateExpireDate.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\checkID.aspx.cs">
+      <DependentUpon>checkID.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\checkID.aspx.designer.cs">
+      <DependentUpon>checkID.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\checkIsMember.aspx.cs">
+      <DependentUpon>checkIsMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\checkIsMember.aspx.designer.cs">
+      <DependentUpon>checkIsMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getBalance.aspx.cs">
+      <DependentUpon>getBalance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getBalance.aspx.designer.cs">
+      <DependentUpon>getBalance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getCertificatePopUpURL.aspx.cs">
+      <DependentUpon>getCertificatePopUpURL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getCertificatePopUpURL.aspx.designer.cs">
+      <DependentUpon>getCertificatePopUpURL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getChargeInfo.aspx.cs">
+      <DependentUpon>getChargeInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getChargeInfo.aspx.designer.cs">
+      <DependentUpon>getChargeInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getCorpInfo.aspx.cs">
+      <DependentUpon>getCorpInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getCorpInfo.aspx.designer.cs">
+      <DependentUpon>getCorpInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getFlatRatePopUpURL.aspx.cs">
+      <DependentUpon>getFlatRatePopUpURL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getFlatRatePopUpURL.aspx.designer.cs">
+      <DependentUpon>getFlatRatePopUpURL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getFlatRateState.aspx.cs">
+      <DependentUpon>getFlatRateState.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getFlatRateState.aspx.designer.cs">
+      <DependentUpon>getFlatRateState.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getJobState.aspx.cs">
+      <DependentUpon>getJobState.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getJobState.aspx.designer.cs">
+      <DependentUpon>getJobState.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getPartnerBalance.aspx.cs">
+      <DependentUpon>getPartnerBalance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getPartnerBalance.aspx.designer.cs">
+      <DependentUpon>getPartnerBalance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getPopbillURL.aspx.cs">
+      <DependentUpon>getPopbillURL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getPopbillURL.aspx.designer.cs">
+      <DependentUpon>getPopbillURL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getTaxinvoice.aspx.cs">
+      <DependentUpon>getTaxinvoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getTaxinvoice.aspx.designer.cs">
+      <DependentUpon>getTaxinvoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\joinMember.aspx.cs">
+      <DependentUpon>joinMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\joinMember.aspx.designer.cs">
+      <DependentUpon>joinMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\listActiveJob.aspx.cs">
+      <DependentUpon>listActiveJob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\listActiveJob.aspx.designer.cs">
+      <DependentUpon>listActiveJob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\listContact.aspx.cs">
+      <DependentUpon>listContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\listContact.aspx.designer.cs">
+      <DependentUpon>listContact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\registContact.aspx.cs">
+      <DependentUpon>registContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\registContact.aspx.designer.cs">
+      <DependentUpon>registContact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\requestJob.aspx.cs">
+      <DependentUpon>requestJob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\requestJob.aspx.designer.cs">
+      <DependentUpon>requestJob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\search.aspx.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\search.aspx.designer.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\summary.aspx.cs">
+      <DependentUpon>summary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\summary.aspx.designer.cs">
+      <DependentUpon>summary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\updateContact.aspx.cs">
+      <DependentUpon>updateContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\updateContact.aspx.designer.cs">
+      <DependentUpon>updateContact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\updateCorpInfo.aspx.cs">
+      <DependentUpon>updateCorpInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\updateCorpInfo.aspx.designer.cs">
+      <DependentUpon>updateCorpInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getCertificateExpireDate.aspx.cs">
+      <DependentUpon>getCertificateExpireDate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getCertificateExpireDate.aspx.designer.cs">
+      <DependentUpon>getCertificateExpireDate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Popbill\Popbill.csproj">
+      <Project>{57F03B3E-C713-443A-AC04-90291B429204}</Project>
+      <Name>Popbill</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58553</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
