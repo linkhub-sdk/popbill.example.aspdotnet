@@ -87,10 +87,14 @@ namespace Popbill.Taxinvoice
             // 페이지당 검색개수, 최대 1000건
             int PerPage = 10;
 
+            // 일반/연동 문서구분, 공백-전체조회, 0-일반문서 조회, 1-연동문서 조회
+            String InterOPYN = "";
+
             try
             {
                 result = Global.taxinvoiceService.Search(testCorpNum, KeyType, DType, SDate, EDate, State,
-                                    Type, TaxType, LateOnly, TaxRegIDYN, TaxRegIDType, TaxRegID, QString, Order, Page, PerPage, testUserID);
+                                    Type, TaxType, LateOnly, TaxRegIDYN, TaxRegIDType, TaxRegID, QString, 
+                                    Order, Page, PerPage, InterOPYN, testUserID);
             }
             catch (PopbillException ex)
             {
