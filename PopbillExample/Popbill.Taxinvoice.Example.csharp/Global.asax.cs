@@ -2,7 +2,7 @@
 * 팜빌 전자세금계산서 API ASP.NET SDK Example
 *
 * ASP.NET SDK 연동환경 설정방법 안내 : http://blog.linkhub.co.kr/4022/
-* 업테이트 일자 : 2017-03-27
+* 업테이트 일자 : 2017-03-29
 * 연동기술지원 연락처 : 1600-8539 / 070-4304-2991
 * 연동기술지원 이메일 : code@linkhub.co.kr
 *
