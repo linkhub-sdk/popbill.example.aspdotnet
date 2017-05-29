@@ -64,6 +64,7 @@
     <Content Include="Example\getFaxResult.aspx" />
     <Content Include="Example\getPartnerBalance.aspx" />
     <Content Include="Example\getPopbillURL.aspx" />
+    <Content Include="Example\getSenderNumberList.aspx" />
     <Content Include="Example\getUnitCost.aspx" />
     <Content Include="Example\joinMember.aspx" />
     <Content Include="Example\listContact.aspx" />
@@ -149,6 +150,13 @@
     </Compile>
     <Compile Include="Example\getPopbillURL.aspx.designer.cs">
       <DependentUpon>getPopbillURL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getSenderNumberList.aspx.cs">
+      <DependentUpon>getSenderNumberList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getSenderNumberList.aspx.designer.cs">
+      <DependentUpon>getSenderNumberList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\getUnitCost.aspx.cs">
       <DependentUpon>getUnitCost.aspx</DependentUpon>

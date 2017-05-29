@@ -12,7 +12,7 @@
 			<p class="heading1">Response</p>
 			<br/>
 			<fieldset class="fieldset1">
-				<legend>문자전송내역 팝업 URL 확인</legend>
+				<legend>문자 API 관련 팝업 URL 확인</legend>
 				<ul>
 					<% if (!String.IsNullOrEmpty(code)) { %>
 						<li>Response.code : <%=code %> </li>

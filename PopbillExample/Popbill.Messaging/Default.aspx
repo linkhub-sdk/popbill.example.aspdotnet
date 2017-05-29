@@ -89,6 +89,7 @@
 						<li><a href="Example/getURL.aspx">getURL</a> - 문자메시지 관련 SSO URL 확인</li>
 						<li><a href="Example/getUnitCost.aspx">getUnitCost</a> - 문자 전송 단가 확인</li>
 						<li><a href="Example/getAutoDenyList.aspx">getAutoDenyList</a> - 080 수신거부 목록 확인</li>
+						<li><a href="Example/getSenderNumberList.aspx">getSenderNumberList</a> - 문자 발신번호 목록 확인</li>
 					</ul>
 				</fieldset>
 			</fieldset>

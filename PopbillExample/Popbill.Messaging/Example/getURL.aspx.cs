@@ -22,7 +22,7 @@ namespace Popbill.Message.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 문자메시지 전송내역 팝업 URL을 반환합니다.
+            * 문자 API 관련 팝업 URL을 반환합니다.
             * - 보안정책에 따라 반환된 URL은 30초의 유효시간을 갖습니다.
             */
 
@@ -32,9 +32,12 @@ namespace Popbill.Message.Example
             // 팝빌회원 아이디
             String testUserID = "testkorea";
 
+            // [BOX]-문자전송내역 팝업 URL / [SENDER]-발신번호 관리 팝업 URL
+            String TOGO = "SENDER";
+
             try
             {
-                url = Global.messageService.GetURL(testCorpNum, testUserID, "BOX");
+                url = Global.messageService.GetURL(testCorpNum, testUserID, TOGO);
             }
             catch (PopbillException ex)
             {

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Linq;
@@ -13,30 +14,24 @@ using System.Xml.Linq;
 
 namespace Popbill.Fax.Example
 {
-    public partial class getURL : System.Web.UI.Page
+    public partial class getSenderNumberList : System.Web.UI.Page
     {
         public String code;
         public String message;
-        public String url;
+        public List<SenderNumber> senderNumberList;
 
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 팩스 전송내역 목록 팝업 URL을 반환합니다.
-            * 보안정책으로 인해 반환된 URL은 30초의 유효시간을 갖습니다.
+            * 발신번호 목록을 확인합니다.
             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
-            // 팝빌회원 아이디
-            String testUserID = "testkorea";
-
-            // [BOX]-팩스 전송내역 목록 팝업 URL / [SENDER]-팩스 발신번호 관리 팝업 URL
-            String TOGO = "SENDER";
             try
             {
-                url = Global.faxService.GetURL(testCorpNum, testUserID, TOGO);
+                senderNumberList = Global.faxService.GetSenderNumberList(testCorpNum);
             }
             catch (PopbillException ex)
             {
