@@ -36,6 +36,9 @@ namespace Popbill.Fax.Example
             // 수신자명 
             String receiverName = "수신자명";
 
+            // 광고팩스 전송여부
+            bool adsYN = true;
+
             // 팩스전송 파일경로, JPG 파일포맷, 300KByte 이하 전송 가능
             String filePath = "C:/popbill.example.aspdotnet/PopbillExample/test.jpg";
 
@@ -51,7 +54,7 @@ namespace Popbill.Fax.Example
 
             try
             {
-                receiptNum = Global.faxService.SendFAX(testCorpNum, senderNum, receiverNum, receiverName, filePath, reserveDT, testUserID);
+                receiptNum = Global.faxService.SendFAX(testCorpNum, senderNum, receiverNum, receiverName, filePath, reserveDT, testUserID, adsYN);
             }
             catch (PopbillException ex)
             {
