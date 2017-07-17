@@ -34,7 +34,7 @@ namespace Popbill.Fax.Example
             String testUserID = "testkorea";
 
             // 팩스전송 요청시 발급받은 접수번호
-            String preReceiptNum = "017032013534100001";
+            String preReceiptNum = "017071713224800001";
 
             // 발신번호, 공백으로 처리시 기존전송정보로 전송
             String senderNum = "";
@@ -74,10 +74,13 @@ namespace Popbill.Fax.Example
                 reserveDT = DateTime.ParseExact(reserveDTStr, "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture);
             }
 
+            // 팩스 제목
+            String title = "팩스 재전송 제목 테스트";
+
             try
             {
                 receiptNum = Global.faxService.ResendFAX(testCorpNum, preReceiptNum,
-                    senderNum, senderName, receivers, reserveDT, testUserID);
+                    senderNum, senderName, receivers, reserveDT, testUserID, title);
             }
             catch (PopbillException ex)
             {

@@ -52,9 +52,12 @@ namespace Popbill.Fax.Example
                 reserveDT = DateTime.ParseExact(reserveDTStr, "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture);
             }
 
+            // 팩스제목
+            String title = "팩스전송 제목";
+
             try
             {
-                receiptNum = Global.faxService.SendFAX(testCorpNum, senderNum, receiverNum, receiverName, filePath, reserveDT, testUserID, adsYN);
+                receiptNum = Global.faxService.SendFAX(testCorpNum, senderNum, receiverNum, receiverName, filePath, reserveDT, testUserID, adsYN, title);
             }
             catch (PopbillException ex)
             {

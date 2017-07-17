@@ -22,9 +22,9 @@
 					        <fieldset class="fieldset2">
 					        <legend>팩스 전송 상태정보</legend>
 					            <ul>
-    						        <li>sendState (전송상태) : <%= faxInfo.sendState %></li>
-    						        <li>convState (변환상태) : <%= faxInfo.convState %></li>
-    						        <li>sendResult (통신사 전송결과) : <%= faxInfo.sendResult %></li>
+    						        <li>state (전송상태 코드) : <%= faxInfo.state %></li>
+    						        <li>result (전송결과 코드) : <%= faxInfo.result %></li>
+    						        <li>title (팩스제목) : <%= faxInfo.title %></li>
     						        <li>sendNum (발신번호) : <%= faxInfo.sendNum %></li>
     						        <li>receiveNum (수신번호) : <%= faxInfo.receiveNum %></li>
     						        <li>receiveName (수신자명) : <%= faxInfo.receiveName %></li>

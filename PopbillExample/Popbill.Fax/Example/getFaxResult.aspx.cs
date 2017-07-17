@@ -26,7 +26,7 @@ namespace Popbill.Fax.Example
             String testCorpNum = "1234567890";
 
             // 팩스전송 요청시 발급받은 접수번호
-            String receiptNum = "017032013534100001";
+            String receiptNum = "017071713443600001";
             
             try
             {

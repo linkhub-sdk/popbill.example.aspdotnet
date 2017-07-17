@@ -36,7 +36,7 @@ namespace Popbill.Cashbill.Example
             String testUserID = "testkorea";
 
             // 현금영수증 문서관리번호
-            String mgtKey = "20170316-02";
+            String mgtKey = "20170717-05";
 
             // 메모
             String memo = "즉시발행 메모";
@@ -50,7 +50,13 @@ namespace Popbill.Cashbill.Example
             cashbill.mgtKey = mgtKey;
 
             // [필수] 거래유형, {승인거래, 취소거래} 중 기재
-            cashbill.tradeType = "승인거래";
+            cashbill.tradeType = "취소거래";
+
+            // [취소거래시 필수] 원본 현금영수증 국세청 승인번호
+            cashbill.orgConfirmNum = "820116333";
+
+            // [취소거래시 필수] 원본 현금영수증 거래일자
+            cashbill.orgTradeDate = "";
 
             // [필수] 과세형태, { 과세, 비과세 } 중 기재
             cashbill.taxationType = "과세";
