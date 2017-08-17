@@ -11,7 +11,7 @@
 namespace Popbill.Cashbill.Example {
     
     
-    public partial class registIssue {
+    public partial class revokeRegistIssue {
         
         /// <summary>
         /// Head1 컨트롤입니다.

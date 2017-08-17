@@ -22,6 +22,7 @@
 						<li>type (사업자유형) : <%= result.type %></li>
 						<li>state (휴폐업상태) : <%= result.state %></li>
 						<li>stateDate (휴폐업일자) : <%= result.stateDate %></li>
+						<li>typeDate (과세유형 전환일자) : <%= result.typeDate %></li>
 						<li>checkDate (국세청 확인일자) : <%= result.checkDate %></li>
 					<% } %>
 				</ul>

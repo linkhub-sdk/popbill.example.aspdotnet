@@ -82,6 +82,8 @@
     <Content Include="Example\registContact.aspx" />
     <Content Include="Example\register.aspx" />
     <Content Include="Example\registIssue.aspx" />
+    <Content Include="Example\revokeRegister.aspx" />
+    <Content Include="Example\revokeRegistIssue.aspx" />
     <Content Include="Example\search.aspx" />
     <Content Include="Example\sendEmail.aspx" />
     <Content Include="Example\sendFAX.aspx" />
@@ -288,6 +290,20 @@
     </Compile>
     <Compile Include="Example\registIssue.aspx.designer.cs">
       <DependentUpon>registIssue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\revokeRegister.aspx.cs">
+      <DependentUpon>revokeRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\revokeRegister.aspx.designer.cs">
+      <DependentUpon>revokeRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\revokeRegistIssue.aspx.cs">
+      <DependentUpon>revokeRegistIssue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\revokeRegistIssue.aspx.designer.cs">
+      <DependentUpon>revokeRegistIssue.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\search.aspx.cs">
       <DependentUpon>search.aspx</DependentUpon>
