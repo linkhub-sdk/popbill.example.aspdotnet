@@ -47,6 +47,7 @@
     						        <li>customerName (고객명) : <%= cashbillInfo.customerName%></li>
     						        <li>cardOwnerName (카드소유자명) : <%= cashbillInfo.cardOwnerName%></li>
     						        <li>deductionType (공제유형) : <%= cashbillInfo.deductionType%></li>
+    						        <li>invoiceType (구분) : <%= cashbillInfo.invoiceType %></li>
     						    </ul>
     						</fieldset>
 					    <% } %>

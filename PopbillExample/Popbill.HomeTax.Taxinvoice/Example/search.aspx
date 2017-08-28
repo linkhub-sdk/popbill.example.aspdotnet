@@ -49,6 +49,7 @@
     						        <li>supplyCost (공급가액) : <%=taxinvoiceInfo.supplyCost %></li>
     						        <li>tax (세액) : <%=taxinvoiceInfo.tax %></li>
     						        <li>remark (비고) : <%=taxinvoiceInfo.remark %></li>
+    						        <li>invoiceType (구분) : <%=taxinvoiceInfo.invoiceType %></li>
     						    </ul>
     						</fieldset>
 					    <% } %>
