@@ -63,6 +63,7 @@
     <Content Include="Example\getChargeInfo.aspx" />
     <Content Include="Example\getCorpInfo.aspx" />
     <Content Include="Example\getPartnerBalance.aspx" />
+    <Content Include="Example\getPartnerURL.aspx" />
     <Content Include="Example\getPopbillURL.aspx" />
     <Content Include="Example\getUnitCost.aspx" />
     <Content Include="Example\joinMember.aspx" />
@@ -136,6 +137,13 @@
     </Compile>
     <Compile Include="Example\getPartnerBalance.aspx.designer.cs">
       <DependentUpon>getPartnerBalance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getPartnerURL.aspx.cs">
+      <DependentUpon>getPartnerURL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getPartnerURL.aspx.designer.cs">
+      <DependentUpon>getPartnerURL.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\getPopbillURL.aspx.cs">
       <DependentUpon>getPopbillURL.aspx</DependentUpon>

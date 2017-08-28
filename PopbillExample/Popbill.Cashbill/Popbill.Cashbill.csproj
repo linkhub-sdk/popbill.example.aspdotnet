@@ -91,6 +91,7 @@
     <Content Include="Example\update.aspx" />
     <Content Include="Example\updateContact.aspx" />
     <Content Include="Example\updateCorpInfo.aspx" />
+    <Content Include="Example\getPartnerURL.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -353,6 +354,13 @@
     </Compile>
     <Compile Include="Example\updateCorpInfo.aspx.designer.cs">
       <DependentUpon>updateCorpInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getPartnerURL.aspx.cs">
+      <DependentUpon>getPartnerURL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getPartnerURL.aspx.designer.cs">
+      <DependentUpon>getPartnerURL.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

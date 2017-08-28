@@ -23,8 +23,9 @@
 						<li><a href="Example/JoinMember.aspx">joinMember</a> - 연동회원 가입 요청</li>
                         <li><a href="Example/GetChargeInfo.aspx">GetChargeInfo</a> - 과금정보 확인</li>
 						<li><a href="Example/GetBalance.aspx">GetBalance</a> - 연동회원 잔여포인트 확인</li>
-						<li><a href="Example/GetPartnerBalance.aspx">getPartnerBalance</a> - 파트너 잔여포인트 확인</li>
-						<li><a href="Example/GetPopbillURL.aspx">getPopbillURL</a> - 팝빌 SSO URL 요청</li>
+						<li><a href="Example/getPopbillURL.aspx">getPopbillURL</a> - 팝빌 SSO URL</li>
+						<li><a href="Example/getPartnerBalance.aspx">getPartnerBalance</a> - 파트너 잔여포인트 확인</li>
+						<li><a href="Example/getPartnerURL.aspx">getPartnerURL</a> - 파트너 포인트 충전 URL</li>
 						<li><a href="Example/GetUnitCost.aspx">getUnitCost</a> - 조회단가 확인</li>
 						<li><a href="Example/RegistContact.aspx">registContact</a> - 담당자 추가</li>
 						<li><a href="Example/ListContact.aspx">listContact</a> - 담당자 목록 확인</li>
