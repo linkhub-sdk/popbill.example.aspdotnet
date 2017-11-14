@@ -11,31 +11,33 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-namespace Popbill.Cashbill.Example
+namespace Popbill.HomeTax.Taxinvoice.Example
 {
-    public partial class getDetailInfo : System.Web.UI.Page
+    public partial class getXML : System.Web.UI.Page
     {
+
         public String code;
         public String message;
-        public Cashbill cashbill;
+        public HTTaxinvoiceXML taxinvoiceXML;
 
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 현금영수증 1건의 상세정보를 조회합니다.
-            * - 응답항목에 대한 자세한 사항은 "[현금영수증 API 연동매뉴얼] > 4.1.
-            *   현금영수증 구성" 을 참조하시기 바랍니다.
+            * 수집된 전자(세금)계산서 1건의 상세정보를 확인합니다.
+            * - 응답항목에 관한 정보는 "[홈택스 전자(세금)계산서 연계 API 연동매뉴얼]
+            *   > 4.1.2. GetTaxinvoice 응답전문 구성" 을 참고하시기 바랍니다.
             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
-            // 현금영수증 문서관리번호
-            String mgtKey = "20171114-64";
-
+            // 조회할 전자세금계산서 국세청 승인번호
+            String ntsConfirmNum = "20170317410002030000017f";
+            
             try
             {
-                cashbill = Global.cashbillService.GetDetailInfo(testCorpNum, mgtKey);
+                taxinvoiceXML = Global.htTaxinvoiceService.GetXML(testCorpNum, ntsConfirmNum);
+                
             }
             catch (PopbillException ex)
             {

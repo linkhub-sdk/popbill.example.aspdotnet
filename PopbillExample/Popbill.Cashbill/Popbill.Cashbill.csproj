@@ -92,6 +92,8 @@
     <Content Include="Example\updateContact.aspx" />
     <Content Include="Example\updateCorpInfo.aspx" />
     <Content Include="Example\getPartnerURL.aspx" />
+    <Content Include="Example\revokeRegistIssue_part.aspx" />
+    <Content Include="Example\revokeRegister_part.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -361,6 +363,20 @@
     </Compile>
     <Compile Include="Example\getPartnerURL.aspx.designer.cs">
       <DependentUpon>getPartnerURL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\revokeRegistIssue_part.aspx.cs">
+      <DependentUpon>revokeRegistIssue_part.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\revokeRegistIssue_part.aspx.designer.cs">
+      <DependentUpon>revokeRegistIssue_part.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\revokeRegister_part.aspx.cs">
+      <DependentUpon>revokeRegister_part.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\revokeRegister_part.aspx.designer.cs">
+      <DependentUpon>revokeRegister_part.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

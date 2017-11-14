@@ -21,6 +21,7 @@
 					    <li>mgtKey (관리번호) : <%= cashbill.mgtKey %></li>
 					    <li>orgConfirmNum (원본 현금영수증 국세청승인번호) : <%= cashbill.orgConfirmNum%></li>
 					    <li>orgTradeDate (원본 현금영수증 거래일자) : <%= cashbill.orgTradeDate %></li>
+					    <li>cancelType (취소사유) : <%= cashbill.cancelType %></li>
 					    <li>tradeDate (거래일자) : <%= cashbill.tradeDate%></li>
 					    <li>tradeUsage (거래유형) : <%= cashbill.tradeUsage%></li>
 					    <li>tradeType (현금영수증 형태) : <%= cashbill.tradeType%></li>
