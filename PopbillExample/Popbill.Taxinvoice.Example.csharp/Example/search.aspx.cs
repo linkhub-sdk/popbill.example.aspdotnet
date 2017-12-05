@@ -41,12 +41,12 @@ namespace Popbill.Taxinvoice
             String DType = "W";
 
             // [필수] 시작일자, 날자형식(yyyyMMdd)
-            String SDate = "20170101";
+            String SDate = "20171101";
 
             // [필수] 종료일자, 날자형식(yyyyMMdd)
-            String EDate = "20170330";
+            String EDate = "20171231";
 
-            // 전송상태값 배열, 미기재시 전체 상태조회, 문서상태 값 3자리의 배열, 2,3번째 자리에 와일드카드 가능
+            // 상태코드 배열, 미기재시 전체 상태조회, 문서상태 값 3자리의 배열, 2,3번째 자리에 와일드카드 가능
             String[] State = new String[3];
             State[0] = "3**";
             State[1] = "4**";
@@ -62,6 +62,12 @@ namespace Popbill.Taxinvoice
             TaxType[0] = "T";
             TaxType[1] = "N";
             TaxType[2] = "Z";
+            
+            // 발행형태 배열, N-정발행, R-역발행, T-위수탁
+            String[] IssueType = new String[3];
+            IssueType[0] = "N";
+            IssueType[1] = "R";
+            IssueType[2] = "T";
 
             // 종사업장 유무, 공백-전체조회, 0-종사업장 없는 문서 조회, 1-종사업장번호 조건에 따라 조회
             String TaxRegIDYN = "";
@@ -93,7 +99,7 @@ namespace Popbill.Taxinvoice
             try
             {
                 result = Global.taxinvoiceService.Search(testCorpNum, KeyType, DType, SDate, EDate, State,
-                                    Type, TaxType, LateOnly, TaxRegIDYN, TaxRegIDType, TaxRegID, QString, 
+                                    Type, TaxType, IssueType, LateOnly, TaxRegIDYN, TaxRegIDType, TaxRegID, QString, 
                                     Order, Page, PerPage, InterOPYN, testUserID);
             }
             catch (PopbillException ex)
