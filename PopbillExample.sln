@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Popbill.HomeTax.Taxinvoice"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Popbill.HomeTax.Cashbill", "PopbillExample\Popbill.HomeTax.Cashbill\Popbill.HomeTax.Cashbill.csproj", "{47786537-07CB-420A-A958-F0787C97A955}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Popbill.Kakao", "Popbill.Kakao\Popbill.Kakao.csproj", "{919AAC1C-3E42-4AD1-8B81-9107FD094991}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +69,10 @@ Global
 		{47786537-07CB-420A-A958-F0787C97A955}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47786537-07CB-420A-A958-F0787C97A955}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47786537-07CB-420A-A958-F0787C97A955}.Release|Any CPU.Build.0 = Release|Any CPU
+		{919AAC1C-3E42-4AD1-8B81-9107FD094991}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{919AAC1C-3E42-4AD1-8B81-9107FD094991}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{919AAC1C-3E42-4AD1-8B81-9107FD094991}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{919AAC1C-3E42-4AD1-8B81-9107FD094991}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
