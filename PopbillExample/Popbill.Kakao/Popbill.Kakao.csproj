@@ -1,0 +1,380 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{919AAC1C-3E42-4AD1-8B81-9107FD094991}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Popbill.Kakao</RootNamespace>
+    <AssemblyName>Popbill.Kakao</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Example.css" />
+    <Content Include="Example\cancelReserve.aspx" />
+    <Content Include="Example\checkID.aspx" />
+    <Content Include="Example\checkIsMember.aspx" />
+    <Content Include="Example\getBalance.aspx" />
+    <Content Include="Example\getChargeInfo.aspx" />
+    <Content Include="Example\getCorpInfo.aspx" />
+    <Content Include="Example\getMessages.aspx" />
+    <Content Include="Example\getPartnerBalance.aspx" />
+    <Content Include="Example\getPartnerURL.aspx" />
+    <Content Include="Example\getPopbillURL_CHRG.aspx" />
+    <Content Include="Example\getPopbillURL_LOGIN.aspx" />
+    <Content Include="Example\getSenderNumberList.aspx" />
+    <Content Include="Example\getUnitCost.aspx" />
+    <Content Include="Example\getURL_BOX.aspx" />
+    <Content Include="Example\getURL_PLUSFRIEND.aspx" />
+    <Content Include="Example\getURL_SENDER.aspx" />
+    <Content Include="Example\getURL_TEMPLATE.aspx" />
+    <Content Include="Example\joinMember.aspx" />
+    <Content Include="Example\listATSTemplate.aspx" />
+    <Content Include="Example\listContact.aspx" />
+    <Content Include="Example\listPlusFriendID.aspx" />
+    <Content Include="Example\registContact.aspx" />
+    <Content Include="Example\search.aspx" />
+    <Content Include="Example\sendATS_multi.aspx" />
+    <Content Include="Example\sendATS_one.aspx" />
+    <Content Include="Example\sendATS_same.aspx" />
+    <Content Include="Example\sendFMS_multi.aspx" />
+    <Content Include="Example\sendFMS_one.aspx" />
+    <Content Include="Example\sendFMS_same.aspx" />
+    <Content Include="Example\sendFTS_multi.aspx" />
+    <Content Include="Example\sendFTS_one.aspx" />
+    <Content Include="Example\sendFTS_same.aspx" />
+    <Content Include="Example\updateContact.aspx" />
+    <Content Include="Example\updateCorpInfo.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\cancelReserve.aspx.cs">
+      <DependentUpon>cancelReserve.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\cancelReserve.aspx.designer.cs">
+      <DependentUpon>cancelReserve.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\checkID.aspx.cs">
+      <DependentUpon>checkID.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\checkID.aspx.designer.cs">
+      <DependentUpon>checkID.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\checkIsMember.aspx.cs">
+      <DependentUpon>checkIsMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\checkIsMember.aspx.designer.cs">
+      <DependentUpon>checkIsMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getBalance.aspx.cs">
+      <DependentUpon>getBalance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getBalance.aspx.designer.cs">
+      <DependentUpon>getBalance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getChargeInfo.aspx.cs">
+      <DependentUpon>getChargeInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getChargeInfo.aspx.designer.cs">
+      <DependentUpon>getChargeInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getCorpInfo.aspx.cs">
+      <DependentUpon>getCorpInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getCorpInfo.aspx.designer.cs">
+      <DependentUpon>getCorpInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getMessages.aspx.cs">
+      <DependentUpon>getMessages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getMessages.aspx.designer.cs">
+      <DependentUpon>getMessages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getPartnerBalance.aspx.cs">
+      <DependentUpon>getPartnerBalance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getPartnerBalance.aspx.designer.cs">
+      <DependentUpon>getPartnerBalance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getPartnerURL.aspx.cs">
+      <DependentUpon>getPartnerURL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getPartnerURL.aspx.designer.cs">
+      <DependentUpon>getPartnerURL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getPopbillURL_CHRG.aspx.cs">
+      <DependentUpon>getPopbillURL_CHRG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getPopbillURL_CHRG.aspx.designer.cs">
+      <DependentUpon>getPopbillURL_CHRG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getPopbillURL_LOGIN.aspx.cs">
+      <DependentUpon>getPopbillURL_LOGIN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getPopbillURL_LOGIN.aspx.designer.cs">
+      <DependentUpon>getPopbillURL_LOGIN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getSenderNumberList.aspx.cs">
+      <DependentUpon>getSenderNumberList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getSenderNumberList.aspx.designer.cs">
+      <DependentUpon>getSenderNumberList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getUnitCost.aspx.cs">
+      <DependentUpon>getUnitCost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getUnitCost.aspx.designer.cs">
+      <DependentUpon>getUnitCost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getURL_BOX.aspx.cs">
+      <DependentUpon>getURL_BOX.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getURL_BOX.aspx.designer.cs">
+      <DependentUpon>getURL_BOX.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getURL_PLUSFRIEND.aspx.cs">
+      <DependentUpon>getURL_PLUSFRIEND.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getURL_PLUSFRIEND.aspx.designer.cs">
+      <DependentUpon>getURL_PLUSFRIEND.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getURL_SENDER.aspx.cs">
+      <DependentUpon>getURL_SENDER.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getURL_SENDER.aspx.designer.cs">
+      <DependentUpon>getURL_SENDER.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getURL_TEMPLATE.aspx.cs">
+      <DependentUpon>getURL_TEMPLATE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getURL_TEMPLATE.aspx.designer.cs">
+      <DependentUpon>getURL_TEMPLATE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\joinMember.aspx.cs">
+      <DependentUpon>joinMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\joinMember.aspx.designer.cs">
+      <DependentUpon>joinMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\listATSTemplate.aspx.cs">
+      <DependentUpon>listATSTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\listATSTemplate.aspx.designer.cs">
+      <DependentUpon>listATSTemplate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\listContact.aspx.cs">
+      <DependentUpon>listContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\listContact.aspx.designer.cs">
+      <DependentUpon>listContact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\listPlusFriendID.aspx.cs">
+      <DependentUpon>listPlusFriendID.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\listPlusFriendID.aspx.designer.cs">
+      <DependentUpon>listPlusFriendID.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\registContact.aspx.cs">
+      <DependentUpon>registContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\registContact.aspx.designer.cs">
+      <DependentUpon>registContact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\search.aspx.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\search.aspx.designer.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\sendATS_multi.aspx.cs">
+      <DependentUpon>sendATS_multi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\sendATS_multi.aspx.designer.cs">
+      <DependentUpon>sendATS_multi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\sendATS_one.aspx.cs">
+      <DependentUpon>sendATS_one.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\sendATS_one.aspx.designer.cs">
+      <DependentUpon>sendATS_one.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\sendATS_same.aspx.cs">
+      <DependentUpon>sendATS_same.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\sendATS_same.aspx.designer.cs">
+      <DependentUpon>sendATS_same.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\sendFMS_multi.aspx.cs">
+      <DependentUpon>sendFMS_multi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\sendFMS_multi.aspx.designer.cs">
+      <DependentUpon>sendFMS_multi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\sendFMS_one.aspx.cs">
+      <DependentUpon>sendFMS_one.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\sendFMS_one.aspx.designer.cs">
+      <DependentUpon>sendFMS_one.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\sendFMS_same.aspx.cs">
+      <DependentUpon>sendFMS_same.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\sendFMS_same.aspx.designer.cs">
+      <DependentUpon>sendFMS_same.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\sendFTS_multi.aspx.cs">
+      <DependentUpon>sendFTS_multi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\sendFTS_multi.aspx.designer.cs">
+      <DependentUpon>sendFTS_multi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\sendFTS_one.aspx.cs">
+      <DependentUpon>sendFTS_one.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\sendFTS_one.aspx.designer.cs">
+      <DependentUpon>sendFTS_one.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\sendFTS_same.aspx.cs">
+      <DependentUpon>sendFTS_same.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\sendFTS_same.aspx.designer.cs">
+      <DependentUpon>sendFTS_same.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\updateContact.aspx.cs">
+      <DependentUpon>updateContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\updateContact.aspx.designer.cs">
+      <DependentUpon>updateContact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\updateCorpInfo.aspx.cs">
+      <DependentUpon>updateCorpInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\updateCorpInfo.aspx.designer.cs">
+      <DependentUpon>updateCorpInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Popbill\Popbill.csproj">
+      <Project>{57F03B3E-C713-443A-AC04-90291B429204}</Project>
+      <Name>Popbill</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53506</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
