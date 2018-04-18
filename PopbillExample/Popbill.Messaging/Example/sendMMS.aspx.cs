@@ -28,7 +28,7 @@ namespace Popbill.Message.Example
             String testUserID = "testkorea";
 
             // 발신번호
-            String senderNum = "07043042991";
+            String senderNum = "070-4304-2993";
 
             // 수신번호 
             String receiver = "010111222";
@@ -48,6 +48,9 @@ namespace Popbill.Message.Example
             // 예약전송일시(yyyyMMddHHmmss), null인 경우 즉시전송
             String reserveDTStr = "";
 
+            // 광고문자 여부 (기본값 false)
+            Boolean adsYN = false;
+
             DateTime? reserveDT = null;
 
             if (reserveDTStr != null && reserveDTStr != "")
@@ -58,7 +61,7 @@ namespace Popbill.Message.Example
             try
             {
                receiptNum = Global.messageService.SendMMS(testCorpNum, senderNum, receiver, receiverName,
-                                                    subject, contents, filePath, reserveDT, testUserID);
+                                                    subject, contents, filePath, reserveDT, testUserID, adsYN);
             }
             catch (PopbillException ex)
             {

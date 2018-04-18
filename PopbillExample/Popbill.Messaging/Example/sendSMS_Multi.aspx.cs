@@ -29,13 +29,16 @@ namespace Popbill.Message.Example
             String testUserID = "testkorea";
 
             // 발신번호
-            String senderNum = "07043042991";
+            String senderNum = "070-4304-2993";
 
             // 동보 메시지 내용, 단문(SMS) 메시지는 90byte초과된 내용은 삭제되어 전송됨. 
             String contents = "동보전송 문자메시지 내용";
 
             // 예약전송일시(yyyyMMddHHmmss), null인 경우 즉시전송
             String reserveDTStr = "";
+
+            // 광고문자 여부 (기본값 false)
+            Boolean adsYN = false;
 
             DateTime? reserveDT = null;
 
@@ -61,7 +64,7 @@ namespace Popbill.Message.Example
 
             try
             {
-                receiptNum = Global.messageService.SendSMS(testCorpNum, senderNum, contents, messages, reserveDT, testUserID);
+                receiptNum = Global.messageService.SendSMS(testCorpNum, senderNum, contents, messages, reserveDT, testUserID, adsYN);
 
             }
             catch (PopbillException ex)
