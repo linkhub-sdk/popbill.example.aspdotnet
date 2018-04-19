@@ -82,6 +82,7 @@
 						<li><a href="Example/sendFAX.aspx">sendFAX</a> - 세금계산서 팩스 전송</li>
 						<li><a href="Example/attachStatement.aspx">attachStatement</a> - 전자명세서 첨부</li>
 						<li><a href="Example/detachStatement.aspx">detachStatement</a> - 전자명세서 첨부해제</li>
+						<li><a href="Example/assignMgtKey.aspx">assignMgtKey</a> - 관리번호 할당 </li>
 					</ul>
 				</fieldset>
 
