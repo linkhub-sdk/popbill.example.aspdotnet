@@ -21,7 +21,7 @@ namespace Popbill.Taxinvoice.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 팝빌사이트 에서 작성한 세금계산서에 파트너 문서관리번호를 할당합니다.
+             * 팝빌사이트 에서 작성한 세금계산서에 문서관리번호를 할당합니다.
              * - 문서관리번호가 존재하지 않는 세금계산서만 할당이 가능합니다.
             */
 
@@ -39,7 +39,7 @@ namespace Popbill.Taxinvoice.Example
 
             // 할당할 문서관리번호, 숫자, 영문, '-', '_' 조합으로 
             // 1~24자리까지 사업자번호별 중복없는 고유번호 할당
-            String mgtKey = "018041823580800001";
+            String mgtKey = "20180420005";
 
             try
             {
