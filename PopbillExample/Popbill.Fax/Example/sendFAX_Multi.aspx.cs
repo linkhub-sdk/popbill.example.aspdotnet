@@ -46,8 +46,10 @@ namespace Popbill.Fax.Example
                 receivers.Add(receiver);
             }
 
-            // 팩스전송 파일경로, JPG 파일포맷, 300KByte 이하 전송 가능
-            String filePath = "C:/popbill.example.aspdotnet/PopbillExample/test.jpg";
+            // 팩스전송 파일경로, JPG 파일포맷, 300KByte 이하 전송 가능, 전송파일 최대 20개 
+            List<String> filePath = new List<String>();
+            filePath.Add("C:/popbill.example.aspdotnet/PopbillExample/test.jpg");
+            filePath.Add("C:/popbill.example.aspdotnet/PopbillExample/test03.jpg");
 
             // 예약전송일시(yyyyMMddHHmmss), null인 경우 즉시전송
             String reserveDTStr = "";
