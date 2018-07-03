@@ -296,6 +296,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Linkhub\Linkhub.csproj">
+      <Project>{F960F70D-9C37-46F8-A1D4-938A81BE9855}</Project>
+      <Name>Linkhub</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Popbill\Popbill.csproj">
       <Project>{57F03B3E-C713-443A-AC04-90291B429204}</Project>
       <Name>Popbill</Name>
