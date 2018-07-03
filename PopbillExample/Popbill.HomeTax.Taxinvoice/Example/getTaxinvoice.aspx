@@ -64,7 +64,7 @@
 						
 						<% foreach (Popbill.HomeTax.HTTaxinvoiceDetail detailInfo in taxinvoiceInfo.detailList) { %>
 					        <fieldset class="fieldset2">
-					        <legend>세금계산서 상세항목 정보<legend>
+					        <legend>세금계산서 상세항목 정보</legend>
 					            <ul>
     						        <li>serialNum (일련번호) : <%= detailInfo.serialNum%></li>
     						        <li>purchaseDT (거래일자) : <%= detailInfo.purchaseDT %></li>
