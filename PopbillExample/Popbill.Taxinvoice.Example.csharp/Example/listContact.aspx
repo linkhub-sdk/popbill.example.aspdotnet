@@ -26,11 +26,13 @@
     						        <li> personName (담당자명) : <%= contactInfo.personName %></li>
     						        <li> email (이메일) : <%= contactInfo.email %></li>
     						        <li> hp (휴대폰번호) : <%= contactInfo.hp %></li>
-    						        <li> searchAllAllowYN (회사조회 여부) : <%= contactInfo.searchAllAllowYN %></li>
-    						        <li> tel (연락처) : <%= contactInfo.tel %></li>
     						        <li> fax (팩스번호) : <%= contactInfo.fax %></li>
+    						        <li> tel (연락처) : <%= contactInfo.tel %></li>
     						        <li> mgrYN (관리자 여부) : <%= contactInfo.mgrYN %></li>
     						        <li> regDT (등록일시) : <%= contactInfo.regDT %></li>
+    						        <li> searchAllAllowYN (회사조회 여부) : <%= contactInfo.searchAllAllowYN %></li>
+    						        <li> mgrYN (관리자여부) : <%= contactInfo.mgrYN %></li>
+    						        <li> state (상태) : <%= contactInfo.state %></li>i>
     						    </ul>
     						</fieldset>
 					    <% } %>
