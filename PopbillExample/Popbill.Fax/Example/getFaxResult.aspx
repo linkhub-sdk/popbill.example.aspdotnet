@@ -41,6 +41,7 @@
     						        <% foreach (String fileName in faxInfo.fileNames)  {%>
     						            <%= fileName %>
     						        <% } %>
+    						        </li>
     						        <li>receiptNum (접수번호) : <%=faxInfo.receiptNum %></li>
     						        <li>requestNum (요청번호) : <%=faxInfo.requestNum %></li>
     						    </ul>
