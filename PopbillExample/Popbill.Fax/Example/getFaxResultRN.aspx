@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="search.aspx.cs" Inherits="Popbill.Fax.Example.search" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="getFaxResultRN.aspx.cs" Inherits="Popbill.Fax.Example.getFaxResultRN" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -12,22 +12,15 @@
 			<p class="heading1">Response</p>
 			<br/>
 			<fieldset class="fieldset1">
-				<legend>팩스전송 목록조회</legend>
+				<legend>팩스전송 결과 조회 (요청번호 할당)</legend>
 				<ul>
 					<% if (!String.IsNullOrEmpty(code)) { %>
 						<li>Response.code : <%=code %> </li>
 						<li>Response.message : <%= message %></li>
 					<% } else {	%>
-					    <li>code (상태코드) : <%=result.code %> </li>
-					    <li>message (응답메시지) : <%=result.message %> </li>
-					    <li>total (총 검색결과 건수) : <%=result.total %> </li>
-					    <li>perPage (페이지당 검색개수) : <%=result.perPage %> </li>
-					    <li>pageNum (페이지 번호) : <%=result.pageNum %> </li>
-					    <li>pageCount (페이지 개수) : <%=result.pageCount %> </li>
-					    
-					    <% foreach (Popbill.Fax.FaxResult faxInfo in result.list) { %>
+					    <% foreach (Popbill.Fax.FaxResult faxInfo in result) { %>
 					        <fieldset class="fieldset2">
-					        <legend>팩스전송 상태정보</legend>
+					        <legend>팩스 전송 상태정보</legend>
 					            <ul>
     						        <li>state (전송상태 코드) : <%= faxInfo.state %></li>
     						        <li>result (전송결과 코드) : <%= faxInfo.result %></li>
@@ -44,11 +37,10 @@
     						        <li>receiptDT (접수시간) : <%= faxInfo.receiptDT %></li>
     						        <li>sendDT (발송시간) : <%= faxInfo.sendDT %></li>
     						        <li>resultDT (전송결과 수신시간) : <%= faxInfo.resultDT %></li>
-    						        <li>fileNames (전송 파일명 리스트) : 
+    						        <li>fileNames (전송 파일명 리스트) :
     						        <% foreach (String fileName in faxInfo.fileNames)  {%>
     						            <%= fileName %>
     						        <% } %>
-    						        </li>
     						        <li>receiptNum (접수번호) : <%=faxInfo.receiptNUm %></li>
     						        <li>requestNum (요청번호) : <%=faxInfo.requestNum %></li>
     						    </ul>

@@ -37,7 +37,12 @@
     						        <li>receiptDT (접수시간) : <%= faxInfo.receiptDT %></li>
     						        <li>sendDT (발송시간) : <%= faxInfo.sendDT %></li>
     						        <li>resultDT (전송결과 수신시간) : <%= faxInfo.resultDT %></li>
-    						        <li>fileNames (전송 파일명 리스트) : <%= faxInfo.fileNames %></li>
+    						        <li>fileNames (전송 파일명 리스트) :
+    						        <% foreach (String fileName in faxInfo.fileNames)  {%>
+    						            <%= fileName %>
+    						        <% } %>
+    						        <li>receiptNum (접수번호) : <%=faxInfo.receiptNUm %></li>
+    						        <li>requestNum (요청번호) : <%=faxInfo.requestNum %></li>
     						    </ul>
     						</fieldset>
 					    <% } %>

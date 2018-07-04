@@ -25,11 +25,12 @@ namespace Popbill.Fax.Example
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
+            // 최대 검색기간 : 6개월 이내 
             // 시작일자, 날짜형식(yyyyMMdd)
-            String SDate = "20160901";
+            String SDate = "20180301";
 
             // 종료일자, 날짜형식(yyyyMMdd)
-            String EDate = "20161031";
+            String EDate = "20180601";
 
             //전송상태 배열 1-대기, 2-성공, 3-실패, 4-취소
             String[] State = new String[4];
@@ -53,9 +54,12 @@ namespace Popbill.Fax.Example
             // 페이지당 검색개수, 최대 1000개
             int PerPage = 10;
 
+            // 조회 검색어, 팩스 전송시 기재한 발신자명 또는 수신자명 기재
+            String QString = "";
+
             try
             {
-                result = Global.faxService.Search(testCorpNum, SDate, EDate, State, ReserveYN, SenderOnly, Order, Page, PerPage);
+                result = Global.faxService.Search(testCorpNum, SDate, EDate, State, ReserveYN, SenderOnly, Order, Page, PerPage, QString);
             }
             catch (PopbillException ex)
             {
