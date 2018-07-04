@@ -25,11 +25,14 @@ namespace Popbill.Kakao.Example
             // 팝빌회원 사업자번호
             String testCorpNum = "1234567890";
 
+            // 팝빌회원 아이디
+            String testUserID = "testkorea";
+
             // 알림톡 템플릿 코드, ListATSTemplate API의 templateCode 확인
-            String templateCode = "018020000001";
+            String templateCode = "018030000066";
 
             // 팝빌에 사전 등록된 발신번호
-            String senderNum = "07043042993";
+            String senderNum = "07043042991";
 
             // 대체문자 유형, 공백-미전송, C-알림톡 내용, A-대체문자 내용
             String altSendType = "A";
@@ -51,9 +54,12 @@ namespace Popbill.Kakao.Example
                 receivers.Add(receiverInfo);
             }
 
-
             // 예약전송일시(yyyyMMddHHmmss), null인 경우 즉시전송
             String reserveDTStr = "";
+
+            // 전송요청번호, 파트너가 전송요청에 대한 관리번호를 직접 할당하여 관리하는 경우 기재
+            // 최대 36자리, 영문, 숫자, 언더바('_'), 하이픈('-')을 조합하여 사업자별로 중복되지 않도록 구성
+            String requestNum = "";
 
             DateTime? reserveDT = null;
             if (reserveDTStr != null && reserveDTStr != "")
@@ -63,7 +69,7 @@ namespace Popbill.Kakao.Example
 
             try
             {
-                receiptNum = Global.kakaoService.SendATS(testCorpNum, templateCode, senderNum, altSendType, reserveDT, receivers);
+                receiptNum = Global.kakaoService.SendATS(testCorpNum, templateCode, senderNum, altSendType, reserveDT, receivers, testUserID, requestNum);
             }
             catch (PopbillException ex)
             {

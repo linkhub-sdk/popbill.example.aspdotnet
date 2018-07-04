@@ -41,6 +41,8 @@
     						        <li>altSendDT (대체문자 전송일시) : <%= sentInfo.altSendDT%></li>
     						        <li>altResult (대체문자 전송결과 코드) : <%= sentInfo.altResult%></li>
     						        <li>altResultDT (대체문자 전송결과 수신일시) : <%= sentInfo.altResultDT%></li>
+    						        <li>receiptNum (접수번호) : <%= sentInfo.receiptNum%></li>
+    						        <li>requestNum (요청번호) : <%= sentInfo.requestNum%></li>
     						    </ul>
     						</fieldset>
 					    <% } %>

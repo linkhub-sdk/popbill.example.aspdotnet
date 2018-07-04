@@ -25,11 +25,14 @@ namespace Popbill.Kakao.Example
             // 팝빌회원 사업자번호
             String testCorpNum = "1234567890";
 
+            // 팝빌회원 아이디
+            String testUserID = "testkorea";
+
             // 플러스친구 아이디, ListPlusFriendID API 의 plusFriendID 참고
             String plusFriendID = "@팝빌";
 
             // 팝빌에 사전 등록된 발신번호
-            String senderNum = "07043042993";
+            String senderNum = "07043042991";
 
             // 친구톡 내용, 최대 400자
             String content = "친구톡 내용";
@@ -48,6 +51,10 @@ namespace Popbill.Kakao.Example
 
             // 광고전송여부
             Boolean adsYN = false;
+
+            // 전송요청번호, 파트너가 전송요청에 대한 관리번호를 직접 할당하여 관리하는 경우 기재
+            // 최대 36자리, 영문, 숫자, 언더바('_'), 하이픈('-')을 조합하여 사업자별로 중복되지 않도록 구성
+            String requestNum = "";
 
             // 이미지 파일경로
             String filePath = "C:/popbill.example.aspdotnet/PopbillExample/test03.jpg";
@@ -74,12 +81,10 @@ namespace Popbill.Kakao.Example
             btnInfo.u2 = "http://test.popbill.com";// 버튼링크2
             buttons.Add(btnInfo);
 
-
-
             try
             {
                 receiptNum = Global.kakaoService.SendFMS(testCorpNum, plusFriendID, senderNum, content, altContent, altSendType, receiverNum,
-                    receiverName, adsYN, reserveDT, buttons, filePath, imageURL);
+                    receiverName, adsYN, reserveDT, buttons, filePath, imageURL, testUserID, requestNum);
             }
             catch (PopbillException ex)
             {

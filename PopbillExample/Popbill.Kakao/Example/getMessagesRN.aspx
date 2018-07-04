@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="getMessages.aspx.cs" Inherits="Popbill.Kakao.Example.getMessages" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="getMessagesRN.aspx.cs" Inherits="Popbill.Kakao.Example.getMessagesRN" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -12,14 +12,14 @@
 			<p class = "heading1">Response</p>
 			<br/>
 			<fieldset class="fieldset1">
-				<legend>알림톡/친구톡 전송결과 확인</legend>
+				<legend>알림톡/친구톡 전송결과 확인(요청번호할당)</legend>
 				<ul>
 					<% if (!String.IsNullOrEmpty(code)) { %>
 						<li>Response.code : <%=code %> </li>
 						<li>Response.message : <%= message %></li>
 					<% } else {	%>
 					    <fieldset class="fieldset2">
-					        <legend>알림톡/친구톡 전송내역 확인</legend>
+					        <legend></legend>
 					        <ul>
     						    <li> contentType (카카오톡 유형) : <%= sentResult.contentType %></li>
     						    <li> templateCode (템플릿 코드) : <%= sentResult.templateCode %></li>

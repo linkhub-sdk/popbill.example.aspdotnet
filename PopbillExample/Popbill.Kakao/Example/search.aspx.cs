@@ -28,11 +28,12 @@ namespace Popbill.Kakao.Example
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
-            // 시작일자, 날짜형식(yyyMMdd)
-            String SDate = "20180101";
+            // 최대 검색기한 : 6개월 이내
+            // 시작일자, 날자형식(yyyyMMdd)
+            String SDate = "20180601";
 
-            // 종료일자, 날짜형식(yyyyMMdd)
-            String EDate = "20180601";
+            // 종료일자, 날자형식(yyyyMMdd)
+            String EDate = "20180731";
 
             // 전송상태값 배열, 0-대기, 1-전송중, -2-성공, 3-대체, 4-실패, 5-취소
             String[] State = new String[6];
@@ -64,10 +65,13 @@ namespace Popbill.Kakao.Example
             // 페이지당 검색개수, 최대 1000건
             int PerPage = 10;
 
+            // 조회 검색어, 카카오톡 전송시 기재한 수신자명 입력
+            String QString = "";
+
             try
             {
                 result = Global.kakaoService.Search(testCorpNum, SDate, EDate, State,
-                    Item, ReserveYN, SenderYN, Order, Page, PerPage);
+                    Item, ReserveYN, SenderYN, Order, Page, PerPage, QString);
             }
             catch (PopbillException ex)
             {

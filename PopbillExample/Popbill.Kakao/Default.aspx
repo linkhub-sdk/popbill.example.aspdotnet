@@ -67,6 +67,7 @@
 				<legend>예약전송 취소</legend>
 				<ul>
 					<li><a href="Example/cancelReserve.aspx">CancelReserve</a> - 예약전송 취소</li>
+					<li><a href="Example/cancelReserveRN.aspx">CancelReserveRN</a> - 예약전송 취소 (요청번호할당)</li>
 				</ul>
 			</fieldset>
 
@@ -74,6 +75,7 @@
 				<legend>정보확인</legend>
 				<ul>
 					<li><a href="Example/getMessages.aspx">GetMessages</a> - 알림톡/친구톡 전송내역 확인</li>
+					<li><a href="Example/getMessagesRN.aspx">GetMessagesRN</a> - 알림톡/친구톡 전송내역 확인 (요청번호할당)</li>
           			<li><a href="Example/search.aspx">Search</a> - 전송내역 목록 조회</li>
           			<li><a href="Example/getURL_BOX.aspx">GetURL</a> - 카카오톡 전송내역 팝업 URL</li>
 				</ul>
