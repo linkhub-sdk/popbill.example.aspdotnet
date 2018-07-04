@@ -1,9 +1,9 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="search.aspx.cs" Inherits="Popbill.Message.Example.search" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="getMessagesRN.aspx.cs" Inherits="Popbill.Message.Example.getMessagesRN" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
-<head runat="server">
+<head id="Head1" runat="server">
     <title>팝빌 문자 SDK ASP.NET Example</title>
     <link href="../Example.css" rel="stylesheet" type="text/css" />
 </head>
@@ -12,20 +12,14 @@
 			<p class="heading1">Response</p>
 			<br/>
 			<fieldset class="fieldset1">
-				<legend>문자전송 목록조회</legend>
+				<legend>문자전송 결과 조회 (요청번호할당)</legend>
 				<ul>
 					<% if (!String.IsNullOrEmpty(code)) { %>
 						<li>Response.code : <%=code %> </li>
 						<li>Response.message : <%= message %></li>
 					<% } else {	%>
-					    <li>code (상태코드) : <%=result.code %> </li>
-					    <li>message (응답메시지) : <%=result.message %> </li>
-					    <li>total (총 검색결과 건수) : <%=result.total %> </li>
-					    <li>perPage (페이지당 검색개수) : <%=result.perPage %> </li>
-					    <li>pageNum (페이지 번호) : <%=result.pageNum %> </li>
-					    <li>pageCount (페이지 개수) : <%=result.pageCount %> </li>
 					    
-					    <% foreach (Popbill.Message.MessageResult msgInfo in result.list) { %>
+					    <% foreach (Popbill.Message.MessageResult msgInfo in result) { %>
 					        <fieldset class="fieldset2">
 					        <legend>문자 전송 상태정보</legend>
 					            <ul>
@@ -42,7 +36,7 @@
     						        <li>type (메시지 타입) : <%= msgInfo.type%></li>
     						        <li>tranNet (전송처리 이동통신사명) : <%= msgInfo.tranNet%></li>
     						        <li>receiptNum (접수번호) : <%= msgInfo.receiptNum%></li>
-    						        <li>requestNum (요청번호) : <%= msgInfo.requestNum%></li>
+    						        <li>requestNum (요청번호) : <%= msgInfo.requestNum%></li> 
     						    </ul>
     						</fieldset>
 					    <% } %>

@@ -21,14 +21,14 @@ namespace Popbill.Message.Example
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            // 팝빌회원 사업자번호, '-' 제외 10자리
+            // 팝빌회원 사업자번호, f-' 제외 10자리
             String testCorpNum = "1234567890";
 
             // 팝빌회원 아이디
             String testUserID = "testkorea";
 
             // 발신번호 
-            String senderNum = "070-4304-2993";
+            String senderNum = "070-4304-2991";
 
             // 수신번호 
             String receiver = "010111222";
@@ -48,6 +48,10 @@ namespace Popbill.Message.Example
             // 광고문자 여부 (기본값 false)
             Boolean adsYN = false;
 
+            // 전송요청번호, 파트너가 전송요청에 대한 관리번호를 직접 할당하여 관리하는 경우 기재
+            // 최대 36자리, 영문, 숫자, 언더바('_'), 하이픈('-')을 조합하여 사업자별로 중복되지 않도록 구성
+            String requestNum = "";
+            
             DateTime? reserveDT = null;
 
             if (reserveDTStr != null && reserveDTStr != "")
@@ -57,7 +61,7 @@ namespace Popbill.Message.Example
 
             try
             {
-                receiptNum = Global.messageService.SendXMS(testCorpNum, senderNum, receiver, receiverName, subject, contents, reserveDT, testUserID, adsYN);
+                receiptNum = Global.messageService.SendXMS(testCorpNum, senderNum, receiver, receiverName, subject, contents, reserveDT, testUserID, requestNum, adsYN);
             }
             catch (PopbillException ex)
             {

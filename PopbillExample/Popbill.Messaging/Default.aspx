@@ -80,7 +80,9 @@
 					<ul>
 						<li><a href="Example/search.aspx">search</a> - 문자전송 목록 조회</li>
 						<li><a href="Example/getMessages.aspx">getMessages</a> - 문자메시지 전송결과 확인</li>
-						<li><a href="Example/cancelReserve.aspx">cancelReserve</a> - 예약문자 메시지 예약취소</li>
+						<li><a href="Example/getMessagesRN.aspx">getMessagesRN</a> - 문자메시지 전송결과 확인 (요청번호할당)</li>
+						<li><a href="Example/cancelReserve.aspx">cancelReserve</a> - 예약문자 메시지 예약취소</li>			
+						<li><a href="Example/cancelReserveRN.aspx">cancelReserveRN</a> - 예약문자 메시지 예약취소 (요청번호할당)</li>
 					</ul>
 				</fieldset>
 

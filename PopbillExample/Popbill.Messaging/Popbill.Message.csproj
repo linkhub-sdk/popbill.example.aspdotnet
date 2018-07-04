@@ -56,6 +56,7 @@
     <Content Include="Default.aspx" />
     <Content Include="Example.css" />
     <Content Include="Example\cancelReserve.aspx" />
+    <Content Include="Example\cancelReserveRN.aspx" />
     <Content Include="Example\checkID.aspx" />
     <Content Include="Example\checkIsMember.aspx" />
     <Content Include="Example\getAutoDenyList.aspx" />
@@ -63,6 +64,7 @@
     <Content Include="Example\getChargeInfo.aspx" />
     <Content Include="Example\getCorpInfo.aspx" />
     <Content Include="Example\getMessages.aspx" />
+    <Content Include="Example\getMessagesRN.aspx" />
     <Content Include="Example\getPartnerBalance.aspx" />
     <Content Include="Example\getPartnerURL.aspx" />
     <Content Include="Example\getPopbillURL.aspx" />
@@ -101,6 +103,13 @@
     </Compile>
     <Compile Include="Example\cancelReserve.aspx.designer.cs">
       <DependentUpon>cancelReserve.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\cancelReserveRN.aspx.cs">
+      <DependentUpon>cancelReserveRN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\cancelReserveRN.aspx.designer.cs">
+      <DependentUpon>cancelReserveRN.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\checkID.aspx.cs">
       <DependentUpon>checkID.aspx</DependentUpon>
@@ -150,6 +159,13 @@
     </Compile>
     <Compile Include="Example\getMessages.aspx.designer.cs">
       <DependentUpon>getMessages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getMessagesRN.aspx.cs">
+      <DependentUpon>getMessagesRN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getMessagesRN.aspx.designer.cs">
+      <DependentUpon>getMessagesRN.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\getPartnerBalance.aspx.cs">
       <DependentUpon>getPartnerBalance.aspx</DependentUpon>

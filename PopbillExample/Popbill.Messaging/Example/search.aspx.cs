@@ -28,11 +28,12 @@ namespace Popbill.Message.Example
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
+            // 최대 검색기간 : 6개월 이내
             // 시작일자, 날짜형식(yyyMMdd)
-            String SDate = "20170101";
+            String SDate = "20180601";
 
             // 종료일자, 날짜형식(yyyyMMdd)
-            String EDate = "20170401";
+            String EDate = "20180731";
 
             // 전송상태값 배열, 1-대기, 2-성공, 3-실패, 4-취소
             String[] State = new String[4];
@@ -62,10 +63,13 @@ namespace Popbill.Message.Example
             // 페이지당 검색개수, 최대 1000건
             int PerPage = 10;
 
+            // 조회 검색어, 문자 전송시 기재한 수신자명 또는 발신자명 기재
+            String QString = "";
+
             try
             {
                 result = Global.messageService.Search(testCorpNum, SDate, EDate, State, 
-                    Item, ReserveYN, SenderYN, Order, Page, PerPage);
+                    Item, ReserveYN, SenderYN, Order, Page, PerPage, QString);
             }
             catch (PopbillException ex)
             {
