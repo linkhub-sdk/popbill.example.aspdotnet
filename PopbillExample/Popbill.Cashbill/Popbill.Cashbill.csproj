@@ -79,6 +79,7 @@
     <Content Include="Example\issue.aspx" />
     <Content Include="Example\joinMember.aspx" />
     <Content Include="Example\listContact.aspx" />
+    <Content Include="Example\listEmailConfig.aspx" />
     <Content Include="Example\registContact.aspx" />
     <Content Include="Example\register.aspx" />
     <Content Include="Example\registIssue.aspx" />
@@ -94,6 +95,7 @@
     <Content Include="Example\getPartnerURL.aspx" />
     <Content Include="Example\revokeRegistIssue_part.aspx" />
     <Content Include="Example\revokeRegister_part.aspx" />
+    <Content Include="Example\updateEmailConfig.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -273,6 +275,13 @@
     <Compile Include="Example\listContact.aspx.designer.cs">
       <DependentUpon>listContact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Example\listEmailConfig.aspx.cs">
+      <DependentUpon>listEmailConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\listEmailConfig.aspx.designer.cs">
+      <DependentUpon>listEmailConfig.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Example\registContact.aspx.cs">
       <DependentUpon>registContact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -377,6 +386,13 @@
     </Compile>
     <Compile Include="Example\revokeRegister_part.aspx.designer.cs">
       <DependentUpon>revokeRegister_part.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\updateEmailConfig.aspx.cs">
+      <DependentUpon>updateEmailConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\updateEmailConfig.aspx.designer.cs">
+      <DependentUpon>updateEmailConfig.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

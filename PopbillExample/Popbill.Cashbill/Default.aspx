@@ -96,6 +96,8 @@
 					<legend>기타</legend>
 					<ul>
 						<li><a href="Example/getUnitCost.aspx">getUnitCost</a> - 현금영수증 발행단가 확인</li>
+						<li><a href="Example/listEmailConfig.aspx">listEmailConfig</a> - 알림메일 전송목록 조회</li>
+						<li><a href="Example/updateEmailConfig.aspx">updateEmailConfig</a> - 알림메일 전송설정 수정</li>
 					</ul>
 				</fieldset>
 
