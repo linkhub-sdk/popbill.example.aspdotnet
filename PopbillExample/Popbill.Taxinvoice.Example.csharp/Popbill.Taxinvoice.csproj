@@ -90,6 +90,7 @@
     <Content Include="Example\joinMember.aspx" />
     <Content Include="Example\getChargeInfo.aspx" />
     <Content Include="Example\listContact.aspx" />
+    <Content Include="Example\listEmailConfig.aspx" />
     <Content Include="Example\registContact.aspx" />
     <Content Include="Example\registIssue.aspx" />
     <Content Include="Example\request.aspx" />
@@ -100,6 +101,7 @@
     <Content Include="Example\updateContact.aspx" />
     <Content Include="Example\updateCorpInfo.aspx" />
     <Content Include="Example\getLogs.aspx" />
+    <Content Include="Example\updateEmailConfig.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Example\register.aspx" />
     <Content Include="Example\search.aspx" />
@@ -362,6 +364,13 @@
     <Compile Include="Example\listContact.aspx.designer.cs">
       <DependentUpon>listContact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Example\listEmailConfig.aspx.cs">
+      <DependentUpon>listEmailConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\listEmailConfig.aspx.designer.cs">
+      <DependentUpon>listEmailConfig.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Example\registContact.aspx.cs">
       <DependentUpon>registContact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -424,6 +433,13 @@
     </Compile>
     <Compile Include="Example\getLogs.aspx.designer.cs">
       <DependentUpon>getLogs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\updateEmailConfig.aspx.cs">
+      <DependentUpon>updateEmailConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\updateEmailConfig.aspx.designer.cs">
+      <DependentUpon>updateEmailConfig.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
