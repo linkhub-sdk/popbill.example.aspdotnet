@@ -59,6 +59,7 @@
 						<li><a href="Example/Summary.aspx">Summary</a> - 수집 결과 요약정보 조회</li>
 						<li><a href="Example/GetTaxinvoice.aspx">GetTaxinvoice</a> - 상세정보 확인</li>
                         <li><a href="Example/GetXML.aspx">GetXML</a> - 상세정보 확인 (XML)</li>
+                        <li><a href="Example/GetPopUpURL.aspx">GetPopUpURL</a> - 홈택스 전자세금계산서 팝업 URL</li>
 					</ul>
 				</fieldset>
 
