@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Popbill.Cashbill.Example {
+namespace Popbill.HomeTax.Cashbill.Example {
     
     
-    public partial class getInfo {
+    public partial class checkCertValidation {
     }
 }

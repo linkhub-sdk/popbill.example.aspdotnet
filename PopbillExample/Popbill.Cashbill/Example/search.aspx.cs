@@ -35,10 +35,10 @@ namespace Popbill.Cashbill.Example
             String DType = "T";
 
             // 시작일자
-            String SDate = "20170101";
+            String SDate = "20180901";
 
             // 종료일자
-            String EDate = "20170601";
+            String EDate = "20180905";
 
             // 상태코드 배열, 2,3번째 자리에 와일드카드(*) 사용가능
             // - 상태코드에 대한 자세한 사항은 "[현금영수증 API 연동매뉴얼] >
@@ -47,15 +47,21 @@ namespace Popbill.Cashbill.Example
             State[0] = "3**";
             State[1] = "4**";
 
-            // 현금영수증형태 배열, N-일반 현금영수증, C-취소 현금영수증
+            // 문서형태 배열, N-일반 현금영수증, C-취소 현금영수증
             String[] TradeType = new String[2];
             TradeType[0] = "N";
             TradeType[1] = "C";
 
-            // 거래용도 배열, P-소득공제용, C-지출증빙용
+            // 거래구분 배열, P-소득공제용, C-지출증빙용
             String[] TradeUsage = new String[2];
             TradeUsage[0] = "P";
             TradeUsage[1] = "C";
+
+            // 거래유형 배열, N-일반, B-도서공연, T-대중교통
+            String[] TradeOpt = new String[3];
+            TradeOpt[0] = "N";
+            TradeOpt[1] = "B";
+            TradeOpt[2] = "T";
 
             // 과세형태 배열, T-과세, N-비과세 
             String[] TaxationType = new String[2];

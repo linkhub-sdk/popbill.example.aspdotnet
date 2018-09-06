@@ -34,12 +34,8 @@ namespace Popbill.Cashbill.Example
             List<string> MgtKeyList = new List<string>();
 
             // 현금영수증 문서관리번호 배열, 최대 1000건.
-            MgtKeyList.Add("20170316-01");
-            MgtKeyList.Add("20170316-02");
-            MgtKeyList.Add("20161017-03");
-            MgtKeyList.Add("20161017-04");
-            MgtKeyList.Add("20161017-05");
-            MgtKeyList.Add("20161017-06");
+            MgtKeyList.Add("20180903_01");
+            MgtKeyList.Add("20180903_02");
 
             try
             {

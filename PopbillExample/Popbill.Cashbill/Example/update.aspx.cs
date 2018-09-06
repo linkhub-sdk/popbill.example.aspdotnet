@@ -35,7 +35,7 @@ namespace Popbill.Cashbill.Example
             String testUserID = "testkorea";
 
             // 현금영수증 문서관리번호
-            String mgtKey = "20170316-02";
+            String mgtKey = "20180905_01";
 
 
             // 현금영수증 정보 객체
@@ -45,67 +45,68 @@ namespace Popbill.Cashbill.Example
             // 1~24자리 영문,숫자,'-','_' 조합 구성
             cashbill.mgtKey = mgtKey;
 
-            // [필수] 거래유형, {승인거래, 취소거래} 중 기재
+            // [필수] 문서형태, {승인거래, 취소거래} 중 기재
             cashbill.tradeType = "승인거래";
+
+            // [필수] 거래구분, {소득공제용, 지출증빙용} 중 기재
+            cashbill.tradeUsage = "소득공제용";
+
+            // [필수] 거래유형, {일반, 도서공연, 대중교통} 중 기재
+            cashbill.tradeOpt = "일반";
 
             // [필수] 과세형태, { 과세, 비과세 } 중 기재
             cashbill.taxationType = "과세";
 
+            // [필수] 거래금액 ( 공급가액 + 세액 + 봉사료 ) 
+            cashbill.totalAmount = "11000";
+
             // [필수] 공급가액
             cashbill.supplyCost = "10000";
 
-            // [필수] 세액 
+            // [필수] 부가세
             cashbill.tax = "1000";
 
             // [필수] 봉사료
             cashbill.serviceFee = "0";
 
-            // [필수] 거래금액 ( 공급가액 + 세액 + 봉사료 ) 
-            cashbill.totalAmount = "11000";
+            // [필수] 가맹점 사업자번호
+            cashbill.franchiseCorpNum = testCorpNum;
 
-            // [필수] 현금영수증 형태, {소득공제용, 지출증빙용} 중 기재
-            cashbill.tradeUsage = "소득공제용";
+            // 가맹점 상호
+            cashbill.franchiseCorpName = "발행자 상호_수정";
 
-            // [필수] 거래처 식별번호
-            // 현금영수증 형태(tradeUsage) - '소득공제용' 인 경우 
+            // 가맹점 대표자 성명
+            cashbill.franchiseCEOName = "발행자 대표자_수정";
+
+            // 가맹점 주소
+            cashbill.franchiseAddr = "발행자 주소";
+
+            // 가맹점 전화번호
+            cashbill.franchiseTEL = "070-1234-1234";
+
+            // [필수] 식별번호
+            // 거래구분(tradeUsage) - '소득공제용' 인 경우 
             // - 주민등록/휴대폰/카드번호 기재 가능
-            // 현금영수증 형태(tradeUsage) - '지출증빙용' 인 경우
+            // 거래구분(tradeUsage) - '지출증빙용' 인 경우
             // - 사업자번호/주민등록/휴대폰/카드번호 기재 가능 
             cashbill.identityNum = "0101112222";
 
-
-            // [필수] 발행자 사업자번호
-            cashbill.franchiseCorpNum = testCorpNum;
-
-            // 발행자 상호
-            cashbill.franchiseCorpName = "발행자 상호_수정";
-
-            // 발행자 대표자 성명
-            cashbill.franchiseCEOName = "발행자 대표자_수정";
-
-            // 발행자 주소
-            cashbill.franchiseAddr = "발행자 주소";
-
-            // 발행자 연락처
-            cashbill.franchiseTEL = "070-1234-1234";
-
-
-            // 고객명
+            // 주문자명
             cashbill.customerName = "고객명";
 
-            // 상품명
+            // 주문상품명
             cashbill.itemName = "상품명";
 
             // 주문번호
             cashbill.orderNumber = "주문번호";
 
-            // 고객 메일
+            // 주문자 메일
             cashbill.email = "test@test.com";
 
-            // 고객 휴대폰번호
+            // 주문자 휴대폰
             cashbill.hp = "010-111-222";
 
-            // 고객 팩스번호
+            // 주문자 팩스번호
             cashbill.fax = "070-111-222";
 
             // 발행시 알림문자 전송여부

@@ -55,8 +55,12 @@
   <ItemGroup>
     <Content Include="Default.aspx" />
     <Content Include="Example.css" />
+    <Content Include="Example\checkCertValidation.aspx" />
+    <Content Include="Example\checkDeptUser.aspx" />
     <Content Include="Example\checkID.aspx" />
     <Content Include="Example\checkIsMember.aspx" />
+    <Content Include="Example\checkLoginDeptUser.aspx" />
+    <Content Include="Example\deleteDeptUser.aspx" />
     <Content Include="Example\getBalance.aspx" />
     <Content Include="Example\getCertificatePopUpURL.aspx" />
     <Content Include="Example\getChargeInfo.aspx" />
@@ -74,6 +78,7 @@
     <Content Include="Example\listActiveJob.aspx" />
     <Content Include="Example\listContact.aspx" />
     <Content Include="Example\registContact.aspx" />
+    <Content Include="Example\registDeptUser.aspx" />
     <Content Include="Example\requestJob.aspx" />
     <Content Include="Example\search.aspx" />
     <Content Include="Example\summary.aspx" />
@@ -91,6 +96,20 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Example\checkCertValidation.aspx.cs">
+      <DependentUpon>checkCertValidation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\checkCertValidation.aspx.designer.cs">
+      <DependentUpon>checkCertValidation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\checkDeptUser.aspx.cs">
+      <DependentUpon>checkDeptUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\checkDeptUser.aspx.designer.cs">
+      <DependentUpon>checkDeptUser.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Example\checkID.aspx.cs">
       <DependentUpon>checkID.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -104,6 +123,20 @@
     </Compile>
     <Compile Include="Example\checkIsMember.aspx.designer.cs">
       <DependentUpon>checkIsMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\checkLoginDeptUser.aspx.cs">
+      <DependentUpon>checkLoginDeptUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\checkLoginDeptUser.aspx.designer.cs">
+      <DependentUpon>checkLoginDeptUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\deleteDeptUser.aspx.cs">
+      <DependentUpon>deleteDeptUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\deleteDeptUser.aspx.designer.cs">
+      <DependentUpon>deleteDeptUser.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\getBalance.aspx.cs">
       <DependentUpon>getBalance.aspx</DependentUpon>
@@ -223,6 +256,13 @@
     </Compile>
     <Compile Include="Example\registContact.aspx.designer.cs">
       <DependentUpon>registContact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\registDeptUser.aspx.cs">
+      <DependentUpon>registDeptUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\registDeptUser.aspx.designer.cs">
+      <DependentUpon>registDeptUser.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\requestJob.aspx.cs">
       <DependentUpon>requestJob.aspx</DependentUpon>

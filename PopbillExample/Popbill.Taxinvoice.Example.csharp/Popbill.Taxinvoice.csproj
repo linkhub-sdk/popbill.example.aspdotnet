@@ -60,6 +60,7 @@
     <Content Include="Example\attachFile.aspx" />
     <Content Include="Example\cancelRequest.aspx" />
     <Content Include="Example\cancelSend.aspx" />
+    <Content Include="Example\checkCertValidation.aspx" />
     <Content Include="Example\checkID.aspx" />
     <Content Include="Example\checkIsMember.aspx" />
     <Content Include="Default.aspx" />
@@ -160,6 +161,13 @@
     </Compile>
     <Compile Include="Example\cancelSend.aspx.designer.cs">
       <DependentUpon>cancelSend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\checkCertValidation.aspx.cs">
+      <DependentUpon>checkCertValidation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\checkCertValidation.aspx.designer.cs">
+      <DependentUpon>checkCertValidation.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\checkID.aspx.cs">
       <DependentUpon>checkID.aspx</DependentUpon>

@@ -39,6 +39,7 @@
     						        <li>receiptDT (접수시간) : <%= msgInfo.receiptDT%></li>
     						        <li>sendDT (발송시간) : <%= msgInfo.sendDT%></li>
     						        <li>resultDT (전송결과 수신시간) : <%= msgInfo.resultDT%></li>
+    						        <li>reserveDT (예약일시) : <%= msgInfo.reserveDT%></li>
     						        <li>type (메시지 타입) : <%= msgInfo.type%></li>
     						        <li>tranNet (전송처리 이동통신사명) : <%= msgInfo.tranNet%></li>
     						        <li>receiptNum (접수번호) : <%= msgInfo.receiptNum%></li>

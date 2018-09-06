@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Popbill.Cashbill.Example {
+namespace Popbill.HomeTax.Taxinvoice.Example {
     
     
-    public partial class getInfo {
+    public partial class deleteDeptUser {
     }
 }

@@ -64,10 +64,21 @@
 					<ul>
 						<li><a href="Example/GetFlatRatePopUpURL.aspx">GetFlatRatePopUpURL</a> - 정액제 서비스 신청 URL</li>
 						<li><a href="Example/GetFlatRateState.aspx">GetFlatRateState</a> - 정액제 서비스 상태 확인</li>
-						<li><a href="Example/GetCertificatePopUpURL.aspx">GetCertificatePopUpURL</a> - 홈택스연동 인증관리 팝업 URL</li>
-						<li><a href="Example/GetCertificateExpireDate.aspx">GetCertificateExpireDate</a> - 홈택스연동 공인인증서 만료일자 확인</li>
 					</ul>
 				</fieldset>
+				
+				<fieldset class="fieldset2">
+					<legend>홈택스 인증관련 기능</legend>
+					<ul>
+						<li><a href="Example/GetCertificatePopUpURL.aspx">GetCertificatePopUpURL</a> - 홈택스연동 인증관리 팝업 URL</li>
+						<li><a href="Example/GetCertificateExpireDate.aspx">GetCertificateExpireDate</a> - 홈택스연동 공인인증서 만료일자 확인</li>
+						<li><a href="Example/CheckCertValidation.aspx">CheckCertValidation</a> - 홈택스 공인인증서 로그인 테스트</li>
+						<li><a href="Example/RegistDeptUser.aspx">RegistDeptUser</a> - 홈택스 현금영수증 부서사용자 계정등록</li>
+						<li><a href="Example/CheckDeptUser.aspx">CheckDeptUser</a> - 홈택스 부서사용자 등록정보 확인</li>
+						<li><a href="Example/CheckLoginDeptUser.aspx">CheckLoginDeptUser</a> - 홈택스 부서사용자 로그인 테스트</li>
+						<li><a href="Example/DeleteDeptUser.aspx">DeleteDeptUser</a> - 홈택스 부서사용자 등록정보 삭제</li>
+					</ul>
+				</fieldset>				
 			</fieldset>
 		 </div>
 	</body>

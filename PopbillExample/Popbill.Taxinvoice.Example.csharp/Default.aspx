@@ -83,6 +83,8 @@
 						<li><a href="Example/attachStatement.aspx">attachStatement</a> - 전자명세서 첨부</li>
 						<li><a href="Example/detachStatement.aspx">detachStatement</a> - 전자명세서 첨부해제</li>
 						<li><a href="Example/assignMgtKey.aspx">assignMgtKey</a> - 관리번호 할당 </li>
+						<li><a href="Example/listEmailConfig.aspx">listEmailConfig</a> - 알림메일 전송목록 조회</li>
+						<li><a href="Example/updateEmailConfig.aspx">updateEmailConfig</a> - 알림메일 전송설정 수정</li>
 					</ul>
 				</fieldset>
 
@@ -103,9 +105,8 @@
 					<ul>
 						<li><a href="Example/getUnitCost.aspx">getUnitCost</a> - 세금계산서 발행 단가 확인</li>
 						<li><a href="Example/getCertificateExpireDate.aspx">getCertificateExpireDate</a> - 공인인증서 만료일시 확인</li>
+						<li><a href="Example/CheckCertValidation.aspx">CheckCertValidation</a> - 공인인증서 유효성 확인</li>
 						<li><a href="Example/getEmailPublicKeys.aspx">getEmailPublicKeys</a> - 대용량 연계사업자 이메일 목록 확인</li>
-						<li><a href="Example/listEmailConfig.aspx">listEmailConfig</a> - 알림메일 전송목록 조회</li>
-						<li><a href="Example/updateEmailConfig.aspx">updateEmailConfig</a> - 알림메일 전송설정 수정</li>
 					</ul>
 				</fieldset>
 			</fieldset>
