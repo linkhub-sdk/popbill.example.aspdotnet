@@ -29,7 +29,7 @@ namespace Popbill.Message.Example
             String testCorpNum = "1234567890";
 
             // 최대 검색기간 : 6개월 이내
-            // 시작일자, 날짜형식(yyyMMdd)
+            // 시작일자, 날짜형식(yyyyMMdd)
             String SDate = "20180601";
 
             // 종료일자, 날짜형식(yyyyMMdd)
