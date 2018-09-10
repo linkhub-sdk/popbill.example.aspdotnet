@@ -48,7 +48,7 @@ namespace Popbill.Message.Example
             Item[1] = "LMS";
             Item[2] = "MMS";
 
-            // 예약여부, true-예약전송만 조회 
+            // 예약여부, true-예약전송건 조회, false-즉시전송건 조회
             bool ReserveYN = false;
 
             // 개인조회여부 true-개인조회, false-회사조회 

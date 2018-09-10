@@ -39,7 +39,7 @@ namespace Popbill.Fax.Example
             State[2] = "3";
             State[3] = "4";
 
-            // 예약여부, True-예약전송건 검색
+            // 예약여부, True-예약전송건 검색, False-즉시전송건 검색
             bool ReserveYN = false;
 
             // 개인조회여부, True-개인조회, False-회사조회
