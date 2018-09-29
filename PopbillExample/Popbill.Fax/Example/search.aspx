@@ -51,6 +51,8 @@
     						        </li>
     						        <li>receiptNum (접수번호) : <%=faxInfo.receiptNum %></li>
     						        <li>requestNum (요청번호) : <%=faxInfo.requestNum %></li>
+    						        <li>chargePageCnt (과금 페이지수) : <%=faxInfo.chargePageCnt%></li>
+    						        <li>tiffFileSize (변환파일용량) : <%=faxInfo.tiffFileSize%></li>
     						    </ul>
     						</fieldset>
 					    <% } %>

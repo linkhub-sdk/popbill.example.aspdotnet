@@ -28,6 +28,7 @@
     						    <li> sDT (전송일시) : <%= info.sDT%></li>
     						    <li> rDT (결과코드 수신일시) : <%= info.rDT%></li>
     						    <li> net (전송 이동통신사명) : <%= info.net%></li>
+    						    <li> srt (구 전송결과 코드) : <%= info.srt%></li>
     						</ul>
     						</fieldset>
 					    <% } %>

@@ -27,10 +27,10 @@ namespace Popbill.Fax.Example
 
             // 최대 검색기간 : 6개월 이내 
             // 시작일자, 날짜형식(yyyyMMdd)
-            String SDate = "20180301";
+            String SDate = "20180925";
 
             // 종료일자, 날짜형식(yyyyMMdd)
-            String EDate = "20180601";
+            String EDate = "20180930";
 
             //전송상태 배열 1-대기, 2-성공, 3-실패, 4-취소
             String[] State = new String[4];
