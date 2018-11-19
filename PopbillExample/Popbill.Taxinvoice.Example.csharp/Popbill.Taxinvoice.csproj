@@ -70,9 +70,9 @@
     <Content Include="Example\deleteFile.aspx" />
     <Content Include="Example\deny.aspx" />
     <Content Include="Example\detachStatement.aspx" />
-    <Content Include="Example\getAccessURL.aspx" />
     <Content Include="Example\getBalance.aspx" />
     <Content Include="Example\getCertificateExpireDate.aspx" />
+    <Content Include="Example\getChargeURL.aspx" />
     <Content Include="Example\getCorpInfo.aspx" />
     <Content Include="Example\getDetailInfo.aspx" />
     <Content Include="Example\getEmailPublicKeys.aspx" />
@@ -104,6 +104,7 @@
     <Content Include="Example\updateCorpInfo.aspx" />
     <Content Include="Example\getLogs.aspx" />
     <Content Include="Example\updateEmailConfig.aspx" />
+    <Content Include="Example\getAccessURL.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Example\register.aspx" />
     <Content Include="Example\search.aspx" />
@@ -226,13 +227,6 @@
     <Compile Include="Example\detachStatement.aspx.designer.cs">
       <DependentUpon>detachStatement.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Example\getAccessURL.aspx.cs">
-      <DependentUpon>getAccessURL.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Example\getAccessURL.aspx.designer.cs">
-      <DependentUpon>getAccessURL.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Example\getBalance.aspx.cs">
       <DependentUpon>getBalance.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -246,6 +240,13 @@
     </Compile>
     <Compile Include="Example\getCertificateExpireDate.aspx.designer.cs">
       <DependentUpon>getCertificateExpireDate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getChargeURL.aspx.cs">
+      <DependentUpon>getChargeURL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getChargeURL.aspx.designer.cs">
+      <DependentUpon>getChargeURL.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\getCorpInfo.aspx.cs">
       <DependentUpon>getCorpInfo.aspx</DependentUpon>
@@ -456,6 +457,13 @@
     </Compile>
     <Compile Include="Example\updateEmailConfig.aspx.designer.cs">
       <DependentUpon>updateEmailConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getAccessURL.aspx.cs">
+      <DependentUpon>getAccessURL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getAccessURL.aspx.designer.cs">
+      <DependentUpon>getAccessURL.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

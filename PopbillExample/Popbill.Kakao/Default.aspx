@@ -92,7 +92,7 @@
             <li><a href="Example/getUnitCost.aspx">getUnitCost</a> - 전송단가 확인</li>
             <li><a href="Example/getChargeInfo.aspx">getChargeInfo</a> - 과금정보 확인</li>
             <li><a href="Example/getBalance.aspx">getBalance</a> - 연동회원 잔여포인트 확인</li>
-            <li><a href="Example/getChargeURL.aspx">getChargeURL</a> (연동회원 포인트충전 URL)</li>
+            <li><a href="Example/getChargeURL.aspx">getChargeURL</a> 연동회원 포인트충전 URL</li>
             <li><a href="Example/getPartnerBalance.aspx">getPartnerBalance</a> - 파트너 잔여포인트 확인</li>
             <li><a href="Example/getPartnerURL.aspx">getPartnerURL</a> - 파트너 포인트충전 URL</li>
         </ul>
@@ -104,7 +104,7 @@
             <li><a href="Example/checkIsMember.aspx">checkIsMember</a> - 연동회원 가입여부 확인</li>
             <li><a href="Example/checkID.aspx">checkID</a> - 연동회원 아이디 중복 확인</li>
             <li><a href="Example/joinMember.aspx">joinMember</a> - 연동회원사 신규가입</li>
-            <li><a href="Example/getAccessURL.aspx">getAccessURL</a> (팝빌 로그인 URL)</li>
+            <li><a href="Example/getAccessURL.aspx">getAccessURL</a> i팝빌 로그인 URL</li>
             <li><a href="Example/registContact.aspx">registContact</a> - 담당자 추가</li>
             <li><a href="Example/listContact.aspx">listContact</a> - 담당자 목록 확인</li>
             <li><a href="Example/updateContact.aspx">updateContact</a> - 담당자 정보 수정</li>

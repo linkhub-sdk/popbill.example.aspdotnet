@@ -12,7 +12,7 @@
 			<p class="heading1">Response</p>
 			<br/>
 			<fieldset class="fieldset1">
-				<legend>팝빌 SSO URL 확인</legend>
+				<legend>팝빌 로그인 URL 확인</legend>
 				<ul>
 					<% if (!String.IsNullOrEmpty(code)) { %>
 						<li>Response.code : <%=code %> </li>

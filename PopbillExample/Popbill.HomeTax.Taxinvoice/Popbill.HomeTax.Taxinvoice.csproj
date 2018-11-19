@@ -61,9 +61,11 @@
     <Content Include="Example\checkIsMember.aspx" />
     <Content Include="Example\checkLoginDeptUser.aspx" />
     <Content Include="Example\deleteDeptUser.aspx" />
+    <Content Include="Example\getAccessURL.aspx" />
     <Content Include="Example\getBalance.aspx" />
     <Content Include="Example\getCertificatePopUpURL.aspx" />
     <Content Include="Example\getChargeInfo.aspx" />
+    <Content Include="Example\getChargeURL.aspx" />
     <Content Include="Example\getCorpInfo.aspx" />
     <Content Include="Example\getFlatRatePopUpURL.aspx" />
     <Content Include="Example\getFlatRateState.aspx" />
@@ -138,6 +140,13 @@
     <Compile Include="Example\deleteDeptUser.aspx.designer.cs">
       <DependentUpon>deleteDeptUser.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Example\getAccessURL.aspx.cs">
+      <DependentUpon>getAccessURL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getAccessURL.aspx.designer.cs">
+      <DependentUpon>getAccessURL.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Example\getBalance.aspx.cs">
       <DependentUpon>getBalance.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -158,6 +167,13 @@
     </Compile>
     <Compile Include="Example\getChargeInfo.aspx.designer.cs">
       <DependentUpon>getChargeInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getChargeURL.aspx.cs">
+      <DependentUpon>getChargeURL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getChargeURL.aspx.designer.cs">
+      <DependentUpon>getChargeURL.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\getCorpInfo.aspx.cs">
       <DependentUpon>getCorpInfo.aspx</DependentUpon>

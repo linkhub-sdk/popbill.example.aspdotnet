@@ -51,6 +51,7 @@
                 <li><a href="Example/getURL.aspx">GetURL</a> - 세금계산서 문서함 관련 URL</li>
             </ul>
         </fieldset>
+        <br/>
         <fieldset class="fieldset1">
             <legend>세금계산서 보기/인쇄</legend>
             <ul>

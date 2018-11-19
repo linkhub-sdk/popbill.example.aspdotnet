@@ -11,6 +11,6 @@
 namespace Popbill.Taxinvoice.Example {
     
     
-    public partial class getAccessURL {
+    public partial class getPopbillURL {
     }
 }
