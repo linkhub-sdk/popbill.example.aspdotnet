@@ -68,7 +68,6 @@
     <Content Include="Example\getFaxResultRN.aspx" />
     <Content Include="Example\getPartnerBalance.aspx" />
     <Content Include="Example\getPartnerURL.aspx" />
-    <Content Include="Example\getPopbillURL.aspx" />
     <Content Include="Example\getSenderNumberList.aspx" />
     <Content Include="Example\getSenderNumberMgtURL.aspx" />
     <Content Include="Example\getSentListURL.aspx" />
@@ -85,6 +84,7 @@
     <Content Include="Example\sendFAX_Multi.aspx" />
     <Content Include="Example\updateContact.aspx" />
     <Content Include="Example\updateCorpInfo.aspx" />
+    <Content Include="Example\getPreviewURL.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -186,13 +186,6 @@
     </Compile>
     <Compile Include="Example\getPartnerURL.aspx.designer.cs">
       <DependentUpon>getPartnerURL.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Example\getPopbillURL.aspx.cs">
-      <DependentUpon>getPopbillURL.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Example\getPopbillURL.aspx.designer.cs">
-      <DependentUpon>getPopbillURL.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\getSenderNumberList.aspx.cs">
       <DependentUpon>getSenderNumberList.aspx</DependentUpon>
@@ -305,6 +298,13 @@
     </Compile>
     <Compile Include="Example\updateCorpInfo.aspx.designer.cs">
       <DependentUpon>updateCorpInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getPreviewURL.aspx.cs">
+      <DependentUpon>getPreviewURL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getPreviewURL.aspx.designer.cs">
+      <DependentUpon>getPreviewURL.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

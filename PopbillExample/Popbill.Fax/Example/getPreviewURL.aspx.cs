@@ -13,7 +13,7 @@ using System.Xml.Linq;
 
 namespace Popbill.Fax.Example
 {
-    public partial class getPopbillURL : System.Web.UI.Page
+    public partial class getPreviewURL : System.Web.UI.Page
     {
         public String code = null;
         public String message = null;
@@ -37,7 +37,7 @@ namespace Popbill.Fax.Example
 
             try
             {
-                url = Global.faxService.getPreviewURL(testCorpNum, receiptNum, testUserID);
+                url = Global.faxService.GetPreviewURL(testCorpNum, receiptNum, testUserID);
             }
             catch (PopbillException ex)
             {

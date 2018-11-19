@@ -72,7 +72,6 @@
     <Content Include="Example\getJobState.aspx" />
     <Content Include="Example\getPartnerBalance.aspx" />
     <Content Include="Example\getPartnerURL.aspx" />
-    <Content Include="Example\getPopbillURL.aspx" />
     <Content Include="Example\getPopUpURL.aspx" />
     <Content Include="Example\getTaxinvoice.aspx" />
     <Content Include="Example\getXML.aspx" />
@@ -216,13 +215,6 @@
     </Compile>
     <Compile Include="Example\getPartnerURL.aspx.designer.cs">
       <DependentUpon>getPartnerURL.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Example\getPopbillURL.aspx.cs">
-      <DependentUpon>getPopbillURL.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Example\getPopbillURL.aspx.designer.cs">
-      <DependentUpon>getPopbillURL.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\getPopUpURL.aspx.cs">
       <DependentUpon>getPopUpURL.aspx</DependentUpon>

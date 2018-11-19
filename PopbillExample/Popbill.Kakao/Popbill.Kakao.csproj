@@ -68,16 +68,10 @@
     <Content Include="Example\getMessagesRN.aspx" />
     <Content Include="Example\getPartnerBalance.aspx" />
     <Content Include="Example\getPartnerURL.aspx" />
-    <Content Include="Example\getPopbillURL_CHRG.aspx" />
-    <Content Include="Example\getPopbillURL_LOGIN.aspx" />
     <Content Include="Example\getSenderNumberList.aspx" />
     <Content Include="Example\getSenderNumberMgtURL.aspx" />
     <Content Include="Example\getSentListURL.aspx" />
     <Content Include="Example\getUnitCost.aspx" />
-    <Content Include="Example\getURL_BOX.aspx" />
-    <Content Include="Example\getURL_PLUSFRIEND.aspx" />
-    <Content Include="Example\getURL_SENDER.aspx" />
-    <Content Include="Example\getURL_TEMPLATE.aspx" />
     <Content Include="Example\joinMember.aspx" />
     <Content Include="Example\listATSTemplate.aspx" />
     <Content Include="Example\listContact.aspx" />
@@ -199,20 +193,6 @@
     <Compile Include="Example\getPartnerURL.aspx.designer.cs">
       <DependentUpon>getPartnerURL.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Example\getPopbillURL_CHRG.aspx.cs">
-      <DependentUpon>getPopbillURL_CHRG.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Example\getPopbillURL_CHRG.aspx.designer.cs">
-      <DependentUpon>getPopbillURL_CHRG.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Example\getPopbillURL_LOGIN.aspx.cs">
-      <DependentUpon>getPopbillURL_LOGIN.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Example\getPopbillURL_LOGIN.aspx.designer.cs">
-      <DependentUpon>getPopbillURL_LOGIN.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Example\getSenderNumberList.aspx.cs">
       <DependentUpon>getSenderNumberList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -240,34 +220,6 @@
     </Compile>
     <Compile Include="Example\getUnitCost.aspx.designer.cs">
       <DependentUpon>getUnitCost.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Example\getURL_BOX.aspx.cs">
-      <DependentUpon>getURL_BOX.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Example\getURL_BOX.aspx.designer.cs">
-      <DependentUpon>getURL_BOX.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Example\getURL_PLUSFRIEND.aspx.cs">
-      <DependentUpon>getURL_PLUSFRIEND.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Example\getURL_PLUSFRIEND.aspx.designer.cs">
-      <DependentUpon>getURL_PLUSFRIEND.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Example\getURL_SENDER.aspx.cs">
-      <DependentUpon>getURL_SENDER.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Example\getURL_SENDER.aspx.designer.cs">
-      <DependentUpon>getURL_SENDER.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Example\getURL_TEMPLATE.aspx.cs">
-      <DependentUpon>getURL_TEMPLATE.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Example\getURL_TEMPLATE.aspx.designer.cs">
-      <DependentUpon>getURL_TEMPLATE.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\joinMember.aspx.cs">
       <DependentUpon>joinMember.aspx</DependentUpon>
