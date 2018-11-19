@@ -11,33 +11,33 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-namespace Popbill.Kakao.Example
+namespace Popbill.Fax.Example
 {
-    public partial class getURL_PLUSFRIEND : System.Web.UI.Page
+    public partial class getPopbillURL : System.Web.UI.Page
     {
-        public String code;
-        public String message;
-        public String url;
+        public String code = null;
+        public String message = null;
+        public String url  = null;
 
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 플러스친구 계정관리 팝업 URL을 반환합니다.
-            * - 보안정책에 따라 반환된 URL은 30초의 유효시간을 갖습니다.
+            * 팩스 미리보기 URL API를 반환합니다.
+            * 반환된 URL은 보안정책에 따라 30초의 유효시간을 갖습니다.
             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
+            // 팩스전송 요청시 발급받은 접수번호
+            String receiptNum = "018092922570100001";
+            
             // 팝빌회원 아이디
             String testUserID = "testkorea";
 
-            // [PLUSFRIEND]-플러스친구 계정관리 팝업
-            String TOGO = "PLUSFRIEND";
-
             try
             {
-                url = Global.kakaoService.GetURL(testCorpNum, testUserID, TOGO);
+                url = Global.faxService.getPreviewURL(testCorpNum, receiptNum, testUserID);
             }
             catch (PopbillException ex)
             {
