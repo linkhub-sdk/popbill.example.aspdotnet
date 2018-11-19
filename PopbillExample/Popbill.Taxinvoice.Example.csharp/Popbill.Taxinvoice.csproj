@@ -70,6 +70,7 @@
     <Content Include="Example\deleteFile.aspx" />
     <Content Include="Example\deny.aspx" />
     <Content Include="Example\detachStatement.aspx" />
+    <Content Include="Example\getAccessURL.aspx" />
     <Content Include="Example\getBalance.aspx" />
     <Content Include="Example\getCertificateExpireDate.aspx" />
     <Content Include="Example\getCorpInfo.aspx" />
@@ -224,6 +225,13 @@
     </Compile>
     <Compile Include="Example\detachStatement.aspx.designer.cs">
       <DependentUpon>detachStatement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getAccessURL.aspx.cs">
+      <DependentUpon>getAccessURL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getAccessURL.aspx.designer.cs">
+      <DependentUpon>getAccessURL.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\getBalance.aspx.cs">
       <DependentUpon>getBalance.aspx</DependentUpon>
