@@ -94,6 +94,7 @@
     <Content Include="Example\listEmailConfig.aspx" />
     <Content Include="Example\registContact.aspx" />
     <Content Include="Example\registIssue.aspx" />
+    <Content Include="Example\registRequest.aspx" />
     <Content Include="Example\request.aspx" />
     <Content Include="Example\sendemail.aspx" />
     <Content Include="Example\sendfax.aspx" />
@@ -395,6 +396,13 @@
     </Compile>
     <Compile Include="Example\registIssue.aspx.designer.cs">
       <DependentUpon>registIssue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\registRequest.aspx.cs">
+      <DependentUpon>registRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\registRequest.aspx.designer.cs">
+      <DependentUpon>registRequest.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\request.aspx.cs">
       <DependentUpon>request.aspx</DependentUpon>
