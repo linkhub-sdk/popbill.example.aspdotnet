@@ -70,6 +70,8 @@
     <Content Include="Example\getPartnerURL.aspx" />
     <Content Include="Example\getPopbillURL.aspx" />
     <Content Include="Example\getSenderNumberList.aspx" />
+    <Content Include="Example\getSenderNumberMgtURL.aspx" />
+    <Content Include="Example\getSentListURL.aspx" />
     <Content Include="Example\getUnitCost.aspx" />
     <Content Include="Example\joinMember.aspx" />
     <Content Include="Example\listContact.aspx" />
@@ -83,7 +85,6 @@
     <Content Include="Example\sendFAX_Multi.aspx" />
     <Content Include="Example\updateContact.aspx" />
     <Content Include="Example\updateCorpInfo.aspx" />
-    <Content Include="Example\getURL.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -200,6 +201,20 @@
     <Compile Include="Example\getSenderNumberList.aspx.designer.cs">
       <DependentUpon>getSenderNumberList.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Example\getSenderNumberMgtURL.aspx.cs">
+      <DependentUpon>getSenderNumberMgtURL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getSenderNumberMgtURL.aspx.designer.cs">
+      <DependentUpon>getSenderNumberMgtURL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getSentListURL.aspx.cs">
+      <DependentUpon>getSentListURL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getSentListURL.aspx.designer.cs">
+      <DependentUpon>getSentListURL.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Example\getUnitCost.aspx.cs">
       <DependentUpon>getUnitCost.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -290,13 +305,6 @@
     </Compile>
     <Compile Include="Example\updateCorpInfo.aspx.designer.cs">
       <DependentUpon>updateCorpInfo.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Example\getURL.aspx.cs">
-      <DependentUpon>getURL.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Example\getURL.aspx.designer.cs">
-      <DependentUpon>getURL.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

@@ -22,7 +22,7 @@
     <fieldset class="fieldset1">
         <legend>발신번호 관리</legend>
         <ul>
-            <li><a href="Example/getPlusFriendMgtURL.aspx">getSenderNumberMgtURL</a> - 발신번호 관리 팝업 URL</li>
+            <li><a href="Example/getSenderNumberMgtURL.aspx">getSenderNumberMgtURL</a> - 발신번호 관리 팝업 URL</li>
             <li><a href="Example/getSenderNumberList.aspx">getSenderNumberList</a> - 발신번호 목록 확인</li>
         </ul>
     </fieldset>

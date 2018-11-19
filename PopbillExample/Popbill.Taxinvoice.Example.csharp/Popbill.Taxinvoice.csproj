@@ -84,7 +84,6 @@
     <Content Include="Example\getMassPrintURL.aspx" />
     <Content Include="Example\getPartnerBalance.aspx" />
     <Content Include="Example\getPartnerURL.aspx" />
-    <Content Include="Example\getPopbillURL.aspx" />
     <Content Include="Example\getPopUpURL.aspx" />
     <Content Include="Example\getPrintURL.aspx" />
     <Content Include="Example\getUnitCost.aspx" />
@@ -105,6 +104,8 @@
     <Content Include="Example\getLogs.aspx" />
     <Content Include="Example\updateEmailConfig.aspx" />
     <Content Include="Example\getAccessURL.aspx" />
+    <Content Include="Example\getSealURL.aspx" />
+    <Content Include="Example\getTaxCertURL.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Example\register.aspx" />
     <Content Include="Example\search.aspx" />
@@ -325,13 +326,6 @@
     <Compile Include="Example\getPartnerURL.aspx.designer.cs">
       <DependentUpon>getPartnerURL.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Example\getPopbillURL.aspx.cs">
-      <DependentUpon>getPopbillURL.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Example\getPopbillURL.aspx.designer.cs">
-      <DependentUpon>getPopbillURL.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Example\getPopUpURL.aspx.cs">
       <DependentUpon>getPopUpURL.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -464,6 +458,20 @@
     </Compile>
     <Compile Include="Example\getAccessURL.aspx.designer.cs">
       <DependentUpon>getAccessURL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getSealURL.aspx.cs">
+      <DependentUpon>getSealURL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getSealURL.aspx.designer.cs">
+      <DependentUpon>getSealURL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getTaxCertURL.aspx.cs">
+      <DependentUpon>getTaxCertURL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getTaxCertURL.aspx.designer.cs">
+      <DependentUpon>getTaxCertURL.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
