@@ -22,7 +22,7 @@ namespace Popbill.Fax.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 팩스 미리보기 URL API를 반환합니다.
+            * 팩스 미리보기 팝업 URL을 반환합니다.
             * 반환된 URL은 보안정책에 따라 30초의 유효시간을 갖습니다.
             */
 
