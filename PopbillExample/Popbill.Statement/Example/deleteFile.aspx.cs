@@ -21,10 +21,10 @@ namespace Popbill.Statement.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 전자명세서에 첨부된 파일을 삭제합니다.
-            * - 파일을 식별하는 파일아이디는 첨부파일 목록(GetFileList API) 의 응답항목
-            *   중 파일아이디(AttachedFile) 값을 통해 확인할 수 있습니다.
-            */
+             * 전자명세서에 첨부된 파일을 삭제합니다.
+             * - 파일을 식별하는 파일아이디는 첨부파일 목록(GetFileList API) 의 응답항목
+             *   중 파일아이디(AttachedFile) 값을 통해 확인할 수 있습니다.
+             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
@@ -36,7 +36,7 @@ namespace Popbill.Statement.Example
             int itemCode = 121;
 
             // 전자명세서 문서관리번호
-            String mgtKey = "20170315-06";
+            String mgtKey = "20190111-001";
 
             // 파일아이디
             String fileID = "2AD5E4B8-3639-4F93-A9B1-A93B097A6D96.PBF";

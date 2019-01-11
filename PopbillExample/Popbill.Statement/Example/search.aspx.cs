@@ -22,10 +22,9 @@ namespace Popbill.Statement.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 검색조건을 사용하여 전자명세서 목록을 조회합니다.
-            * - 응답항목에 대한 자세한 사항은 "[전자명세서 API 연동매뉴얼] >
-            *   3.3.3. Search (목록 조회)" 를 참조하시기 바랍니다.
-            */
+             * 검색조건을 사용하여 전자명세서 목록을 조회합니다.
+             * - 응답항목에 대한 자세한 사항은 "[전자명세서 API 연동매뉴얼] > 3.2.4. Search (목록 조회)" 를 참조하시기 바랍니다.
+             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
@@ -34,10 +33,10 @@ namespace Popbill.Statement.Example
             String DType = "W";
 
             // [필수] 시작일자, 날짜형식(yyyyMMdd)
-            String SDate = "20170101";
+            String SDate = "20190101";
 
             // [필수] 종료일자, 날짜형식(yyyyMMdd)
-            String EDate = "20170601";
+            String EDate = "20190111";
 
             // 전송상태값 배열, 미기재시 전체 상태조회, 문서상태 값 3자리의 배열, 2,3번째 자리에 와일드카드 가능
             String[] State = new String[4];

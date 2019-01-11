@@ -22,8 +22,8 @@ namespace Popbill.Statement.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 1건의 전자명세서를 즉시발행 처리합니다.
-            */
+             * 1건의 전자명세서를 즉시발행 처리합니다.
+             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
@@ -34,11 +34,11 @@ namespace Popbill.Statement.Example
             // 맞춤양식코드, 미기재시 기본양식으로 처리
             String formCode = "";
 
-            // 명세서 종류 코드 - 121(거래명세서), 122(청구서), 123(견적서) 124(발주서), 125(입금표), 126(영수증)
+            // 명세서 종류 코드 - 121(거래명세서), 122(청구서), 123(견적서), 124(발주서), 125(입금표), 126(영수증)
             int itemCode = 121;
 
             // 전자명세서 문서관리번호
-            String mgtKey = "20170316-01";
+            String mgtKey = "20190111-001";
 
             // 즉시발행 메모
             String memo = "즉시발행 메모";
@@ -49,7 +49,7 @@ namespace Popbill.Statement.Example
             Statement statement = new Statement();
 
             // [필수], 기재상 작성일자 날짜형식(yyyyMMdd)
-            statement.writeDate = "20170316";
+            statement.writeDate = "20190111";
 
             // [필수], {영수, 청구} 중 기재 
             statement.purposeType = "영수";
@@ -78,22 +78,22 @@ namespace Popbill.Statement.Example
             statement.senderTaxRegID = "";
 
             // 발신자 상호
-            statement.senderCorpName = "공급자 상호";
+            statement.senderCorpName = "발신자 상호";
 
             // 발신자 대표자 성명 
-            statement.senderCEOName = "공급자 대표자 성명";
+            statement.senderCEOName = "발신자 대표자 성명";
 
             // 발신자 주소 
-            statement.senderAddr = "공급자 주소";
+            statement.senderAddr = "발신자 주소";
 
             // 발신자 종목
-            statement.senderBizClass = "공급자 종목";
+            statement.senderBizClass = "발신자 종목";
 
             // 발신자 업태 
-            statement.senderBizType = "공급자 업태,업태2";
+            statement.senderBizType = "발신자 업태,업태2";
 
             // 발신자 담당자 성명
-            statement.senderContactName = "공급자 담당자명";
+            statement.senderContactName = "발신자 담당자명";
 
             // 발신자 메일주소 
             statement.senderEmail = "test@test.com";
@@ -113,22 +113,22 @@ namespace Popbill.Statement.Example
             statement.receiverCorpNum = "8888888888";
 
             // [필수] 수신자 상호
-            statement.receiverCorpName = "공급받는자 상호";
+            statement.receiverCorpName = "수신자 상호";
 
             // 수신자 대표자 성명
-            statement.receiverCEOName = "공급받는자 대표자 성명";
+            statement.receiverCEOName = "수신자 대표자 성명";
 
             // 수신자 주소 
-            statement.receiverAddr = "공급받는자 주소";
+            statement.receiverAddr = "수신자 주소";
 
             // 수신자 종목
-            statement.receiverBizClass = "공급받는자 종목";
+            statement.receiverBizClass = "수신자 종목";
 
             // 수신자 업태 
-            statement.receiverBizType = "공급받는자 업태";
+            statement.receiverBizType = "수신자 업태";
 
             // 수신자 담당자 성명 
-            statement.receiverContactName = "공급받는자 담당자명";
+            statement.receiverContactName = "수신자 담당자명";
 
             // 수신자 메일주소 
             statement.receiverEmail = "test@receiver.com";
@@ -165,7 +165,7 @@ namespace Popbill.Statement.Example
             StatementDetail detail = new StatementDetail();
 
             detail.serialNum = 1;               // 일련번호, 1부터 순차기재, 최대 99
-            detail.purchaseDT = "20170315";     // 거래일자
+            detail.purchaseDT = "20190111";     // 거래일자
             detail.itemName = "품목명";
             detail.spec = "규격";
             detail.qty = "1";                   // 수량
@@ -184,7 +184,7 @@ namespace Popbill.Statement.Example
             detail = new StatementDetail();
 
             detail.serialNum = 2;               // 일련번호, 1부터 순차기재, 최대 99
-            detail.purchaseDT = "20170315";     // 거래일자
+            detail.purchaseDT = "20190111";     // 거래일자
             detail.itemName = "품목명";
             detail.spec = "규격";
             detail.qty = "1";                   // 수량

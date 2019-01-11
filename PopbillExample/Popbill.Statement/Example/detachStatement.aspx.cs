@@ -31,13 +31,13 @@ namespace Popbill.Statement.Example
             int itemCode = 121;
 
             // 전자명세서 문서관리번호
-            String mgtKey = "20170316-01";
+            String mgtKey = "20190111-001";
 
             // 첨부해제할 명세서 종류 코드 - 121(거래명세서), 122(청구서), 123(견적서) 124(발주서), 125(입금표), 126(영수증)
             int SubItemCode = 121;
 
             // 첨부해제할 명세서 관리번호 
-            String SubMgtKey = "20160202-03";
+            String SubMgtKey = "20190111-002";
 
             try
             {

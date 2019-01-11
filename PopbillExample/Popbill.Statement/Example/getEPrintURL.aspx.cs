@@ -22,9 +22,9 @@ namespace Popbill.Statement.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 1건의 전자명세서 인쇄팝업 URL을 반환합니다.
-            * - 보안정책으로 인해 반환된 URL의 유효시간은 30초입니다.
-            */
+             * 1건의 전자명세서 인쇄팝업 URL을 반환합니다.
+             * - 보안정책으로 인해 반환된 URL의 유효시간은 30초입니다.
+             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
@@ -36,7 +36,7 @@ namespace Popbill.Statement.Example
             int itemCode = 121;
 
             // 전자명세서 문서관리번호
-            String mgtKey = "20170316-01";
+            String mgtKey = "20190111-001";
 
             try
             {

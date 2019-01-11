@@ -21,10 +21,10 @@ namespace Popbill.Statement.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 1건의 전자명세서를 삭제합니다.
-            * - 전자명세서를 삭제하면 사용된 문서관리번호(mgtKey)를 재사용할 수 있습니다.
-            * - 삭제가능한 문서 상태 : [임시저장], [발행취소]
-            */
+             * 1건의 전자명세서를 삭제합니다.
+             * - 전자명세서를 삭제하면 사용된 문서관리번호(mgtKey)를 재사용할 수 있습니다.
+             * - 삭제가능한 문서 상태 : [임시저장], [발행취소]
+             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
@@ -36,7 +36,7 @@ namespace Popbill.Statement.Example
             int itemCode = 121;
 
             // 전자명세서 문서관리번호
-            String mgtKey = "20170315-02";
+            String mgtKey = "20190111-001";
 
             try
             {

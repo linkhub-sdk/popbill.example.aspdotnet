@@ -21,8 +21,8 @@ namespace Popbill.Statement.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 1건의 전자명세서를 [발행취소] 처리합니다.
-            */
+             * 1건의 전자명세서를 [발행취소] 처리합니다.
+             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
@@ -34,7 +34,7 @@ namespace Popbill.Statement.Example
             int itemCode = 121;
 
             // 전자명세서 문서관리번호
-            String mgtKey = "20170315-02";
+            String mgtKey = "20190111-001";
 
             // 메모
             String memo = "발행취소 메모";
