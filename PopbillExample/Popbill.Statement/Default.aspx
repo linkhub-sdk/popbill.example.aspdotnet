@@ -20,7 +20,7 @@
                 <li><a href="Example/register.aspx">register</a> - 임시저장</li>
                 <li><a href="Example/update.aspx">update</a> - 수정</li>
                 <li><a href="Example/issue.aspx">issue</a> - 발행</li>
-                <li><a href="Example/cancel.aspx">cancel</a> - 발행취소</li>
+                <li><a href="Example/cancelIssue.aspx">cancelIssue</a> - 발행취소</li>
                 <li><a href="Example/delete.aspx">delete</a> - 삭제</li>
             </ul>
         </fieldset>
