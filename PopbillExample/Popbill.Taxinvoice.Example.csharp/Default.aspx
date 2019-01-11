@@ -13,7 +13,7 @@
     <br/>
     <form id="form1" runat="server">
         <fieldset class="fieldset1">
-            <legend>정방행/역발행/위수탁발행</legend>
+            <legend>정발행/역발행/위수탁발행</legend>
             <ul>
                 <li><a href="Example/checkMgtKeyInUse.aspx">CheckMgtKeyInUse</a> - 관리번호 확인</li>
                 <li><a href="Example/registIssue.aspx">RegistIssue</a> - 즉시 발행</li>
