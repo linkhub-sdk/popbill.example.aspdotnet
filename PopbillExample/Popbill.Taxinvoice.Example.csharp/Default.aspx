@@ -2,15 +2,15 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml" >
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
     <title>팝빌 세금계산서 SDK ASP.NET Example</title>
-    <link href="Example.css" rel="stylesheet" type="text/css" />
+    <link href="Example.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="content">
     <p class="heading1">팝빌 세금계산서 SDK ASP.NET Example</p>
-    <br />
+    <br/>
     <form id="form1" runat="server">
         <fieldset class="fieldset1">
             <legend>정방행/역발행/위수탁발행</legend>
@@ -58,7 +58,7 @@
                 <li><a href="Example/getPopUpURL.aspx">GetPopUpURL</a> - 세금계산서 보기 URL</li>
                 <li><a href="Example/getPrintURL.aspx">GetPrintURL</a> - 세금계산서 인쇄 [공급자/공급받는자] URL</li>
                 <li><a href="Example/getEPrintURL.aspx">GetEPrintURL</a> - 세금계산서 인쇄 [공급받는자용] URL</li>
-                <li><a href="Example/getMassPrintURL.aspx">GetMassPrintURL</a> - (세금계산서 대량 인쇄 URL</li>
+                <li><a href="Example/getMassPrintURL.aspx">GetMassPrintURL</a> - 세금계산서 대량 인쇄 URL</li>
                 <li><a href="Example/getMailURL.aspx">GetMailURL</a> - 세금계산서 메일링크 URL</li>
             </ul>
         </fieldset>
