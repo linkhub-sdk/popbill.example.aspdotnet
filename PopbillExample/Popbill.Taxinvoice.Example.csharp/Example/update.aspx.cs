@@ -22,10 +22,9 @@ namespace Popbill.Taxinvoice.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * [임시저장] 상태의 세금계산서의 항목을 수정합니다.
-            * - 세금계산서 항목별 정보는 "[전자세금계산서 API 연동매뉴얼] > 4.1. (세금)계산서구성"을
-            *   참조하시기 바랍니다.
-            */
+             * [임시저장] 상태의 세금계산서의 항목을 수정합니다.
+             * - 세금계산서 항목별 정보는 "[전자세금계산서 API 연동매뉴얼] > 4.1. (세금)계산서구성"을 참조하시기 바랍니다.
+             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
@@ -37,14 +36,14 @@ namespace Popbill.Taxinvoice.Example
             MgtKeyType KeyType = MgtKeyType.SELL;
 
             // 세금계산서 문서관리번호
-            String mgtKey = "20170314-03";
+            String mgtKey = "20190111-001";
     
             
             // 세금계산서 정보 객체 
             Taxinvoice taxinvoice = new Taxinvoice();
 
             // [필수] 기재상 작성일자, 날자형식(yyyyMMdd)
-            taxinvoice.writeDate = "20161013";
+            taxinvoice.writeDate = "20190111";
 
             // [필수] 과금방향, {정과금, 역과금}중 선택
             // - 정과금(공급자과금), 역과금(공급받는자과금)
@@ -70,7 +69,7 @@ namespace Popbill.Taxinvoice.Example
              *****************************************************************/
 
             // [필수] 공급자 사업자번호, '-' 제외 10자리
-            taxinvoice.invoicerCorpNum = "1234567890";
+            taxinvoice.invoicerCorpNum = testCorpNum;
 
             // 공급자 종사업자 식별번호. 필요시 기재. 형식은 숫자 4자리.
             taxinvoice.invoicerTaxRegID = "";
@@ -230,7 +229,7 @@ namespace Popbill.Taxinvoice.Example
             TaxinvoiceDetail detail = new TaxinvoiceDetail();
 
             detail.serialNum = 1;               // 일련번호, 1부터 순차기재 
-            detail.purchaseDT = "20161013";     // 거래일자
+            detail.purchaseDT = "20190111";     // 거래일자
             detail.itemName = "품목명";         // 품목명 
             detail.spec = "규격";               // 규격
             detail.qty = "1";                   // 수량
@@ -244,7 +243,7 @@ namespace Popbill.Taxinvoice.Example
             detail = new TaxinvoiceDetail();
 
             detail.serialNum = 2;               // 일련번호, 1부터 순차기재 
-            detail.purchaseDT = "20161013";     // 거래일자
+            detail.purchaseDT = "20190111";     // 거래일자
             detail.itemName = "품목명";         // 품목명 
             detail.spec = "규격";               // 규격
             detail.qty = "1";                   // 수량

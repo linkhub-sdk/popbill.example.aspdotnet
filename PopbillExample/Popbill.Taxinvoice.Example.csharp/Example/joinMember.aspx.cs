@@ -21,55 +21,52 @@ namespace Popbill.Taxinvoice.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 파트너의 연동회원으로 회원가입을 요청합니다.
-            */
-
-            // 파트너 링크아이디
-            String LinkID = "TESTER";
+             * 파트너의 연동회원으로 회원가입을 요청합니다.
+             */
 
             JoinForm joinInfo = new JoinForm();
 
-            // 링크아이디
-            joinInfo.LinkID = LinkID;
-
-            // 사업자번호 "-" 제외
-            joinInfo.CorpNum = "1231212312";
-
-            // 대표자명 
-            joinInfo.CEOName = "대표자성명";
-
-            // 상호
-            joinInfo.CorpName = "상호";
-
-            // 주소
-            joinInfo.Addr = "주소";
-
-            // 업태
-            joinInfo.BizType = "업태";
-
-            // 종목
-            joinInfo.BizClass = "종목";
-
-            // 아이디, 6자이상 20자 미만
+            //아이디, 6자이상 50자 미만
             joinInfo.ID = "userid";
 
-            // 비밀번호, 6자이상 20자 미만
+            //비밀번호, 6자이상 20자 미만
             joinInfo.PWD = "pwd_must_be_long_enough";
 
-            // 담당자명
+            //링크아이디
+            joinInfo.LinkID = "TESTER";
+
+            //사업자번호 "-" 제외
+            joinInfo.CorpNum = "1231212312";
+
+            //대표자명 (최대 100자)
+            joinInfo.CEOName = "대표자성명";
+
+            //상호 (최대 200자)
+            joinInfo.CorpName = "상호";
+
+            //사업장 주소 (최대 300자)
+            joinInfo.Addr = "주소";
+
+            //업태 (최대 100자)
+            joinInfo.BizType = "업태";
+
+            //종목 (최대 100자)
+            joinInfo.BizClass = "종목";
+
+            //담당자 성명 (최대 100자)
             joinInfo.ContactName = "담당자명";
 
-            // 담당자 연락처
+            //담당자 이메일 (최대 20자)
+            joinInfo.ContactEmail = "test@test.com";
+
+            //담당자 연락처 (최대 20자)
             joinInfo.ContactTEL = "070-4304-2991";
 
-            // 담당자 휴대폰번호
+            //담당자 휴대폰번호 (최대 20자)
             joinInfo.ContactHP = "010-111-222";
 
-            // 담당자 팩스번호
+            //담당자 팩스번호 (최대 20자)
             joinInfo.ContactFAX = "02-6442-9700";
-
-            // 담당자 메일주소
-            joinInfo.ContactEmail = "test@test.com";
 
             try
             {

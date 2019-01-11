@@ -22,9 +22,9 @@ namespace Popbill.Taxinvoice.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 팝빌에 로그인 상태로 접근할 수 있는 팝업 URL을 반환합니다.
-            * 반환된 URL은 보안정책에 따라 30초의 유효시간을 갖습니다.
-            */
+             * 팝빌에 로그인 상태로 접근할 수 있는 팝업 URL을 반환합니다.
+             * 반환된 URL의 유지시간은 30초이며, 제한된 시간 이후에는 정상적으로 처리되지 않습니다.
+             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";

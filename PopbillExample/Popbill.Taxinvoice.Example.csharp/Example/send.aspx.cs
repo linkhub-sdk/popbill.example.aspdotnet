@@ -21,12 +21,10 @@ namespace Popbill.Taxinvoice
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 1건의 [임시저장] 상태의 세금계산서를 [발행예정] 처리합니다.
-            * - 발행예정이란 공급자와 공급받는자 사이에 세금계산서 확인 후 발행하는
-            *   방법입니다.
-            * - "[전자세금계산서 API 연동매뉴얼] > 1.3.1. 정발행 프로세스 흐름도
-            *   > 다. 임시저장 발행예정" 의 프로세스를 참조하시기 바랍니다.
-            */
+             * 1건의 [임시저장] 상태의 세금계산서를 [발행예정] 처리합니다.
+             * - 발행예정이란 공급자와 공급받는자 사이에 세금계산서 확인 후 발행하는 방법입니다.
+             * - "[전자세금계산서 API 연동매뉴얼] > 1.2.1. 정발행 > 다. 임시저장 발행예정" 의 프로세스를 참조하시기 바랍니다.
+             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
@@ -38,7 +36,7 @@ namespace Popbill.Taxinvoice
             MgtKeyType KeyType = MgtKeyType.SELL;
 
             // 세금계산서 문서관리번호
-            String mgtKey = "20170314-05";
+            String mgtKey = "20190111-001";
 
             // 메모
             String Memo = "발행예정 메모";

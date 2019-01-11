@@ -30,7 +30,7 @@ namespace Popbill.Taxinvoice.Example
 
             // 조회할 세금계산서 문서관리번호
             // 1~24자리 숫자, 영문, '-', '_' 조합으로 사업자별로 중복되지 않도록 구성
-            String mgtKey = "20170307-01";
+            String mgtKey = "20190111-001";
 
             // 세금계산서 발행유형, SELL-매출, BUY-매입, TRUSTEE-위수탁
             MgtKeyType KeyType = MgtKeyType.SELL;

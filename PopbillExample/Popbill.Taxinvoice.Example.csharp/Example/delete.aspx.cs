@@ -21,9 +21,9 @@ namespace Popbill.Taxinvoice.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             *  세금계산서 1건을 삭제합니다.
-             * - 삭제된 세금계산서의 문서관리번호는 재사용할 수 있습니다.
-             * - 삭제 가능한 문서상태 : [임시저장], [발행취소]
+             * 1건의 전자세금계산서를 [삭제]합니다.
+             * - 세금계산서를 삭제해야만 문서관리번호(mgtKey)를 재사용할 수 있습니다.
+             * - 삭제가능한 문서 상태 : [임시저장], [발행취소], [발행예정 취소], [발행예정 거부]
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
@@ -33,7 +33,7 @@ namespace Popbill.Taxinvoice.Example
             MgtKeyType KeyType = MgtKeyType.SELL;
 
             // 세금계산서 문서관리번호
-            String mgtKey = "20170314-01";
+            String mgtKey = "20190111-001";
 
             try
             {

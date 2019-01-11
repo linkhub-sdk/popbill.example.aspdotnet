@@ -21,14 +21,14 @@ namespace Popbill.Taxinvoice.Example
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            /*
+            /**
              * [공급받는자]가 공급자에게 1건의 역발행 세금계산서를 [즉시 요청]합니다.
              * - 세금계산서 항목별 정보는 "[전자세금계산서 API 연동매뉴얼] > 4.1. (세금)계산서구성"을 참조하시기 바랍니다.
              * - 역발행 세금계산서 프로세스를 구현하기 위해서는 공급자/공급받는자가 모두 팝빌에 회원이여야 합니다.
              * - 역발행 즉시요청후 공급자가 [발행] 처리시 포인트가 차감되며 역발행 세금계산서 항목중 과금방향(ChargeDirection)에 기재한 값에 따라
              *   정과금(공급자과금) 또는 역과금(공급받는자과금) 처리됩니다.
              */
-
+            
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
@@ -36,7 +36,7 @@ namespace Popbill.Taxinvoice.Example
             Taxinvoice taxinvoice = new Taxinvoice();
 
             // [필수] 기재상 작성일자, 날자형식(yyyyMMdd)
-            taxinvoice.writeDate = "20181119";
+            taxinvoice.writeDate = "20190111";
 
             // [필수] 과금방향, {정과금, 역과금}중 선택
             // - 정과금(공급자과금), 역과금(공급받는자과금)
@@ -119,7 +119,7 @@ namespace Popbill.Taxinvoice.Example
 
             // [역발행시 필수] 공급받는자 문서관리번호, 숫자, 영문, '-', '_' 조합으로
             // 1~24자리까지 사업자번호별 중복없는 고유번호 할당
-            taxinvoice.invoiceeMgtKey = "20181119-0001";
+            taxinvoice.invoiceeMgtKey = "20190111-001";
 
             // [필수] 공급받는자 대표자 성명 
             taxinvoice.invoiceeCEOName = "공급받는자 대표자 성명";
@@ -223,7 +223,7 @@ namespace Popbill.Taxinvoice.Example
             TaxinvoiceDetail detail = new TaxinvoiceDetail();
 
             detail.serialNum = 1;               // 일련번호, 1부터 순차기재 
-            detail.purchaseDT = "20181119";     // 거래일자
+            detail.purchaseDT = "20190111";     // 거래일자
             detail.itemName = "품목명";         // 품목명 
             detail.spec = "규격";               // 규격
             detail.qty = "1";                   // 수량
@@ -237,7 +237,7 @@ namespace Popbill.Taxinvoice.Example
             detail = new TaxinvoiceDetail();
 
             detail.serialNum = 2;               // 일련번호, 1부터 순차기재 
-            detail.purchaseDT = "20181119";     // 거래일자
+            detail.purchaseDT = "20190111";     // 거래일자
             detail.itemName = "품목명";         // 품목명 
             detail.spec = "규격";               // 규격
             detail.qty = "1";                   // 수량

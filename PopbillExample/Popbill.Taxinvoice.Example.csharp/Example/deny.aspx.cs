@@ -21,9 +21,9 @@ namespace Popbill.Taxinvoice.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 발행예정 세금계산서를 [거부]처리 합니다.
-            * - [거부]처리된 세금계산서를 삭제(Delete API)하면 등록된 문서관리번호를 재사용할 수 있습니다.
-            */
+             * [승인대기] 상태의 세금계산서를 [공급받는자]가 [거부]합니다.
+             * - [거부]처리된 세금계산서를 삭제(Delete API)하면 등록된 문서관리번호를 재사용할 수 있습니
+             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
@@ -32,10 +32,10 @@ namespace Popbill.Taxinvoice.Example
             String testUserID = "testkorea";
 
             // 세금계산서 발행유형, SELL-매출, BUY-매입, TRUSTEE-위수탁
-            MgtKeyType KeyType = MgtKeyType.SELL;
+            MgtKeyType KeyType = MgtKeyType.BUY;
 
             // 세금계산서 문서관리번호
-            String mgtKey = "20170314-05";
+            String mgtKey = "20190111-001";
 
             // 메모
             String memo = "발행예정 거부 메모";

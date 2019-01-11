@@ -36,7 +36,7 @@ namespace Popbill.Taxinvoice.Example
             MgtKeyType KeyType = MgtKeyType.SELL;
 
             // 세금계산서 문서관리번호
-            String mgtKey = "20170314-05";
+            String mgtKey = "20190111-001";
 
             try
             {

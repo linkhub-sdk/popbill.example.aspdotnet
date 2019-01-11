@@ -21,8 +21,8 @@ namespace Popbill.Taxinvoice.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 세금계산서에 첨부된 전자명세서 1건을 첨부해제합니다.
-            */
+             * 세금계산서에 첨부된 전자명세서 1건을 첨부해제합니다.
+             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";

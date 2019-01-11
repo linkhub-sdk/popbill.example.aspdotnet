@@ -21,10 +21,9 @@ namespace Popbill.Taxinvoice.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 역발행 세금계산서를 [취소] 처리합니다.
-            * - [취소]한 세금계산서의 문서관리번호를 재사용하기 위해서는 삭제 (Delete API)
-            *   를 호출해야 합니다.
-            */
+             * [공급받는자]가 역)발행대기 상태의 세금계산서를 [취소]합니다.
+             * - [취소]한 세금계산서의 문서관리번호를 재사용하기 위해서는 삭제 (Delete API)를 호출해야 합니다.
+             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
@@ -36,7 +35,7 @@ namespace Popbill.Taxinvoice.Example
             MgtKeyType KeyType = MgtKeyType.SELL;
 
             // 세금계산서 문서관리번호
-            String mgtKey = "20170315-01";
+            String mgtKey = "20190111-001";
 
             // 메모 
             String memo = "역발행 요청 취소 메모";

@@ -21,10 +21,9 @@ namespace Popbill.Taxinvoice.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 세금계산서에 첨부된 파일을 삭제합니다.
-            * - 파일을 식별하는 파일아이디는 첨부파일 목록(GetFileList API) 의 응답항목 중
-            *   파일아이디(AttachedFile) 값을 통해 확인할 수 있습니다.
-            */
+             * 세금계산서에 첨부된 파일을 삭제합니다.
+             * - 파일을 식별하는 파일아이디는 첨부파일 목록(GetFiles API) 의 응답항목 중 파일아이디(AttachedFile) 값을 통해 확인할 수 있습니다.
+             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
@@ -36,7 +35,7 @@ namespace Popbill.Taxinvoice.Example
             MgtKeyType KeyType = MgtKeyType.SELL;
 
             // 세금계산서 문서관리번호
-            String mgtKey = "20170314-05";
+            String mgtKey = "20190111-001";
 
             // 파일아이디, 첨부파일 목록(GetFileList API) 의 응답항목 중 파일아이디(AttachedFile) 값
             String fileID = "E85CDB70-1ADF-41FB-9B2C-CDB5AC6B2139.PBF";

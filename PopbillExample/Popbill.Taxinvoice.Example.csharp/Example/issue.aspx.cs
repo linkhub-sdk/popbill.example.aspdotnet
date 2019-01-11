@@ -20,14 +20,11 @@ namespace Popbill.Taxinvoice
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
             /**
-            *[발행완료] 상태의 세금계산서를 [발행취소] 처리합니다.
-            * - [발행취소]는 국세청 전송전에만 가능합니다.
-            * - 발행취소된 세금계산서는 국세청에 전송되지 않습니다.
-            * - 발행취소 세금계산서에 기재된 문서관리번호를 재사용 하기 위해서는
-            *   삭제(Delete API)를 호출하여 [삭제] 처리 하셔야 합니다.
-            */
+              * [임시저장] 또는 [발행대기] 상태의 세금계산서를 [공급자]가 [발행]합니다.
+              * - 세금계산서 항목별 정보는 "[전자세금계산서 API 연동매뉴얼] > 4.1. (세금)계산서구성"을 참조하시기 바랍니다.
+              */
+
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
@@ -39,7 +36,7 @@ namespace Popbill.Taxinvoice
             MgtKeyType KeyType = MgtKeyType.SELL;
 
             // 세금계산서 문서관리번호
-            String mgtKey = "20170314-05";
+            String mgtKey = "20190111-001";
 
             // 메모
             String memo = "발행메모";
@@ -51,7 +48,8 @@ namespace Popbill.Taxinvoice
 
             try
             {
-                Response response = Global.taxinvoiceService.Issue(testCorpNum, KeyType, mgtKey, memo, forceIssue, testUserID);
+                Response response =
+                    Global.taxinvoiceService.Issue(testCorpNum, KeyType, mgtKey, memo, forceIssue, testUserID);
 
                 code = response.code.ToString();
                 message = response.message;

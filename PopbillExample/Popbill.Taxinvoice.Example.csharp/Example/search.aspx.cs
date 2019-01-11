@@ -22,10 +22,9 @@ namespace Popbill.Taxinvoice
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 검색조건을 사용하여 세금계산서 목록을 조회합니다.
-            * - 응답항목에 대한 자세한 사항은 "[전자세금계산서 API 연동매뉴얼] >
-            *   4.2. (세금)계산서 상태정보 구성" 을 참조하시기 바랍니다.
-            */
+             * 검색조건을 사용하여 세금계산서 목록을 조회합니다.
+             * - 응답항목에 대한 자세한 사항은 "[전자세금계산서 API 연동매뉴얼] > 4.2. (세금)계산서 상태정보 구성" 을 참조하시기 바랍니다.
+             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
@@ -41,10 +40,10 @@ namespace Popbill.Taxinvoice
             String DType = "W";
 
             // [필수] 시작일자, 날자형식(yyyyMMdd)
-            String SDate = "20171101";
+            String SDate = "20190101";
 
             // [필수] 종료일자, 날자형식(yyyyMMdd)
-            String EDate = "20171231";
+            String EDate = "20190111";
 
             // 상태코드 배열, 미기재시 전체 상태조회, 문서상태 값 3자리의 배열, 2,3번째 자리에 와일드카드 가능
             String[] State = new String[3];

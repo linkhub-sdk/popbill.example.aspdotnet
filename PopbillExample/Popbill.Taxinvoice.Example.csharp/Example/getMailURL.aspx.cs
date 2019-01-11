@@ -22,9 +22,9 @@ namespace Popbill.Taxinvoice.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 공급받는자 메일링크 URL을 반환합니다.
-            * - 메일링크 URL은 유효시간이 존재하지 않습니다.
-            */
+             * 공급받는자 메일링크 URL을 반환합니다.
+             * - 메일링크 URL은 유효시간이 존재하지 않습니다.
+             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
@@ -36,7 +36,7 @@ namespace Popbill.Taxinvoice.Example
             MgtKeyType KeyType = MgtKeyType.SELL;
 
             // 세금계산서 문서관리번호
-            String mgtKey = "20170314-05";
+            String mgtKey = "20190111-001";
 
             try
             {

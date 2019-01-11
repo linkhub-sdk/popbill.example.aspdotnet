@@ -21,8 +21,8 @@ namespace Popbill.Taxinvoice.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 팝빌에 등록된 공인인증서의 유효성을 확인한다.
-            */
+             * 팝빌에 등록된 공인인증서의 유효성을 확인합니다.
+             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
