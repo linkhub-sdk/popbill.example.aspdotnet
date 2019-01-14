@@ -12,7 +12,7 @@
 	<p class="heading1">Response</p>
 	<br/>
 	<fieldset class="fieldset1">
-		<legend>홈택스연계 공인인증서 등록 URL 확인</legend>
+		<legend>홈택스 인증정보 설정 팝업 URL</legend>
 		<ul>
 			<% if (!String.IsNullOrEmpty(code)) { %>
 				<li>Response.code : <%= code %> </li>
