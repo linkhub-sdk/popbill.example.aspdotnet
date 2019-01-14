@@ -21,6 +21,12 @@ namespace Popbill.HomeTax.Cashbill.Example
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            /**
+             * 전자세금계산서 매입/매출 내역의 수집 결과 요약정보를 조회합니다.
+             * - 응답항목에 관한 정보는 "[홈택스연동 (전자세금계산서계산서) API 연동매뉴얼] >
+             *   3.2.2. Summary(수집 결과 요약정보 조회)" 을 참고하시기 바랍니다.
+             */
+            
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 

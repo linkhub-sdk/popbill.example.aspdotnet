@@ -22,11 +22,11 @@ namespace Popbill.HomeTax.Cashbill.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 현금영수증 매출/매입 내역 수집을 요청합니다
-            * - 매출/매입 연계 프로세스는 "[홈택스 현금영수증 연계 API 연동매뉴얼]
-            *   > 1.2. 프로세스 흐름도" 를 참고하시기 바랍니다.
-            * - 수집 요청후 반환받은 작업아이디(JobID)의 유효시간은 1시간 입니다.
-            */
+             * 전자세금계산서 매출/매입 내역 수집을 요청합니다
+             * - 홈택스연동 프로세스는 "[홈택스연동(전자세금계산서계산서) API 연동매뉴얼] >
+             *   1.1. 홈택스연동(전자세금계산서) API 구성" 을 참고하시기 바랍니다.
+             * - 수집 요청후 반환받은 작업아이디(JobID)의 유효시간은 1시간 입니다.
+             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
@@ -35,10 +35,10 @@ namespace Popbill.HomeTax.Cashbill.Example
             KeyType tiKeyType = KeyType.BUY;
 
             // 시작일자, 표시형식(yyyyMMdd)
-            String SDate = "20170101";
+            String SDate = "20190101";
 
             // 종료일자, 표시형식(yyyyMMdd)
-            String EDate = "20170701";
+            String EDate = "20190114";
 
             try
             {
