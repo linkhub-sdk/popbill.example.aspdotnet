@@ -2,10 +2,10 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml" >
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
     <title>팝빌 카카오톡 SDK ASP.NET Example</title>
-    <link href="Example.css" rel="stylesheet" type="text/css" />
+    <link href="Example.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="content">
@@ -36,53 +36,46 @@
     </fieldset>
     <br/>
     <fieldset class="fieldset1">
-        <legend>알림톡 전송</legend>
-        <ul>
-            <li><a href="Example/sendATS_one.aspx">sendATS</a> - 알림톡 단건 전송</li>
-            <li><a href="Example/sendATS_same.aspx">sendATS</a> - 알림톡 동일내용 대량 전송</li>
-            <li><a href="Example/sendATS_multi.aspx">sendATS</a> - 알림톡 개별내용 대량 전송</li>
-        </ul>
-    </fieldset>
-    <br/>
-    <fieldset class="fieldset1">
-        <legend>친구톡 텍스트 전송</legend>
-        <ul>
-            <li><a href="Example/sendFTS_one.aspx">sendFTS</a> - 친구톡 텍스트 단건 전송</li>
-            <li><a href="Example/sendFTS_same.aspx">sendFTS</a> - 친구톡 텍스트 동일내용 대량전송</li>
-            <li><a href="Example/sendFTS_multi.aspx">sendFTS</a> - 친구톡 텍스트 개별내용 대량전송</li>
-        </ul>
-    </fieldset>
-    <br/>
-    <fieldset class="fieldset1">
-        <legend>친구톡 이미지 전송</legend>
-        <ul>
-            <li><a href="Example/sendFMS_one.aspx">sendFMS</a> - 친구톡 이미지 단건 전송</li>
-            <li><a href="Example/sendFMS_same.aspx">sendFMS</a> - 친구톡 이미지 동일내용 대량전송</li>
-            <li><a href="Example/sendFMS_multi.aspx">sendFMS</a> - 친구톡 이미지 개별내용 대량전송</li>
-        </ul>
+        <fieldset class="fieldset2">
+            <legend>알림톡 전송</legend>
+            <ul>
+                <li><a href="Example/sendATS_one.aspx">sendATS</a> - 알림톡 단건 전송</li>
+                <li><a href="Example/sendATS_same.aspx">sendATS</a> - 알림톡 동일내용 대량 전송</li>
+                <li><a href="Example/sendATS_multi.aspx">sendATS</a> - 알림톡 개별내용 대량 전송</li>
+            </ul>
+        </fieldset>
+        <fieldset class="fieldset2">
+            <legend>친구톡 텍스트 전송</legend>
+            <ul>
+                <li><a href="Example/sendFTS_one.aspx">sendFTS</a> - 친구톡 텍스트 단건 전송</li>
+                <li><a href="Example/sendFTS_same.aspx">sendFTS</a> - 친구톡 텍스트 동일내용 대량전송</li>
+                <li><a href="Example/sendFTS_multi.aspx">sendFTS</a> - 친구톡 텍스트 개별내용 대량전송</li>
+            </ul>
+        </fieldset>
+        <fieldset class="fieldset2">
+            <legend>친구톡 이미지 전송</legend>
+            <ul>
+                <li><a href="Example/sendFMS_one.aspx">sendFMS</a> - 친구톡 이미지 단건 전송</li>
+                <li><a href="Example/sendFMS_same.aspx">sendFMS</a> - 친구톡 이미지 동일내용 대량전송</li>
+                <li><a href="Example/sendFMS_multi.aspx">sendFMS</a> - 친구톡 이미지 개별내용 대량전송</li>
+            </ul>
+        </fieldset>
+        <fieldset class="fieldset2">
+            <legend>예약전송 취소</legend>
+            <ul>
+                <li><a href="Example/cancelReserve.aspx">cancelReserve</a> - 예약전송 취소</li>
+                <li><a href="Example/cancelReserveRN.aspx">cancelReserveRN</a> - 예약전송 취소 (요청번호 할당)</li>
+            </ul>
+        </fieldset>
     </fieldset>
     <br/>
     <fieldset class="fieldset1">
         <legend>정보확인</legend>
         <ul>
+            <li><a href="Example/getMessages.aspx">getMessages</a> - 알림톡/친구톡 전송내역 확인</li>
+            <li><a href="Example/getMessagesRN.aspx">getMessagesRN</a> - 알림톡/친구톡 전송내역 확인 (요청번호 할당)</li>
             <li><a href="Example/search.aspx">search</a> - 전송내역 목록 조회</li>
             <li><a href="Example/getSentListURL.aspx">getSentListURL</a> - 카카오톡 전송내역 팝업 URL</li>
-        </ul>
-    </fieldset>
-    <br/>
-    <fieldset class="fieldset1">
-        <legend>접수번호 관련 기능 (요청번호 미할당)</legend>
-        <ul>
-            <li><a href="Example/getMessages.aspx">getMessages</a> - 알림톡/친구톡 전송내역 확인</li>
-            <li><a href="Example/cancelReserve.aspx">cancelReserve</a> - 예약전송 취소</li>
-        </ul>
-    </fieldset>
-    <br/>
-    <fieldset class="fieldset1">
-        <legend>요청번호 할당 전송건 관련 기능</legend>
-        <ul>
-            <li><a href="Example/getMessagesRN.aspx">getMessagesRN</a> - 알림톡/친구톡 전송내역 확인</li>
-            <li><a href="Example/cancelReserveRN.aspx">cancelReserveRN</a> - 예약전송 취소</li>
         </ul>
     </fieldset>
     <br/>

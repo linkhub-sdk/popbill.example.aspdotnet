@@ -22,6 +22,11 @@ namespace Popbill.Kakao.Example
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            /**
+             * [대량전송] 알림톡 전송을 요청합니다.
+             * 사전에 승인된 템플릿의 내용과 알림톡 전송내용(content)이 다를 경우 전송실패 처리됩니다.
+             */
+            
             // 팝빌회원 사업자번호
             String testCorpNum = "1234567890";
 

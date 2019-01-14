@@ -22,6 +22,12 @@ namespace Popbill.Kakao.Example
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            /**
+             * [동보전송] 친구톡(이미지) 전송을 요청합니다.
+             * - 친구톡은 심야 전송(20:00~08:00)이 제한됩니다.
+             * - 이미지 전송규격 / jpg 포맷, 용량 최대 500KByte, 이미지 높이/너비 비율 1.333 이하, 1/2 이상
+             */
+                        
             // 팝빌회원 사업자번호
             String testCorpNum = "1234567890";
 

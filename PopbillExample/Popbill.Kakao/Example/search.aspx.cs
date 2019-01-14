@@ -30,10 +30,10 @@ namespace Popbill.Kakao.Example
 
             // 최대 검색기한 : 6개월 이내
             // 시작일자, 날자형식(yyyyMMdd)
-            String SDate = "20180601";
+            String SDate = "20190101";
 
             // 종료일자, 날자형식(yyyyMMdd)
-            String EDate = "20180731";
+            String EDate = "20190114";
 
             // 전송상태값 배열, 0-대기, 1-전송중, -2-성공, 3-대체, 4-실패, 5-취소
             String[] State = new String[6];

@@ -22,6 +22,11 @@ namespace Popbill.Kakao.Example
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            /**
+             * [동보전송] 친구톡(텍스트) 전송을 요청합니다.
+             * - 친구톡은 심야 전송(20:00~08:00)이 제한됩니다.
+             */
+            
             // 팝빌회원 사업자번호
             String testCorpNum = "1234567890";
 
