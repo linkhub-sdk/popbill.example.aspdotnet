@@ -23,6 +23,12 @@ namespace Popbill.Message.Example
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            /**
+            * [대량전송] LMS(장문)를 전송합니다.
+            *  - 메시지 내용이 2,000Byte 초과시 메시지 내용은 자동으로 제거됩니다.
+            *  - 단건/대량 전송에 대한 설명은 "[문자 API 연동매뉴얼] > 3.2.2 SendLMS(장문전송)"을 참조하시기 바랍니다.
+            */
+            
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 

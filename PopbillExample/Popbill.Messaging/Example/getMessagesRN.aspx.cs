@@ -30,7 +30,7 @@ namespace Popbill.Message.Example
             String testCorpNum = "1234567890";
 
             // 문자전송시 할당한 요청번호
-            String requestNum = "20180905-02";
+            String requestNum = "20190114-002";
 
             try
             {
