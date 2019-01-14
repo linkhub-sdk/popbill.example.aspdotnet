@@ -26,7 +26,7 @@ namespace Popbill.Fax.Example
             String testCorpNum = "1234567890";
 
             // 팩스 전송시 기재한 요청번호
-            String requestNum = "20180929225651";
+            String requestNum = "20190114-001";
 
             try
             {

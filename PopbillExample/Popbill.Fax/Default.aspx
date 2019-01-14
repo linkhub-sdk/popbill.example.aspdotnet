@@ -2,10 +2,10 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml" >
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
     <title>팝빌 팩스 SDK ASP.NET Example</title>
-    <link href="./Example.css" rel="stylesheet" type="text/css" />
+    <link href="./Example.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="content">
@@ -24,32 +24,20 @@
         <ul>
             <li><a href="Example/sendFAX.aspx">sendFAX</a> - 팩스 전송</li>
             <li><a href="Example/sendFAX_Multi.aspx">sendFAX</a> - 팩스 동보전송</li>
+            <li><a href="Example/resendFAX.aspx">resendFAX</a> - 팩스 재전송</li>
+            <li><a href="Example/resendFAXRN.aspx">resendFAX</a> - 팩스 재전송 (요청번호 할당)</li>
+            <li><a href="Example/resendFAX_Multi.aspx">resendFAX</a> - 팩스 동보재전송</li>
+            <li><a href="Example/resendFAXRN_Multi.aspx">resendFAX</a> - 팩스 동보재전송 (요청번호 할당)</li>
+            <li><a href="Example/cancelReserve.aspx">cancelReserve</a> - 예약전송 취소</li>
+            <li><a href="Example/cancelReserveRN.aspx">cancelReserveRN</a> - 예약전송 취소 (요청번호 할당)</li>
         </ul>
     </fieldset>
     <br/>
     <fieldset class="fieldset1">
-        <legend>접수번호 관련 기능 (요청번호 미할당</legend>
+        <legend>정보확인</legend>
         <ul>
             <li><a href="Example/getFaxResult.aspx">getFaxResult</a> - 전송내역 및 전송상태 확인</li>
-            <li><a href="Example/cancelReserve.aspx">cancelReserve</a> - 예약전송 취소</li>
-            <li><a href="Example/resendFAX.aspx">resendFAX</a> - 팩스 재전송</li>
-            <li><a href="Example/resendFAX_Multi.aspx">resendFAX</a> - 팩스 동보재전송</li>
-        </ul>
-    </fieldset>
-    <br/>
-    <fieldset class="fieldset1">
-        <legend>요청번호 할당 전송건 관련 기능</legend>
-        <ul>
-            <li><a href="Example/getFaxResultRN.aspx">getFaxResultRN</a> - 전송내역 및 전송상태 확인</li>
-            <li><a href="Example/cancelReserveRN.aspx">cancelReserveRN</a> - 예약전송 취소</li>
-            <li><a href="Example/resendFAXRN.aspx">resendFAX</a> - 팩스 재전송</li>
-            <li><a href="Example/resendFAXRN_Multi.aspx">resendFAX</a> - 팩스 동보재전송</li>
-        </ul>
-    </fieldset>
-    <br/>
-    <fieldset class="fieldset1">
-        <legend>팩스전송 목록조회</legend>
-        <ul>
+            <li><a href="Example/getFaxResultRN.aspx">getFaxResultRN</a> - 전송내역 및 전송상태 확인 (요청번호 할당)</li>
             <li><a href="Example/search.aspx">search</a> - 전송내역 목록 조회</li>
             <li><a href="Example/getSentListURL.aspx">getSentListURL</a> - 팩스 전송내역 팝업 URL</li>
             <li><a href="Example/getPreviewURL.aspx">getPreviewURL</a> - 팩스 미리보기 팝업 URL</li>
