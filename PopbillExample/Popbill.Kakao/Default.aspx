@@ -83,12 +83,12 @@
     <fieldset class="fieldset1">
         <legend>포인트관리</legend>
         <ul>
-            <li><a href="Example/getUnitCost.aspx">getUnitCost</a> - 전송단가 확인</li>
-            <li><a href="Example/getChargeInfo.aspx">getChargeInfo</a> - 과금정보 확인</li>
             <li><a href="Example/getBalance.aspx">getBalance</a> - 연동회원 잔여포인트 확인</li>
             <li><a href="Example/getChargeURL.aspx">getChargeURL</a> 연동회원 포인트충전 URL</li>
             <li><a href="Example/getPartnerBalance.aspx">getPartnerBalance</a> - 파트너 잔여포인트 확인</li>
             <li><a href="Example/getPartnerURL.aspx">getPartnerURL</a> - 파트너 포인트충전 URL</li>
+            <li><a href="Example/getUnitCost.aspx">getUnitCost</a> - 전송단가 확인</li>
+            <li><a href="Example/getChargeInfo.aspx">getChargeInfo</a> - 과금정보 확인</li>
         </ul>
     </fieldset>
     <br/>
