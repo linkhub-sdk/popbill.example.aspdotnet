@@ -36,6 +36,7 @@
     </fieldset>
     <br/>
     <fieldset class="fieldset1">
+        <legend>알림톡 / 친구톡 전송</legend>
         <fieldset class="fieldset2">
             <legend>알림톡 전송</legend>
             <ul>
