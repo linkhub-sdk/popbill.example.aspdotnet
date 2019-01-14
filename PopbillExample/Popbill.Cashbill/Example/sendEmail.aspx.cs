@@ -31,7 +31,7 @@ namespace Popbill.Cashbill.Example
             String testUserID = "testkorea";
 
             // 현금영수증 문서관리번호
-            String mgtKey = "20170316-02";
+            String mgtKey = "20190114-001";
 
             // 수신메일주소
             String receiveEmail = "test@test.com";

@@ -22,16 +22,15 @@ namespace Popbill.Cashbill.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 현금영수증 1건의 상세정보를 조회합니다.
-            * - 응답항목에 대한 자세한 사항은 "[현금영수증 API 연동매뉴얼] > 4.1.
-            *   현금영수증 구성" 을 참조하시기 바랍니다.
-            */
+             * 현금영수증 1건의 상세정보를 조회합니다.
+             * - 응답항목에 대한 자세한 사항은 "[현금영수증 API 연동매뉴얼] > 4.1. 현금영수증 구성" 을 참조하시기 바랍니다.
+             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
             // 현금영수증 문서관리번호
-            String mgtKey = "20180903_01";
+            String mgtKey = "20190114-001";
 
             try
             {

@@ -21,10 +21,10 @@ namespace Popbill.Cashbill.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 1건의 현금영수증을 삭제합니다.
-            * - 현금영수증을 삭제하면 사용된 문서관리번호(mgtKey)를 재사용할 수 있습니다.
-            * - 삭제가능한 문서 상태 : [임시저장], [발행취소]
-            */
+             * 1건의 현금영수증을 [삭제]합니다.
+             * - 현금영수증을 삭제하면 사용된 문서관리번호(mgtKey)를 재사용할 수 있습니다.
+             * - 삭제가능한 문서 상태 : [임시저장], [발행취소]
+             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
@@ -33,7 +33,7 @@ namespace Popbill.Cashbill.Example
             String testUserID = "testkorea";
 
             // 현금영수증 문서관리번호
-            String mgtKey = "20170316-01";
+            String mgtKey = "20190114-001";
 
             try
             {

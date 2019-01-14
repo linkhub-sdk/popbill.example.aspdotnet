@@ -21,15 +21,11 @@ namespace Popbill.Cashbill.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 1건의 현금영수증을 임시저장 합니다.
-            * - [임시저장] 상태의 현금영수증은 발행(Issue API)을 호출해야만 국세청에
-            *   전송됩니다.
-            * - 발행일 기준 오후 5시 이전에 발행된 현금영수증은 다음날 오후 2시에 국세청
-            *   전송결과를 확인할 수 있습니다.
-            * - 현금영수증 국세청 전송 정책에 대한 정보는 "[현금영수증 API 연동매뉴얼]
-            *   > 1.4. 국세청 전송정책"을 참조하시기 바랍니다.
-            * - 취소현금영수증 작성방법 안내 - http://blog.linkhub.co.kr/702
-            */
+             * 1건의 현금영수증을 [임시저장]합니다.
+             * - [임시저장] 상태의 현금영수증은 발행(Issue API)을 호출해야만 국세청에 전송됩니다.
+             * - 발행일 기준 오후 5시 이전에 발행된 현금영수증은 다음날 오후 2시에 국세청 전송결과를 확인할 수 있습니다.
+             * - 현금영수증 국세청 전송 정책에 대한 정보는 "[현금영수증 API 연동매뉴얼] > 1.3. 국세청 전송정책"을 참조하시기 바랍니다.
+             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
@@ -38,8 +34,7 @@ namespace Popbill.Cashbill.Example
             String testUserID = "testkorea";
 
             // 현금영수증 문서관리번호
-            String mgtKey = "20180905_01";
-
+            String mgtKey = "20190114-001";
 
             // 현금영수증 정보 객체
             Cashbill cashbill = new Cashbill();

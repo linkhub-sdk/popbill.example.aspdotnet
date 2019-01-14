@@ -29,7 +29,7 @@ namespace Popbill.Cashbill.Example
             String testCorpNum = "1234567890";
 
             // 현금영수증 문서관리번호
-            String mgtKey = "20170316-01";
+            String mgtKey = "20190114-001";
 
             try
             {

@@ -22,11 +22,9 @@ namespace Popbill.Cashbill.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 검색조건을 사용하여 현금영수증 목록을 조회합니다.
-            * - 응답항목에 대한 자세한 사항은 "[현금영수증 API 연동매뉴얼] >
-            *   4.2. 현금영수증 상태정보 구성" 을 참조하시기 바랍니다.
-            */
-
+             * 검색조건을 사용하여 현금영수증 목록을 조회합니다.
+             * - 응답항목에 대한 자세한 사항은 "[현금영수증 API 연동매뉴얼] > 4.2. 현금영수증 상태정보 구성" 을 참조하시기 바랍니다.
+             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
@@ -35,10 +33,10 @@ namespace Popbill.Cashbill.Example
             String DType = "T";
 
             // 시작일자
-            String SDate = "20180901";
+            String SDate = "20190101";
 
             // 종료일자
-            String EDate = "20180905";
+            String EDate = "20190114";
 
             // 상태코드 배열, 2,3번째 자리에 와일드카드(*) 사용가능
             // - 상태코드에 대한 자세한 사항은 "[현금영수증 API 연동매뉴얼] >

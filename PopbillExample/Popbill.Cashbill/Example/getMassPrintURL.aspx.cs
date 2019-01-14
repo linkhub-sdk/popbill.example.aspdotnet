@@ -23,9 +23,9 @@ namespace Popbill.Cashbill.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 대량의 현금영수증 인쇄팝업 URL을 반환합니다. (최대 100건)
-            * 보안정책으로 인해 반환된 URL의 유효시간은 30초입니다.
-            */
+             * 대량의 현금영수증 인쇄팝업 URL을 반환합니다. (최대 100건)
+             * 보안정책으로 인해 반환된 URL의 유효시간은 30초입니다.
+             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
@@ -36,12 +36,12 @@ namespace Popbill.Cashbill.Example
             List<string> MgtKeyList = new List<string>();
 
             // 현금영수증 문서관리번호 배열, 최대 100건.
-            MgtKeyList.Add("20170316-02");
-            MgtKeyList.Add("20161017-02");
-            MgtKeyList.Add("20161017-03");
-            MgtKeyList.Add("20161017-04");
-            MgtKeyList.Add("20161017-05");
-            MgtKeyList.Add("20161017-06");
+            MgtKeyList.Add("20190114-001");
+            MgtKeyList.Add("20190114-002");
+            MgtKeyList.Add("20190114-003");
+            MgtKeyList.Add("20190114-004");
+            MgtKeyList.Add("20190114-005");
+            MgtKeyList.Add("20190114-006");
 
             try
             {

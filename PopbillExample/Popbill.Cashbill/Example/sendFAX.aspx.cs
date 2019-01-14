@@ -21,11 +21,10 @@ namespace Popbill.Cashbill.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 현금영수증을 팩스전송합니다.
-            * - 팩스 전송 요청시 포인트가 차감됩니다. (전송실패시 환불처리)
-            * - 전송내역 확인은 "팝빌 로그인" > [문자 팩스] > [팩스] > [전송내역]
-            *   메뉴에서 전송결과를 확인할 수 있습니다.
-            */
+             * 현금영수증을 팩스전송합니다.
+             * - 팩스 전송 요청시 포인트가 차감됩니다. (전송실패시 환불처리)
+             * - 전송내역 확인은 "팝빌 로그인" > [문자 팩스] > [팩스] > [전송내역] 메뉴에서 전송결과를 확인할 수 있습니다.
+             */
 
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
@@ -35,7 +34,7 @@ namespace Popbill.Cashbill.Example
             String testUserID = "testkorea";
 
             // 현금영수증 문서관리번호
-            String mgtKey = "20170316-02";
+            String mgtKey = "20190114-001";
 
             // 발신번호
             String sendNum = "070-4304-2991";

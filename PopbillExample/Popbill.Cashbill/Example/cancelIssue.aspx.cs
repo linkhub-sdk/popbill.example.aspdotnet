@@ -21,10 +21,10 @@ namespace Popbill.Cashbill.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * [발행완료] 상태의 현금영수증을 [발행취소] 합니다.
-            * - 발행취소는 국세청 전송전에만 가능합니다.
-            * - 발행취소된 형금영수증은 국세청에 전송되지 않습니다.
-            */
+             * [발행완료] 상태의 현금영수증을 [발행취소]합니다.
+             * - 발행취소는 국세청 전송전에만 가능합니다.
+             * - 발행취소된 형금영수증은 국세청에 전송되지 않습니다.
+             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
@@ -33,7 +33,7 @@ namespace Popbill.Cashbill.Example
             String testUserID = "testkorea";
 
             // 현금영수증 문서관리번호
-            String mgtKey = "20170316-03";
+            String mgtKey = "20190114-001";
 
             // 메모
             String memo = "발행취소 메모";

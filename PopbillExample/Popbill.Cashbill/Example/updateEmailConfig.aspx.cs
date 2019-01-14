@@ -18,12 +18,17 @@ namespace Popbill.Cashbill.Example
         public String code = null;
         public String message = null;
 
-        //현금영수증 메일전송 항목에 대한 전송여부를 수정한다.
-        //메일전송유형
-        //CSH_ISSUE : 고객에게 현금영수증이 발행 되었음을 알려주는 메일 입니다.
-        //CSH_CANCEL : 고객에게 현금영수증 발행취소 되었음을 알려주는 메일 입니다.
         protected void Page_Load(object sender, EventArgs e)
         {
+            
+            /**
+             * 현금영수증 관련 메일전송 항목에 대한 전송여부를 수정합니다.
+             *
+             * 메일전송유형
+             * CSH_ISSUE : 고객에게 현금영수증이 발행 되었음을 알려주는 메일 입니다.
+             * CSH_CANCEL : 고객에게 현금영수증이 발행취소 되었음을 알려주는 메일 입니다.
+             */
+            
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
