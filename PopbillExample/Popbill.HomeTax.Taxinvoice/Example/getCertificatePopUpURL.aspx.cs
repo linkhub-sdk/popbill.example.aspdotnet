@@ -22,9 +22,10 @@ namespace Popbill.HomeTax.Taxinvoice.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 홈택스연계 공인인증서 등록 URL을 반환합니다.
-            * - 보안정책에 따라 반환된 URL은 30초의 유효시간을 갖습니다.
-            */
+             * 홈택스연동 인증관리를 위한 URL을 반환합니다.
+             * 인증방식에는 부서사용자/공인인증서 인증 방식이 있습니다.
+             * - 반환된 URL은 보안정책에 따라 30초의 유효시간을 갖습니다.
+             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
