@@ -32,7 +32,7 @@ namespace Popbill.Message.Example
             String testUserID = "testkorea";
 
             // 문자전송 요청시 발급받은 접수번호
-            String receiptNum = "017032011000000002";
+            String receiptNum = "019011516000000002";
 
             try
             {
