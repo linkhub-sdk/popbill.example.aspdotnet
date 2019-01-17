@@ -41,8 +41,8 @@
             <legend>전자명세서 보기/인쇄</legend>
             <ul>
                 <li><a href="Example/getPopUpURL.aspx">getPopUpURL</a> - 전자명세서 보기 URL</li>
-                <li><a href="Example/getPrintURL.aspx">getPrintURL</a> - 전자명세서 인쇄 [공급자] URL</li>
-                <li><a href="Example/getEPrintURL.aspx">getEPrintURL</a> - 전자명세서 인쇄 [공급받는자용] URL</li>
+                <li><a href="Example/getPrintURL.aspx">getPrintURL</a> - 전자명세서 인쇄 [발신자/수신자용] URL</li>
+                <li><a href="Example/getEPrintURL.aspx">getEPrintURL</a> - 전자명세서 인쇄 [수신자용] URL</li>
                 <li><a href="Example/getMassPrintURL.aspx">getMassPrintURL</a> - 전자명세서 대량 인쇄 URL</li>
                 <li><a href="Example/getMailURL.aspx">getMailURL</a> - 전자명세서 메일링크 URL</li>
             </ul>
