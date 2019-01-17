@@ -21,6 +21,12 @@ namespace Popbill.HomeTax.Cashbill.Example
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            /**
+             * 현금영수증 매입/매출 내역의 수집 결과를 조회합니다.
+             * - 응답항목에 관한 정보는 "[홈택스연동 (현금영수증) API 연동매뉴얼] >
+             *  3.2.1. Search(수집 결과 조회)" 을 참고하시기 바랍니다.
+             */
+            
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 

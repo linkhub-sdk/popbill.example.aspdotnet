@@ -22,7 +22,7 @@ namespace Popbill.HomeTax.Taxinvoice.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 세금계산서 1건의 팝업 보기 URL을 반환합니다.. 
+            * 세금계산서 1건의 팝업 보기 URL을 반환합니다.
             * - 반환된 URL은 보안정책에 따라 30초의 유효시간을 갖습니다.
             */
 

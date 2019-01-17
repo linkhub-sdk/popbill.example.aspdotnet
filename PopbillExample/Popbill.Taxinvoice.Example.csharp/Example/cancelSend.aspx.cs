@@ -21,7 +21,7 @@ namespace Popbill.Taxinvoice.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * [발행대기] 상태의 세금계산서를 [공급자]가 [취소]합니다.
+             * [승인대기] 상태의 세금계산서를 [공급자]가 [취소]합니다.
              * - [취소]된 세금계산서를 삭제(Delete API)하면 등록된 문서관리번호를 재사용할 수 있습니다.
              */
 

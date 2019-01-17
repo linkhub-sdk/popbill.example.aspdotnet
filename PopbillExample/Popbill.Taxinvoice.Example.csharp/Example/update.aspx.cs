@@ -189,9 +189,11 @@ namespace Popbill.Taxinvoice.Example
             taxinvoice.remark3 = "비고3";
 
             // 기재상 권 항목, 최대값 32767
+            // 미기재시 taxinvoice.kwon = null;
             taxinvoice.kwon = 1;
 
             // 기재상 호 항목, 최대값 32767
+            // 미기재시 taxinvoice.ho = null;
             taxinvoice.ho = 1;
 
 
@@ -214,8 +216,6 @@ namespace Popbill.Taxinvoice.Example
             // 수정세금계산서 작성시 원본세금계산서의 ItemKey기재
             // - 원본세금계산서의 ItemKey는 문서정보 (GetInfo API) 응답항목으로 확인할 수 있습니다.
             taxinvoice.originalTaxinvoiceKey = "";
-
-
 
             /**************************************************************************
              *                         상세항목(품목) 정보                            *
@@ -279,9 +279,6 @@ namespace Popbill.Taxinvoice.Example
             addContact2.contactName = "추가담당자명";   // 추가담당자 성명
 
             taxinvoice.addContactList.Add(addContact2);
-
-
-            
 
             try
             {

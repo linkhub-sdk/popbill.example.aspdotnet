@@ -18,7 +18,7 @@
 				<li>Response.code : <%= code %> </li>
 				<li>Response.message : <%= message %></li>
 			<% } else { %>
-				<li>unitCost (발행단가) : <%= chrgInfo.unitCost %></li>
+				<li>unitCost (조회단가) : <%= chrgInfo.unitCost %></li>
 				<li>chargeMethod (과금유형) : <%= chrgInfo.chargeMethod %></li>
 				<li>rateSystem (과금제도) : <%= chrgInfo.rateSystem %></li>
 			<% } %>

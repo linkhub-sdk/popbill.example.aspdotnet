@@ -38,7 +38,7 @@ namespace Popbill.Taxinvoice.Example
 
             List<string> MgtKeyList = new List<string>();
 
-            // 인쇄할 세금계산서 문서관리번호, (최대 1000건)
+            // 인쇄할 세금계산서 문서관리번호, (최대 100건)
             MgtKeyList.Add("20190111-001");
             MgtKeyList.Add("20190111-002");
             MgtKeyList.Add("20190111-003");

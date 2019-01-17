@@ -12,7 +12,7 @@
 	<p class="heading1">Response</p>
 	<br/>
 	<fieldset class="fieldset1">
-		<legend>카카오톡 전송내역 목록조회</legend>
+		<legend>알림톡/친구톡 전송내역 목록조회</legend>
 		<ul>
 			<% if (!String.IsNullOrEmpty(code)) { %>
 				<li>Response.code : <%= code %> </li>

@@ -36,7 +36,6 @@ namespace Popbill.Taxinvoice
             // 1~24자리 숫자, 영문, '-', '_' 조합으로 사업자별로 중복되지 않도록 구성
             String mgtKey = "20190111-001";
 
-
             // 세금계산서 정보 객체 
             Taxinvoice taxinvoice = new Taxinvoice();
 
@@ -188,11 +187,12 @@ namespace Popbill.Taxinvoice
             taxinvoice.remark3 = "비고3";
 
             // 기재상 권 항목, 최대값 32767
+            // 미기재시 taxinvoice.kwon = null;
             taxinvoice.kwon = 1;
 
             // 기재상 호 항목, 최대값 32767
+            // 미기재시 taxinvoice.ho = null;
             taxinvoice.ho = 1;
-
 
             // 사업자등록증 이미지 첨부여부
             taxinvoice.businessLicenseYN = false;
@@ -213,8 +213,6 @@ namespace Popbill.Taxinvoice
             // 수정세금계산서 작성시 원본세금계산서의 ItemKey기재
             // - 원본세금계산서의 ItemKey는 문서정보 (GetInfo API) 응답항목으로 확인할 수 있습니다.
             taxinvoice.originalTaxinvoiceKey = "";
-
-
 
             /**************************************************************************
              *                         상세항목(품목) 정보                            *

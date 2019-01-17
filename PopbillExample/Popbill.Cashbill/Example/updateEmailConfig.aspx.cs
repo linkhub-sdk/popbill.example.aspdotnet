@@ -20,7 +20,6 @@ namespace Popbill.Cashbill.Example
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            
             /**
              * 현금영수증 관련 메일전송 항목에 대한 전송여부를 수정합니다.
              *

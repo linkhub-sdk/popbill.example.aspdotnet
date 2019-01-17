@@ -183,11 +183,12 @@ namespace Popbill.Taxinvoice.Example
             taxinvoice.remark3 = "비고3";
 
             // 기재상 권 항목, 최대값 32767
+            // 미기재시 taxinvoice.kwon = null;
             taxinvoice.kwon = 1;
 
             // 기재상 호 항목, 최대값 32767
+            // 미기재시 taxinvoice.ho = null;
             taxinvoice.ho = 1;
-
 
             // 사업자등록증 이미지 첨부여부
             taxinvoice.businessLicenseYN = false;

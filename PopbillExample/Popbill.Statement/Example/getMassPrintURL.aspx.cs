@@ -38,7 +38,7 @@ namespace Popbill.Statement
 
             List<string> mgtKeyList = new List<string>();
 
-            // 문서관리번호 배열, 최대 1000건
+            // 문서관리번호 배열, 최대 100건
             mgtKeyList.Add("20190111-001");
             mgtKeyList.Add("20190111-002");
             mgtKeyList.Add("20190111-003");

@@ -22,6 +22,11 @@ namespace Popbill.Fax.Example
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            /**
+             * 검색조건을 사용하여 카카오톡 전송내역을 조회합니다.
+             * - 최대 검색기한 : 6개월 이내
+             */
+            
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
