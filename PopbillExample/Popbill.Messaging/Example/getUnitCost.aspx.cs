@@ -23,8 +23,8 @@ namespace Popbill.Message.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 문자메시지 전송단가를 확인합니다.
-            */
+             * 문자메시지 전송단가를 확인합니다.
+             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";

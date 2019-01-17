@@ -46,7 +46,7 @@ namespace Popbill.Kakao.Example
             // 대체문자 메시지 내용
             String altContent = "대체문자 내용";
 
-            // 대체문자 유형, 공백-미전송, C-알림톡 내용, A-대체문자 내용
+            // 대체문자 유형, 공백-미전송, C-친구톡 내용, A-대체문자 내용
             String altSendType = "C";
 
             // 광고전송여부

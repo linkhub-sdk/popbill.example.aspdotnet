@@ -23,8 +23,8 @@ namespace Popbill.Message.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 080 서비스 수신거부 목록을 확인합니다.
-            */
+             * 080 서비스 수신거부 목록을 확인합니다.
+             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";

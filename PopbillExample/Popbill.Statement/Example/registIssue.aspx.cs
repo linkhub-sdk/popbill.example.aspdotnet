@@ -44,7 +44,6 @@ namespace Popbill.Statement.Example
             String memo = "즉시발행 메모";
 
 
-
             // 전자명세서 객체
             Statement statement = new Statement();
 
@@ -164,39 +163,39 @@ namespace Popbill.Statement.Example
 
             StatementDetail detail = new StatementDetail();
 
-            detail.serialNum = 1;               // 일련번호, 1부터 순차기재, 최대 99
-            detail.purchaseDT = "20190111";     // 거래일자
-            detail.itemName = "품목명";
-            detail.spec = "규격";
-            detail.qty = "1";                   // 수량
-            detail.unitCost = "100000";         // 단가
-            detail.supplyCost = "100000";       // 공급가액
-            detail.tax = "10000";               // 세액
-            detail.remark = "품목비고";
-            detail.spare1 = "spare1";
-            detail.spare1 = "spare2";
-            detail.spare1 = "spare3";
-            detail.spare1 = "spare4";
-            detail.spare1 = "spare5";
+            detail.serialNum = 1; // 일련번호, 1부터 순차기재, 최대 99
+            detail.purchaseDT = "20190111"; // 거래일자
+            detail.itemName = "품목명"; // 품목명
+            detail.spec = "규격"; // 규격
+            detail.qty = "1"; // 수량
+            detail.unitCost = "100000"; // 단가
+            detail.supplyCost = "100000"; // 공급가액
+            detail.tax = "10000"; // 세액
+            detail.remark = "품목비고"; // 비고
+            detail.spare1 = "spare1"; //여분1
+            detail.spare1 = "spare2"; //여분2
+            detail.spare1 = "spare3"; //여분3
+            detail.spare1 = "spare4"; //여분4
+            detail.spare1 = "spare5"; //여분5
 
             statement.detailList.Add(detail);
 
             detail = new StatementDetail();
 
-            detail.serialNum = 2;               // 일련번호, 1부터 순차기재, 최대 99
-            detail.purchaseDT = "20190111";     // 거래일자
-            detail.itemName = "품목명";
-            detail.spec = "규격";
-            detail.qty = "1";                   // 수량
-            detail.unitCost = "100000";         // 단가
-            detail.supplyCost = "100000";       // 공급가액
-            detail.tax = "10000";               // 세액
-            detail.remark = "품목비고";
-            detail.spare1 = "spare1";
-            detail.spare1 = "spare2";
-            detail.spare1 = "spare3";
-            detail.spare1 = "spare4";
-            detail.spare1 = "spare5";
+            detail.serialNum = 2; // 일련번호, 1부터 순차기재, 최대 99
+            detail.purchaseDT = "20190111"; // 거래일자
+            detail.itemName = "품목명"; // 품목명
+            detail.spec = "규격"; // 규격
+            detail.qty = "1"; // 수량
+            detail.unitCost = "100000"; // 단가
+            detail.supplyCost = "100000"; // 공급가액
+            detail.tax = "10000"; // 세액
+            detail.remark = "품목비고"; // 비고
+            detail.spare1 = "spare1"; //여분1
+            detail.spare1 = "spare2"; //여분2
+            detail.spare1 = "spare3"; //여분3
+            detail.spare1 = "spare4"; //여분4
+            detail.spare1 = "spare5"; //여분5
 
             statement.detailList.Add(detail);
 
@@ -204,9 +203,9 @@ namespace Popbill.Statement.Example
             // 추가속성항목, 자세한사항은 "전자명세서 API 연동매뉴얼> 5.2 기본양식 추가속성 테이블" 참조. 
             statement.propertyBag = new propertyBag();
 
-            statement.propertyBag.Add("Balance", "15000");          // 전잔액
-            statement.propertyBag.Add("Deposit", "5000");           // 입금액
-            statement.propertyBag.Add("CBalance", "20000");         // 현잔액
+            statement.propertyBag.Add("Balance", "15000"); // 전잔액
+            statement.propertyBag.Add("Deposit", "5000"); // 입금액
+            statement.propertyBag.Add("CBalance", "20000"); // 현잔액
 
             try
             {

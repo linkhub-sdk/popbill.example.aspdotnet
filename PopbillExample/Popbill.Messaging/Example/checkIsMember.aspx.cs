@@ -21,9 +21,9 @@ namespace Popbill.Message.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 해당 사업자의 파트너 연동회원 가입여부를 확인합니다.
-            * - LinkID는 파트너에 할당된 링크아이디를 기재합니다.
-            */
+             * 해당 사업자의 파트너 연동회원 가입여부를 확인합니다.
+             * - LinkID는 파트너에 할당된 링크아이디를 기재합니다.
+             */
 
             // 조회할 사업자번호
             String testCorpNum = "1234567890";

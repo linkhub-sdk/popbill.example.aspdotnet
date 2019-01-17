@@ -32,7 +32,7 @@ namespace Popbill.Cashbill.Example
 
             // [필수] 문서관리번호, 사업자별로 중복되지 않도록 관리번호 할당
             // 1~24자리 영문,숫자,'-','_' 조합 구성
-            String mgtKey = "20190114-001";
+            String mgtKey = "20190117-001";
 
             // 원본현금영수증 승인번호, 문서정보 확인(GetInfo API)로 확인가능
             String orgConfirmNum = "548757045";

@@ -29,7 +29,7 @@ namespace Popbill.Kakao.Example
             // 팝빌에 사전 등록된 발신번호
             String senderNum = "07043042991";
 
-            // 대체문자 유형, 공백-미전송, C-알림톡 내용, A-대체문자 내용
+            // 대체문자 유형, 공백-미전송, C-친구톡 내용, A-대체문자 내용
             String altSendType = "C";
 
             // 광고전송여부

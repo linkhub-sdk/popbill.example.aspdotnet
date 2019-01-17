@@ -28,7 +28,7 @@ namespace Popbill.Taxinvoice.Example
              * - 역발행 즉시요청후 공급자가 [발행] 처리시 포인트가 차감되며 역발행 세금계산서 항목중 과금방향(ChargeDirection)에 기재한 값에 따라
              *   정과금(공급자과금) 또는 역과금(공급받는자과금) 처리됩니다.
              */
-            
+
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
@@ -211,7 +211,6 @@ namespace Popbill.Taxinvoice.Example
             taxinvoice.originalTaxinvoiceKey = "";
 
 
-
             /**************************************************************************
              *                         상세항목(품목) 정보                            *
              * - 상세항목 정보는 세금계산서 필수기재사항이 아니므로 작성하지 않더라도 *
@@ -223,29 +222,29 @@ namespace Popbill.Taxinvoice.Example
 
             TaxinvoiceDetail detail = new TaxinvoiceDetail();
 
-            detail.serialNum = 1;               // 일련번호, 1부터 순차기재 
-            detail.purchaseDT = "20190111";     // 거래일자
-            detail.itemName = "품목명";         // 품목명 
-            detail.spec = "규격";               // 규격
-            detail.qty = "1";                   // 수량
-            detail.unitCost = "50000";          // 단가
-            detail.supplyCost = "50000";        // 공급가액
-            detail.tax = "5000";                // 세액
-            detail.remark = "품목비고";
+            detail.serialNum = 1; // 일련번호, 1부터 순차기재 
+            detail.purchaseDT = "20190111"; // 거래일자
+            detail.itemName = "품목명"; // 품목명 
+            detail.spec = "규격"; // 규격
+            detail.qty = "1"; // 수량
+            detail.unitCost = "50000"; // 단가
+            detail.supplyCost = "50000"; // 공급가액
+            detail.tax = "5000"; // 세액
+            detail.remark = "품목비고"; // 비고
 
             taxinvoice.detailList.Add(detail);
 
             detail = new TaxinvoiceDetail();
 
-            detail.serialNum = 2;               // 일련번호, 1부터 순차기재 
-            detail.purchaseDT = "20190111";     // 거래일자
-            detail.itemName = "품목명";         // 품목명 
-            detail.spec = "규격";               // 규격
-            detail.qty = "1";                   // 수량
-            detail.unitCost = "50000";          // 단가
-            detail.supplyCost = "50000";        // 공급가액
-            detail.tax = "5000";                // 세액
-            detail.remark = "품목비고";
+            detail.serialNum = 2; // 일련번호, 1부터 순차기재 
+            detail.purchaseDT = "20190111"; // 거래일자
+            detail.itemName = "품목명"; // 품목명 
+            detail.spec = "규격"; // 규격
+            detail.qty = "1"; // 수량
+            detail.unitCost = "50000"; // 단가
+            detail.supplyCost = "50000"; // 공급가액
+            detail.tax = "5000"; // 세액
+            detail.remark = "품목비고"; // 비고
 
             taxinvoice.detailList.Add(detail);
 
@@ -261,17 +260,17 @@ namespace Popbill.Taxinvoice.Example
 
             TaxinvoiceAddContact addContact = new TaxinvoiceAddContact();
 
-            addContact.serialNum = 1;                   // 일련번호, 1부터 순차기재
-            addContact.email = "test2@invoicee.com";    // 추가담당자 메일주소 
-            addContact.contactName = "추가담당자명";    // 추가담당자 성명 
+            addContact.serialNum = 1; // 일련번호, 1부터 순차기재
+            addContact.email = "test2@invoicee.com"; // 추가담당자 메일주소 
+            addContact.contactName = "추가담당자명"; // 추가담당자 성명 
 
             taxinvoice.addContactList.Add(addContact);
 
             TaxinvoiceAddContact addContact2 = new TaxinvoiceAddContact();
 
-            addContact2.serialNum = 2;                  // 일련번호, 1부터 순차기재 
-            addContact2.email = "test2@invoicee.com";   // 추가담당자 메일주소
-            addContact2.contactName = "추가담당자명";   // 추가담당자 성명
+            addContact2.serialNum = 2; // 일련번호, 1부터 순차기재 
+            addContact2.email = "test2@invoicee.com"; // 추가담당자 메일주소
+            addContact2.contactName = "추가담당자명"; // 추가담당자 성명
 
             taxinvoice.addContactList.Add(addContact2);
 

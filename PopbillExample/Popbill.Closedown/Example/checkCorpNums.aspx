@@ -20,13 +20,13 @@
 			</ul>
 		<% } else { %>
 			<p class="info">> state (휴폐업상태) : null-알수없음, 0-등록되지 않은 사업자번호, 1-사업중, 2-폐업, 3-휴업</p>
-			<p class="info">> type (사업 유형) : null-알수없음, 1-일반과세자, 2-면세과세자, 3-간이과세자, 4-비영리법인, 국가기관</p>
+			<p class="info">> type (사업자 과세유형) : null-알수없음, 1-일반과세자, 2-면세과세자, 3-간이과세자, 4-비영리법인, 국가기관</p>
 			<% foreach (Popbill.Closedown.CorpState result in corpStateList)
 			   { %>
 				<fieldset class="fieldset2">
 					<ul>
 						<li>corpNum (사업자번호) : <%= result.corpNum %></li>
-						<li>type (사업자유형) : <%= result.type %></li>
+						<li>type (사업자 과세유형) : <%= result.type %></li>
 						<li>state (휴폐업상태) : <%= result.state %></li>
 						<li>stateDate (휴폐업일자) : <%= result.stateDate %></li>
 						<li>typeDate (과세유형 전환일자) : <%= result.typeDate %></li>

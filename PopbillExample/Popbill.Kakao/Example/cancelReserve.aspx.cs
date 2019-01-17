@@ -21,9 +21,9 @@ namespace Popbill.Kakao.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 예약전송을 취소합니다.
-            * - 예약취소는 예약전송시간 10분전까지만 가능합니다.
-            */
+             * 알림톡/친구톡 전송요청시 발급받은 접수번호(receiptNum)로 예약전송건을 취소합니다.
+             * - 예약취소는 예약전송시간 10분전까지만 가능합니다.
+             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";

@@ -22,7 +22,7 @@ namespace Popbill.Message.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 검색조건을 사용하여 카카오톡 전송내역을 조회합니다.
+             * 검색조건을 사용하여 메시지 전송내역을 조회합니다.
              * - 최대 검색기한 : 6개월 이내
              */
 

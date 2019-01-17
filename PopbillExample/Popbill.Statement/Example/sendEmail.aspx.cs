@@ -24,7 +24,6 @@ namespace Popbill.Statement.Example
              * 발행 안내메일을 재전송합니다.
              */
 
-
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 

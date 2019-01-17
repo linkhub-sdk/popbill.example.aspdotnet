@@ -12,13 +12,13 @@
 	<p class="heading1">Response</p>
 	<br/>
 	<fieldset class="fieldset1">
-		<legend>팩스 전송단가 확인</legend>
+		<legend>휴폐업 조회단가 확인</legend>
 		<ul>
 			<% if (!String.IsNullOrEmpty(code)) { %>
 				<li>Response.code : <%= code %> </li>
 				<li>Response.message : <%= message %></li>
 			<% } else { %>
-				<li>unitCost(전송단가) : <%= unitCost %></li>
+				<li>unitCost(조회단가) : <%= unitCost %></li>
 			<% } %>
 		</ul>
 	</fieldset>
