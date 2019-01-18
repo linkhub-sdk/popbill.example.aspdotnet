@@ -41,7 +41,7 @@ namespace Popbill.Message.Example
             // 동보 메시지 제목
             String subject = "동보 메시지 제목";
 
-            // 동보 메시지내용, 90byte 기준으로 단문/장문이 자동으로 인식되어 전송됨, 최대 2000byte
+            // 동보 메시지내용, 90byte 기준으로 단문/장문이 자동으로 인식되어 전송됨 (최대 2000byte)
             String contents = "동보 단문문자 메시지 내용";
 
             // 예약전송일시(yyyyMMddHHmmss), null인 경우 즉시전송
@@ -61,7 +61,7 @@ namespace Popbill.Message.Example
                 reserveDT = DateTime.ParseExact(reserveDTStr, "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture);
             }
 
-
+            // 수신자 정보 배열 (최대 1000건)
             List<Message> messages = new List<Message>();
             
             for (int i = 0; i < 100; i++)

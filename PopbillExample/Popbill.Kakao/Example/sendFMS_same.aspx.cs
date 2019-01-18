@@ -40,10 +40,10 @@ namespace Popbill.Kakao.Example
             // 팝빌에 사전 등록된 발신번호
             String senderNum = "07043042991";
 
-            // 친구톡 내용, 최대 1000자
+            // 친구톡 내용, 최대 400자
             String content = "친구톡 내용";
 
-            // 대체문자 메시지 내용
+            // 대체문자 내용 (최대 2000byte)
             String altContent = "대체문자 내용";
 
             // 대체문자 유형, 공백-미전송, C-친구톡 내용, A-대체문자 내용

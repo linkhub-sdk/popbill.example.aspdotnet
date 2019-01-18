@@ -32,7 +32,7 @@ namespace Popbill.Message.Example
             //팝빌회원 아이디
             String userID = "testkorea";
 
-            //문자전송 접수번호
+            //문자전송 접수번호 (최대 1000건)
             List<string> reciptNumList = new List<String>();
 
             reciptNumList.Add("018041717000000018");

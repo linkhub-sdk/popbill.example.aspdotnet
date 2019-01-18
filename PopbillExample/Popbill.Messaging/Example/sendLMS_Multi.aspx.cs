@@ -61,6 +61,7 @@ namespace Popbill.Message.Example
                 reserveDT = DateTime.ParseExact(reserveDTStr, "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture);
             }
 
+            // 수신자 정보 배열 (최대 1000건)
             List<Message> messages = new List<Message>();
 
             for (int i = 0; i < 10; i++)

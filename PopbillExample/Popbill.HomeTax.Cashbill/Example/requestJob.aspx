@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-	<title>팝빌 현금영수증 매입/매출 조회 API SDK ASP.NET Example</title>
+	<title>팝빌 홈택스 현금영수증 매입/매출 조회 API SDK ASP.NET Example</title>
 	<link href="../Example.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>

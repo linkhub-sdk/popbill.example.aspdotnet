@@ -59,10 +59,10 @@ namespace Popbill.Kakao.Example
             for (int i = 0; i < 5; i++)
             {
                 KakaoReceiver receiverInfo = new KakaoReceiver();
-                receiverInfo.rcv = "01011122" + i;
-                receiverInfo.rcvnm = "수신자명" + i.ToString();
-                receiverInfo.msg = "개별 친구톡 내용" + i.ToString();
-                receiverInfo.altmsg = "대체문자 전송내용" + i.ToString();
+                receiverInfo.rcv = "01011122" + i; // 수신번호
+                receiverInfo.rcvnm = "수신자명" + i.ToString(); // 수신자명
+                receiverInfo.msg = "개별 친구톡 내용" + i.ToString(); // 친구톡 내용 (최대 400자)
+                receiverInfo.altmsg = "대체문자 전송내용" + i.ToString(); // 대체문자 내용 (최대 2000byte)
                 receivers.Add(receiverInfo);
             }
 
