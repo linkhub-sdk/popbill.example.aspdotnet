@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Linq;
@@ -30,13 +31,18 @@ namespace Popbill.Kakao.Example
             String testCorpNum = "1234567890";
 
             // 알림톡 템플릿 코드, ListATSTemplate API의 templateCode 확인
-            String templateCode = "018030000066";
+            String templateCode = "019020000163";
 
             // 팝빌에 사전 등록된 발신번호
             String senderNum = "07043042991";
 
             // 알림톡 템플릿 내용, 최대 1000자
-            String content = "[테스트] 테스트 템플릿입니다.";
+            String content = "[ 팝빌 ]\n";
+            content += "신청하신 #{템플릿코드}에 대한 심사가 완료되어 승인 처리되었습니다.\n";
+            content += "해당 템플릿으로 전송 가능합니다.\n\n";
+            content += "문의사항 있으시면 파트너센터로 편하게 연락주시기 바랍니다.\n\n";
+            content += "팝빌 파트너센터 : 1600-8536\n";
+            content += "support@linkhub.co.kr".Replace("\n", Environment.NewLine);
 
             // 대체문자 메시지 내용 
             String altContent = "대체문자 메시지 내용";
@@ -63,10 +69,30 @@ namespace Popbill.Kakao.Example
                 reserveDT = DateTime.ParseExact(reserveDTStr, "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture);
             }
 
+            // 버튼정보를 수정하지 않고 템플릿 신청시 기재한 정보로 전송하는 경우 null 처리
+            List<KakaoButton> buttons = null;
+
+
+            // 버튼링크 URL 에 #{템플릿변수}를 기재하여 승인받은경우 URL 수정하여 전송
+            /*
+            List<KakaoButton> buttons = new List<KakaoButton>();
+            
+            KakaoButton btnInfo = new KakaoButton();
+            // 버튼명
+            btnInfo.n = "템플릿 안내";
+            // 버튼유형 DS(-배송조회 / WL - 웹링크 / AL - 앱링크 / MD - 메시지전달 / BK - 봇키워드)
+            btnInfo.t = "WL";
+            // 버튼링크1 [앱링크] Android / [웹링크] Mobile
+            btnInfo.u1 = "https://www.popbill.com";
+            // 버튼링크2 [앱링크] IOS / [웹링크] PC URL
+            btnInfo.u2 = "http://test.popbill.com";
+            buttons.Add(btnInfo);
+            */
+
             try
             {
                 receiptNum = Global.kakaoService.SendATS(testCorpNum, templateCode, senderNum, altSendType, reserveDT,
-                    receiverNum, receiverName, content, altContent, requestNum);
+                    receiverNum, receiverName, content, altContent, requestNum, buttons);
             }
             catch (PopbillException ex)
             {

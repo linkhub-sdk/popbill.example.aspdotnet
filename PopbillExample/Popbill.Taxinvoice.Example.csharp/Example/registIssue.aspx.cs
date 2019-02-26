@@ -284,7 +284,7 @@ namespace Popbill.Taxinvoice.Example
 
             try
             {
-                Response response = Global.taxinvoiceService.RegistIssue(testCorpNum, taxinvoice, forceIssue, memo);
+                IssueResponse response = Global.taxinvoiceService.RegistIssue(testCorpNum, taxinvoice, forceIssue, memo);
 
                 code = response.code.ToString();
                 message = response.message;

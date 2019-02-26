@@ -47,7 +47,7 @@ namespace Popbill.Taxinvoice
 
             try
             {
-                Response response =
+                IssueResponse response =
                     Global.taxinvoiceService.Issue(testCorpNum, KeyType, mgtKey, memo, forceIssue, testUserID);
 
                 code = response.code.ToString();
