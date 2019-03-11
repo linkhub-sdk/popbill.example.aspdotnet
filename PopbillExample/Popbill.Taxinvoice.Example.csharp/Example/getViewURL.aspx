@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="issue.aspx.cs" Inherits="Popbill.Taxinvoice.issue" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="getViewURL.aspx.cs" Inherits="Popbill.Taxinvoice.Example.getViewURL" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -12,15 +12,17 @@
 	<p class="heading1">Response</p>
 	<br/>
 	<fieldset class="fieldset1">
-		<legend>세금계산서 발행</legend>
+		<legend>세금계산서 보기 팝업 URL 확인</legend>
 		<ul>
-			<li>응답코드 (code)  : <%= code %></li>
-			<li>응답메시지 (message) : <%= message %></li>
-			<% if (!String.IsNullOrEmpty(ntsConfirmNum))      { %>
-			    <li>국세청승인번호 (ntsConfirmNum) : <%= ntsConfirmNum%></li>
-			<% }  %>
+			<% if (!String.IsNullOrEmpty(code)) { %>
+				<li>Response.code : <%= code %> </li>
+				<li>Response.message : <%= message %></li>
+			<% } else { %>
+				<li>url : <%= url %></li>
+			<% } %>
 		</ul>
 	</fieldset>
 </div>
 </body>
 </html>
+

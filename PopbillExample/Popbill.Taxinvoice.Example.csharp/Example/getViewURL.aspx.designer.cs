@@ -8,10 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Popbill.Taxinvoice {
+namespace Popbill.Taxinvoice.Example {
     
     
-    public partial class issue {
+    public partial class getViewURL {
         
         /// <summary>
         /// Head1 컨트롤입니다.

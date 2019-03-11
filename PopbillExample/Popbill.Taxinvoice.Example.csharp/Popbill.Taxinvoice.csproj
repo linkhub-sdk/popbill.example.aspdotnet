@@ -88,6 +88,7 @@
     <Content Include="Example\getPrintURL.aspx" />
     <Content Include="Example\getUnitCost.aspx" />
     <Content Include="Example\geturl.aspx" />
+    <Content Include="Example\getViewURL.aspx" />
     <Content Include="Example\joinMember.aspx" />
     <Content Include="Example\getChargeInfo.aspx" />
     <Content Include="Example\listContact.aspx" />
@@ -354,6 +355,13 @@
     </Compile>
     <Compile Include="Example\geturl.aspx.designer.cs">
       <DependentUpon>geturl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getViewURL.aspx.cs">
+      <DependentUpon>getViewURL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getViewURL.aspx.designer.cs">
+      <DependentUpon>getViewURL.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\joinMember.aspx.cs">
       <DependentUpon>joinMember.aspx</DependentUpon>

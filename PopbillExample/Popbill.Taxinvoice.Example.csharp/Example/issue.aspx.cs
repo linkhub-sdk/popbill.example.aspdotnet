@@ -17,6 +17,7 @@ namespace Popbill.Taxinvoice
     {
         public String code = null;
         public String message = null;
+        public String ntsConfirmNum = null;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -35,7 +36,7 @@ namespace Popbill.Taxinvoice
             MgtKeyType KeyType = MgtKeyType.SELL;
 
             // 세금계산서 문서관리번호
-            String mgtKey = "20190111-001";
+            String mgtKey = "20190311-06";
 
             // 메모
             String memo = "발행메모";
@@ -52,6 +53,7 @@ namespace Popbill.Taxinvoice
 
                 code = response.code.ToString();
                 message = response.message;
+                ntsConfirmNum = response.ntsConfirmNum;
             }
             catch (PopbillException ex)
             {

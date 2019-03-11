@@ -14,8 +14,11 @@
 	<fieldset class="fieldset1">
 		<legend>전자세금계산서 즉시발행</legend>
 		<ul>
-			<li>Response.code : <%= code %></li>
-			<li>Response.message : <%= message %></li>
+			<li>응답코드 (code)  : <%= code %></li>
+			<li>응답메시지 (message) : <%= message %></li>
+			<% if (!String.IsNullOrEmpty(ntsConfirmNum))      { %>
+			    <li>국세청승인번호 (ntsConfirmNum) : <%= ntsConfirmNum%></li>
+			<% }  %>
 		</ul>
 	</fieldset>
 </div>

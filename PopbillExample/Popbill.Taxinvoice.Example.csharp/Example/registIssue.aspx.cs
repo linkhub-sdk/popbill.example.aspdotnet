@@ -18,6 +18,7 @@ namespace Popbill.Taxinvoice.Example
     {
         public String code = null;
         public String message = null;
+        public String ntsConfirmNum = null;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -30,14 +31,14 @@ namespace Popbill.Taxinvoice.Example
             String testCorpNum = "1234567890";
 
             // 세금계산서 문서관리번호
-            String mgtKey = "20190111-001";
+            String mgtKey = "20190311-04";
 
 
             // 세금계산서 정보 객체 
             Taxinvoice taxinvoice = new Taxinvoice();
 
             // [필수] 기재상 작성일자, 날자형식(yyyyMMdd)
-            taxinvoice.writeDate = "20170314";
+            taxinvoice.writeDate = "20190311";
 
             // [필수] 과금방향, {정과금, 역과금}중 선택
             // - 정과금(공급자과금), 역과금(공급받는자과금)
@@ -288,6 +289,7 @@ namespace Popbill.Taxinvoice.Example
 
                 code = response.code.ToString();
                 message = response.message;
+                ntsConfirmNum = response.ntsConfirmNum;
             }
             catch (PopbillException ex)
             {

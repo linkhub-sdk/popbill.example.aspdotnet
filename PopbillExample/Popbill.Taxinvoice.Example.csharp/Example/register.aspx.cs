@@ -34,13 +34,13 @@ namespace Popbill.Taxinvoice
 
             // 세금계산서 문서관리번호
             // 1~24자리 숫자, 영문, '-', '_' 조합으로 사업자별로 중복되지 않도록 구성
-            String mgtKey = "20190111-001";
+            String mgtKey = "20190311-06";
 
             // 세금계산서 정보 객체 
             Taxinvoice taxinvoice = new Taxinvoice();
 
             // [필수] 기재상 작성일자, 날자형식(yyyyMMdd)
-            taxinvoice.writeDate = "20190111";
+            taxinvoice.writeDate = "20190311";
 
             // [필수] 과금방향, {정과금, 역과금}중 선택
             // - 정과금(공급자과금), 역과금(공급받는자과금)
