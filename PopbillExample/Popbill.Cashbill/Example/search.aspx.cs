@@ -33,10 +33,10 @@ namespace Popbill.Cashbill.Example
             String DType = "T";
 
             // 시작일자
-            String SDate = "20190101";
+            String SDate = "20190901";
 
             // 종료일자
-            String EDate = "20190114";
+            String EDate = "20191231";
 
             // 상태코드 배열, 2,3번째 자리에 와일드카드(*) 사용가능
             // - 상태코드에 대한 자세한 사항은 "[현금영수증 API 연동매뉴얼] >

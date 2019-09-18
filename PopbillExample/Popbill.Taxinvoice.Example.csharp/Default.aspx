@@ -15,16 +15,12 @@
         <fieldset class="fieldset1">
             <legend>정발행/역발행/위수탁발행</legend>
             <ul>
-                <li><a href="Example/checkMgtKeyInUse.aspx">checkMgtKeyInUse</a> - 관리번호 확인</li>
+                <li><a href="Example/checkMgtKeyInUse.aspx">checkMgtKeyInUse</a> - 문서번호 확인</li>
                 <li><a href="Example/registIssue.aspx">registIssue</a> - 즉시 발행</li>
                 <li><a href="Example/register.aspx">register</a> - 임시저장</li>
                 <li><a href="Example/update.aspx">update</a> - 수정</li>
                 <li><a href="Example/issue.aspx">issue</a> - 발행</li>
                 <li><a href="Example/cancelIssue.aspx">cancelIssue</a> - 발행취소</li>
-                <li><a href="Example/send.aspx">send</a> - [발행예정]</li>
-                <li><a href="Example/cancelSend.aspx">cancelSend</a> - [발행예정] 취소</li>
-                <li><a href="Example/accept.aspx">accept</a> - [발행예정] 승인</li>
-                <li><a href="Example/deny.aspx">deny</a> - [발행예정] 거부</li>
                 <li><a href="Example/delete.aspx">delete</a> - 삭제</li>
                 <li><a href="Example/registRequest.aspx">registRequest</a> - [역발행] 즉시 요청</li>
                 <li><a href="Example/request.aspx">request</a> - 역발행요청</li>

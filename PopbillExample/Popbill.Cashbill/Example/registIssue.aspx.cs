@@ -32,7 +32,7 @@ namespace Popbill.Cashbill.Example
             // 팝빌회원 아이디
             String testUserID = "testkorea";
 
-            // 현금영수증 문서관리번호
+            // 현금영수증 문서번호
             String mgtKey = "20190117-001";
 
             // 메모
@@ -42,7 +42,7 @@ namespace Popbill.Cashbill.Example
             // 현금영수증 정보 객체
             Cashbill cashbill = new Cashbill();
 
-            // [필수] 문서관리번호, 사업자별로 중복되지 않도록 관리번호 할당
+            // [필수] 문서번호, 사업자별로 중복되지 않도록 문서번호 할당
             // 1~24자리 영문,숫자,'-','_' 조합 구성
             cashbill.mgtKey = mgtKey;
 

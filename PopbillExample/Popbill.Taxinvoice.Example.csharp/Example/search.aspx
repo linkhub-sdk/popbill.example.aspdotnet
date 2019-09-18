@@ -41,7 +41,6 @@
 							<li>issueDT (발행일시) : <%= taxinvoiceInfo.issueDT %></li>
 							<li>lateIssueYN (지연발행 여부) : <%= taxinvoiceInfo.lateIssueYN %></li>
 							<li>interOPYN (연동문서 여부) : <%= taxinvoiceInfo.interOPYN %></li>
-							<li>preIssueDT (발행예정일시) : <%= taxinvoiceInfo.preIssueDT %></li>
 							<li>openYN (개봉 여부) : <%= taxinvoiceInfo.openYN %></li>
 							<li>openDT (개봉 일시) : <%= taxinvoiceInfo.openDT %></li>
 							<li>stateMemo (상태메모) : <%= taxinvoiceInfo.stateMemo %></li>

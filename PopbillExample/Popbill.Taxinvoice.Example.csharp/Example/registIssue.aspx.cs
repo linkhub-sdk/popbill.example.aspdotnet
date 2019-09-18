@@ -30,15 +30,15 @@ namespace Popbill.Taxinvoice.Example
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
-            // 세금계산서 문서관리번호
-            String mgtKey = "20190311-04";
+            // 세금계산서 문서번호
+            String mgtKey = "20190918-04";
 
 
             // 세금계산서 정보 객체 
             Taxinvoice taxinvoice = new Taxinvoice();
 
             // [필수] 기재상 작성일자, 날자형식(yyyyMMdd)
-            taxinvoice.writeDate = "20190311";
+            taxinvoice.writeDate = "20190918";
 
             // [필수] 과금방향, {정과금, 역과금}중 선택
             // - 정과금(공급자과금), 역과금(공급받는자과금)
@@ -72,7 +72,7 @@ namespace Popbill.Taxinvoice.Example
             // [필수] 공급자 상호
             taxinvoice.invoicerCorpName = "공급자 상호";
 
-            // [필수] 공급자 문서관리번호, 숫자, 영문, '-', '_' 조합으로 
+            // [필수] 공급자 문서번호, 숫자, 영문, '-', '_' 조합으로 
             //        1~24자리까지 사업자번호별 중복없는 고유번호 할당
             taxinvoice.invoicerMgtKey = mgtKey;
 
@@ -119,7 +119,7 @@ namespace Popbill.Taxinvoice.Example
             // [필수] 공급받는자 상호
             taxinvoice.invoiceeCorpName = "공급받는자 상호";
 
-            // [역발행시 필수] 공급받는자 문서관리번호, 숫자, 영문, '-', '_' 조합으로
+            // [역발행시 필수] 공급받는자 문서번호, 숫자, 영문, '-', '_' 조합으로
             // 1~24자리까지 사업자번호별 중복없는 고유번호 할당
             taxinvoice.invoiceeMgtKey = "";
 
@@ -224,7 +224,7 @@ namespace Popbill.Taxinvoice.Example
             TaxinvoiceDetail detail = new TaxinvoiceDetail();
 
             detail.serialNum = 1; // 일련번호, 1부터 순차기재 
-            detail.purchaseDT = "20190111"; // 거래일자
+            detail.purchaseDT = "20190918"; // 거래일자
             detail.itemName = "품목명"; // 품목명 
             detail.spec = "규격"; // 규격
             detail.qty = "1"; // 수량
@@ -238,7 +238,7 @@ namespace Popbill.Taxinvoice.Example
             detail = new TaxinvoiceDetail();
 
             detail.serialNum = 2; // 일련번호, 1부터 순차기재 
-            detail.purchaseDT = "20190111"; // 거래일자
+            detail.purchaseDT = "20190918"; // 거래일자
             detail.itemName = "품목명"; // 품목명 
             detail.spec = "규격"; // 규격
             detail.qty = "1"; // 수량

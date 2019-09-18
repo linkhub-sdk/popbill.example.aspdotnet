@@ -36,7 +36,7 @@ namespace Popbill.Taxinvoice.Example
             Taxinvoice taxinvoice = new Taxinvoice();
 
             // [필수] 기재상 작성일자, 날자형식(yyyyMMdd)
-            taxinvoice.writeDate = "20190111";
+            taxinvoice.writeDate = "20190918";
 
             // [필수] 과금방향, {정과금, 역과금}중 선택
             // - 정과금(공급자과금), 역과금(공급받는자과금)
@@ -70,7 +70,7 @@ namespace Popbill.Taxinvoice.Example
             // [필수] 공급자 상호
             taxinvoice.invoicerCorpName = "공급자 상호";
 
-            // 공급자 문서관리번호, 숫자, 영문, '-', '_' 조합으로 
+            // 공급자 문서번호, 숫자, 영문, '-', '_' 조합으로 
             // 1~24자리까지 사업자번호별 중복없는 고유번호 할당
             taxinvoice.invoicerMgtKey = "";
 
@@ -117,9 +117,9 @@ namespace Popbill.Taxinvoice.Example
             // [필수] 공급받는자 상호
             taxinvoice.invoiceeCorpName = "공급받는자 상호";
 
-            // [역발행시 필수] 공급받는자 문서관리번호, 숫자, 영문, '-', '_' 조합으로
+            // [역발행시 필수] 공급받는자 문서번호, 숫자, 영문, '-', '_' 조합으로
             // 1~24자리까지 사업자번호별 중복없는 고유번호 할당
-            taxinvoice.invoiceeMgtKey = "20190111-001";
+            taxinvoice.invoiceeMgtKey = "20190918-001";
 
             // [필수] 공급받는자 대표자 성명 
             taxinvoice.invoiceeCEOName = "공급받는자 대표자 성명";
@@ -223,7 +223,7 @@ namespace Popbill.Taxinvoice.Example
             TaxinvoiceDetail detail = new TaxinvoiceDetail();
 
             detail.serialNum = 1; // 일련번호, 1부터 순차기재 
-            detail.purchaseDT = "20190111"; // 거래일자
+            detail.purchaseDT = "20190918"; // 거래일자
             detail.itemName = "품목명"; // 품목명 
             detail.spec = "규격"; // 규격
             detail.qty = "1"; // 수량
@@ -237,7 +237,7 @@ namespace Popbill.Taxinvoice.Example
             detail = new TaxinvoiceDetail();
 
             detail.serialNum = 2; // 일련번호, 1부터 순차기재 
-            detail.purchaseDT = "20190111"; // 거래일자
+            detail.purchaseDT = "20190918"; // 거래일자
             detail.itemName = "품목명"; // 품목명 
             detail.spec = "규격"; // 규격
             detail.qty = "1"; // 수량
@@ -247,32 +247,6 @@ namespace Popbill.Taxinvoice.Example
             detail.remark = "품목비고"; // 비고
 
             taxinvoice.detailList.Add(detail);
-
-
-            /*************************************************************************
-            *                           추가담당자 정보                              *  
-            * - 세금계산서 발행안내 메일을 수신받을 공급받는자 담당자가 다수인 경우  *
-            *   담당자 정보를 추가하여 발행안내메일을 다수에게 전송할 수 있습니다.   *
-            * - 최대 5개까지 기재가능                                                *
-            *************************************************************************/
-
-            taxinvoice.addContactList = new List<TaxinvoiceAddContact>();
-
-            TaxinvoiceAddContact addContact = new TaxinvoiceAddContact();
-
-            addContact.serialNum = 1; // 일련번호, 1부터 순차기재
-            addContact.email = "test2@invoicee.com"; // 추가담당자 메일주소 
-            addContact.contactName = "추가담당자명"; // 추가담당자 성명 
-
-            taxinvoice.addContactList.Add(addContact);
-
-            TaxinvoiceAddContact addContact2 = new TaxinvoiceAddContact();
-
-            addContact2.serialNum = 2; // 일련번호, 1부터 순차기재 
-            addContact2.email = "test2@invoicee.com"; // 추가담당자 메일주소
-            addContact2.contactName = "추가담당자명"; // 추가담당자 성명
-
-            taxinvoice.addContactList.Add(addContact2);
 
             // 즉시요청 메모 
             String memo = "즉시요청 메모";

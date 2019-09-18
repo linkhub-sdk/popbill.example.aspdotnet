@@ -15,7 +15,7 @@
         <fieldset class="fieldset1">
             <legend>전자명세서 발행</legend>
             <ul>
-                <li><a href="Example/checkMgtKeyInUse.aspx">checkMgtKeyInUse</a> - 관리번호 확인</li>
+                <li><a href="Example/checkMgtKeyInUse.aspx">checkMgtKeyInUse</a> - 문서번호 확인</li>
                 <li><a href="Example/registIssue.aspx">registIssue</a> - 즉시 발행</li>
                 <li><a href="Example/register.aspx">register</a> - 임시저장</li>
                 <li><a href="Example/update.aspx">update</a> - 수정</li>

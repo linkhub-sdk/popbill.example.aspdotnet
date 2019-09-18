@@ -32,9 +32,9 @@ namespace Popbill.Taxinvoice
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
-            // 세금계산서 문서관리번호
+            // 세금계산서 문서번호
             // 1~24자리 숫자, 영문, '-', '_' 조합으로 사업자별로 중복되지 않도록 구성
-            String mgtKey = "20190311-06";
+            String mgtKey = "20190918-06";
 
             // 세금계산서 정보 객체 
             Taxinvoice taxinvoice = new Taxinvoice();
@@ -74,7 +74,7 @@ namespace Popbill.Taxinvoice
             // [필수] 공급자 상호
             taxinvoice.invoicerCorpName = "공급자 상호";
 
-            // [필수] 공급자 문서관리번호, 숫자, 영문, '-', '_' 조합으로 
+            // [필수] 공급자 문서번호, 숫자, 영문, '-', '_' 조합으로 
             //        1~24자리까지 사업자번호별 중복없는 고유번호 할당
             taxinvoice.invoicerMgtKey = mgtKey;
 
@@ -121,7 +121,7 @@ namespace Popbill.Taxinvoice
             // [필수] 공급받는자 상호
             taxinvoice.invoiceeCorpName = "공급받는자 상호";
 
-            // [역발행시 필수] 공급받는자 문서관리번호, 숫자, 영문, '-', '_' 조합으로
+            // [역발행시 필수] 공급받는자 문서번호, 숫자, 영문, '-', '_' 조합으로
             // 1~24자리까지 사업자번호별 중복없는 고유번호 할당
             taxinvoice.invoiceeMgtKey = "";
 

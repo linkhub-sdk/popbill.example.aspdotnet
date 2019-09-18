@@ -35,13 +35,13 @@ namespace Popbill.HomeTax.Taxinvoice.Example
             KeyType tiKeyType = KeyType.SELL;
 
             // 일자유형, W-작성일자, I-발행일자, S-전송일자
-            String DType = "I";
+            String DType = "S";
 
             // 시작일자, 표시형식(yyyyMMdd)
-            String SDate = "20190101";
+            String SDate = "20190901";
 
             // 종료일자, 표시형식(yyyyMMdd)
-            String EDate = "20190114";
+            String EDate = "20191231";
 
             try
             {

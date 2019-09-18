@@ -35,10 +35,10 @@ namespace Popbill.HomeTax.Cashbill.Example
             KeyType tiKeyType = KeyType.BUY;
 
             // 시작일자, 표시형식(yyyyMMdd)
-            String SDate = "20190101";
+            String SDate = "20190901";
 
             // 종료일자, 표시형식(yyyyMMdd)
-            String EDate = "20190114";
+            String EDate = "20191231";
 
             try
             {

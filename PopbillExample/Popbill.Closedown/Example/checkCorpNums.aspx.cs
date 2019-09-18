@@ -33,7 +33,7 @@ namespace Popbill.Closedown.Example
             List<String> CorpNumList = new List<string>();
 
             CorpNumList.Add("1234567890");
-            CorpNumList.Add("4352343543");
+            CorpNumList.Add("1231212312");
             CorpNumList.Add("6798700433");
 
             try

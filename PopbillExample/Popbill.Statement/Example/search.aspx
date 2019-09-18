@@ -33,7 +33,7 @@
 							<li>itemCode (문서종류코드) : <%= statementInfo.itemCode %></li>
 							<li>itemKey (아이템키) : <%= statementInfo.itemKey %></li>
 							<li>invoiceNum (문서고유번호) : <%= statementInfo.invoiceNum %></li>
-							<li>mgtKey (문서관리번호) : <%= statementInfo.mgtKey %></li>
+							<li>mgtKey (문서번호) : <%= statementInfo.mgtKey %></li>
 							<li>taxType (세금형태) : <%= statementInfo.taxType %></li>
 							<li>writeDate (작성일자) : <%= statementInfo.writeDate %></li>
 							<li>regDT (등록일시) : <%= statementInfo.regDT %></li>
