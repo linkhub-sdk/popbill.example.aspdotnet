@@ -33,10 +33,13 @@ namespace Popbill.Cashbill.Example
             String testUserID = "testkorea";
 
             // 현금영수증 문서번호
-            String mgtKey = "20190117-001";
+            String mgtKey = "20191023-002";
 
             // 메모
             String memo = "즉시발행 메모";
+
+            // 안내메일 제목, 공백처리시 기본양식으로 전송
+            String emailSubject = "";
 
             
             // 현금영수증 정보 객체
@@ -119,9 +122,11 @@ namespace Popbill.Cashbill.Example
             // 발행시 알림문자 전송여부
             cashbill.smssendYN = false;
 
+
+
             try
             {
-                Response response = Global.cashbillService.RegistIssue(testCorpNum, cashbill, memo, testUserID);
+                Response response = Global.cashbillService.RegistIssue(testCorpNum, cashbill, memo, testUserID, emailSubject);
 
                 code = response.code.ToString();
                 message = response.message;

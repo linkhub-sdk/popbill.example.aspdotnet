@@ -38,17 +38,20 @@ namespace Popbill.Statement.Example
             int itemCode = 121;
 
             // 전자명세서 문서번호
-            String mgtKey = "20190111-001";
+            String mgtKey = "20191023-001";
 
             // 즉시발행 메모
             String memo = "즉시발행 메모";
+
+            // 안내메일 제목, 공백처리시 기본양식으로 전송
+            String emailSubject = "메일 제목 테스트";
 
 
             // 전자명세서 객체
             Statement statement = new Statement();
 
             // [필수], 기재상 작성일자 날짜형식(yyyyMMdd)
-            statement.writeDate = "20190111";
+            statement.writeDate = "20191023";
 
             // [필수], {영수, 청구} 중 기재 
             statement.purposeType = "영수";
@@ -130,7 +133,7 @@ namespace Popbill.Statement.Example
             statement.receiverContactName = "수신자 담당자명";
 
             // 수신자 메일주소 
-            statement.receiverEmail = "test@receiver.com";
+            statement.receiverEmail = "test@test.com";
 
             /**************************************************************************
              *                         전자명세서 기재항목                            *
@@ -209,7 +212,7 @@ namespace Popbill.Statement.Example
 
             try
             {
-                Response response = Global.statementService.RegistIssue(testCorpNum, statement, memo, testUserID);
+                Response response = Global.statementService.RegistIssue(testCorpNum, statement, memo, testUserID, emailSubject);
                 code = response.code.ToString();
                 message = response.message;
             }
