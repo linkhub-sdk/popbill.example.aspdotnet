@@ -86,6 +86,7 @@
     <Content Include="Example\updateContact.aspx" />
     <Content Include="Example\updateCorpInfo.aspx" />
     <Content Include="Example\getCertificateExpireDate.aspx" />
+    <Content Include="Example\getPrintURL.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -313,6 +314,13 @@
     </Compile>
     <Compile Include="Example\getCertificateExpireDate.aspx.designer.cs">
       <DependentUpon>getCertificateExpireDate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getPrintURL.aspx.cs">
+      <DependentUpon>getPrintURL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getPrintURL.aspx.designer.cs">
+      <DependentUpon>getPrintURL.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
