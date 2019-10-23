@@ -30,8 +30,10 @@ namespace Popbill.HomeTax.Taxinvoice.Example
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
+            String testUserID = "";
+
             // 수집 요청(requestJob API)시 반환반은 작업아이디(jobID)
-            String jobID = "017032109000000001";
+            String jobID = "019102318000000002";
 
 
             // 문서형태 배열, N-일반 전자세금계산서, M-수정 전자세금계산서
@@ -52,10 +54,14 @@ namespace Popbill.HomeTax.Taxinvoice.Example
             // 종사업장번호, 콤마(",")로 구분하여 구성 ex) "0001,1234"
             String TaxRegID = "";
 
+            // 조회 검색어, 거래처 사업자번호 또는 거래처명 like 검색
+            String SearchString = "";
+
             try
             {
                 summaryInfo = Global.htTaxinvoiceService.Summary(testCorpNum, jobID, Type,
-                                     TaxType, PurposeType, TaxRegIDYN, TaxRegIDType, TaxRegID);
+                                     TaxType, PurposeType, TaxRegIDYN, TaxRegIDType, TaxRegID,
+                                     testUserID, SearchString);
 
             }
             catch (PopbillException ex)
