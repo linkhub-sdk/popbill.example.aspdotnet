@@ -31,14 +31,14 @@ namespace Popbill.Taxinvoice.Example
             String testCorpNum = "1234567890";
 
             // 세금계산서 문서번호
-            String mgtKey = "20190918-04";
+            String mgtKey = "20191024-01";
 
 
             // 세금계산서 정보 객체 
             Taxinvoice taxinvoice = new Taxinvoice();
 
             // [필수] 기재상 작성일자, 날자형식(yyyyMMdd)
-            taxinvoice.writeDate = "20190918";
+            taxinvoice.writeDate = "20191024";
 
             // [필수] 과금방향, {정과금, 역과금}중 선택
             // - 정과금(공급자과금), 역과금(공급받는자과금)
@@ -142,6 +142,8 @@ namespace Popbill.Taxinvoice.Example
             taxinvoice.invoiceeContactName1 = "공급받는자 담당자명";
 
             // 공급받는자 담당자 메일주소 
+            // 팝빌 개발환경에서 테스트하는 경우에도 안내 메일이 전송되므로,
+            // 실제 거래처의 메일주소가 기재되지 않도록 주의
             taxinvoice.invoiceeEmail1 = "test@test.com";
 
             // 공급받는자 담당자 휴대폰번호 
@@ -200,17 +202,16 @@ namespace Popbill.Taxinvoice.Example
 
 
             /**************************************************************************
-             *        수정세금계산서 정보 (수정세금계산서 작성시에만 기재             *
-             * - 수정세금계산서 관련 정보는 연동매뉴얼 또는 개발가이드 링크 참조      *
-             * - [참고] 수정세금계산서 작성방법 안내 - http://blog.linkhub.co.kr/650  *
+             *        수정세금계산서 정보 (수정세금계산서 작성시에만 기재       
+             * - 수정세금계산서 관련 정보는 연동매뉴얼 또는 개발가이드 링크 참조
+             * - [참고] 수정세금계산서 작성방법 안내 - https://docs.popbill.com/taxinvoice/modify?lang=dotnet
              *************************************************************************/
 
             // 수정사유코드, 1~6까지 선택기재.
             taxinvoice.modifyCode = null;
 
-            // 수정세금계산서 작성시 원본세금계산서의 ItemKey기재
-            // - 원본세금계산서의 ItemKey는 문서정보 (GetInfo API) 응답항목으로 확인할 수 있습니다.
-            taxinvoice.originalTaxinvoiceKey = "";
+            // 수정세금계산서 작성시 원본세금계산서의 국세청승인번호 기재
+            taxinvoice.orgNTSConfirmNum = "";
 
             /**************************************************************************
              *                         상세항목(품목) 정보                            *
