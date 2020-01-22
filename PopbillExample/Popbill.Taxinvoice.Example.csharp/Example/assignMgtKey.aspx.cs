@@ -22,6 +22,7 @@ namespace Popbill.Taxinvoice.Example
         {
             /**
              * 팝빌사이트에서 작성된 세금계산서에 파트너 문서관리번호를 할당합니다.
+             * - https://docs.popbill.com/taxinvoice/dotnet/api#AssignMgtKey
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

@@ -22,6 +22,7 @@ namespace Popbill.HomeTax.Taxinvoice.Example
         {
             /**
             * 팝빌 회원아이디 중복여부를 확인합니다.
+            * - https://docs.popbill.com/httaxinvoice/dotnet/api#CheckID
             */
 
             // 조회할 아이디

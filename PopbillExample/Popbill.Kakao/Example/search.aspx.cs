@@ -24,6 +24,7 @@ namespace Popbill.Kakao.Example
             /**
              * 검색조건을 사용하여 알림톡/친구톡 전송내역을 조회합니다.
              * - 최대 검색기한 : 6개월 이내
+             * - https://docs.popbill.com/kakao/dotnet/api#Search
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

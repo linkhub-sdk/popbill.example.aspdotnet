@@ -23,6 +23,7 @@ namespace Popbill.Message.Example
             /**
              * 문자전송요청시 할당한 전송요청번호(requestNum)로 예약문자전송을 취소합니다.
              * - 예약취소는 예약전송시간 10분전까지만 가능합니다.
+             * - https://docs.popbill.com/message/dotnet/api#CancelReserve
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

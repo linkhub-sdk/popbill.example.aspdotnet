@@ -23,6 +23,7 @@ namespace Popbill.EasyFin.Bank.Example
         {
             /**
              * 은행 계좌 관리를 위한 URL을 반환합니다.
+             * - https://docs.popbill.com/easyfinbank/dotnet/api#GetBankAccountMgtURL
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

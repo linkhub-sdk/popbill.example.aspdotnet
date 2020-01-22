@@ -24,7 +24,7 @@ namespace Popbill.Taxinvoice
              * [발행완료] 상태의 세금계산서를 [공급자]가 [발행취소]합니다.
              * - [발행취소]는 국세청 전송전에만 가능합니다.
              * - 발행취소된 세금계산서는 국세청에 전송되지 않습니다.
-             * - 발행취소 세금계산서에 사용된 문서관리번호를 재사용 하기 위해서는 삭제(Delete API)를 호출하여 해당세금계산서를 삭제해야 합니다.
+             * - https://docs.popbill.com/taxinvoice/dotnet/api#CancelIssue
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

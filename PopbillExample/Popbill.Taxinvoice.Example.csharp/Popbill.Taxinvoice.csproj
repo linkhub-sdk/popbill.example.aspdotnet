@@ -56,10 +56,8 @@
     <Content Include="Example\assignMgtKey.aspx" />
     <Content Include="Example\attachStatement.aspx" />
     <Content Include="Example\cancelIssue.aspx" />
-    <Content Include="Example\accept.aspx" />
     <Content Include="Example\attachFile.aspx" />
     <Content Include="Example\cancelRequest.aspx" />
-    <Content Include="Example\cancelSend.aspx" />
     <Content Include="Example\checkCertValidation.aspx" />
     <Content Include="Example\checkID.aspx" />
     <Content Include="Example\checkIsMember.aspx" />
@@ -68,7 +66,6 @@
     <Content Include="Example\checkMgtKeyInUse.aspx" />
     <Content Include="Example\delete.aspx" />
     <Content Include="Example\deleteFile.aspx" />
-    <Content Include="Example\deny.aspx" />
     <Content Include="Example\detachStatement.aspx" />
     <Content Include="Example\getBalance.aspx" />
     <Content Include="Example\getCertificateExpireDate.aspx" />
@@ -111,7 +108,6 @@
     <Content Include="Global.asax" />
     <Content Include="Example\register.aspx" />
     <Content Include="Example\search.aspx" />
-    <Content Include="Example\send.aspx" />
     <Content Include="Example\issue.aspx" />
     <Content Include="Example\refuse.aspx" />
     <Content Include="Example\sendToNTS.aspx" />
@@ -139,13 +135,6 @@
     <Compile Include="Example\cancelIssue.aspx.designer.cs">
       <DependentUpon>cancelIssue.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Example\accept.aspx.cs">
-      <DependentUpon>accept.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Example\accept.aspx.designer.cs">
-      <DependentUpon>accept.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Example\attachFile.aspx.cs">
       <DependentUpon>attachFile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -159,13 +148,6 @@
     </Compile>
     <Compile Include="Example\cancelRequest.aspx.designer.cs">
       <DependentUpon>cancelRequest.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Example\cancelSend.aspx.cs">
-      <DependentUpon>cancelSend.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Example\cancelSend.aspx.designer.cs">
-      <DependentUpon>cancelSend.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\checkCertValidation.aspx.cs">
       <DependentUpon>checkCertValidation.aspx</DependentUpon>
@@ -215,13 +197,6 @@
     </Compile>
     <Compile Include="Example\deleteFile.aspx.designer.cs">
       <DependentUpon>deleteFile.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Example\deny.aspx.cs">
-      <DependentUpon>deny.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Example\deny.aspx.designer.cs">
-      <DependentUpon>deny.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\detachStatement.aspx.cs">
       <DependentUpon>detachStatement.aspx</DependentUpon>
@@ -520,13 +495,6 @@
     </Compile>
     <Compile Include="Example\search.aspx.designer.cs">
       <DependentUpon>search.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Example\send.aspx.cs">
-      <DependentUpon>send.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Example\send.aspx.designer.cs">
-      <DependentUpon>send.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\refuse.aspx.cs">
       <DependentUpon>refuse.aspx</DependentUpon>

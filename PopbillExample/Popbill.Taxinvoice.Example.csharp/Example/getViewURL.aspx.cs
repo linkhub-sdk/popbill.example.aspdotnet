@@ -24,6 +24,7 @@ namespace Popbill.Taxinvoice.Example
             /**
              * 1건의 전자세금계산서 보기 팝업 URL을 반환합니다. (메뉴/버튼 제외)
              * - 반환된 URL은 보안정책으로 인해 30초의 유효시간을 갖습니다.
+             * - https://docs.popbill.com/taxinvoice/dotnet/api#GetViewURL
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

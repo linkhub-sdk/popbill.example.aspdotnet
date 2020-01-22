@@ -26,6 +26,7 @@ namespace Popbill.Taxinvoice.Example
             * 세금계산서 첨부파일 목록을 확인합니다.
             * - 응답항목 중 파일아이디(AttachedFile) 항목은 파일삭제(DeleteFile API)
             *   호출시 이용할 수 있습니다.
+            * - https://docs.popbill.com/taxinvoice/dotnet/api#GetFiles
             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

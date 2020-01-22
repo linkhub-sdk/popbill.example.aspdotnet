@@ -22,6 +22,7 @@ namespace Popbill.Taxinvoice.Example
         {
             /**
              * 팝빌에 등록된 공인인증서의 유효성을 확인합니다.
+             * - https://docs.popbill.com/taxinvoice/dotnet/api#CheckCertValidation
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

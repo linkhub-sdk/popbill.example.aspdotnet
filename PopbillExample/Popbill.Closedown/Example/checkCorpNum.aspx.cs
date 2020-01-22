@@ -23,6 +23,7 @@ namespace Popbill.Closedown.Example
         {
             /**
             * 1건의 사업자 휴폐업여부를 조회합니다.
+            * - https://docs.popbill.com/closedown/dotnet/api#CheckCorpNum
             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

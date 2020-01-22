@@ -22,6 +22,7 @@ namespace Popbill.HomeTax.Cashbill.Example
         {
             /**
             * 홈택스 현금영수증 부서사용자 계정을 등록합니다.
+            * - https://docs.popbill.com/htcashbill/dotnet/api#RegistDeptUser
             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

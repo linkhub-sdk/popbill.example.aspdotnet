@@ -24,6 +24,7 @@ namespace Popbill.Closedown.Example
         {
             /**
             * 다수의 사업자에 대한 휴폐업여부를 조회합니다. (최대 1000건)
+            * - https://docs.popbill.com/closedown/dotnet/api#CheckCorpNums
             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

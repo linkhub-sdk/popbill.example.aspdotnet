@@ -23,6 +23,7 @@ namespace Popbill.Kakao.Example
         {
             /**
              * 알림톡/친구톡 요청시 발급받은 접수번호(receiptNum)로 전송상태를 확인합니다.
+             * - https://docs.popbill.com/kakao/dotnet/api#GetMessages
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

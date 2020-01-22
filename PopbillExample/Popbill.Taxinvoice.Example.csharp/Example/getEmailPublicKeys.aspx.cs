@@ -24,6 +24,7 @@ namespace Popbill.Taxinvoice.Example
         {
             /**
             * 대용량 연계사업자 유통메일주소 목록을 반환합니다.
+            * - https://docs.popbill.com/taxinvoice/dotnet/api#GetEmailPublicKeys
             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

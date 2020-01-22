@@ -23,8 +23,9 @@ namespace Popbill.Cashbill.Example
         {
             /**
              * 팝빌 현금영수증 문서함 팝업 URL을 반환합니다.
-             * TOGO - TBOX-임시문서함, PBOX-발행문서함, WRITE-현금영수증 신규작성
-             * 반환된 URL은 보안정책에 따라 30초의 유효시간을 갖습니다.
+             * - TOGO - TBOX-임시문서함, PBOX-발행문서함, WRITE-현금영수증 신규작성
+             * - 반환된 URL은 보안정책에 따라 30초의 유효시간을 갖습니다.
+             * - https://docs.popbill.com/cashbill/dotnet/api#GetURL
              */
 
             String testCorpNum = "1234567890";

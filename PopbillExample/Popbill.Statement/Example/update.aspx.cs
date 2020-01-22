@@ -24,6 +24,7 @@ namespace Popbill.Statement.Example
             /**
              * 1건의 전자명세서를 수정합니다.
              * - [임시저장] 상태의 전자명세서만 수정할 수 있습니다.
+             * - https://docs.popbill.com/statement/dotnet/api#Update
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

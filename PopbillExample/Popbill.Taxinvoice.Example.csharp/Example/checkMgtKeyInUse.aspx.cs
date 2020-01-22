@@ -23,6 +23,7 @@ namespace Popbill.Taxinvoice.Example
             /**
             * 세금계산서 문서관리번호 중복여부를 확인합니다.
             * - 관리번호는 1~24자리로 숫자, 영문 '-', '_' 조합으로 사업자별로 중복되지 않도록 구성해야 합니다.
+            * - https://docs.popbill.com/taxinvoice/dotnet/api#CheckMgtKeyInUse
             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

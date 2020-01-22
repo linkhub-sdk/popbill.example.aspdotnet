@@ -24,6 +24,7 @@ namespace Popbill.Statement.Example
              * 1건의 전자명세서를 삭제합니다.
              * - 전자명세서를 삭제하면 사용된 문서관리번호(mgtKey)를 재사용할 수 있습니다.
              * - 삭제가능한 문서 상태 : [임시저장], [발행취소]
+             * - https://docs.popbill.com/statement/dotnet/api#Delete
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

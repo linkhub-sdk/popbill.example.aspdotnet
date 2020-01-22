@@ -22,6 +22,7 @@ namespace Popbill.Statement.Example
         {
             /**
             * 전자명세서에 첨부된 다른 전자명세서를 첨부해제합니다.
+            * - https://docs.popbill.com/statement/dotnet/api#DetachStatement
             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

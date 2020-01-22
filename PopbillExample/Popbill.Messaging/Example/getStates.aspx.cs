@@ -24,8 +24,9 @@ namespace Popbill.Message.Example
         {
             /**
              * 문자 전송내역 요약정보를 확인 합니다.
+             * - https://docs.popbill.com/message/dotnet/api#GetStates
              */
-            
+
             //팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 

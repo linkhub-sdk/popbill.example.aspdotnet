@@ -23,6 +23,7 @@ namespace Popbill.Message.Example
         {
             /**
              * 문자 API 서비스 과금정보를 확인합니다.
+             * - https://docs.popbill.com/message/dotnet/api#GetChargeInfo
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

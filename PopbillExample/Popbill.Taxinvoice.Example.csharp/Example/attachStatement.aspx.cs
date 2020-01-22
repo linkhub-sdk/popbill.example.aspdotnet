@@ -22,8 +22,9 @@ namespace Popbill.Taxinvoice.Example
         {
             /**
              * 1건의 전자명세서를 세금계산서에 첨부합니다.
+             * - https://docs.popbill.com/taxinvoice/dotnet/api#AttachStatement
              */
-            
+
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 

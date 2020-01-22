@@ -23,6 +23,7 @@ namespace Popbill.Kakao.Example
             /**
              * 전송요청번호(requestNum)를 할당한 알림톡/친구톡 예약전송건을 취소합니다.
              * - 예약전송 취소는 예약시간 10분전까지만 가능합니다.
+             * - https://docs.popbill.com/kakao/dotnet/api#CancelReserveRN
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

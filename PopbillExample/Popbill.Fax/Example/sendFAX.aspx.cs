@@ -24,9 +24,9 @@ namespace Popbill.Fax.Example
         {
             /**
              * 팩스를 전송합니다. (전송할 파일 개수는 최대 20개까지 가능)
-             * - 팩스전송 문서 파일포맷 안내 : http://blog.linkhub.co.kr/2561
+             * - https://docs.popbill.com/fax/dotnet/api#SendFAX
              */
-            
+
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 

@@ -23,7 +23,8 @@ namespace Popbill.Fax.Example
         {
             /**
             * 팝빌 팩스 전송 내역 URL을 반환합니다.
-            * 반환된 URL은 보안정책에 따라 30초의 유효시간을 갖습니다.
+            * - 반환된 URL은 보안정책에 따라 30초의 유효시간을 갖습니다.
+            * - https://docs.popbill.com/fax/dotnet/api#GetSentListURL
             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

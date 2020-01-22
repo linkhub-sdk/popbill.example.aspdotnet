@@ -22,6 +22,7 @@ namespace Popbill.Cashbill.Example
         {
             /**
              * 연동회원의 담당자 정보를 수정합니다.
+             * - https://docs.popbill.com/cashbill/dotnet/api#UpdateContact
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

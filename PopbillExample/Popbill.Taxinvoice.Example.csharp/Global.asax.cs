@@ -1,8 +1,8 @@
 ﻿/**
 * 팝빌 전자세금계산서 API ASP.NET SDK Example
 *
-* ASP.NET SDK 연동환경 설정방법 안내 : http://blog.linkhub.co.kr/4022/
-* 업데이트 일자 : 2019-09-23
+* ASP.NET SDK 연동환경 설정방법 안내 : https://docs.popbill.com/taxinvoice/tutorial/dotnet#asp
+* 업데이트 일자 : 2020-01-22
 * 연동기술지원 연락처 : 1600-9854 / 070-4304-2991
 * 연동기술지원 이메일 : code@linkhub.co.kr
 *

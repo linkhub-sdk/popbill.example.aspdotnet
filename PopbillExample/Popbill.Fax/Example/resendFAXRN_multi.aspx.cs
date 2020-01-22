@@ -25,6 +25,7 @@ namespace Popbill.Fax.Example
             /**
             * 팩스전송 요청시 기재한 요청번호(requestNum)을 이용하여 팩스 재전송을 요청합니다.
             * - 접수일로부터 60일이 경과된 경우 재전송할 수 없습니다.
+            * - https://docs.popbill.com/fax/dotnet/api#ResendFAXRN_Same
             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

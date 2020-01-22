@@ -21,7 +21,8 @@ namespace Popbill.Taxinvoice.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 세금계싼서 발행안내 메일을 재전송합니다.
+             * 세금계산서 발행안내 메일을 재전송합니다.
+             * - https://docs.popbill.com/taxinvoice/dotnet/api#SendEmail
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

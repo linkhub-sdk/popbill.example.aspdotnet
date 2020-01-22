@@ -23,8 +23,9 @@ namespace Popbill.Closedown.Example
         {
             /**
              * 휴폐업 조회단가를 확인합니다.
+             * - https://docs.popbill.com/closedown/dotnet/api#GetUnitCost
              */
-            
+
             String testCorpNum = "1234567890";
 
             try

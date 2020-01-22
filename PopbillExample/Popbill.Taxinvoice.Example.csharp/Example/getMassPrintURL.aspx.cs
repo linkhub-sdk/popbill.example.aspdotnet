@@ -25,6 +25,7 @@ namespace Popbill.Taxinvoice.Example
             /**
              * 대량의 세금계산서 인쇄팝업 URL을 반환합니다. (최대 100건)
              * - 보안정책으로 인해 반환된 URL의 유효시간은 30초입니다.
+             * - https://docs.popbill.com/taxinvoice/dotnet/api#GetMassPrintURL
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

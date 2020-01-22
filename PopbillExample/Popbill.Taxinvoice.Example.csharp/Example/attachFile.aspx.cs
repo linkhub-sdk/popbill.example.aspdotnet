@@ -24,6 +24,7 @@ namespace Popbill.Taxinvoice.Example
              * 세금계산서에 첨부파일을 등록합니다.
              * - [임시저장] 상태의 세금계산서만 파일을 첨부할수 있습니다.
              * - 첨부파일은 최대 5개까지 등록할 수 있습니다.
+             * - https://docs.popbill.com/taxinvoice/dotnet/api#AttachFile
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

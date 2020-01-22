@@ -23,6 +23,7 @@ namespace Popbill.EasyFin.Bank.Example
         {
             /**
              * 수집 요청 상태를 확인합니다.
+             * - https://docs.popbill.com/easyfinbank/dotnet/api#GetJobState
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

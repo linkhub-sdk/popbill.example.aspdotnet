@@ -24,7 +24,7 @@ namespace Popbill.Taxinvoice.Example
         {
             /**
              * 1건의 세금계산서를 즉시발행 처리합니다.
-             * - 세금계산서 항목별 정보는 "[전자세금계산서 API 연동매뉴얼] > 4.1. (세금)계산서구성"을 참조하시기 바랍니다.
+             * - https://docs.popbill.com/taxinvoice/dotnet/api#RegistIssue
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

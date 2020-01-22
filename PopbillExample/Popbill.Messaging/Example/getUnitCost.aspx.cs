@@ -24,6 +24,7 @@ namespace Popbill.Message.Example
         {
             /**
              * 문자메시지 전송단가를 확인합니다.
+             * - https://docs.popbill.com/message/dotnet/api#GetUnitCost
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

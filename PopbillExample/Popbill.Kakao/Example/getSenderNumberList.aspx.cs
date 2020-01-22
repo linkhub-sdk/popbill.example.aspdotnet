@@ -24,6 +24,7 @@ namespace Popbill.Kakao.Example
         {
             /**
              * 발신번호 목록을 확인합니다.
+             * - https://docs.popbill.com/kakao/dotnet/api#GetSenderNumberList
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
