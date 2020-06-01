@@ -57,8 +57,10 @@
     <Content Include="Example.css" />
     <Content Include="Example\checkID.aspx" />
     <Content Include="Example\checkIsMember.aspx" />
+    <Content Include="Example\closeBankAccount.aspx" />
     <Content Include="Example\getAccessURL.aspx" />
     <Content Include="Example\getBalance.aspx" />
+    <Content Include="Example\getBankAccountInfo.aspx" />
     <Content Include="Example\getBankAccountMgtURL.aspx" />
     <Content Include="Example\getChargeInfo.aspx" />
     <Content Include="Example\getChargeURL.aspx" />
@@ -72,11 +74,14 @@
     <Content Include="Example\listActiveJob.aspx" />
     <Content Include="Example\listBankAccount.aspx" />
     <Content Include="Example\listContact.aspx" />
+    <Content Include="Example\registBankAccount.aspx" />
     <Content Include="Example\registContact.aspx" />
     <Content Include="Example\requestJob.aspx" />
+    <Content Include="Example\revokeCloseBankAccount.aspx" />
     <Content Include="Example\saveMemo.aspx" />
     <Content Include="Example\search.aspx" />
     <Content Include="Example\summary.aspx" />
+    <Content Include="Example\updateBankAccount.aspx" />
     <Content Include="Example\updateContact.aspx" />
     <Content Include="Example\updateCorpInfo.aspx" />
     <Content Include="Global.asax" />
@@ -104,6 +109,13 @@
     <Compile Include="Example\checkIsMember.aspx.designer.cs">
       <DependentUpon>checkIsMember.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Example\closeBankAccount.aspx.cs">
+      <DependentUpon>closeBankAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\closeBankAccount.aspx.designer.cs">
+      <DependentUpon>closeBankAccount.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Example\getAccessURL.aspx.cs">
       <DependentUpon>getAccessURL.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -117,6 +129,13 @@
     </Compile>
     <Compile Include="Example\getBalance.aspx.designer.cs">
       <DependentUpon>getBalance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getBankAccountInfo.aspx.cs">
+      <DependentUpon>getBankAccountInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getBankAccountInfo.aspx.designer.cs">
+      <DependentUpon>getBankAccountInfo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\getBankAccountMgtURL.aspx.cs">
       <DependentUpon>getBankAccountMgtURL.aspx</DependentUpon>
@@ -209,6 +228,13 @@
     <Compile Include="Example\listContact.aspx.designer.cs">
       <DependentUpon>listContact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Example\registBankAccount.aspx.cs">
+      <DependentUpon>registBankAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\registBankAccount.aspx.designer.cs">
+      <DependentUpon>registBankAccount.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Example\registContact.aspx.cs">
       <DependentUpon>registContact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -222,6 +248,13 @@
     </Compile>
     <Compile Include="Example\requestJob.aspx.designer.cs">
       <DependentUpon>requestJob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\revokeCloseBankAccount.aspx.cs">
+      <DependentUpon>revokeCloseBankAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\revokeCloseBankAccount.aspx.designer.cs">
+      <DependentUpon>revokeCloseBankAccount.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\saveMemo.aspx.cs">
       <DependentUpon>saveMemo.aspx</DependentUpon>
@@ -243,6 +276,13 @@
     </Compile>
     <Compile Include="Example\summary.aspx.designer.cs">
       <DependentUpon>summary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\updateBankAccount.aspx.cs">
+      <DependentUpon>updateBankAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\updateBankAccount.aspx.designer.cs">
+      <DependentUpon>updateBankAccount.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\updateContact.aspx.cs">
       <DependentUpon>updateContact.aspx</DependentUpon>

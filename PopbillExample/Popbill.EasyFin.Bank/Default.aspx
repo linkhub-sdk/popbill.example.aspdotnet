@@ -14,8 +14,13 @@
     <fieldset class="fieldset1">
         <legend>계좌관리</legend>
         <ul>
-            <li><a href="Example/GetBankAccountMgtURL.aspx">getBankAccountMgtURL</a> - 계좌 관리 팝업 URL</li>
+            <li><a href="Example/registBankAccount.aspx">registBankAccount</a> - 계좌 등록</li>
+            <li><a href="Example/updateBankAccount.aspx">updateBankAccount</a> - 계좌정보 수정</li>
+            <li><a href="Example/getBankAccountInfo.aspx">getBankAccountInfo</a> - 계좌정보 확인</li>
             <li><a href="Example/listBankAccount.aspx">listBankAccount</a> - 계좌 목록 확인</li>
+            <li><a href="Example/GetBankAccountMgtURL.aspx">getBankAccountMgtURL</a> - 계좌 관리 팝업 URL</li>
+            <li><a href="Example/closeBankAccount.aspx">closeBankAccount</a> - 계좌 정액제 해지요청</li>
+            <li><a href="Example/revokeCloseBankAccount.aspx">revokeCloseBankAccount</a> - 계좌 정액제 해지요청 취소</li>
         </ul>
     </fieldset>
     <br/>

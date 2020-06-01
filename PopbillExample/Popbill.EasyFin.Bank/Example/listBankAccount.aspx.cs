@@ -22,7 +22,7 @@ namespace Popbill.EasyFin.Bank.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 수집 요청건들에 대한 상태 목록을 확인합니다.
+             * 팝빌에 등록된 은행계좌 목록을 반환한다.
              * - https://docs.popbill.com/easyfinbank/dotnet/api#ListBankAccount
              */
 
