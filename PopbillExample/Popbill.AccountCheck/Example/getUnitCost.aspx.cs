@@ -22,7 +22,7 @@ namespace Popbill.AccountCheck.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 휴폐업 조회단가를 확인합니다.
+             * 예금주 조회단가를 확인합니다.
              */
 
             String testCorpNum = "1234567890";
