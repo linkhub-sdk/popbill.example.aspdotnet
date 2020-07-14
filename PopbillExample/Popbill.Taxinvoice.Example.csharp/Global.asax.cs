@@ -2,7 +2,7 @@
 * 팝빌 전자세금계산서 API ASP.NET SDK Example
 *
 * ASP.NET SDK 연동환경 설정방법 안내 : https://docs.popbill.com/taxinvoice/tutorial/dotnet#asp
-* 업데이트 일자 : 2020-06-01
+* 업데이트 일자 : 2020-07-14
 * 연동기술지원 연락처 : 1600-9854 / 070-4304-2991
 * 연동기술지원 이메일 : code@linkhub.co.kr
 *
@@ -48,6 +48,9 @@ namespace Popbill.Taxinvoice
 
             // 인증토큰 IP 제한기능 사용여부, 권장(true)
             taxinvoiceService.IPRestrictOnOff = true;
+
+            // 팝빌 API 서비스 고정 IP 사용여부(GA), true-사용, false-미사용, 기본값(false)
+            taxinvoiceService.UseStaticIP = false;
         }
     }
 }
