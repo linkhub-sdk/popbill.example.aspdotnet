@@ -31,14 +31,14 @@ namespace Popbill.Taxinvoice.Example
             String testCorpNum = "1234567890";
 
             // 세금계산서 문서번호
-            String mgtKey = "20191024-01";
+            String mgtKey = "20200717-31";
 
 
             // 세금계산서 정보 객체 
             Taxinvoice taxinvoice = new Taxinvoice();
 
             // [필수] 기재상 작성일자, 날자형식(yyyyMMdd)
-            taxinvoice.writeDate = "20191024";
+            taxinvoice.writeDate = "20200717";
 
             // [필수] 과금방향, {정과금, 역과금}중 선택
             // - 정과금(공급자과금), 역과금(공급받는자과금)
@@ -50,10 +50,6 @@ namespace Popbill.Taxinvoice.Example
 
             // [필수] {영수, 청구} 중 기재
             taxinvoice.purposeType = "영수";
-
-            // [필수] 발행시점, {직접발행, 승인시자동발행} 중 기재 
-            // - {승인시자동발행}은 발행예정 프로세스에서만 이용가능
-            taxinvoice.issueTiming = "직접발행";
 
             // [필수] 과세형태, {과세, 영세, 면세} 중 기재
             taxinvoice.taxType = "과세";
