@@ -25,6 +25,7 @@
 							<li> number (발신번호) : <%= info.number %></li>
 							<li> representYN (대표번호 지정여부) : <%= info.representYN %></li>
 							<li> state (등록상태) : <%= info.state %></li>
+							<li> memo (메모) : <%= info.memo %></li>
 						</ul>
 					</fieldset>
 				<% } %>

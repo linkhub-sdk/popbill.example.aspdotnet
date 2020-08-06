@@ -57,6 +57,7 @@
 									<li> altResultDT (대체문자 전송결과 수신일시) : <%= detailInfo.altResultDT %></li>
 									<li> receiptNum (접수번호) : <%= detailInfo.receiptNum %></li>
 									<li> requestNum (요청번호) : <%= detailInfo.requestNum %></li>
+									<li> interOPRefKey (파트너 지정키) : <%= detailInfo.interOPRefKey %></li>
 								</ul>
 							</fieldset>
 						<% } %>

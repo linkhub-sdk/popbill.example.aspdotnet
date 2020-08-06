@@ -30,7 +30,7 @@ namespace Popbill.Kakao.Example
             String testCorpNum = "1234567890";
 
             // 카카오톡 전송 요청시 발급받은 접수번호
-            String receiptNum = "018031312090200001";
+            String receiptNum = "020080618024000001";
 
             try
             {

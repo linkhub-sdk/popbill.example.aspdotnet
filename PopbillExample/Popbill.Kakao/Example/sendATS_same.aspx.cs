@@ -65,6 +65,10 @@ namespace Popbill.Kakao.Example
 
                 // 수신자명
                 receiverInfo.rcvnm = "수신자명"+i;
+
+                // 파트너 지정키, 수신자 구별용 메모
+                receiverInfo.interOPRefKey = "20200806-" + i;
+
                 receivers.Add(receiverInfo);
             }
 

@@ -39,10 +39,10 @@ namespace Popbill.Taxinvoice
             String DType = "W";
 
             // [필수] 시작일자, 날자형식(yyyyMMdd)
-            String SDate = "20190101";
+            String SDate = "20200701";
 
             // [필수] 종료일자, 날자형식(yyyyMMdd)
-            String EDate = "20190111";
+            String EDate = "20200731";
 
             // 상태코드 배열, 미기재시 전체 상태조회, 문서상태 값 3자리의 배열, 2,3번째 자리에 와일드카드 가능
             String[] State = new String[3];
@@ -67,6 +67,19 @@ namespace Popbill.Taxinvoice
             IssueType[1] = "R";
             IssueType[2] = "T";
 
+            // 등록유형 배열, P-팝빌, H-홈택스 또는 외부ASP
+            String[] RegType = new String[2];
+            RegType[0] = "P";
+            RegType[1] = "H";
+
+            // 공급받는자 휴폐업상태 배열, N-미확인, 0-미등록, 1-사업중, 2-폐업, 3-휴업
+            String[] CloseDownState = new String[5];
+            CloseDownState[0] = "N";
+            CloseDownState[1] = "0";
+            CloseDownState[2] = "1";
+            CloseDownState[3] = "2";
+            CloseDownState[4] = "3";
+
             // 종사업장 유무, 공백-전체조회, 0-종사업장 없는 문서 조회, 1-종사업장번호 조건에 따라 조회
             String TaxRegIDYN = "";
 
@@ -81,6 +94,9 @@ namespace Popbill.Taxinvoice
 
             // 거래처 조회, 거래처 사업자등록번호 또는 상호명 기재, 미기재시 전체조회 
             String QString = "";
+
+            // 문서번호 또는 국세청승인번호 조회
+            String MgtKey = "";
 
             // 정렬방향, A-오름차순, D-내림차순
             String Order = "D";
@@ -98,7 +114,7 @@ namespace Popbill.Taxinvoice
             {
                 result = Global.taxinvoiceService.Search(testCorpNum, KeyType, DType, SDate, EDate, State,
                                     Type, TaxType, IssueType, LateOnly, TaxRegIDYN, TaxRegIDType, TaxRegID, QString, 
-                                    Order, Page, PerPage, InterOPYN, testUserID);
+                                    Order, Page, PerPage, InterOPYN, testUserID, RegType, CloseDownState, MgtKey);
             }
             catch (PopbillException ex)
             {
