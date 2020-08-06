@@ -24,6 +24,7 @@
 				<li>perPage (페이지당 검색개수) : <%= result.perPage %> </li>
 				<li>pageNum (페이지 번호) : <%= result.pageNum %> </li>
 				<li>pageCount (페이지 개수) : <%= result.pageCount %> </li>
+				<li>lastScrapDT (최종 조회일시) : <%= result.lastScrapDT %> </li>
 
 				<% foreach (Popbill.EasyFin.EasyFinBankSearchDetail tradeInfo in result.list)
 				   { %>

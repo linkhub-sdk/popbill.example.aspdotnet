@@ -33,7 +33,7 @@ namespace Popbill.EasyFin.Bank.Example
             String testUserID = "testkorea";
 
             // 수집 요청(requestJob API)시 반환반은 작업아이디(jobID)
-            String jobID = "019123013000000002";
+            String jobID = "020080618000000001";
 
             // 거래유형 배열, I-입금, O-출금
             String[] TradeType = { "I", "O" };
