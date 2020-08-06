@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="assignMgtKey.aspx.cs" Inherits="Popbill.Taxinvoice.Example.assignMgtKey" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="assignMgtKey.aspx.cs" Inherits="Popbill.Cashbill.Example.assignMgtKey" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
-	<title>팝빌 세금계산서 SDK ASP.NET Example</title>
+	<title>팝빌 현금영수증 SDK ASP.NET Example</title>
 	<link href="../Example.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>

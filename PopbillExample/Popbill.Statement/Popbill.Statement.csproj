@@ -80,6 +80,7 @@
     <Content Include="Example\getPopUpURL.aspx" />
     <Content Include="Example\getUnitCost.aspx" />
     <Content Include="Example\getURL.aspx" />
+    <Content Include="Example\getViewURL.aspx" />
     <Content Include="Example\issue.aspx" />
     <Content Include="Example\joinMember.aspx" />
     <Content Include="Example\listContact.aspx" />
@@ -284,6 +285,13 @@
     </Compile>
     <Compile Include="Example\getURL.aspx.designer.cs">
       <DependentUpon>getURL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getViewURL.aspx.cs">
+      <DependentUpon>getViewURL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getViewURL.aspx.designer.cs">
+      <DependentUpon>getViewURL.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\issue.aspx.cs">
       <DependentUpon>issue.aspx</DependentUpon>

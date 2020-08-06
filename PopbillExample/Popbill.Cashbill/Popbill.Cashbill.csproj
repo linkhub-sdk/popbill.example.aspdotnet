@@ -55,6 +55,7 @@
   <ItemGroup>
     <Content Include="Default.aspx" />
     <Content Include="Example.css" />
+    <Content Include="Example\assignMgtKey.aspx" />
     <Content Include="Example\cancelIssue.aspx" />
     <Content Include="Example\checkID.aspx" />
     <Content Include="Example\checkIsMember.aspx" />
@@ -73,6 +74,7 @@
     <Content Include="Example\getMailURL.aspx" />
     <Content Include="Example\getMassPrintURL.aspx" />
     <Content Include="Example\getPartnerBalance.aspx" />
+    <Content Include="Example\getPDFURL.aspx" />
     <Content Include="Example\getPopUpURL.aspx" />
     <Content Include="Example\getPrintURL.aspx" />
     <Content Include="Example\getUnitCost.aspx" />
@@ -107,6 +109,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\assignMgtKey.aspx.cs">
+      <DependentUpon>assignMgtKey.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\assignMgtKey.aspx.designer.cs">
+      <DependentUpon>assignMgtKey.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\cancelIssue.aspx.cs">
       <DependentUpon>cancelIssue.aspx</DependentUpon>
@@ -233,6 +242,13 @@
     </Compile>
     <Compile Include="Example\getPartnerBalance.aspx.designer.cs">
       <DependentUpon>getPartnerBalance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getPDFURL.aspx.cs">
+      <DependentUpon>getPDFURL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getPDFURL.aspx.designer.cs">
+      <DependentUpon>getPDFURL.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\getPopUpURL.aspx.cs">
       <DependentUpon>getPopUpURL.aspx</DependentUpon>

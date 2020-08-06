@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="assignMgtKey.aspx.cs" Inherits="Popbill.Taxinvoice.Example.assignMgtKey" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="getPDFURL.aspx.cs" Inherits="Popbill.Taxinvoice.Example.getPDFURL" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -12,10 +12,14 @@
 	<p class="heading1">Response</p>
 	<br/>
 	<fieldset class="fieldset1">
-		<legend>문서번호 할당</legend>
+		<legend>세금계산서 PDF 다운로드 URL 확인</legend>
 		<ul>
-			<li>Response.code : <%= code %></li>
-			<li>Response.message : <%= message %></li>
+			<% if (!String.IsNullOrEmpty(code)) { %>
+				<li>Response.code : <%= code %> </li>
+				<li>Response.message : <%= message %></li>
+			<% } else { %>
+				<li>url : <%= url %></li>
+			<% } %>
 		</ul>
 	</fieldset>
 </div>
