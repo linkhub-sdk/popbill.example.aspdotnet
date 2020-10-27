@@ -58,6 +58,8 @@
                 <li><a href="Example/getEPrintURL.aspx">getEPrintURL</a> - 세금계산서 인쇄 [공급받는자용] URL</li>
                 <li><a href="Example/getMassPrintURL.aspx">getMassPrintURL</a> - 세금계산서 대량 인쇄 URL</li>
                 <li><a href="Example/getMailURL.aspx">getMailURL</a> - 세금계산서 메일링크 URL</li>
+                <li><a href="Example/getPDF.aspx">getPDF</a> - 세금계산서 PDF 다운로드</li>
+                <li><a href="Example/getPDFURL.aspx">getPDFURL</a> - 세금계산서 PDF 다운로드 URL</li>
             </ul>
         </fieldset>
         <br/>

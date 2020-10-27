@@ -8,10 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Popbill.Cashbill {
+namespace Popbill.Taxinvoice.Example {
     
     
-    public partial class _Default {
+    public partial class getPDF {
         
         /// <summary>
         /// Head1 컨트롤입니다.

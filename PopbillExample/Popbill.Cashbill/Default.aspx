@@ -53,6 +53,8 @@
             <li><a href="Example/getPrintURL.aspx">getPrintURL</a> - 현금영수증 인쇄 URL</li>
             <li><a href="Example/getMassPrintURL.aspx">getMassPrintURL</a> - 현금영수증 대량 인쇄 URL</li>
             <li><a href="Example/getMailURL.aspx">getMailURL</a> - 현금영수증 메일링크 URL</li>
+            <li><a href="Example/getPDF.aspx">getPDF</a> - 현금영수증 PDF 다운로드</li>
+            <li><a href="Example/getPDFURL.aspx">getPDFURL</a> - 현금영수증 PDF 다운로드 URL</li>
         </ul>
     </fieldset>
     <br/>
