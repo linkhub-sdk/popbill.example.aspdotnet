@@ -65,6 +65,47 @@ namespace Popbill.Kakao.Example
                 receiverInfo.msg = content;
                 // 대체문자 내용
                 receiverInfo.altmsg = "대체문자 내용입니다"+i;
+                // 파트너 지정키, 대량전송시, 수신자 구별용 메모
+                receiverInfo.interOPRefKey = "20201027-" + i.ToString();
+
+                // 수신자별 개별 버튼내용 전송하는 경우
+                // 개별 버튼의 개수는 템플릿 신청 시 승인받은 버튼의 개수와 동일하게 생성, 다를경우 실패 처리
+                // 버튼링크URL에 #{템플릿변수}를 기재하여 승인받은 경우 URL 수정가능
+                // 버튼 표시명, 버튼 유형 수정 불가능
+                /*
+                // 수신자별 개별 버튼정보 리스트 생성
+                List<KakaoButton> btns = new List<KakaoButton>();
+                
+                // 개별 버튼정보 생성
+                KakaoButton btnInfo1 = new KakaoButton();
+                
+                // 버튼명
+                btnInfo1.n = "템플릿 안내";
+                // 버튼유형 DS(-배송조회 / WL - 웹링크 / AL - 앱링크 / MD - 메시지전달 / BK - 봇키워드)
+                btnInfo1.t = "WL";
+                // 버튼링크1 [앱링크] Android / [웹링크] Mobile
+                btnInfo1.u1 = "https://www.popbill.com";
+                // 버튼링크2 [앱링크] IOS / [웹링크] PC URL
+                btnInfo1.u2 = "http://test.popbill.com" + i.ToString();
+                // 개별 버튼정보 리스트에 개별 버튼정보 추가
+                btns.Add(btnInfo1);
+                
+                // 개별 버튼정보 생성
+                KakaoButton btnInfo2 = new KakaoButton();
+                
+                // 버튼명
+                btnInfo2.n = "템플릿 안내";
+                // 버튼유형 DS(-배송조회 / WL - 웹링크 / AL - 앱링크 / MD - 메시지전달 / BK - 봇키워드)
+                btnInfo2.t = "WL";
+                // 버튼링크1 [앱링크] Android / [웹링크] Mobile
+                btnInfo2.u1 = "https://www.test.com";
+                // 버튼링크2 [앱링크] IOS / [웹링크] PC URL
+                btnInfo2.u2 = "http://test.test.com" + i.ToString();
+                // 개별 버튼정보 리스트에 개별 버튼정보 추가
+                btns.Add(btnInfo2);
+                // 수신자 정보에 개별 버튼정보 리스트 추가
+                receiverInfo.btns = btns;
+                */
                 receivers.Add(receiverInfo);
             }
 
@@ -83,9 +124,11 @@ namespace Popbill.Kakao.Example
 
 
             // 버튼정보를 수정하지 않고 템플릿 신청시 기재한 정보로 전송하는 경우 null 처리
+            // 개별 버튼정보 전송하는 경우 null 처리
             List<KakaoButton> buttons = null;
 
 
+            // 동일 버튼정보, 수신자별 동일 버튼내용 전송하는 경우
             // 버튼링크 URL 에 #{템플릿변수}를 기재하여 승인받은경우 URL 수정하여 전송
             /*
             List<KakaoButton> buttons = new List<KakaoButton>();
