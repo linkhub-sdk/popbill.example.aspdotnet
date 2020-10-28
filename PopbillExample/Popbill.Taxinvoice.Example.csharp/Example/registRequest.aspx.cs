@@ -36,7 +36,7 @@ namespace Popbill.Taxinvoice.Example
             Taxinvoice taxinvoice = new Taxinvoice();
 
             // [필수] 기재상 작성일자, 날자형식(yyyyMMdd)
-            taxinvoice.writeDate = "20190918";
+            taxinvoice.writeDate = "20201027";
 
             // [필수] 과금방향, {정과금, 역과금}중 선택
             // - 정과금(공급자과금), 역과금(공급받는자과금)
@@ -115,7 +115,7 @@ namespace Popbill.Taxinvoice.Example
 
             // [역발행시 필수] 공급받는자 문서번호, 숫자, 영문, '-', '_' 조합으로
             // 1~24자리까지 사업자번호별 중복없는 고유번호 할당
-            taxinvoice.invoiceeMgtKey = "20190918-001";
+            taxinvoice.invoiceeMgtKey = "20201027-005";
 
             // [필수] 공급받는자 대표자 성명 
             taxinvoice.invoiceeCEOName = "공급받는자 대표자 성명";
@@ -220,7 +220,7 @@ namespace Popbill.Taxinvoice.Example
             TaxinvoiceDetail detail = new TaxinvoiceDetail();
 
             detail.serialNum = 1; // 일련번호, 1부터 순차기재 
-            detail.purchaseDT = "20190918"; // 거래일자
+            detail.purchaseDT = "20201027"; // 거래일자
             detail.itemName = "품목명"; // 품목명 
             detail.spec = "규격"; // 규격
             detail.qty = "1"; // 수량
@@ -234,7 +234,7 @@ namespace Popbill.Taxinvoice.Example
             detail = new TaxinvoiceDetail();
 
             detail.serialNum = 2; // 일련번호, 1부터 순차기재 
-            detail.purchaseDT = "20190918"; // 거래일자
+            detail.purchaseDT = "20201027"; // 거래일자
             detail.itemName = "품목명"; // 품목명 
             detail.spec = "규격"; // 규격
             detail.qty = "1"; // 수량

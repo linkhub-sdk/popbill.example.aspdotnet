@@ -33,10 +33,10 @@ namespace Popbill.Statement.Example
             String DType = "W";
 
             // [필수] 시작일자, 날짜형식(yyyyMMdd)
-            String SDate = "20190101";
+            String SDate = "20201020";
 
             // [필수] 종료일자, 날짜형식(yyyyMMdd)
-            String EDate = "20190111";
+            String EDate = "20201027";
 
             // 전송상태값 배열, 미기재시 전체 상태조회, 문서상태 값 3자리의 배열, 2,3번째 자리에 와일드카드 가능
             String[] State = new String[4];

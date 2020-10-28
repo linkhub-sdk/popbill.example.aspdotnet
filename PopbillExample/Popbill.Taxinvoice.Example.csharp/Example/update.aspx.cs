@@ -36,14 +36,14 @@ namespace Popbill.Taxinvoice.Example
             MgtKeyType KeyType = MgtKeyType.SELL;
 
             // 세금계산서 문서관리번호
-            String mgtKey = "20190111-001";
+            String mgtKey = "20201027-111";
 
 
             // 세금계산서 정보 객체 
             Taxinvoice taxinvoice = new Taxinvoice();
 
             // [필수] 기재상 작성일자, 날자형식(yyyyMMdd)
-            taxinvoice.writeDate = "20190111";
+            taxinvoice.writeDate = "20201027";
 
             // [필수] 과금방향, {정과금, 역과금}중 선택
             // - 정과금(공급자과금), 역과금(공급받는자과금)
@@ -230,7 +230,7 @@ namespace Popbill.Taxinvoice.Example
             TaxinvoiceDetail detail = new TaxinvoiceDetail();
 
             detail.serialNum = 1; // 일련번호, 1부터 순차기재 
-            detail.purchaseDT = "20190111"; // 거래일자
+            detail.purchaseDT = "20201027"; // 거래일자
             detail.itemName = "품목명"; // 품목명 
             detail.spec = "규격"; // 규격
             detail.qty = "1"; // 수량
@@ -244,7 +244,7 @@ namespace Popbill.Taxinvoice.Example
             detail = new TaxinvoiceDetail();
 
             detail.serialNum = 2; // 일련번호, 1부터 순차기재 
-            detail.purchaseDT = "20190111"; // 거래일자
+            detail.purchaseDT = "20201027"; // 거래일자
             detail.itemName = "품목명"; // 품목명 
             detail.spec = "규격"; // 규격
             detail.qty = "1"; // 수량

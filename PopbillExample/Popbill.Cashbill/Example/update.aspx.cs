@@ -34,7 +34,7 @@ namespace Popbill.Cashbill.Example
             String testUserID = "testkorea";
 
             // 현금영수증 문서관리번호
-            String mgtKey = "20190114-001";
+            String mgtKey = "20201027-111";
 
 
             // 현금영수증 정보 객체

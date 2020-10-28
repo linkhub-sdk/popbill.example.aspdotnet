@@ -39,14 +39,14 @@ namespace Popbill.Statement.Example
             int itemCode = 121;
 
             // 전자명세서 문서번호
-            String mgtKey = "20190111-001";
+            String mgtKey = "20201028-001";
 
 
             // 전자명세서 객체
             Statement statement = new Statement();
 
             // [필수], 기재상 작성일자 날짜형식(yyyyMMdd)
-            statement.writeDate = "20190111";
+            statement.writeDate = "20201028";
 
             // [필수], {영수, 청구} 중 기재 
             statement.purposeType = "영수";
@@ -164,7 +164,7 @@ namespace Popbill.Statement.Example
             StatementDetail detail = new StatementDetail();
 
             detail.serialNum = 1; // 일련번호, 1부터 순차기재, 최대 99
-            detail.purchaseDT = "20190111"; // 거래일자
+            detail.purchaseDT = "20201028"; // 거래일자
             detail.itemName = "품목명"; // 품목명
             detail.spec = "규격"; // 규격
             detail.qty = "1"; // 수량
@@ -183,7 +183,7 @@ namespace Popbill.Statement.Example
             detail = new StatementDetail();
 
             detail.serialNum = 2; // 일련번호, 1부터 순차기재, 최대 99
-            detail.purchaseDT = "20190111"; // 거래일자
+            detail.purchaseDT = "20201028"; // 거래일자
             detail.itemName = "품목명"; // 품목명
             detail.spec = "규격"; // 규격
             detail.qty = "1"; // 수량
