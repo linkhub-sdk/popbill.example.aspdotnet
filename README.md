@@ -12,8 +12,10 @@
 4. 전자세금계산서 홈택스 연동
 5. 현금영수증 홈택스 연동
 6. 휴폐업조회
-7. 문자
-8. 팩스
-9. 카카오톡(알림톡/친구톡)
+7. 계좌조회
+8. 예금주조회
+9. 문자
+10. 팩스
+11. 카카오톡(알림톡/친구톡)
 
-[ASP.NET SDK 적용방법](http://blog.linkhub.co.kr/4022/)
+[ASP.NET SDK 적용방법](https://docs.popbill.com/taxinvoice/tutorial/dotnet)
