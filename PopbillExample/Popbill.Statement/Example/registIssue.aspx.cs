@@ -215,7 +215,7 @@ namespace Popbill.Statement.Example
 
             try
             {
-                Response response = Global.statementService.RegistIssue(testCorpNum, statement, memo, testUserID, emailSubject);
+                STMIssueResponse response = Global.statementService.RegistIssue(testCorpNum, statement, memo, testUserID, emailSubject);
                 code = response.code.ToString();
                 message = response.message;
             }
