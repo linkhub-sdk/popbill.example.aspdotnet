@@ -33,10 +33,10 @@ namespace Popbill.Cashbill.Example
             String testUserID = "testkorea";
 
             // 현금영수증 문서번호
-            String mgtKey = "20201027-001 ";
+            String mgtKey = "20210701-001 ";
 
             // 저장파일 경로
-            String path = @"C:\Users\wjkim\Desktop\CashBill_20201027-001.pdf";
+            String path = @"C:\Users\wjkim\Desktop\CashBill_20210701-001.pdf";
 
             try
             {

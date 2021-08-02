@@ -21,7 +21,7 @@ namespace Popbill.Statement.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 전자명세서에 다른 전자명세서 1건을 첨부합니다.
+             * 하나의 전자명세서에 다른 전자명세서를 첨부합니다.
              * - https://docs.popbill.com/statement/dotnet/api#AttachStatement
              */
 
@@ -31,14 +31,14 @@ namespace Popbill.Statement.Example
             // 명세서 종류 코드 - 121(거래명세서), 122(청구서), 123(견적서), 124(발주서), 125(입금표), 126(영수증)
             int itemCode = 121;
 
-            // 전자명세서 문서관리번호
-            String mgtKey = "20190111-001";
+            // 전자명세서 문서번호
+            String mgtKey = "20210701-001";
 
             // 첨부할 명세서 종류 코드 - 121(거래명세서), 122(청구서), 123(견적서), 124(발주서), 125(입금표), 126(영수증)
             int SubItemCode = 121;
 
-            // 첨부할 전자명세서 관리번호 
-            String SubMgtKey = "20190111-002";
+            // 첨부할 전자명세서 문서번호 
+            String SubMgtKey = "20210701-002";
 
             try
             {

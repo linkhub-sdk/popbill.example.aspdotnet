@@ -4,24 +4,24 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-	<title>팝빌 세금계산서 SDK ASP.NET Example</title>
-	<link href="../Example.css" rel="stylesheet" type="text/css"/>
+    <title>팝빌 세금계산서 SDK ASP.NET Example</title>
+    <link href="../Example.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="content">
-	<p class="heading1">Response</p>
-	<br/>
-	<fieldset class="fieldset1">
-		<legend>팝빌 인감 및 첨부문서 등록 URL 확인</legend>
-		<ul>
-			<% if (!String.IsNullOrEmpty(code)) { %>
-				<li>Response.code : <%= code %> </li>
-				<li>Response.message : <%= message %></li>
-			<% } else { %>
-				<li>url : <%= url %></li>
-			<% } %>
-		</ul>
-	</fieldset>
+    <p class="heading1">Response</p>
+    <br/>
+    <fieldset class="fieldset1">
+        <legend>팝빌 인감 및 첨부문서 등록 URL 확인</legend>
+        <ul>
+            <% if (!String.IsNullOrEmpty(code)) { %>
+                <li>Response.code : <%= code %> </li>
+                <li>Response.message : <%= message %></li>
+            <% } else { %>
+                <li>url : <%= url %></li>
+            <% } %>
+        </ul>
+    </fieldset>
 </div>
 </body>
 </html>

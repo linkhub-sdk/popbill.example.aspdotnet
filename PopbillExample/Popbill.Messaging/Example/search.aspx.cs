@@ -22,8 +22,7 @@ namespace Popbill.Message.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 검색조건을 사용하여 메시지 전송내역을 조회합니다.
-             * - 최대 검색기한 : 6개월 이내
+             * 검색조건에 해당하는 문자 전송내역을 조회합니다. (최대 검색기간 : 6개월)
              * - https://docs.popbill.com/message/dotnet/api#Search
              */
 
@@ -32,10 +31,10 @@ namespace Popbill.Message.Example
 
             // 최대 검색기간 : 6개월 이내
             // 시작일자, 날짜형식(yyyyMMdd)
-            String SDate = "20190918";
+            String SDate = "20210701";
 
             // 종료일자, 날짜형식(yyyyMMdd)
-            String EDate = "20191231";
+            String EDate = "20210730";
 
             // 전송상태값 배열, 1-대기, 2-성공, 3-실패, 4-취소
             String[] State = new String[4];

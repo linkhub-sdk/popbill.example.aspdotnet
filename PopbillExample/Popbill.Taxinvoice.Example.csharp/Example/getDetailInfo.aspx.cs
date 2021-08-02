@@ -22,7 +22,7 @@ namespace Popbill.Taxinvoice.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 1건의 세금계산서 상세정보를 확인합니다.
+             * 세금계산서 1건의 상세정보를 확인합니다.
              * - https://docs.popbill.com/taxinvoice/dotnet/api#GetDetailInfo
              */
 
@@ -33,8 +33,8 @@ namespace Popbill.Taxinvoice.Example
             // 세금계산서 발행유형, SELL-매출, BUY-매입, TRUSTEE-위수탁
             MgtKeyType KeyType = MgtKeyType.SELL;
 
-            // 세금계산서 문서관리번호
-            String mgtKey = "20190111-001";
+            // 세금계산서 문서번호
+            String mgtKey = "20210701-001";
 
             try
             {

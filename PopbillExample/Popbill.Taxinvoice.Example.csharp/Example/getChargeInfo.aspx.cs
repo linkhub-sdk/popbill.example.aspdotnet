@@ -22,7 +22,7 @@ namespace Popbill.Taxinvoice.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 전자세금계산서 API 서비스 과금정보를 확인합니다.
+             * 팝빌 전자세금계산서 API 서비스 과금정보를 확인합니다.
              * - https://docs.popbill.com/taxinvoice/dotnet/api#GetChargeInfo
              */
 

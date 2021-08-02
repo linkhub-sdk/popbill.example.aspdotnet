@@ -23,7 +23,7 @@ namespace Popbill.Message.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 팝빌에 등록된 문자 발신번호 목록을 확인합니다.
+             * 팝빌에 등록한 연동회원의 문자 발신번호 목록을 확인합니다.
              * - https://docs.popbill.com/message/dotnet/api#GetSenderNumberList
              */
 

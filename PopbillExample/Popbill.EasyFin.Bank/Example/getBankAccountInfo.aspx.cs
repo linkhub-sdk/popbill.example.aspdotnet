@@ -22,8 +22,9 @@ namespace Popbill.EasyFin.Bank.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 팝빌에 등록된 은행 계좌정보를 확인합니다.
-            */
+             * 팝빌에 등록된 계좌 정보를 확인합니다.
+             * -https://docs.popbill.com/easyfinbank/dotnet/api#GetBankAccountInfo
+             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";

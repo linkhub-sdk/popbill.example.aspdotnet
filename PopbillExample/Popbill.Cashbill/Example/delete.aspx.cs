@@ -21,9 +21,9 @@ namespace Popbill.Cashbill.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 1건의 현금영수증을 [삭제]합니다.
-             * - 현금영수증을 삭제하면 사용된 문서관리번호(mgtKey)를 재사용할 수 있습니다.
-             * - 삭제가능한 문서 상태 : [임시저장], [발행취소]
+             * 삭제 가능한 상태의 현금영수증을 삭제합니다.
+             * - 삭제 가능한 상태: "임시저장", "발행취소", "전송실패"
+             * - 현금영수증을 삭제하면 사용된 문서번호(mgtKey)를 재사용할 수 있습니다.
              * - https://docs.popbill.com/cashbill/dotnet/api#Delete
              */
 
@@ -33,8 +33,8 @@ namespace Popbill.Cashbill.Example
             // 팝빌회원 아이디
             String testUserID = "testkorea";
 
-            // 현금영수증 문서관리번호
-            String mgtKey = "20190114-001";
+            // 현금영수증 문서번호
+            String mgtKey = "20210701-001";
 
             try
             {

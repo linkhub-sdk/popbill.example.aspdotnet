@@ -9,19 +9,19 @@
 </head>
 <body>
 <div id="content">
-	<p class="heading1">Response</p>
-	<br/>
-	<fieldset class="fieldset1">
-		<legend>파트너 포인트 충전 URL 확인</legend>
-		<ul>
-			<% if (!String.IsNullOrEmpty(code)) { %>
-				<li>Response.code : <%=code %> </li>
-				<li>Response.message : <%= message %></li>
-			<% } else {	%>
-				<li>url : <%= url %></li>
-			<% } %>
-		</ul>
-	</fieldset>
+    <p class="heading1">Response</p>
+    <br/>
+    <fieldset class="fieldset1">
+        <legend>파트너 포인트 충전 URL 확인</legend>
+        <ul>
+            <% if (!String.IsNullOrEmpty(code)) { %>
+                <li>Response.code : <%=code %> </li>
+                <li>Response.message : <%= message %></li>
+            <% } else {	%>
+                <li>url : <%= url %></li>
+            <% } %>
+        </ul>
+    </fieldset>
  </div>
 </body>
 </html>

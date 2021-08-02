@@ -21,8 +21,7 @@ namespace Popbill.Taxinvoice
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 공급받는자에게 요청받은 역)발행대기 상태의 세금계산서를 [공급자]가 [거부]합니다.
-             * - 세금계산서의 문서관리번호를 재사용하기 위해서는 삭제 (Delete API)를 호출하여 [삭제] 처리해야 합니다.
+             * 공급자가 공급받는자에게 역발행 요청 받은 세금계산서의 발행을 거부합니다.
              * - https://docs.popbill.com/taxinvoice/dotnet/api#Refuse
              */
 
@@ -35,8 +34,8 @@ namespace Popbill.Taxinvoice
             // 세금계산서 발행유형, SELL-매출, BUY-매입, TRUSTEE-위수탁
             MgtKeyType KeyType = MgtKeyType.SELL;
 
-            // 세금계산서 문서관리번호
-            String mgtKey = "20190111-001";
+            // 세금계산서 문서번호
+            String mgtKey = "20210701-001";
 
             // 메모 
             String memo = "역발행 요청 거부 메모";

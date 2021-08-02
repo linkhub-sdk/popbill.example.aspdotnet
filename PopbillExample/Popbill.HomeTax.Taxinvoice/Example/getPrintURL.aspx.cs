@@ -22,16 +22,16 @@ namespace Popbill.HomeTax.Taxinvoice.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 세금계산서 1건의 팝업 인쇄 URL을 반환합니다.
-            * - 반환된 URL은 보안정책에 따라 30초의 유효시간을 갖습니다.
-            * - https://docs.popbill.com/httaxinvoice/dotnet/api#GetPrintURL
-            */
+             * 홈택스 전자세금계산서 인쇄 팝업 URL을 반환합니다.
+             * - 반환되는 URL은 보안 정책상 30초 동안 유효하며, 시간을 초과한 후에는 해당 URL을 통한 페이지 접근이 불가합니다.
+             * - https://docs.popbill.com/httaxinvoice/dotnet/api#GetPrintURL
+             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
             // 조회할 전자세금계산서 국세청승인번호
-            String NTSConfirmNum = "201610314100020300002777";
+            String NTSConfirmNum = "202110314100020300002777";
 
             try
             {

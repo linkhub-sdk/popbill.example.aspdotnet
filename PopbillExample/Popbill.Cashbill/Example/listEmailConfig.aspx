@@ -4,27 +4,27 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head id="Head1" runat="server">
-	<title>팝빌 현금영수증 SDK ASP.NET Example</title>
-	<link href="../Example.css" rel="stylesheet" type="text/css" />
+    <title>팝빌 현금영수증 SDK ASP.NET Example</title>
+    <link href="../Example.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div id="content">
-	<p class="heading1">Response</p>
-	<br/>
-	<fieldset class="fieldset1">
-		<legend>알림메일 전송목록 조회 </legend>
-		<ul>
-			<% if (!String.IsNullOrEmpty(code)) { %>
-				<li>Response.code : <%=code %> </li>
-				<li>Response.message : <%= message %></li>
-			<% } else {	%>
-		        <% foreach (Popbill.EmailConfig info in emailConfigList) { %>
-	                <%if (info.emailType == "CSH_ISSUE") { %> <li> CSH_ISSUE (고객에게 현금영수증이 발행 되었음을 알려주는 메일) : <%= info.sendYN%></li> <%} %>
-	                <%if (info.emailType == "CSH_CANCEL") { %> <li> CSH_CANCEL (고객에게 현금영수증이 발행취소 되었음을 알려주는 메일) : <%= info.sendYN%></li> <%} %>
-		        <% } %>
-			<% } %>
-		</ul>
-	</fieldset>
+    <p class="heading1">Response</p>
+    <br/>
+    <fieldset class="fieldset1">
+        <legend>알림메일 전송목록 조회 </legend>
+        <ul>
+            <% if (!String.IsNullOrEmpty(code)) { %>
+                <li>Response.code : <%=code %> </li>
+                <li>Response.message : <%= message %></li>
+            <% } else {	%>
+                <% foreach (Popbill.EmailConfig info in emailConfigList) { %>
+                    <%if (info.emailType == "CSH_ISSUE") { %> <li> CSH_ISSUE (고객에게 현금영수증이 발행 되었음을 알려주는 메일) : <%= info.sendYN%></li> <%} %>
+                    <%if (info.emailType == "CSH_CANCEL") { %> <li> CSH_CANCEL (고객에게 현금영수증이 발행취소 되었음을 알려주는 메일) : <%= info.sendYN%></li> <%} %>
+                <% } %>
+            <% } %>
+        </ul>
+    </fieldset>
  </div>
 </body>
 </html>

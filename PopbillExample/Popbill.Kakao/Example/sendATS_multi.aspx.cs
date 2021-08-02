@@ -23,8 +23,8 @@ namespace Popbill.Kakao.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * [대량전송] 알림톡 전송을 요청합니다.
-             * 사전에 승인된 템플릿의 내용과 알림톡 전송내용(content)이 다를 경우 전송실패 처리됩니다.
+             * 승인된 템플릿의 내용을 작성하여 다수건의 알림톡 전송을 팝빌에 접수하며, 수신자 별로 개별 내용을 전송합니다. (최대 1,000건)
+             * - 전송실패시 사전에 지정한 변수 'altSendType' 값으로 대체문자를 전송할 수 있고, 이 경우 문자(SMS/LMS) 요금이 과금됩니다.
              * - https://docs.popbill.com/kakao/dotnet/api#SendATS_Multi
              */
 
@@ -66,7 +66,7 @@ namespace Popbill.Kakao.Example
                 // 대체문자 내용
                 receiverInfo.altmsg = "대체문자 내용입니다"+i;
                 // 파트너 지정키, 대량전송시, 수신자 구별용 메모
-                receiverInfo.interOPRefKey = "20201027-" + i.ToString();
+                receiverInfo.interOPRefKey = "20210701-" + i.ToString();
 
                 // 수신자별 개별 버튼내용 전송하는 경우
                 // 개별 버튼의 개수는 템플릿 신청 시 승인받은 버튼의 개수와 동일하게 생성, 다를경우 실패 처리

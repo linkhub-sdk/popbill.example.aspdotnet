@@ -22,9 +22,9 @@ namespace Popbill.EasyFin.Bank.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 연동회원의 정액제 서비스 이용상태를 확인합니다.
-            * - https://docs.popbill.com/easyfinbank/dotnet/api#GetFlatRateState
-            */
+             * 계좌조회 정액제 서비스 상태를 확인합니다.
+             * - https://docs.popbill.com/easyfinbank/dotnet/api#GetFlatRateState
+             */
 
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

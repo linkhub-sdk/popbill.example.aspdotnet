@@ -21,9 +21,9 @@ namespace Popbill.HomeTax.Cashbill.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 팝빌에 등록된 현금영수증 부서사용자 계정정보를 이용하여 홈택스 로그인을 테스트합니다.
-            * - https://docs.popbill.com/htcashbill/dotnet/api#CheckLoginDeptUser
-            */
+             * 팝빌에 등록된 현금영수증 자료조회 부서사용자 계정 정보로 홈택스 로그인 가능 여부를 확인합니다.
+             * - https://docs.popbill.com/htcashbill/dotnet/api#CheckLoginDeptUser
+             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";

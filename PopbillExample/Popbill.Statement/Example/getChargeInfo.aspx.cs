@@ -22,7 +22,7 @@ namespace Popbill.Statement.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 전자명세서 API 서비스 과금정보를 확인합니다.
+             * 팝빌 전자명세서 API 서비스 과금정보를 확인합니다.
              * - https://docs.popbill.com/statement/dotnet/api#GetChargeInfo
              */
 

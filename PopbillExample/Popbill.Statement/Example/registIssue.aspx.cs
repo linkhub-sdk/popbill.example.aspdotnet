@@ -22,7 +22,8 @@ namespace Popbill.Statement.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 1건의 전자명세서를 즉시발행 처리합니다.
+             * 작성된 전자명세서 데이터를 팝빌에 저장과 동시에 발행하여, "발행완료" 상태로 처리합니다.
+             * - 팝빌 사이트 [전자명세서] > [환경설정] > [전자명세서 관리] 메뉴의 발행시 자동승인 옵션 설정을 통해 전자명세서를 "발행완료" 상태가 아닌 "승인대기" 상태로 발행 처리 할 수 있습니다.
              * - https://docs.popbill.com/statement/dotnet/api#RegistIssue
              */
 
@@ -35,11 +36,11 @@ namespace Popbill.Statement.Example
             // 맞춤양식코드, 미기재시 기본양식으로 처리
             String formCode = "";
 
-            // 명세서 종류 코드 - 121(거래명세서), 122(청구서), 123(견적서), 124(발주서), 125(입금표), 126(영수증)
+            // 명세서 코드 - 121(거래명세서), 122(청구서), 123(견적서), 124(발주서), 125(입금표), 126(영수증)
             int itemCode = 121;
 
-            // 전자명세서 문서번호
-            String mgtKey = "20201027-002";
+            // 전자명세서 문서번호, 최대 24자리, 영문, 숫자 '-', '_'를 조합하여 사업자별로 중복되지 않도록 구성
+            String mgtKey = "20210706-002";
 
             // 즉시발행 메모
             String memo = "즉시발행 메모";
@@ -52,7 +53,7 @@ namespace Popbill.Statement.Example
             Statement statement = new Statement();
 
             // [필수], 기재상 작성일자 날짜형식(yyyyMMdd)
-            statement.writeDate = "20201028";
+            statement.writeDate = "20210706";
 
             // [필수], {영수, 청구} 중 기재 
             statement.purposeType = "영수";
@@ -63,10 +64,10 @@ namespace Popbill.Statement.Example
             // 맞춤양식코드, 기본값을 공백('')으로 처리하면 기본양식으로 처리.
             statement.formCode = formCode;
 
-            // [필수] 전자명세서 양식코드
+            // [필수] 명세서 코드
             statement.itemCode = itemCode;
 
-            // [필수] 문서번호, 1~24자리 숫자, 영문, '-', '_' 조합으로 사업자별로 중복되지 않도록 구성
+            // [필수] 문서번호, 최대 24자리, 영문, 숫자 '-', '_'를 조합하여 사업자별로 중복되지 않도록 구성
             statement.mgtKey = mgtKey;
 
 
@@ -170,7 +171,7 @@ namespace Popbill.Statement.Example
             StatementDetail detail = new StatementDetail();
 
             detail.serialNum = 1; // 일련번호, 1부터 순차기재, 최대 99
-            detail.purchaseDT = "20201028"; // 거래일자
+            detail.purchaseDT = "20210706"; // 거래일자
             detail.itemName = "품목명"; // 품목명
             detail.spec = "규격"; // 규격
             detail.qty = "1"; // 수량
@@ -189,7 +190,7 @@ namespace Popbill.Statement.Example
             detail = new StatementDetail();
 
             detail.serialNum = 2; // 일련번호, 1부터 순차기재, 최대 99
-            detail.purchaseDT = "20201028"; // 거래일자
+            detail.purchaseDT = "20210706"; // 거래일자
             detail.itemName = "품목명"; // 품목명
             detail.spec = "규격"; // 규격
             detail.qty = "1"; // 수량

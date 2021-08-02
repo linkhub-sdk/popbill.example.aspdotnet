@@ -23,10 +23,9 @@ namespace Popbill.Statement
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 팝빌에 전자명세서를 등록하지 않고 수신자에게 팩스전송합니다.
+             * 전자명세서를 팩스로 전송하는 함수로, 팝빌에 데이터를 저장하는 과정이 없습니다.
              * - 팩스 전송 요청시 포인트가 차감됩니다. (전송실패시 환불처리)
-             * - 팩스 발행 요청시 작성한 문서관리번호는 팩스전송 파일명으로 사용됩니다.
-             * - 전송내역 확인은 "팝빌 로그인" > [문자 팩스] > [팩스] > [전송내역] 메뉴에서 전송결과를 확인할 수 있습니다.
+             * - 팝빌 사이트 [문자·팩스] > [팩스] > [전송내역] 메뉴에서 전송결과를 확인 할 수 있습니다.
              * - 팩스 전송결과를 확인하기 위해서는 선팩스 전송 요청 시 반환받은 접수번호를 이용하여
              *   팩스 API의 전송결과 확인 (GetFaxDetail) API를 이용하면 됩니다.
              * - https://docs.popbill.com/statement/dotnet/api#FAXSend
@@ -44,8 +43,8 @@ namespace Popbill.Statement
             // 명세서 종류 코드 - 121(거래명세서), 122(청구서), 123(견적서), 124(발주서), 125(입금표), 126(영수증)
             int itemCode = 121;
 
-            // 전자명세서 문서관리번호
-            String mgtKey = "20190111-001";
+            // 전자명세서 문서번호, 최대 24자리, 영문, 숫자 '-', '_'를 조합하여 사업자별로 중복되지 않도록 구성
+            String mgtKey = "20210701-001";
 
             // [필수] 팩스 발신번호
             String SendNum = "07043042991";
@@ -58,7 +57,7 @@ namespace Popbill.Statement
             Statement statement = new Statement();
 
             // [필수], 기재상 작성일자 날짜형식(yyyyMMdd)
-            statement.writeDate = "20190111";
+            statement.writeDate = "20210701";
 
             // [필수], {영수, 청구} 중 기재 
             statement.purposeType = "영수";
@@ -72,7 +71,7 @@ namespace Popbill.Statement
             // [필수] 전자명세서 양식코드
             statement.itemCode = itemCode;
 
-            // [필수] 문서관리번호, 1~24자리 숫자, 영문, '-', '_' 조합으로 사업자별로 중복되지 않도록 구성
+            // [필수] 문서번호, 1~24자리 숫자, 영문, '-', '_' 조합으로 사업자별로 중복되지 않도록 구성
             statement.mgtKey = mgtKey;
 
 
@@ -174,7 +173,7 @@ namespace Popbill.Statement
             StatementDetail detail = new StatementDetail();
 
             detail.serialNum = 1; // 일련번호, 1부터 순차기재, 최대 99
-            detail.purchaseDT = "20190111"; // 거래일자
+            detail.purchaseDT = "20210701"; // 거래일자
             detail.itemName = "품목명"; // 품목명
             detail.spec = "규격"; // 규격
             detail.qty = "1"; // 수량
@@ -193,7 +192,7 @@ namespace Popbill.Statement
             detail = new StatementDetail();
 
             detail.serialNum = 2; // 일련번호, 1부터 순차기재, 최대 99
-            detail.purchaseDT = "20190111"; // 거래일자
+            detail.purchaseDT = "20210701"; // 거래일자
             detail.itemName = "품목명"; // 품목명
             detail.spec = "규격"; // 규격
             detail.qty = "1"; // 수량

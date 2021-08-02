@@ -21,7 +21,7 @@ namespace Popbill.Cashbill.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 1건의 현금영수증을 [즉시발행]합니다.
+             * 현금영수증 데이터를 팝빌에 전송하여 발행합니다.
              * - 현금영수증 국세청 전송 정책 : https://docs.popbill.com/cashbill/ntsSendPolicy?lang=dotnet
              * - https://docs.popbill.com/cashbill/dotnet/api#RegistIssue
              */
@@ -33,7 +33,7 @@ namespace Popbill.Cashbill.Example
             String testUserID = "testkorea";
 
             // 현금영수증 문서번호
-            String mgtKey = "20201027-002";
+            String mgtKey = "20210701-002";
 
             // 메모
             String memo = "즉시발행 메모";
@@ -45,8 +45,7 @@ namespace Popbill.Cashbill.Example
             // 현금영수증 정보 객체
             Cashbill cashbill = new Cashbill();
 
-            // [필수] 문서번호, 사업자별로 중복되지 않도록 문서번호 할당
-            // 1~24자리 영문,숫자,'-','_' 조합 구성
+            // [필수] 문서번호, 최대 24자리, 영문, 숫자 '-', '_'를 조합하여 사업자별로 중복되지 않도록 구성
             cashbill.mgtKey = mgtKey;
 
             // [취소거래시 필수] 원본 현금영수증 국세청승인번호

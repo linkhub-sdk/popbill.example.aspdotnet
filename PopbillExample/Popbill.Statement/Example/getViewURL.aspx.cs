@@ -22,8 +22,9 @@ namespace Popbill.Statement.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 1건의 전자명세서 보기 URL을 반환합니다. (메뉴/버튼 제외)
-             * - 보안정책으로 인해 반환된 URL의 유효시간은 30초입니다.
+             * 팝빌 사이트와 동일한 전자명세서 1건의 상세 정보 페이지(사이트 상단, 좌측 메뉴 및 버튼 제외)의 팝업 URL을 반환합니다.
+             * - 반환되는 URL은 보안 정책상 30초 동안 유효하며, 시간을 초과한 후에는 해당 URL을 통한 페이지 접근이 불가합니다.
+             * - https://docs.popbill.com/statement/dotnet/api#GetViewURL
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
@@ -35,8 +36,8 @@ namespace Popbill.Statement.Example
             // 명세서 종류 코드 - 121(거래명세서), 122(청구서), 123(견적서), 124(발주서), 125(입금표), 126(영수증)
             int itemCode = 121;
 
-            // 전자명세서 문서관리번호
-            String mgtKey = "20190111-001";
+            // 전자명세서 문서번호
+            String mgtKey = "20210701-001";
 
             try
             {

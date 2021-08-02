@@ -22,7 +22,7 @@ namespace Popbill.Taxinvoice
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 검색조건을 사용하여 세금계산서 목록을 조회합니다.
+             * 검색조건에 해당하는 세금계산서를 조회합니다.
              * - https://docs.popbill.com/taxinvoice/dotnet/api#Search
              */
 
@@ -39,10 +39,10 @@ namespace Popbill.Taxinvoice
             String DType = "W";
 
             // [필수] 시작일자, 날자형식(yyyyMMdd)
-            String SDate = "20200701";
+            String SDate = "20210701";
 
             // [필수] 종료일자, 날자형식(yyyyMMdd)
-            String EDate = "20200731";
+            String EDate = "20210730";
 
             // 상태코드 배열, 미기재시 전체 상태조회, 문서상태 값 3자리의 배열, 2,3번째 자리에 와일드카드 가능
             String[] State = new String[3];

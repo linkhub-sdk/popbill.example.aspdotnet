@@ -23,7 +23,7 @@ namespace Popbill.Taxinvoice
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 세금계산서 상태 변경이력을 확인합니다.
+             * 세금계산서의 상태에 대한 변경이력을 확인합니다.
              * - https://docs.popbill.com/taxinvoice/dotnet/api#GetLogs
              */
 
@@ -33,8 +33,8 @@ namespace Popbill.Taxinvoice
             // 세금계산서 발행유형, SELL-매출, BUY-매입, TRUSTEE-위수탁
             MgtKeyType KeyType = MgtKeyType.SELL;
 
-            // 세금계산서 문서관리번호
-            String mgtKey = "20190111-001";
+            // 세금계산서 문서번호
+            String mgtKey = "20210701-001";
 
             try
             {

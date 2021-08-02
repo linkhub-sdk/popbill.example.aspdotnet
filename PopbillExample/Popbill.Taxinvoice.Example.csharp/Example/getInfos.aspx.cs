@@ -23,7 +23,7 @@ namespace Popbill.Taxinvoice.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 대량의 세금계산서 상태/요약 정보를 확인합니다. (최대 1000건)
+             * 다수건의 세금계산서 상태 및 요약 정보를 확인합니다. (1회 호출 시 최대 1,000건 확인 가능)
              * - https://docs.popbill.com/taxinvoice/dotnet/api#GetInfos
              */
 
@@ -35,10 +35,10 @@ namespace Popbill.Taxinvoice.Example
 
             List<string> MgtKeyList = new List<string>();
 
-            //  조회할 세금계산서 문서관리번호 배열, (최대 1000건)
-            MgtKeyList.Add("20190111-001");
-            MgtKeyList.Add("20190111-002");
-            MgtKeyList.Add("20190111-003");
+            //  조회할 세금계산서 문서번호 배열, (최대 1000건)
+            MgtKeyList.Add("20210701-001");
+            MgtKeyList.Add("20210701-002");
+            MgtKeyList.Add("20210701-003");
 
             try
             {

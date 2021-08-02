@@ -23,7 +23,6 @@ namespace Popbill.Cashbill.Example
             /**
              * 1건의 현금영수증을 [임시저장]합니다.
              * - [임시저장] 상태의 현금영수증은 발행(Issue API)을 호출해야만 국세청에 전송됩니다.
-             * - https://docs.popbill.com/cashbill/dotnet/api#Register
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
@@ -33,13 +32,12 @@ namespace Popbill.Cashbill.Example
             String testUserID = "testkorea";
 
             // 현금영수증 문서번호
-            String mgtKey = "20201027-011";
+            String mgtKey = "20210701-011";
 
             // 현금영수증 정보 객체
             Cashbill cashbill = new Cashbill();
 
-            // [필수] 문서번호, 사업자별로 중복되지 않도록 문서번호 할당
-            // 1~24자리 영문,숫자,'-','_' 조합 구성
+            // [필수] 문서번호, 최대 24자리, 영문, 숫자 '-', '_'를 조합하여 사업자별로 중복되지 않도록 구성
             cashbill.mgtKey = mgtKey;
 
             // [필수] 문서형태, {승인거래, 취소거래} 중 기재

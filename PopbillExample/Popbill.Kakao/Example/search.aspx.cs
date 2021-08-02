@@ -22,8 +22,7 @@ namespace Popbill.Kakao.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 검색조건을 사용하여 알림톡/친구톡 전송내역을 조회합니다.
-             * - 최대 검색기한 : 6개월 이내
+             * 검색조건에 해당하는 카카오톡 전송내역을 조회합니다. (최대 검색기간 : 6개월)
              * - https://docs.popbill.com/kakao/dotnet/api#Search
              */
 
@@ -32,10 +31,10 @@ namespace Popbill.Kakao.Example
 
             // 최대 검색기한 : 6개월 이내
             // 시작일자, 날자형식(yyyyMMdd)
-            String SDate = "20190101";
+            String SDate = "20210701";
 
             // 종료일자, 날자형식(yyyyMMdd)
-            String EDate = "20190114";
+            String EDate = "20210730";
 
             // 전송상태값 배열, 0-대기, 1-전송중, -2-성공, 3-대체, 4-실패, 5-취소
             String[] State = new String[6];

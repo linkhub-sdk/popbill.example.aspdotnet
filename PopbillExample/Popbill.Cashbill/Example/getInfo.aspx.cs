@@ -22,15 +22,15 @@ namespace Popbill.Cashbill.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 1건의 현금영수증 상태/요약 정보를 확인합니다.
+             * 현금영수증 1건의 상태 및 요약정보를 확인합니다.
              * - https://docs.popbill.com/cashbill/dotnet/api#GetInfo
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
-            // 현금영수증 문서관리번호
-            String mgtKey = "20190114-001";
+            // 현금영수증 문서번호
+            String mgtKey = "20210701-001";
 
             try
             {

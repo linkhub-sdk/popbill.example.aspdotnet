@@ -22,7 +22,7 @@ namespace Popbill.HomeTax.Cashbill.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 현금영수증 매입/매출 내역의 수집 결과 요약정보를 조회합니다.
+             * 함수  GetJobState(수집 상태 확인)를 통해 상태 정보가 확인된 작업아이디를 활용하여 수집된 현금영수증 매입/매출 내역의 요약 정보를 조회합니다.
              * - https://docs.popbill.com/htcashbill/dotnet/api#Summary
              */
 
@@ -30,7 +30,7 @@ namespace Popbill.HomeTax.Cashbill.Example
             String testCorpNum = "1234567890";
 
             // 수집 요청(requestJob API)시 반환반은 작업아이디(jobID)
-            String jobID = "017032114000000005";
+            String jobID = "021032114000000005";
 
             // 현금영수증 형태 배열, N-일반 현금영수증, C-취소 현금영수증
             String[] TradeType = { "N", "C" };

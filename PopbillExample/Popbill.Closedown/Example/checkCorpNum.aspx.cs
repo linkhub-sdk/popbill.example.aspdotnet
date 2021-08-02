@@ -22,9 +22,9 @@ namespace Popbill.Closedown.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 1건의 사업자 휴폐업여부를 조회합니다.
-            * - https://docs.popbill.com/closedown/dotnet/api#CheckCorpNum
-            */
+             * 사업자번호 1건에 대한 휴폐업정보를 확인합니다.
+             * - https://docs.popbill.com/closedown/dotnet/api#CheckCorpNum
+             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";

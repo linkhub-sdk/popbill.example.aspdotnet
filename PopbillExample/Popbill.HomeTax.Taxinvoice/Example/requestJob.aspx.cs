@@ -22,7 +22,7 @@ namespace Popbill.HomeTax.Taxinvoice.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 전자세금계산서 매출/매입 내역 수집을 요청합니다.
+             * 홈택스에 신고된 전자세금계산서 매입/매출 내역 수집을 팝빌에 요청합니다.
              * - 수집 요청후 반환받은 작업아이디(JobID)의 유효시간은 1시간 입니다.
              * - https://docs.popbill.com/httaxinvoice/dotnet/api#RequestJob
              */
@@ -37,10 +37,10 @@ namespace Popbill.HomeTax.Taxinvoice.Example
             String DType = "S";
 
             // 시작일자, 표시형식(yyyyMMdd)
-            String SDate = "20190901";
+            String SDate = "20210701";
 
             // 종료일자, 표시형식(yyyyMMdd)
-            String EDate = "20191231";
+            String EDate = "20210730";
 
             try
             {

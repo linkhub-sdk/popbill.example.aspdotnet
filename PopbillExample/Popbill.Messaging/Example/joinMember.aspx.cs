@@ -21,7 +21,7 @@ namespace Popbill.Message.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 파트너의 연동회원으로 회원가입을 요청합니다.
+             * 사용자를 연동회원으로 가입처리합니다.
              * - https://docs.popbill.com/message/dotnet/api#JoinMember
              */
 

@@ -23,7 +23,7 @@ namespace Popbill.Fax.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 팩스전송요청시 할당한 전송요청번호(requestNum)으로 전송결과를 확인합니다
+             * 파트너가 할당한 전송요청 번호를 통해 팩스 전송상태 및 결과를 확인합니다.
              * - https://docs.popbill.com/fax/dotnet/api#GetFaxResultRN
              */
 
@@ -31,7 +31,7 @@ namespace Popbill.Fax.Example
             String testCorpNum = "1234567890";
 
             // 팩스 전송시 기재한 요청번호
-            String requestNum = "20190114-001";
+            String requestNum = "20210701-001";
 
             try
             {

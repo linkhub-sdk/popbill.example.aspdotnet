@@ -21,9 +21,9 @@ namespace Popbill.Statement.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 1건의 전자명세서를 삭제합니다.
-             * - 전자명세서를 삭제하면 사용된 문서관리번호(mgtKey)를 재사용할 수 있습니다.
-             * - 삭제가능한 문서 상태 : [임시저장], [발행취소]
+             * 삭제 가능한 상태의 전자명세서를 삭제합니다.
+             * - 전자명세서를 삭제하면 사용된 문서번호(mgtKey)를 재사용할 수 있습니다.
+             * - 삭제 가능한 상태: "임시저장", "취소", "승인거부", "발행취소"
              * - https://docs.popbill.com/statement/dotnet/api#Delete
              */
 
@@ -36,8 +36,8 @@ namespace Popbill.Statement.Example
             // 명세서 종류 코드 - 121(거래명세서), 122(청구서), 123(견적서), 124(발주서), 125(입금표), 126(영수증)
             int itemCode = 121;
 
-            // 전자명세서 문서관리번호
-            String mgtKey = "20190111-001";
+            // 전자명세서 문서번호
+            String mgtKey = "20210702-001";
 
             try
             {

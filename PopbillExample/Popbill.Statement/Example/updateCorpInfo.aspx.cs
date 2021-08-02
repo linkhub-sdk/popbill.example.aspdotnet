@@ -21,7 +21,7 @@ namespace Popbill.Statement
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 연동회원의 회사정보를 수정합니다
+             * 연동회원의 회사정보를 수정합니다.
              * - https://docs.popbill.com/statement/dotnet/api#UpdateCorpInfo
              */
 

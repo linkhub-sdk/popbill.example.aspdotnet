@@ -23,7 +23,7 @@ namespace Popbill.Message.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 문자전송요청시 발급받은 접수번호(receiptNum)로 전송상태를 확인합니다.
+             * 팝빌에서 반환받은 접수번호를 통해 문자 전송상태 및 결과를 확인합니다.
              * - https://docs.popbill.com/message/dotnet/api#GetMessageResult
              */
 
@@ -31,7 +31,7 @@ namespace Popbill.Message.Example
             String testCorpNum = "1234567890";
 
             // 문자전송 요청시 발급받은 접수번호
-            String receiptNum = "018090511000000030";
+            String receiptNum = "021010809000000005";
 
             try
             {

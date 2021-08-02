@@ -22,8 +22,7 @@ namespace Popbill.Message.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 전송요청번호를 할당한 예약문자전송을 취소합니다.
-             * - 예약취소는 예약전송시간 10분전까지만 가능합니다.
+             * 파트너가 할당한 전송요청 번호를 통해 예약접수된 문자 전송을 취소합니다. (예약시간 10분 전까지 가능)
              * - https://docs.popbill.com/message/dotnet/api#CancelReserveRN
              */
 
@@ -34,7 +33,7 @@ namespace Popbill.Message.Example
             String testUserID = "testkorea";
 
             // 문자전송시 할당한 요청번호
-            String requestNum = "20190114-001";
+            String requestNum = "20210703-001";
 
             try
             {

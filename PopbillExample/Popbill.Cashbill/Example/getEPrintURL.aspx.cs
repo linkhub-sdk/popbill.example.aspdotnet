@@ -23,8 +23,6 @@ namespace Popbill.Cashbill.Example
         {
             /**
             * 현금영수증 인쇄(공급받는자) URL을 반환합니다.
-            * - URL 보안정책에 따라 반환된 URL은 30초의 유효시간을 갖습니다.
-            * - https://docs.popbill.com/cashbill/dotnet/api#GetPrintURL
             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
@@ -33,8 +31,8 @@ namespace Popbill.Cashbill.Example
             // 팝빌회원 아이디
             String testUserID = "testkorea";
 
-            // 현금영수증 문서관리번호
-            String mgtKey = "20190114-001";
+            // 현금영수증 문서번호
+            String mgtKey = "20210701-001";
 
             try
             {

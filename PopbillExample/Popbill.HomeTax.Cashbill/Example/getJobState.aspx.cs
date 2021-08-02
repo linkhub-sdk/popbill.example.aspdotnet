@@ -22,7 +22,7 @@ namespace Popbill.HomeTax.Cashbill.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 수집 요청 상태를 확인합니다.
+             * 함수 RequestJob (수집 요청)를 통해 반환 받은 작업 아이디의 상태를 확인합니다.
              * - https://docs.popbill.com/htcashbill/dotnet/api#GetJobState
              */
 
@@ -30,7 +30,7 @@ namespace Popbill.HomeTax.Cashbill.Example
             String testCorpNum = "1234567890";
 
             // 수집 요청(requestJob API)시 반환반은 작업아이디(jobID)
-            String jobID = "017032114000000005";
+            String jobID = "021032114000000005";
 
             try
             {

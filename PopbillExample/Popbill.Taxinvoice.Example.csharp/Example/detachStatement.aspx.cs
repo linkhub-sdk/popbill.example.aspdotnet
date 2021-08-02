@@ -21,7 +21,7 @@ namespace Popbill.Taxinvoice.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 세금계산서에 첨부된 전자명세서 1건을 첨부해제합니다.
+             * 세금계산서에 첨부된 전자명세서를 해제합니다.
              * - https://docs.popbill.com/taxinvoice/dotnet/api#DetachStatement
              */
 
@@ -31,14 +31,14 @@ namespace Popbill.Taxinvoice.Example
             // 세금계산서 발행유형, SELL-매출, BUY-매입, TRUSTEE-위수탁
             MgtKeyType KeyType = MgtKeyType.SELL;
 
-            // 세금계산서 문서관리번호
-            String mgtKey = "20170314-05";
+            // 세금계산서 문서번호
+            String mgtKey = "20210701-05";
 
             // 첨부해제 할 명세서 종류 코드
             int DocItemCode = 121;
 
-            // 첨부해제 할 명세서 관리번호
-            String DocMgtKey = "20160202-01";
+            // 첨부해제 할 명세서 문서번호
+            String DocMgtKey = "20210701-S01";
 
             try
             {

@@ -21,9 +21,7 @@ namespace Popbill.Statement.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 전자명세서에 첨부파일을 등록합니다.
-             * - 첨부파일 등록은 전자명세서가 [임시저장] 상태인 경우에만 가능합니다.
-             * - 첨부파일은 최대 5개까지 등록할 수 있습니다.
+             * "임시저장" 상태의 명세서에 1개의 파일을 첨부합니다. (최대 5개)
              * - https://docs.popbill.com/statement/dotnet/api#AttachFile
              */
 
@@ -36,8 +34,8 @@ namespace Popbill.Statement.Example
             // 명세서 종류 코드 - 121(거래명세서), 122(청구서), 123(견적서), 124(발주서), 125(입금표), 126(영수증)
             int itemCode = 121;
 
-            // 전자명세서 문서관리번호
-            String mgtKey = "20190111-001";
+            // 전자명세서 문서번호
+            String mgtKey = "20210701-001";
 
             // 첨부파일 경로
             String filePath = "C:/popbill.example.aspdotnet/PopbillExample/test.jpg";

@@ -22,10 +22,10 @@ namespace Popbill.Fax.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 팩스를 재전송합니다.
-            * - 접수일로부터 60일이 경과된 경우 재전송할 수 없습니다.
-            * - https://docs.popbill.com/fax/dotnet/api#ResendFAX
-            */
+             * 팝빌에서 반환받은 접수번호를 통해 팩스 1건을 재전송합니다.
+             * - 발신/수신 정보 미입력시 기존과 동일한 정보로 팩스가 전송되고, 접수일 기준 최대 60일이 경과되지 않는 건만 재전송이 가능합니다.
+             * - https://docs.popbill.com/fax/dotnet/api#ResendFAX
+             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";

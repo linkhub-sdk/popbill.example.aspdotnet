@@ -21,10 +21,9 @@ namespace Popbill.Statement.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 전자명세서 관리번호 중복여부를 확인합니다.
-            * - 관리번호는 1~24자리로 숫자, 영문 '-', '_' 조합하여 사업자별로 중복되지 않도록 구성해야합니다.
-            * - https://docs.popbill.com/statement/dotnet/api#CheckMgtKeyInUse
-            */
+             * 파트너가 전자명세서 관리 목적으로 할당하는 문서번호의 사용여부를 확인합니다.
+             * - https://docs.popbill.com/statement/dotnet/api#CheckMgtKeyInUse
+             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
@@ -32,8 +31,8 @@ namespace Popbill.Statement.Example
             // 명세서 종류 코드 - 121(거래명세서), 122(청구서), 123(견적서), 124(발주서), 125(입금표), 126(영수증)
             int itemCode = 121;
 
-            // 전자명세서 문서관리번호
-            String mgtKey = "20190111-001";
+            // 전자명세서 문서번호, 최대 24자리, 영문, 숫자 '-', '_'를 조합하여 사업자별로 중복되지 않도록 구성
+            String mgtKey = "20210704-001";
 
             try
             {

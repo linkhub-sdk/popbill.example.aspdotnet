@@ -4,50 +4,50 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
-	<title>팝빌 카카오톡 SDK ASP.NET Example</title>
-	<link href="../Example.css" rel="stylesheet" type="text/css"/>
+    <title>팝빌 카카오톡 SDK ASP.NET Example</title>
+    <link href="../Example.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="content">
-	<p class="heading1">Response</p>
-	<br/>
-	<fieldset class="fieldset1">
-		<legend>알림톡 템플릿 목록</legend>
-		<ul>
-			<% if (!String.IsNullOrEmpty(code)) { %>
-				<li>Response.code : <%= code %> </li>
-				<li>Response.message : <%= message %></li>
-			<% } else { %>
-				<% foreach (Popbill.Kakao.ATSTemplate info in templateList)
-				   { %>
-					<fieldset class="fieldset2">
-						<legend>템플릿 정보</legend>
-						<ul>
-							<li> templateCode (템플릿 코드) : <%= info.templateCode %></li>
-							<li> templateName (템플릿 제목) : <%= info.templateName %></li>
-							<li> template (템플릿 내용) : <%= info.template %></li>
-							<li> plusFriendID (플러스친구 아이디) : <%= info.plusFriendID %></li>
-						</ul>
-						<% if (info.btns != null)
-						   { %>
-							<% foreach (Popbill.Kakao.KakaoButton btnInfo in info.btns)
-							   { %>
-								<fieldset class="fieldset3">
-									<legend>버튼정보</legend>
-									<ul>
-										<li> n (버튼명) : <%= btnInfo.n %></li>
-										<li> t (버튼유형) : <%= btnInfo.t %></li>
-										<li> u1 (버튼링크1) : <%= btnInfo.u1 %></li>
-										<li> u2 (버튼링크2) : <%= btnInfo.u2 %></li>
-									</ul>
-								</fieldset>
-							<% } %>
-						<% } %>
-					</fieldset>
-				<% } %>
-			<% } %>
-		</ul>
-	</fieldset>
+    <p class="heading1">Response</p>
+    <br/>
+    <fieldset class="fieldset1">
+        <legend>알림톡 템플릿 목록</legend>
+        <ul>
+            <% if (!String.IsNullOrEmpty(code)) { %>
+                <li>Response.code : <%= code %> </li>
+                <li>Response.message : <%= message %></li>
+            <% } else { %>
+                <% foreach (Popbill.Kakao.ATSTemplate info in templateList)
+                   { %>
+                    <fieldset class="fieldset2">
+                        <legend>템플릿 정보</legend>
+                        <ul>
+                            <li> templateCode (템플릿 코드) : <%= info.templateCode %></li>
+                            <li> templateName (템플릿 제목) : <%= info.templateName %></li>
+                            <li> template (템플릿 내용) : <%= info.template %></li>
+                            <li> plusFriendID (카카오톡 채널 아이디) : <%= info.plusFriendID %></li>
+                        </ul>
+                        <% if (info.btns != null)
+                           { %>
+                            <% foreach (Popbill.Kakao.KakaoButton btnInfo in info.btns)
+                               { %>
+                                <fieldset class="fieldset3">
+                                    <legend>버튼정보</legend>
+                                    <ul>
+                                        <li> n (버튼명) : <%= btnInfo.n %></li>
+                                        <li> t (버튼유형) : <%= btnInfo.t %></li>
+                                        <li> u1 (버튼링크1) : <%= btnInfo.u1 %></li>
+                                        <li> u2 (버튼링크2) : <%= btnInfo.u2 %></li>
+                                    </ul>
+                                </fieldset>
+                            <% } %>
+                        <% } %>
+                    </fieldset>
+                <% } %>
+            <% } %>
+        </ul>
+    </fieldset>
 </div>
 </body>
 </html>

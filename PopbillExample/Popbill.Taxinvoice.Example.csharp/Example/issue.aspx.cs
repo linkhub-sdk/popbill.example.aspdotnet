@@ -22,7 +22,9 @@ namespace Popbill.Taxinvoice
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * [임시저장] 또는 [발행대기] 상태의 세금계산서를 [공급자]가 [발행]합니다.
+             * "임시저장" 또는 "(역)발행대기" 상태의 세금계산서를 발행(전자서명)하며, "발행완료" 상태로 처리합니다.
+             * - "발행완료"된 전자세금계산서는 국세청 전송 이전에 (CancelIssue API)함수로 국세청 신고 대상에서 제외할 수 있습니다.
+             * - 세금계산서 국세청 전송 정책 : https://docs.popbill.com/taxinvoice/ntsSendPolicy?lang=dotnet
              * - https://docs.popbill.com/taxinvoice/dotnet/api#TIIssue
              */
 
@@ -35,8 +37,8 @@ namespace Popbill.Taxinvoice
             // 세금계산서 발행유형, SELL-매출, BUY-매입, TRUSTEE-위수탁
             MgtKeyType KeyType = MgtKeyType.SELL;
 
-            // 세금계산서 문서관리번호
-            String mgtKey = "20190311-06";
+            // 세금계산서 문서번호
+            String mgtKey = "20210701-06";
 
             // 메모
             String memo = "발행메모";

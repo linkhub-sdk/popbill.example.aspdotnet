@@ -23,8 +23,8 @@ namespace Popbill.Taxinvoice.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 대량의 세금계산서 인쇄팝업 URL을 반환합니다. (최대 100건)
-             * - 보안정책으로 인해 반환된 URL의 유효시간은 30초입니다.
+             * 다수건의 세금계산서를 인쇄하기 위한 페이지의 팝업 URL을 반환합니다. (최대 100건)
+             * - 반환되는 URL은 보안 정책상 30초 동안 유효하며, 시간을 초과한 후에는 해당 URL을 통한 페이지 접근이 불가합니다.
              * - https://docs.popbill.com/taxinvoice/dotnet/api#GetMassPrintURL
              */
 
@@ -39,11 +39,11 @@ namespace Popbill.Taxinvoice.Example
 
             List<string> MgtKeyList = new List<string>();
 
-            // 인쇄할 세금계산서 문서관리번호, (최대 100건)
-            MgtKeyList.Add("20190111-001");
-            MgtKeyList.Add("20190111-002");
-            MgtKeyList.Add("20190111-003");
-            MgtKeyList.Add("20190111-004");
+            // 인쇄할 세금계산서 문서번호, (최대 100건)
+            MgtKeyList.Add("20210704-001");
+            MgtKeyList.Add("20210704-002");
+            MgtKeyList.Add("20210704-003");
+            MgtKeyList.Add("20210704-004");
 
             try
             {

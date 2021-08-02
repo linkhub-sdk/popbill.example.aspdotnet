@@ -22,8 +22,8 @@ namespace Popbill.Taxinvoice.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 공급받는자 메일링크 URL을 반환합니다.
-             * - 메일링크 URL은 유효시간이 존재하지 않습니다.
+             * 안내메일과 관련된 전자세금계산서를 확인 할 수 있는 상세 페이지의 팝업 URL을 반환하며, 해당 URL은 메일 하단의 "전자세금계산서 보기" 버튼의 링크와 같습니다.
+             * - 함수 호출로 반환 받은 URL에는 유효시간이 없습니다.
              * - https://docs.popbill.com/taxinvoice/dotnet/api#GetMailURL
              */
 
@@ -36,8 +36,8 @@ namespace Popbill.Taxinvoice.Example
             // 세금계산서 발행유형, SELL-매출, BUY-매입, TRUSTEE-위수탁
             MgtKeyType KeyType = MgtKeyType.SELL;
 
-            // 세금계산서 문서관리번호
-            String mgtKey = "20190111-001";
+            // 세금계산서 문서번호
+            String mgtKey = "20210710-001";
 
             try
             {

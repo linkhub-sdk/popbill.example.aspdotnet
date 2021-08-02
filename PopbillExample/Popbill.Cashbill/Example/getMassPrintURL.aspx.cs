@@ -23,8 +23,8 @@ namespace Popbill.Cashbill.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 대량의 현금영수증 인쇄팝업 URL을 반환합니다. (최대 100건)
-             * - 보안정책으로 인해 반환된 URL의 유효시간은 30초입니다.
+             * 다수건의 현금영수증을 인쇄하기 위한 페이지의 팝업 URL을 반환합니다. (최대 100건)
+             * 반환되는 URL은 보안 정책상 30초 동안 유효하며, 시간을 초과한 후에는 해당 URL을 통한 페이지 접근이 불가합니다.
              * - https://docs.popbill.com/cashbill/dotnet/api#GetMassPrintURL
              */
 
@@ -36,13 +36,13 @@ namespace Popbill.Cashbill.Example
 
             List<string> MgtKeyList = new List<string>();
 
-            // 현금영수증 문서관리번호 배열, 최대 100건.
-            MgtKeyList.Add("20190114-001");
-            MgtKeyList.Add("20190114-002");
-            MgtKeyList.Add("20190114-003");
-            MgtKeyList.Add("20190114-004");
-            MgtKeyList.Add("20190114-005");
-            MgtKeyList.Add("20190114-006");
+            // 현금영수증 문서번호 배열, 최대 100건.
+            MgtKeyList.Add("20210701-001");
+            MgtKeyList.Add("20210701-002");
+            MgtKeyList.Add("20210701-003");
+            MgtKeyList.Add("20210701-004");
+            MgtKeyList.Add("20210701-005");
+            MgtKeyList.Add("20210701-006");
 
             try
             {

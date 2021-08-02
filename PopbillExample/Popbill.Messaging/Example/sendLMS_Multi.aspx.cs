@@ -24,8 +24,7 @@ namespace Popbill.Message.Example
         {
 
             /**
-            * [대량전송] LMS(장문)를 전송합니다.
-            *  - 메시지 내용이 2,000Byte 초과시 메시지 내용은 자동으로 제거됩니다.
+            * 최대 2,000byte의 장문(LMS) 메시지 다수건 전송을 팝빌에 접수합니다. (최대 1,000건)
             *  - https://docs.popbill.com/message/dotnet/api#SendLMS_Multi
             */
 

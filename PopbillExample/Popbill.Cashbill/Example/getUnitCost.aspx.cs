@@ -22,7 +22,7 @@ namespace Popbill.Cashbill.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 현금영수증의 발행단가를 확인합니다.
+             * 현금영수증 발행시 과금되는 포인트 단가를 확인합니다.
              * - https://docs.popbill.com/cashbill/dotnet/api#GetUnitCost
              */
 

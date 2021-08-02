@@ -23,7 +23,6 @@ namespace Popbill.Cashbill.Example
             /**
              * 1건의 [임시저장] 현금영수증을 [발행]합니다.
              * - 현금영수증 국세청 전송 정책 : https://docs.popbill.com/cashbill/ntsSendPolicy?lang=dotnet
-             * - https://docs.popbill.com/cashbill/dotnet/api#CBIssue
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
@@ -32,8 +31,8 @@ namespace Popbill.Cashbill.Example
             // 팝빌회원 아이디
             String testUserID = "testkorea";
 
-            // 현금영수증 문서관리번호
-            String mgtKey = "20190114-001";
+            // 현금영수증 문서번호
+            String mgtKey = "20210701-001";
 
             // 메모
             String memo = "발행 메모";

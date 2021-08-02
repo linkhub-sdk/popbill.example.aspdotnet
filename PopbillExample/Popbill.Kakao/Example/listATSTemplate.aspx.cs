@@ -23,7 +23,7 @@ namespace Popbill.Kakao.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * (주)카카오로부터 승인된 알림톡 템플릿 목록을 반환합니다.
+             * 승인된 알림톡 템플릿 목록을 확인합니다.
              * - https://docs.popbill.com/kakao/dotnet/api#ListATSTemplate
              */
 

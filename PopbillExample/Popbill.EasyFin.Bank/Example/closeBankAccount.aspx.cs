@@ -21,8 +21,8 @@ namespace Popbill.EasyFin.Bank.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /*
-            * 팝빌에 등록된 은행계좌의 정액제 해지를 요청합니다.
-            */
+             * 계좌의 정액제 해지를 요청합니다.
+             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "";

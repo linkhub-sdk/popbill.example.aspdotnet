@@ -23,7 +23,7 @@ namespace Popbill.HomeTax.Taxinvoice.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * XML 형식의 전자세금계산서 상세정보를 확인합니다.
+             * 국세청 승인번호를 통해 수집한 전자세금계산서 1건의 상세정보를 XML 형태의 문자열로 반환합니다.
              * - https://docs.popbill.com/httaxinvoice/dotnet/api#GetXML
              */
 
@@ -31,7 +31,7 @@ namespace Popbill.HomeTax.Taxinvoice.Example
             String testCorpNum = "1234567890";
 
             // 조회할 전자세금계산서 국세청 승인번호
-            String ntsConfirmNum = "20170317410002030000017f";
+            String ntsConfirmNum = "20210317410002030000017f";
             
             try
             {

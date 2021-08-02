@@ -21,9 +21,7 @@ namespace Popbill.Statement.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 전자명세서에 첨부된 파일을 삭제합니다.
-             * - 파일을 식별하는 파일아이디는 첨부파일 목록(GetFileList API) 의 응답항목
-             *   중 파일아이디(AttachedFile) 값을 통해 확인할 수 있습니다.
+             * 삭제 가능한 상태의 전자명세서를 삭제합니다.
              * - https://docs.popbill.com/statement/dotnet/api#DeleteFile
              */
 
@@ -36,8 +34,8 @@ namespace Popbill.Statement.Example
             // 명세서 종류 코드 - 121(거래명세서), 122(청구서), 123(견적서), 124(발주서), 125(입금표), 126(영수증)
             int itemCode = 121;
 
-            // 전자명세서 문서관리번호
-            String mgtKey = "20190111-001";
+            // 전자명세서 문서번호
+            String mgtKey = "20210703-001";
 
             // 파일아이디
             String fileID = "2AD5E4B8-3639-4F93-A9B1-A93B097A6D96.PBF";

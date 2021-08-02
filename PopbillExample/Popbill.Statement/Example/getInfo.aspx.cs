@@ -22,7 +22,7 @@ namespace Popbill.Statement.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 1건의 전자명세서 상태/요약 정보를 확인합니다.
+             * 전자명세서의 1건의 상태 및 요약정보 확인합니다.
              * - https://docs.popbill.com/statement/dotnet/api#GetInfo
              */
 
@@ -32,8 +32,8 @@ namespace Popbill.Statement.Example
             // 명세서 종류 코드 - 121(거래명세서), 122(청구서), 123(견적서), 124(발주서), 125(입금표), 126(영수증)
             int itemCode = 121;
 
-            // 전자명세서 문서관리번호
-            String mgtKey = "20190111-001";
+            // 전자명세서 문서번호
+            String mgtKey = "20210710-001";
 
             try
             {

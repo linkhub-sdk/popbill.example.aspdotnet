@@ -23,7 +23,7 @@ namespace Popbill.Message.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 문자 전송내역 요약정보를 확인 합니다.
+             * 문자전송에 대한 전송결과 요약정보를 확인합니다.
              * - https://docs.popbill.com/message/dotnet/api#GetStates
              */
 
@@ -36,8 +36,8 @@ namespace Popbill.Message.Example
             //문자전송 접수번호 (최대 1000건)
             List<string> reciptNumList = new List<String>();
 
-            reciptNumList.Add("018041717000000018");
-            reciptNumList.Add("018041717000000019");
+            reciptNumList.Add("021041717000000018");
+            reciptNumList.Add("021041717000000019");
 
             try
             {

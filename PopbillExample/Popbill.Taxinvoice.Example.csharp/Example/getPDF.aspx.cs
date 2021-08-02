@@ -36,10 +36,10 @@ namespace Popbill.Taxinvoice.Example
             MgtKeyType KeyType = MgtKeyType.SELL;
 
             // 세금계산서 문서번호
-            String mgtKey = "20201027-001";
+            String mgtKey = "20211027-001";
 
             // 저장파일 경로
-            String path = @"C:\Users\wjkim\Desktop\Taxinvoice_20201027-001.pdf";
+            String path = @"C:\Users\wjkim\Desktop\Taxinvoice_20210701-001.pdf";
 
             try
             {

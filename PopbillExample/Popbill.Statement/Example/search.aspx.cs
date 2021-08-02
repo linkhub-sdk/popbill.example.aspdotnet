@@ -22,7 +22,7 @@ namespace Popbill.Statement.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 검색조건을 사용하여 전자명세서 목록을 조회합니다.
+             * 검색조건에 해당하는 전자명세서를 조회합니다.
              * - https://docs.popbill.com/statement/dotnet/api#Search
              */
 
@@ -33,10 +33,10 @@ namespace Popbill.Statement.Example
             String DType = "W";
 
             // [필수] 시작일자, 날짜형식(yyyyMMdd)
-            String SDate = "20201020";
+            String SDate = "20210601";
 
             // [필수] 종료일자, 날짜형식(yyyyMMdd)
-            String EDate = "20201027";
+            String EDate = "20210630";
 
             // 전송상태값 배열, 미기재시 전체 상태조회, 문서상태 값 3자리의 배열, 2,3번째 자리에 와일드카드 가능
             String[] State = new String[4];

@@ -21,7 +21,7 @@ namespace Popbill.Taxinvoice.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 세금계산서 발행안내 메일을 재전송합니다.
+             * 세금계산서와 관련된 안내 메일을 재전송 합니다.
              * - https://docs.popbill.com/taxinvoice/dotnet/api#SendEmail
              */
 
@@ -34,8 +34,8 @@ namespace Popbill.Taxinvoice.Example
             // 세금계산서 발행유형 
             MgtKeyType KeyType = MgtKeyType.SELL;
 
-            // 세금계산서 문서관리번호
-            String mgtKey = "20190111-001";
+            // 세금계산서 문서번호
+            String mgtKey = "20210701-001";
 
             // 수신메일주소
             // 팝빌 개발환경에서 테스트하는 경우에도 안내 메일이 전송되므로,

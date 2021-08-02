@@ -22,7 +22,7 @@ namespace Popbill.Cashbill.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 검색조건을 사용하여 현금영수증 목록을 조회합니다.
+             * 검색조건에 해당하는 현금영수증을 조회합니다.
              * - https://docs.popbill.com/cashbill/dotnet/api#Search
              */
 
@@ -33,10 +33,10 @@ namespace Popbill.Cashbill.Example
             String DType = "T";
 
             // 시작일자
-            String SDate = "20201010";
+            String SDate = "20210701";
 
             // 종료일자
-            String EDate = "20201027";
+            String EDate = "20210730";
 
             // 상태코드 배열, 2,3번째 자리에 와일드카드(*) 사용가능
             // - 상태코드에 대한 자세한 사항은 "[현금영수증 API 연동매뉴얼] >

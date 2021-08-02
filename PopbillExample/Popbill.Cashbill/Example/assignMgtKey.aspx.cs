@@ -21,7 +21,8 @@ namespace Popbill.Cashbill.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 팝빌사이트에서 작성된 현금영수증에 파트너 문서관리번호를 할당합니다.
+             * 팝빌 사이트를 통해 발행하였지만 문서번호가 존재하지 않는 현금영수증에 문서번호를 할당합니다.
+             * - https://docs.popbill.com/cashbill/dotnet/api#AssignMgtKey
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
@@ -30,12 +31,11 @@ namespace Popbill.Cashbill.Example
             // 팝빌회원 아이디
             String testUserID = "testkorea";
 
-            // 세금계산서 아이템키, 목록조회(Search) API의 반환항목중 ItemKey 참조
+            // 팝빌번호, 목록조회(Search) API의 반환항목중 ItemKey 참조
             String itemKey = "020080618301000001";
 
-            // 할당할 문서관리번호, 숫자, 영문, '-', '_' 조합으로 
-            // 1~24자리까지 사업자번호별 중복없는 고유번호 할당
-            String mgtKey = "20200806-03";
+            // 할당할 문서번호, 최대 24자리, 영문, 숫자 '-', '_'를 조합하여 사업자별로 중복되지 않도록 구성
+            String mgtKey = "20210701-03";
 
             try
             {

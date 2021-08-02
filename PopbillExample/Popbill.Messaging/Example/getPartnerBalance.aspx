@@ -4,24 +4,24 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-	<title>팝빌 문자 SDK ASP.NET Example</title>
-	<link href="../Example.css" rel="stylesheet" type="text/css"/>
+    <title>팝빌 문자 SDK ASP.NET Example</title>
+    <link href="../Example.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="content">
-	<p class="heading1">Response</p>
-	<br/>
-	<fieldset class="fieldset1">
-		<legend>파트너 잔여포인트 확인</legend>
-		<ul>
-			<% if (!String.IsNullOrEmpty(code)) { %>
-				<li>Response.code : <%= code %> </li>
-				<li>Response.message : <%= message %></li>
-			<% } else { %>
-				<li>remainPoint (잔여포인트) : <%= remainPoint %></li>
-			<% } %>
-		</ul>
-	</fieldset>
+    <p class="heading1">Response</p>
+    <br/>
+    <fieldset class="fieldset1">
+        <legend>파트너 잔여포인트 확인</legend>
+        <ul>
+            <% if (!String.IsNullOrEmpty(code)) { %>
+                <li>Response.code : <%= code %> </li>
+                <li>Response.message : <%= message %></li>
+            <% } else { %>
+                <li>remainPoint (잔여포인트) : <%= remainPoint %></li>
+            <% } %>
+        </ul>
+    </fieldset>
 </div>
 </body>
 </html>

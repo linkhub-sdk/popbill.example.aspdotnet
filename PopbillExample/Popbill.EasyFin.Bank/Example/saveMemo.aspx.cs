@@ -21,18 +21,18 @@ namespace Popbill.EasyFin.Bank.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 계좌 거래내역에 메모를 저장합니다.
-            * - https://docs.popbill.com/easyfinbank/dotnet/api#SaveMemo
-            */
+             * 한 건의 거래 내역에 메모를 저장합니다.
+             * - https://docs.popbill.com/easyfinbank/dotnet/api#SaveMemo
+             */
 
             // 팝빌회원 사업자번호
             String testCorpNum = "1234567890";
 
             // 거래내역아이디, Search API 반환항목중 tid 확인
-            String tid = "01912181100000000120191221000001";
+            String tid = "02112181100000000120211221000001";
 
             // 메모
-            String memo = "20191230-asp 메모";
+            String memo = "20210701-asp 메모";
 
             try
             {

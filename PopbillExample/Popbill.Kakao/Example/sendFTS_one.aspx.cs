@@ -23,8 +23,9 @@ namespace Popbill.Kakao.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 친구톡(텍스트) 전송을 요청합니다.
+             * 텍스트로 구성된 1건의 친구톡 전송을 팝빌에 접수합니다.
              * - 친구톡은 심야 전송(20:00~08:00)이 제한됩니다.
+             * - 전송실패시 사전에 지정한 변수 'altSendType' 값으로 대체문자를 전송할 수 있고, 이 경우 문자(SMS/LMS) 요금이 과금됩니다.
              * - https://docs.popbill.com/kakao/dotnet/api#SendFTS
              */
 
@@ -34,7 +35,7 @@ namespace Popbill.Kakao.Example
             // 팝빌회원 아이디
             String testUserID = "testkorea";
 
-            // 플러스친구 아이디, ListPlusFriendID API 의 plusFriendID 참고
+            // 카카오톡 채널 아이디, ListPlusFriendID API 의 plusFriendID 참고
             String plusFriendID = "@팝빌";
 
             // 팝빌에 사전 등록된 발신번호

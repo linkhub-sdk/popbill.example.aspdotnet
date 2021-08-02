@@ -21,9 +21,8 @@ namespace Popbill.Taxinvoice
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * [발행완료] 상태의 세금계산서를 [공급자]가 [발행취소]합니다.
-             * - [발행취소]는 국세청 전송전에만 가능합니다.
-             * - 발행취소된 세금계산서는 국세청에 전송되지 않습니다.
+             * 국세청 전송 이전 "발행완료" 상태의 전자세금계산서를 "발행취소"하고, 해당 건은 국세청 신고 대상에서 제외됩니다.
+             * - "발행취소" 상태의 전자세금계산서를 삭제하면, 문서번호 재사용이 가능합니다.
              * - https://docs.popbill.com/taxinvoice/dotnet/api#CancelIssue
              */
 
@@ -36,8 +35,8 @@ namespace Popbill.Taxinvoice
             // 세금계산서 발행유형, SELL-매출, BUY-매입, TRUSTEE-위수탁
             MgtKeyType KeyType = MgtKeyType.SELL;
 
-            // 세금계산서 문서관리번호
-            String mgtKey = "20190111-001";
+            // 세금계산서 문서번호
+            String mgtKey = "20210701-001";
 
             // 메모
             string memo = "발행취소 메모";

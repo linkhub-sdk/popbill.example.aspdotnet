@@ -21,9 +21,8 @@ namespace Popbill.Cashbill.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 현금영수증을 팩스전송합니다.
+             * 현금영수증을 팩스로 전송하는 함수로, 팝빌 사이트 [문자·팩스] > [팩스] > [전송내역] 메뉴에서 전송결과를 확인 할 수 있습니다.
              * - 팩스 전송 요청시 포인트가 차감됩니다. (전송실패시 환불처리)
-             * - 전송내역 확인은 "팝빌 로그인" > [문자 팩스] > [팩스] > [전송내역] 메뉴에서 전송결과를 확인할 수 있습니다.
              * - https://docs.popbill.com/cashbill/dotnet/api#SendFAX
              */
 
@@ -33,8 +32,8 @@ namespace Popbill.Cashbill.Example
             // 팝빌회원 아이디
             String testUserID = "testkorea";
 
-            // 현금영수증 문서관리번호
-            String mgtKey = "20190114-001";
+            // 현금영수증 문서번호
+            String mgtKey = "20210701-001";
 
             // 발신번호
             String sendNum = "070-4304-2991";

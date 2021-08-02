@@ -21,9 +21,8 @@ namespace Popbill.Statement
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 전자명세서를 팩스전송합니다.
+             * 전자명세서를 팩스로 전송하는 함수로, 팝빌 사이트 [문자·팩스] > [팩스] > [전송내역] 메뉴에서 전송결과를 확인 할 수 있습니다.
              * - 팩스 전송 요청시 포인트가 차감됩니다. (전송실패시 환불처리)
-             * - 전송내역 확인은 "팝빌 로그인" > [문자 팩스] > [팩스] > [전송내역] 메뉴에서 전송결과를 확인할 수 있습니다.
              * - https://docs.popbill.com/statement/dotnet/api#SendFAX
              */
 
@@ -37,8 +36,8 @@ namespace Popbill.Statement
             // 명세서 종류 코드 - 121(거래명세서), 122(청구서), 123(견적서), 124(발주서), 125(입금표), 126(영수증)
             int itemcode = 121;
 
-            // 전자명세서 문서관리번호
-            String mgtKey = "20190111-001";
+            // 전자명세서 문서번호
+            String mgtKey = "20210703-001";
 
             // 발신번호 
             String senderNum = "07043042991";

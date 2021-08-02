@@ -4,20 +4,20 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head id="Head1" runat="server">
-	<title>팝빌 계좌조회 API SDK ASP.NET Example</title>
-	<link href="../Example.css" rel="stylesheet" type="text/css"/>
+    <title>팝빌 계좌조회 API SDK ASP.NET Example</title>
+    <link href="../Example.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="content">
-	<p class="heading1">Response</p>
-	<br/>
-	<fieldset class="fieldset1">
-		<legend>계좌정보 확인</legend>
-		<ul>
-			<% if (!String.IsNullOrEmpty(code)) { %>
-				<li>Response.code : <%= code %> </li>
-				<li>Response.message : <%= message %></li>
-			<% } else { %>
+    <p class="heading1">Response</p>
+    <br/>
+    <fieldset class="fieldset1">
+        <legend>계좌정보 확인</legend>
+        <ul>
+            <% if (!String.IsNullOrEmpty(code)) { %>
+                <li>Response.code : <%= code %> </li>
+                <li>Response.message : <%= message %></li>
+            <% } else { %>
                 <li>accountNumber (계좌번호) : <%= accountInfo.accountNumber%></li>
                 <li>bankCode (은행코드) : <%= accountInfo.bankCode%></li>
                 <li>accountName (계좌 별칭) : <%= accountInfo.accountName%></li>
@@ -34,9 +34,9 @@
                 <li>useRestrictYN (정액제 서비스 사용제한 여부) : <%=accountInfo.useRestrictYN.ToString()%> </li>
                 <li>closeOnExpired (정액제 서비스 만료 시 해지 여부) : <%=accountInfo.closeOnExpired.ToString()%> </li>
                 <li>unPaidYN (미수금 보유 여부) : <%=accountInfo.unPaidYN.ToString()%> </li>
-			<% } %>
-		</ul>
-	</fieldset>
+            <% } %>
+        </ul>
+    </fieldset>
 </div>
 </body>
 </html>

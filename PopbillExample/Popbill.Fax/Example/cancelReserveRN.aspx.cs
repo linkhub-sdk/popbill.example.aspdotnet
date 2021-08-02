@@ -21,8 +21,7 @@ namespace Popbill.Fax.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 팩스전송요청시 할당한 전송요청번호(requestNum)로 팩스 예약전송건을 취소합니다.
-             * - 예약전송 취소는 예약전송시간 10분전까지 가능하며, 팩스변환 이후 가능합니다.
+             * 파트너가 할당한 전송요청 번호를 통해 예약접수된 팩스 전송을 취소합니다. (예약시간 10분 전까지 가능)
              * - https://docs.popbill.com/fax/dotnet/api#CancelReserveRN
              */
 
@@ -33,7 +32,7 @@ namespace Popbill.Fax.Example
             String testUserID = "testkorea";
 
             // 팩스 전송시 기재한 요청번호
-            String requestNum = "fax20180730050509";
+            String requestNum = "fax20210730050509";
 
             try
             {

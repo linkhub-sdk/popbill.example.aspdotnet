@@ -23,7 +23,7 @@ namespace Popbill.Statement.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 다수건의 전자명세서 상태/요약 정보를 확인합니다.
+             * 다수건의 전자명세서 상태 및 요약정보 확인합니다. (1회 호출 시 최대 1,000건 확인 가능)
              * - https://docs.popbill.com/statement/dotnet/api#GetInfos
              */
 
@@ -35,12 +35,12 @@ namespace Popbill.Statement.Example
 
             List<string> MgtKeyList = new List<string>();
 
-            //문서관리번호 배열, 최대 1000건
-            MgtKeyList.Add("20190111-001");
-            MgtKeyList.Add("20190111-001");
-            MgtKeyList.Add("20190111-003");
-            MgtKeyList.Add("20190111-004");
-            MgtKeyList.Add("20190111-005");
+            //문서번호 배열, 최대 1000건
+            MgtKeyList.Add("20210703-001");
+            MgtKeyList.Add("20210703-001");
+            MgtKeyList.Add("20210703-003");
+            MgtKeyList.Add("20210703-004");
+            MgtKeyList.Add("20210703-005");
 
             try
             {

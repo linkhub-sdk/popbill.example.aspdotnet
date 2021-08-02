@@ -24,7 +24,6 @@ namespace Popbill.Cashbill.Example
              * 1건의 현금영수증을 [수정]합니다.
              * - [임시저장] 상태의 현금영수증만 수정할 수 있습니다.
              * - 국세청에 신고된 현금영수증은 수정할 수 없으며, 취소 현금영수증을 발행하여 취소처리 할 수 있습니다.
-             * - https://docs.popbill.com/cashbill/dotnet/api#Update
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
@@ -33,15 +32,13 @@ namespace Popbill.Cashbill.Example
             // 팝빌회원 아이디
             String testUserID = "testkorea";
 
-            // 현금영수증 문서관리번호
-            String mgtKey = "20201027-111";
-
+            // 현금영수증 문서번호
+            String mgtKey = "20210702-111";
 
             // 현금영수증 정보 객체
             Cashbill cashbill = new Cashbill();
 
-            // [필수] 문서관리번호, 사업자별로 중복되지 않도록 관리번호 할당
-            // 1~24자리 영문,숫자,'-','_' 조합 구성
+            // [필수] 문서번호, 최대 24자리, 영문, 숫자 '-', '_'를 조합하여 사업자별로 중복되지 않도록 구성
             cashbill.mgtKey = mgtKey;
 
             // [필수] 문서형태, {승인거래, 취소거래} 중 기재

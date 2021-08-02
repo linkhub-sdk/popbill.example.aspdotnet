@@ -23,7 +23,7 @@ namespace Popbill.Fax.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 팩스전송요청시 발급받은 접수번호(receiptNum)로 전송결과를 확인합니다.
+             * 팝빌에서 반환 받은 접수번호를 통해 팩스 전송상태 및 결과를 확인합니다.
              * - https://docs.popbill.com/fax/dotnet/api#GetFaxResult
              */
 

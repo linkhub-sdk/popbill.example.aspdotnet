@@ -23,7 +23,7 @@ namespace Popbill.Message.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 080 서비스 수신거부 목록을 확인합니다.
+             * 전용 080 번호에 등록된 수신거부 목록을 반환합니다.
              * - https://docs.popbill.com/message/dotnet/api#GetAutoDenyList
              */
 

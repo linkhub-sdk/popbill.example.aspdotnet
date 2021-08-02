@@ -21,9 +21,9 @@ namespace Popbill.Cashbill.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 현금영수증 발행 안내메일을 재전송합니다.
-            * - https://docs.popbill.com/cashbill/dotnet/api#SendEmail
-            */
+             * 현금영수증과 관련된 안내 메일을 재전송 합니다.
+             * - https://docs.popbill.com/cashbill/dotnet/api#SendEmail
+             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
@@ -31,8 +31,8 @@ namespace Popbill.Cashbill.Example
             // 팝빌회원 아이디
             String testUserID = "testkorea";
 
-            // 현금영수증 문서관리번호
-            String mgtKey = "20190114-001";
+            // 현금영수증 문서번호
+            String mgtKey = "20210701-001";
 
             // 수신메일주소
             String receiveEmail = "test@test.com";

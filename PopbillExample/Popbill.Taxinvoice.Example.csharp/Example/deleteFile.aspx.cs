@@ -21,8 +21,8 @@ namespace Popbill.Taxinvoice.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 세금계산서에 첨부된 파일을 삭제합니다.
-             * - 파일을 식별하는 파일아이디는 첨부파일 목록(GetFiles API) 의 응답항목 중 파일아이디(AttachedFile) 값을 통해 확인할 수 있습니다.
+             * "임시저장" 상태의 세금계산서에 첨부된 1개의 파일을 삭제합니다.
+             * - 파일을 식별하는 파일아이디는 첨부파일 목록(GetFiles API) 를 호출하여 확인합니다.
              * - https://docs.popbill.com/taxinvoice/dotnet/api#DeleteFile
              */
 
@@ -35,8 +35,8 @@ namespace Popbill.Taxinvoice.Example
             // 세금계산서 발행유형, SELL-매출, BUY-매입, TRUSTEE-위수탁
             MgtKeyType KeyType = MgtKeyType.SELL;
 
-            // 세금계산서 문서관리번호
-            String mgtKey = "20190111-001";
+            // 세금계산서 문서번호
+            String mgtKey = "20210701-001";
 
             // 파일아이디, 첨부파일 목록(GetFileList API) 의 응답항목 중 파일아이디(AttachedFile) 값
             String fileID = "E85CDB70-1ADF-41FB-9B2C-CDB5AC6B2139.PBF";

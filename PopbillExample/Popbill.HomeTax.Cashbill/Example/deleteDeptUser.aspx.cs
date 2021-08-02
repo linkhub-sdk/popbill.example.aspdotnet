@@ -21,9 +21,9 @@ namespace Popbill.HomeTax.Cashbill.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 팝빌에 등록된 현금영수증 부서사용자 계정정보를 삭제합니다.
-            * - https://docs.popbill.com/htcashbill/dotnet/api#DeleteDeptUser
-            */
+             * 팝빌에 등록된 홈택스 현금영수증 자료조회 부서사용자 계정을 삭제합니다.
+             * - https://docs.popbill.com/htcashbill/dotnet/api#DeleteDeptUser
+             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";

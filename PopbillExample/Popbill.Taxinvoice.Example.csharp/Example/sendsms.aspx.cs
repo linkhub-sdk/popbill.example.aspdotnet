@@ -21,9 +21,9 @@ namespace Popbill.Taxinvoice.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 알림문자를 전송합니다. (단문/SMS- 한글 최대 45자)
+             * 세금계산서와 관련된 안내 SMS(단문) 문자를 재전송하는 함수로, 팝빌 사이트 [문자·팩스] > [문자] > [전송내역] 메뉴에서 전송결과를 확인 할 수 있습니다.
+             * - 메시지는 최대 90byte까지 입력 가능하고, 초과한 내용은 자동으로 삭제되어 전송합니다. (한글 최대 45자)
              * - 알림문자 전송시 포인트가 차감됩니다. (전송실패시 환불처리)
-             * - 전송내역 확인은 "팝빌 로그인" > [문자 팩스] > [문자] > [전송내역] 메뉴에서 전송결과를 확인할 수 있습니다.
              * - https://docs.popbill.com/taxinvoice/dotnet/api#SendSMS
              */
 
@@ -36,10 +36,10 @@ namespace Popbill.Taxinvoice.Example
             // 세금계산서 발행유형, SELL-매출, BUY-매입, TRUSTEE-위수탁
             MgtKeyType KeyType = MgtKeyType.SELL;
 
-            // 세금계산서 문서관리번호
-            String mgtKey = "20190111-001";
+            // 세금계산서 문서번호
+            String mgtKey = "20210701-001";
 
-            // 발신번호, [참고] 발신번호 세칙안내 - http://blog.linkhub.co.kr/3064
+            // 발신번호
             string senderNum = "070-4304-2991";
 
             // 수신번호

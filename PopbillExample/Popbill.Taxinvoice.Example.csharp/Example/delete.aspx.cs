@@ -21,9 +21,9 @@ namespace Popbill.Taxinvoice.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 1건의 전자세금계산서를 [삭제]합니다.
-             * - 세금계산서를 삭제해야만 문서관리번호(mgtKey)를 재사용할 수 있습니다.
-             * - 삭제가능한 문서 상태 : [임시저장], [발행취소], [발행예정 취소], [발행예정 거부]
+             * 삭제 가능한 상태의 세금계산서를 삭제합니다.
+             * - ※ 삭제 가능한 상태: "임시저장", "발행취소", "역발행거부", "역발행취소", "전송실패"
+             * - 삭제처리된 세금계산서의 문서번호는 재사용이 가능합니다.
              * - https://docs.popbill.com/taxinvoice/dotnet/api#Delete
              */
 
@@ -33,8 +33,8 @@ namespace Popbill.Taxinvoice.Example
             // 세금계산서 발행유형, SELL-매출, BUY-매입, TRUSTEE-위수탁
             MgtKeyType KeyType = MgtKeyType.SELL;
 
-            // 세금계산서 문서관리번호
-            String mgtKey = "20190111-001";
+            // 세금계산서 문서번호
+            String mgtKey = "20210701-001";
 
             try
             {

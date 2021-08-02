@@ -21,7 +21,7 @@ namespace Popbill.Cashbill.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 1건의 취소현금영수증을 [즉시발행]합니다.
+             * 취소 현금영수증을 발행하며 취소 현금영수증의 금액은 원본 금액을 넘을 수 없습니다.
              * - 현금영수증 국세청 전송 정책 : https://docs.popbill.com/cashbill/ntsSendPolicy?lang=dotnet
              * - https://docs.popbill.com/cashbill/dotnet/api#RevokeRegistIssue
              */
@@ -29,15 +29,14 @@ namespace Popbill.Cashbill.Example
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
-            // [필수] 문서번호, 사업자별로 중복되지 않도록 문서번호 할당
-            // 1~24자리 영문,숫자,'-','_' 조합 구성
-            String mgtKey = "20201027-101";
+            // [필수] 문서번호, 최대 24자리, 영문, 숫자 '-', '_'를 조합하여 사업자별로 중복되지 않도록 구성
+            String mgtKey = "20210702-101";
 
             // 원본현금영수증 승인번호, 문서정보 확인(GetInfo API)로 확인가능
             String orgConfirmNum = "548757045";
 
             // 원본현금영수증 거래일자, 문서정보 확인(GetInfo API)로 확인가능
-            String orgTradeDate = "20201027";
+            String orgTradeDate = "20210701";
 
             try
             {

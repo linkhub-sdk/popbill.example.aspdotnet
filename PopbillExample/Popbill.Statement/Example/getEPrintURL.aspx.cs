@@ -22,8 +22,8 @@ namespace Popbill.Statement.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 1건의 전자명세서 인쇄팝업 URL을 반환합니다.
-             * - 보안정책으로 인해 반환된 URL의 유효시간은 30초입니다.
+             * "공급받는자" 용 전자명세서 1건을 인쇄하기 위한 페이지의 팝업 URL을 반환합니다.
+             * - 반환되는 URL은 보안 정책상 30초 동안 유효하며, 시간을 초과한 후에는 해당 URL을 통한 페이지 접근이 불가합니다.
              * - https://docs.popbill.com/statement/dotnet/api#GetEPrintURL
              */
 
@@ -36,8 +36,8 @@ namespace Popbill.Statement.Example
             // 명세서 종류 코드 - 121(거래명세서), 122(청구서), 123(견적서), 124(발주서), 125(입금표), 126(영수증)
             int itemCode = 121;
 
-            // 전자명세서 문서관리번호
-            String mgtKey = "20190111-001";
+            // 전자명세서 문서번호
+            String mgtKey = "20210703-001";
 
             try
             {

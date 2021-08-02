@@ -22,20 +22,19 @@ namespace Popbill.Fax.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 검색조건을 사용하여 팩스 전송내역을 조회합니다.
-             * - 최대 검색기한 : 6개월 이내
+             * 검색조건에 해당하는 팩스 전송내역 목록을 조회합니다. (최대 검색기간 : 2개월)
              * - https://docs.popbill.com/fax/dotnet/api#Search
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
-            // 최대 검색기간 : 6개월 이내 
+            // 최대 검색기간 : 2개월 이내 
             // 시작일자, 날짜형식(yyyyMMdd)
-            String SDate = "20190901";
+            String SDate = "20210701";
 
             // 종료일자, 날짜형식(yyyyMMdd)
-            String EDate = "20191231";
+            String EDate = "20210730";
 
             //전송상태 배열 1-대기, 2-성공, 3-실패, 4-취소
             String[] State = new String[4];

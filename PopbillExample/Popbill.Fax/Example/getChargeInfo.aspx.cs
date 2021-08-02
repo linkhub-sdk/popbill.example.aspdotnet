@@ -22,7 +22,7 @@ namespace Popbill.Fax.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 팩스 API 서비스 과금정보를 확인합니다.
+             * 팝빌 팩스 API 서비스 과금정보를 확인합니다.
              * - https://docs.popbill.com/fax/dotnet/api#GetChargeInfo
              */
 

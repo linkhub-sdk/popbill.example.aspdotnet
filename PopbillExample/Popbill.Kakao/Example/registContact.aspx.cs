@@ -21,7 +21,7 @@ namespace Popbill.Kakao.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 연동회원의 담당자를 신규로 등록합니다.
+             * 연동회원 사업자번호에 담당자(팝빌 로그인 계정)를 추가합니다.
              * - https://docs.popbill.com/kakao/dotnet/api#RegistContact
              */
 
@@ -34,7 +34,7 @@ namespace Popbill.Kakao.Example
             Contact contactInfo = new Contact();
 
             // 담당자 아이디, 6자 이상 50자 미만
-            contactInfo.id = "testkorea_20181212";
+            contactInfo.id = "testkorea";
             
             // 비밀번호, 6자 이상 20자 미만
             contactInfo.pwd = "user_password";

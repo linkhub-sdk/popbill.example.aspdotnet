@@ -22,7 +22,7 @@ namespace Popbill.EasyFin.Bank.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 계좌 거래내역의 요약정보를 조회합니다.
+             * GetJobState(수집 상태 확인)를 통해 상태 정보가 확인된 작업아이디를 활용하여 계좌 거래내역의 요약 정보를 조회합니다.
              * - https://docs.popbill.com/easyfinbank/dotnet/api#Summary
              */
 

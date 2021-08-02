@@ -22,7 +22,7 @@ namespace Popbill.Statement.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 전자명세서 발행단가를 확인합니다.
+             * 전자명세서 발행시 과금되는 포인트 단가를 확인합니다.
              * - https://docs.popbill.com/statement/dotnet/api#GetUnitCost
              */
 

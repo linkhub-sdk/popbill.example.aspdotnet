@@ -4,20 +4,20 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-	<title>팝빌 세금계산서 SDK ASP.NET Example</title>
-	<link href="../Example.css" rel="stylesheet" type="text/css"/>
+    <title>팝빌 세금계산서 SDK ASP.NET Example</title>
+    <link href="../Example.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="content">
-	<p class="heading1">Response</p>
-	<br/>
-	<fieldset class="fieldset1">
-		<legend>세금계산서 삭제</legend>
-		<ul>
-			<li>Response.code : <%= code %></li>
-			<li>Response.message : <%= message %></li>
-		</ul>
-	</fieldset>
+    <p class="heading1">Response</p>
+    <br/>
+    <fieldset class="fieldset1">
+        <legend>세금계산서 삭제</legend>
+        <ul>
+            <li>Response.code : <%= code %></li>
+            <li>Response.message : <%= message %></li>
+        </ul>
+    </fieldset>
 </div>
 </body>
 </html>
