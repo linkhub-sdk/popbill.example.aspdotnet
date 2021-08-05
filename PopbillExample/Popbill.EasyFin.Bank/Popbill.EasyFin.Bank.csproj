@@ -58,6 +58,7 @@
     <Content Include="Example\checkID.aspx" />
     <Content Include="Example\checkIsMember.aspx" />
     <Content Include="Example\closeBankAccount.aspx" />
+    <Content Include="Example\deleteBankAccount.aspx" />
     <Content Include="Example\getAccessURL.aspx" />
     <Content Include="Example\getBalance.aspx" />
     <Content Include="Example\getBankAccountInfo.aspx" />
@@ -115,6 +116,13 @@
     </Compile>
     <Compile Include="Example\closeBankAccount.aspx.designer.cs">
       <DependentUpon>closeBankAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\deleteBankAccount.aspx.cs">
+      <DependentUpon>deleteBankAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\deleteBankAccount.aspx.designer.cs">
+      <DependentUpon>deleteBankAccount.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\getAccessURL.aspx.cs">
       <DependentUpon>getAccessURL.aspx</DependentUpon>
