@@ -11,7 +11,7 @@
 namespace Popbill.Taxinvoice.Example {
     
     
-    public partial class getPDF {
+    public partial class bulkSubmit {
         
         /// <summary>
         /// Head1 컨트롤입니다.

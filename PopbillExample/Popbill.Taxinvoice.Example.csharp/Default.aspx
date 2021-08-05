@@ -17,6 +17,8 @@
             <ul>
                 <li><a href="Example/checkMgtKeyInUse.aspx">checkMgtKeyInUse</a> - 문서번호 확인</li>
                 <li><a href="Example/registIssue.aspx">registIssue</a> - 즉시 발행</li>
+                <li><a href="Example/bulkSubmit.aspx">bulkSubmit</a> - 초대량 발행 접수</li>
+                <li><a href="Example/getBulkResult.aspx">getBulkResult</a> - 초대량 접수결과 확인</li>
                 <li><a href="Example/register.aspx">register</a> - 임시저장</li>
                 <li><a href="Example/update.aspx">update</a> - 수정</li>
                 <li><a href="Example/issue.aspx">issue</a> - 발행</li>
@@ -58,7 +60,6 @@
                 <li><a href="Example/getEPrintURL.aspx">getEPrintURL</a> - 세금계산서 인쇄 [공급받는자용] URL</li>
                 <li><a href="Example/getMassPrintURL.aspx">getMassPrintURL</a> - 세금계산서 대량 인쇄 URL</li>
                 <li><a href="Example/getMailURL.aspx">getMailURL</a> - 세금계산서 메일링크 URL</li>
-                <li><a href="Example/getPDF.aspx">getPDF</a> - 세금계산서 PDF 다운로드</li>
                 <li><a href="Example/getPDFURL.aspx">getPDFURL</a> - 세금계산서 PDF 다운로드 URL</li>
             </ul>
         </fieldset>

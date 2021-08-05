@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="getPDF.aspx.cs" Inherits="Popbill.Cashbill.Example.getPDF" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="bulkSubmit.aspx.cs" Inherits="Popbill.Taxinvoice.Example.bulkSubmit" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -12,13 +12,15 @@
     <p class="heading1">Response</p>
     <br/>
     <fieldset class="fieldset1">
-        <legend>현금영수증 PDF 다운로드</legend>
+        <legend>초대량 발행 접수</legend>
         <ul>
-            <li>Response.code : <%= code %> </li>
-            <li>Response.message : <%= message %></li>
+            <li>응답코드 (code)  : <%= code %></li>
+            <li>응답메시지 (message) : <%= message %></li>
+            <% if (!String.IsNullOrEmpty(receiptID)) { %>
+                <li>접수아이디 (receiptID) : <%= receiptID%></li>
+            <% }  %>
         </ul>
     </fieldset>
 </div>
 </body>
 </html>
-

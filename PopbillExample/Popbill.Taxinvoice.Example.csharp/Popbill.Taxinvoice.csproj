@@ -55,6 +55,7 @@
   <ItemGroup>
     <Content Include="Example\assignMgtKey.aspx" />
     <Content Include="Example\attachStatement.aspx" />
+    <Content Include="Example\bulkSubmit.aspx" />
     <Content Include="Example\cancelIssue.aspx" />
     <Content Include="Example\attachFile.aspx" />
     <Content Include="Example\cancelRequest.aspx" />
@@ -68,6 +69,7 @@
     <Content Include="Example\deleteFile.aspx" />
     <Content Include="Example\detachStatement.aspx" />
     <Content Include="Example\getBalance.aspx" />
+    <Content Include="Example\getBulkResult.aspx" />
     <Content Include="Example\getCertificateExpireDate.aspx" />
     <Content Include="Example\getChargeURL.aspx" />
     <Content Include="Example\getCorpInfo.aspx" />
@@ -82,7 +84,6 @@
     <Content Include="Example\getOldPrintURL.aspx" />
     <Content Include="Example\getPartnerBalance.aspx" />
     <Content Include="Example\getPartnerURL.aspx" />
-    <Content Include="Example\getPDF.aspx" />
     <Content Include="Example\getPDFURL.aspx" />
     <Content Include="Example\getPopUpURL.aspx" />
     <Content Include="Example\getPrintURL.aspx" />
@@ -130,6 +131,13 @@
     </Compile>
     <Compile Include="Example\attachStatement.aspx.designer.cs">
       <DependentUpon>attachStatement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\bulkSubmit.aspx.cs">
+      <DependentUpon>bulkSubmit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\bulkSubmit.aspx.designer.cs">
+      <DependentUpon>bulkSubmit.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\cancelIssue.aspx.cs">
       <DependentUpon>cancelIssue.aspx</DependentUpon>
@@ -214,6 +222,13 @@
     </Compile>
     <Compile Include="Example\getBalance.aspx.designer.cs">
       <DependentUpon>getBalance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getBulkResult.aspx.cs">
+      <DependentUpon>getBulkResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getBulkResult.aspx.designer.cs">
+      <DependentUpon>getBulkResult.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\getCertificateExpireDate.aspx.cs">
       <DependentUpon>getCertificateExpireDate.aspx</DependentUpon>
@@ -312,13 +327,6 @@
     </Compile>
     <Compile Include="Example\getPartnerURL.aspx.designer.cs">
       <DependentUpon>getPartnerURL.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Example\getPDF.aspx.cs">
-      <DependentUpon>getPDF.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Example\getPDF.aspx.designer.cs">
-      <DependentUpon>getPDF.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\getPDFURL.aspx.cs">
       <DependentUpon>getPDFURL.aspx</DependentUpon>

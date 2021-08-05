@@ -22,9 +22,9 @@ namespace Popbill.AccountCheck.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 1건의 예금주성명을 조회합니다.
-            * - https://docs.popbill.com/accountcheck/dotnet/api#CheckAccountInfo
-            */
+             * 1건의 예금주성명을 조회합니다.
+             * - https://docs.popbill.com/accountcheck/dotnet/api#CheckAccountInfo
+             */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
