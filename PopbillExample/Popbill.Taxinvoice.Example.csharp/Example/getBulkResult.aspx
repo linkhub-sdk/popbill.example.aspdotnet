@@ -31,11 +31,11 @@
                 <li>txEndDT (발행처리 완료일시) : <%= result.txEndDT%> </li>
                 <li>receiptDT (접수일시) : <%= result.receiptDT%> </li>
                 <li>receiptID (접수아이디) : <%= result.receiptID%> </li>
-
+                <% int i = 1; %>
                 <% foreach (Popbill.Taxinvoice.BulkTaxinvoiceIssueResult issueResult in result.issueResult)
                    { %>
                     <fieldset class="fieldset2">
-                        <legend>발행결과</legend>
+                        <legend>발행결과 [<%= i %>/<%= result.issueResult.Count %>]</legend>
                         <ul>
                             <li>code (응답코드) : <%= issueResult.code%></li>
                             <li>ntsconfirmNum (국세청승인번호) : <%= issueResult.ntsconfirmNum%></li>
@@ -43,6 +43,7 @@
                             <li>issueDT (발행일시) : <%= issueResult.issueDT%></li>
                         </ul>
                     </fieldset>
+                    <% i++; %>
                 <% } %>
             <% } %>
         </ul>
