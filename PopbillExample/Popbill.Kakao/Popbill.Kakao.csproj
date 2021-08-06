@@ -60,6 +60,7 @@
     <Content Include="Example\checkID.aspx" />
     <Content Include="Example\checkIsMember.aspx" />
     <Content Include="Example\getAccessURL.aspx" />
+    <Content Include="Example\getATSTemplate.aspx" />
     <Content Include="Example\getBalance.aspx" />
     <Content Include="Example\getChargeInfo.aspx" />
     <Content Include="Example\getChargeURL.aspx" />
@@ -136,6 +137,13 @@
     </Compile>
     <Compile Include="Example\getAccessURL.aspx.designer.cs">
       <DependentUpon>getAccessURL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getATSTemplate.aspx.cs">
+      <DependentUpon>getATSTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getATSTemplate.aspx.designer.cs">
+      <DependentUpon>getATSTemplate.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\getBalance.aspx.cs">
       <DependentUpon>getBalance.aspx</DependentUpon>

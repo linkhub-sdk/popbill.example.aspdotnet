@@ -8,10 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Popbill.Kakao {
+namespace Popbill.Kakao.Example {
     
     
-    public partial class _Default {
+    public partial class getATSTemplate {
         
         /// <summary>
         /// Head1 컨트롤입니다.
