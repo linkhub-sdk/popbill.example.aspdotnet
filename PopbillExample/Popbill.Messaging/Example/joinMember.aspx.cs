@@ -30,8 +30,8 @@ namespace Popbill.Message.Example
             //아이디, 6자이상 50자 미만
             joinInfo.ID = "userid";
 
-            //비밀번호, 6자이상 20자 미만
-            joinInfo.PWD = "pwd_must_be_long_enough";
+            // 비밀번호, 8자 이상 20자 이하(영문, 숫자, 특수문자 조합)
+            joinInfo.Password = "asdf8536!@#";
 
             //링크아이디
             joinInfo.LinkID = "TESTER";
