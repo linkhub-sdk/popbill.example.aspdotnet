@@ -72,8 +72,10 @@
     <Content Include="Example\getJobState.aspx" />
     <Content Include="Example\getPartnerBalance.aspx" />
     <Content Include="Example\getPartnerURL.aspx" />
+    <Content Include="Example\getPaymentURL.aspx" />
     <Content Include="Example\getPopUpURL.aspx" />
     <Content Include="Example\getTaxinvoice.aspx" />
+    <Content Include="Example\getUseHistoryURL.aspx" />
     <Content Include="Example\getXML.aspx" />
     <Content Include="Example\joinMember.aspx" />
     <Content Include="Example\listActiveJob.aspx" />
@@ -217,6 +219,13 @@
     <Compile Include="Example\getPartnerURL.aspx.designer.cs">
       <DependentUpon>getPartnerURL.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Example\getPaymentURL.aspx.cs">
+      <DependentUpon>getPaymentURL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getPaymentURL.aspx.designer.cs">
+      <DependentUpon>getPaymentURL.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Example\getPopUpURL.aspx.cs">
       <DependentUpon>getPopUpURL.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -230,6 +239,13 @@
     </Compile>
     <Compile Include="Example\getTaxinvoice.aspx.designer.cs">
       <DependentUpon>getTaxinvoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getUseHistoryURL.aspx.cs">
+      <DependentUpon>getUseHistoryURL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getUseHistoryURL.aspx.designer.cs">
+      <DependentUpon>getUseHistoryURL.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\getXML.aspx.cs">
       <DependentUpon>getXML.aspx</DependentUpon>

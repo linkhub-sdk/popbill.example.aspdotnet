@@ -84,11 +84,13 @@
     <Content Include="Example\getOldPrintURL.aspx" />
     <Content Include="Example\getPartnerBalance.aspx" />
     <Content Include="Example\getPartnerURL.aspx" />
+    <Content Include="Example\getPaymentURL.aspx" />
     <Content Include="Example\getPDFURL.aspx" />
     <Content Include="Example\getPopUpURL.aspx" />
     <Content Include="Example\getPrintURL.aspx" />
     <Content Include="Example\getUnitCost.aspx" />
     <Content Include="Example\geturl.aspx" />
+    <Content Include="Example\getUseHistoryURL.aspx" />
     <Content Include="Example\getViewURL.aspx" />
     <Content Include="Example\joinMember.aspx" />
     <Content Include="Example\getChargeInfo.aspx" />
@@ -328,6 +330,13 @@
     <Compile Include="Example\getPartnerURL.aspx.designer.cs">
       <DependentUpon>getPartnerURL.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Example\getPaymentURL.aspx.cs">
+      <DependentUpon>getPaymentURL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getPaymentURL.aspx.designer.cs">
+      <DependentUpon>getPaymentURL.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Example\getPDFURL.aspx.cs">
       <DependentUpon>getPDFURL.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -362,6 +371,13 @@
     </Compile>
     <Compile Include="Example\geturl.aspx.designer.cs">
       <DependentUpon>geturl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getUseHistoryURL.aspx.cs">
+      <DependentUpon>getUseHistoryURL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getUseHistoryURL.aspx.designer.cs">
+      <DependentUpon>getUseHistoryURL.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\getViewURL.aspx.cs">
       <DependentUpon>getViewURL.aspx</DependentUpon>
