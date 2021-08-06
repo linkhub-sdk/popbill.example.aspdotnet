@@ -23,7 +23,7 @@ namespace Popbill.EasyFin.Bank.Example
         {
             /**
              * 팝빌에 등록된 계좌 정보를 확인합니다.
-             * -https://docs.popbill.com/easyfinbank/dotnet/api#GetBankAccountInfo
+             * - https://docs.popbill.com/easyfinbank/dotnet/api#GetBankAccountInfo
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

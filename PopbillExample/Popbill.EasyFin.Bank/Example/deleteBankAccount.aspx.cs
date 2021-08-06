@@ -20,7 +20,7 @@ namespace Popbill.EasyFin.Bank.Example
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            /*
+            /**
              * 등록된 계좌를 삭제합니다.
              * - 정액제가 아닌 종량제 이용 시에만 등록된 계좌를 삭제할 수 있습니다.
              * - https://docs.popbill.com/easyfinbank/dotnet/api#DeleteBankAccount

@@ -20,7 +20,7 @@ namespace Popbill.EasyFin.Bank.Example
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            /*
+            /**
              * 계좌의 정액제 해지를 요청합니다.
              * - https://docs.popbill.com/easyfinbank/dotnet/api#CloseBankAccount
              */
