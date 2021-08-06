@@ -89,6 +89,7 @@
     <Content Include="Example\getPDFURL.aspx" />
     <Content Include="Example\getPopUpURL.aspx" />
     <Content Include="Example\getPrintURL.aspx" />
+    <Content Include="Example\getSendToNTSConfig.aspx" />
     <Content Include="Example\getUnitCost.aspx" />
     <Content Include="Example\geturl.aspx" />
     <Content Include="Example\getUseHistoryURL.aspx" />
@@ -365,6 +366,13 @@
     </Compile>
     <Compile Include="Example\getPrintURL.aspx.designer.cs">
       <DependentUpon>getPrintURL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getSendToNTSConfig.aspx.cs">
+      <DependentUpon>getSendToNTSConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getSendToNTSConfig.aspx.designer.cs">
+      <DependentUpon>getSendToNTSConfig.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\getUnitCost.aspx.cs">
       <DependentUpon>getUnitCost.aspx</DependentUpon>
