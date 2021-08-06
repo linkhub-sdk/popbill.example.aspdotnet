@@ -63,6 +63,7 @@
     <Content Include="Example\getBalance.aspx" />
     <Content Include="Example\getChargeInfo.aspx" />
     <Content Include="Example\getChargeURL.aspx" />
+    <Content Include="Example\getContactInfo.aspx" />
     <Content Include="Example\getCorpInfo.aspx" />
     <Content Include="Example\getPartnerBalance.aspx" />
     <Content Include="Example\getPartnerURL.aspx" />
@@ -140,6 +141,13 @@
     </Compile>
     <Compile Include="Example\getChargeURL.aspx.designer.cs">
       <DependentUpon>getChargeURL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getContactInfo.aspx.cs">
+      <DependentUpon>getContactInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getContactInfo.aspx.designer.cs">
+      <DependentUpon>getContactInfo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\getCorpInfo.aspx.cs">
       <DependentUpon>getCorpInfo.aspx</DependentUpon>
@@ -230,7 +238,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
+    <Folder Include="Example\App_Data\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />

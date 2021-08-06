@@ -116,6 +116,7 @@
                 <li><a href="Example/getCorpInfo.aspx">getCorpInfo</a> - 회사정보 확인</li>
                 <li><a href="Example/updateCorpInfo.aspx">updateCorpInfo</a> - 회사정보 수정</li>
                 <li><a href="Example/registContact.aspx">registContact</a> - 담당자 등록</li>
+                <li><a href="Example/getContactInfo.aspx">getContactInfo</a> - 담당자 정보 확인</li>
                 <li><a href="Example/listContact.aspx">listContact</a> - 담당자 목록 확인</li>
                 <li><a href="Example/updateContact.aspx">updateContact</a> - 담당자 정보 수정</li>
             </ul>

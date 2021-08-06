@@ -66,6 +66,7 @@
     <Content Include="Example\getCertificatePopUpURL.aspx" />
     <Content Include="Example\getChargeInfo.aspx" />
     <Content Include="Example\getChargeURL.aspx" />
+    <Content Include="Example\getContactInfo.aspx" />
     <Content Include="Example\getCorpInfo.aspx" />
     <Content Include="Example\getFlatRatePopUpURL.aspx" />
     <Content Include="Example\getFlatRateState.aspx" />
@@ -176,6 +177,13 @@
     </Compile>
     <Compile Include="Example\getChargeURL.aspx.designer.cs">
       <DependentUpon>getChargeURL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getContactInfo.aspx.cs">
+      <DependentUpon>getContactInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getContactInfo.aspx.designer.cs">
+      <DependentUpon>getContactInfo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\getCorpInfo.aspx.cs">
       <DependentUpon>getCorpInfo.aspx</DependentUpon>
