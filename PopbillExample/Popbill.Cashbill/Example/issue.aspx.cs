@@ -17,6 +17,8 @@ namespace Popbill.Cashbill.Example
     {
         public String code;
         public String message;
+        public String confirmNum;
+        public String tradeDate;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -39,10 +41,12 @@ namespace Popbill.Cashbill.Example
 
             try
             {
-                Response response = Global.cashbillService.Issue(testCorpNum, mgtKey, memo, testUserID);
+                CBIssueResponse response = Global.cashbillService.Issue(testCorpNum, mgtKey, memo, testUserID);
 
                 code = response.code.ToString();
                 message = response.message;
+                confirmNum = response.confirmNum;
+                tradeDate = response.tradeDate;
             }
             catch (PopbillException ex)
             {

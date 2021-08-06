@@ -16,6 +16,11 @@
         <ul>
             <li>Response.code : <%= code %></li>
             <li>Response.message : <%= message %></li>
+            <% if (!String.IsNullOrEmpty(confirmNum))
+               {%>
+               <li>Response.confirmNum : <%= confirmNum %></li>
+               <li>Response.tradeDate : <%= tradeDate%></li>
+            <% } %>
         </ul>
     </fieldset>
 </div>

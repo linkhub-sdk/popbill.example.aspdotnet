@@ -17,6 +17,8 @@ namespace Popbill.Cashbill.Example
     {
         public String code;
         public String message;
+        public String confirmNum;
+        public String tradeDate;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -33,13 +35,13 @@ namespace Popbill.Cashbill.Example
             String testUserID = "testkorea";
 
             // [필수] 문서번호, 최대 24자리, 영문, 숫자 '-', '_'를 조합하여 사업자별로 중복되지 않도록 구성
-            String mgtKey = "20210702-011";
+            String mgtKey = "20210806-RevokePart-001";
 
             // 원본현금영수증 승인번호, 문서정보 확인(GetInfo API)로 확인가능
-            String orgConfirmNum = "548757045";
+            String orgConfirmNum = "TB0000027";
 
             // 원본현금영수증 거래일자, 문서정보 확인(GetInfo API)로 확인가능
-            String orgTradeDate = "20210701";
+            String orgTradeDate = "20210805";
 
             // 안내문자 전송여부
             bool smssendYN = false;
@@ -68,12 +70,14 @@ namespace Popbill.Cashbill.Example
 
             try
             {
-                Response response = Global.cashbillService.RevokeRegistIssue(testCorpNum, mgtKey,
+                CBIssueResponse response = Global.cashbillService.RevokeRegistIssue(testCorpNum, mgtKey,
                     orgConfirmNum, orgTradeDate, smssendYN, memo, testUserID, isPartCancel, cancelType, 
                     supplyCost, tax, serviceFee, totalAmount);
 
                 code = response.code.ToString();
                 message = response.message;
+                confirmNum = response.confirmNum;
+                tradeDate = response.tradeDate;
             }
             catch (PopbillException ex)
             {
