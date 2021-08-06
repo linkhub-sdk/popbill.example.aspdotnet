@@ -32,7 +32,7 @@
                             <li> tel (연락처) : <%= contactInfo.tel %></li>
                             <li> mgrYN (관리자 여부) : <%= contactInfo.mgrYN %></li>
                             <li> regDT (등록일시) : <%= contactInfo.regDT %></li>
-                            <li> searchAllAllowYN (회사조회 여부) : <%= contactInfo.searchAllAllowYN %></li>
+                            <li> searchRole (담당자 권한) : <%= contactInfo.searchRole %></li>
                             <li> mgrYN (관리자여부) : <%= contactInfo.mgrYN %></li>
                             <li> state (상태) : <%= contactInfo.state %></li>
                         </ul>

@@ -54,11 +54,8 @@ namespace Popbill.AccountCheck.Example
             // 담당자 이메일 (최대 100자)
             contactInfo.email = "aspnetcore@popbill.co.kr";
 
-            // 회사조회 권한여부, true(회사조회), false(개인조회)
-            contactInfo.searchAllAllowYN = true;
-
-            // 관리자 권한여부, true(관리자), false(사용자)
-            contactInfo.mgrYN = false;
+            // 담당자 권한, 1 : 개인권한, 2 : 읽기권한, 3 : 회사권한
+            contactInfo.searchRole = 3;
 
             try
             {
