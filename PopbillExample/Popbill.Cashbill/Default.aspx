@@ -50,6 +50,7 @@
         <legend>현금영수증 보기/인쇄</legend>
         <ul>
             <li><a href="Example/getPopUpURL.aspx">getPopUpURL</a> - 현금영수증 보기 URL</li>
+            <li><a href="Example/getViewURL.aspx">getViewURL</a> - 현금영수증 보기 URL (메뉴/버튼 제외)</li>
             <li><a href="Example/getPrintURL.aspx">getPrintURL</a> - 현금영수증 인쇄 URL</li>
             <li><a href="Example/getMassPrintURL.aspx">getMassPrintURL</a> - 현금영수증 대량 인쇄 URL</li>
             <li><a href="Example/getMailURL.aspx">getMailURL</a> - 현금영수증 메일링크 URL</li>

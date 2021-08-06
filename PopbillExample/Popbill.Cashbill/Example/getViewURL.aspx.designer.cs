@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Popbill.Taxinvoice.Example {
+namespace Popbill.Cashbill.Example {
     
     
     public partial class getViewURL {
