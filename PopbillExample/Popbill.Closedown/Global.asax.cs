@@ -1,16 +1,17 @@
-/**
-* ÆËºô ÈŞÆó¾÷Á¶È¸ API ASP.NET SDK Example
+ï»¿/**
+* íŒë¹Œ íœ´íì—…ì¡°íšŒ API ASP.NET SDK Example
 *
-* ASP.NET SDK ¿¬µ¿È¯°æ ¼³Á¤¹æ¹ı ¾È³» : https://docs.popbill.com/closedown/tutorial/dotnet#asp
-* ¾÷µ¥ÀÌÆ® ÀÏÀÚ : 2021-08-06
-* ¿¬µ¿±â¼úÁö¿ø ¿¬¶ôÃ³ : 1600-9854 / 070-4304-2991
-* ¿¬µ¿±â¼úÁö¿ø ÀÌ¸ŞÀÏ : code@linkhub.co.kr
+* ASP.NET SDK ì—°ë™í™˜ê²½ ì„¤ì •ë°©ë²• ì•ˆë‚´ : https://docs.popbill.com/closedown/tutorial/dotnet#asp
+* ì—…ë°ì´íŠ¸ ì¼ì : 2021-08-06
+* ì—°ë™ê¸°ìˆ ì§€ì› ì—°ë½ì²˜ : 1600-9854 / 070-4304-2991
+* ì—°ë™ê¸°ìˆ ì§€ì› ì´ë©”ì¼ : code@linkhub.co.kr
 *
-* <Å×½ºÆ® ¿¬µ¿°³¹ß ÁØºñ»çÇ×>
-* 1) 30, 33¹ø ¶óÀÎ¿¡ ¼±¾ğµÈ ¸µÅ©¾ÆÀÌµğ(LinkID)¿Í ºñ¹ĞÅ°(SecretKey)¸¦
-*    ¸µÅ©Çãºê °¡ÀÔ½Ã ¸ŞÀÏ·Î ¹ß±Ş¹ŞÀº ÀÎÁõÁ¤º¸¸¦ ÂüÁ¶ÇÏ¿© º¯°æÇÕ´Ï´Ù.
-* 2) ÆËºô °³¹ß¿ë »çÀÌÆ®(test.popbill.com)¿¡ ¿¬µ¿È¸¿øÀ¸·Î °¡ÀÔÇÕ´Ï´Ù.
+* <í…ŒìŠ¤íŠ¸ ì—°ë™ê°œë°œ ì¤€ë¹„ì‚¬í•­>
+* 1) 30, 33ë²ˆ ë¼ì¸ì— ì„ ì–¸ëœ ë§í¬ì•„ì´ë””(LinkID)ì™€ ë¹„ë°€í‚¤(SecretKey)ë¥¼
+*    ë§í¬í—ˆë¸Œ ê°€ì…ì‹œ ë©”ì¼ë¡œ ë°œê¸‰ë°›ì€ ì¸ì¦ì •ë³´ë¥¼ ì°¸ì¡°í•˜ì—¬ ë³€ê²½í•©ë‹ˆë‹¤.
+* 2) íŒë¹Œ ê°œë°œìš© ì‚¬ì´íŠ¸(test.popbill.com)ì— ì—°ë™íšŒì›ìœ¼ë¡œ ê°€ì…í•©ë‹ˆë‹¤.
 */
+
 using System;
 using System.Collections;
 using System.Configuration;
@@ -25,30 +26,30 @@ namespace Popbill.Closedown
 {
     public class Global : System.Web.HttpApplication
     {
-        // ¸µÅ©¾ÆÀÌµğ
+        // ë§í¬ì•„ì´ë””
         private string LinkID = "TESTER";
 
-        // ºñ¹ĞÅ°
+        // ë¹„ë°€í‚¤
         private string SecretKey = "SwWxqU+0TErBXy/9TVjIPEnI0VTUMMSQZtJf3Ed8q3I=";
 
-        // ÈŞÆó¾÷Á¶È¸ ¼­ºñ½º °´Ã¼ ¼±¾ğ
+        // íœ´íì—…ì¡°íšŒ ì„œë¹„ìŠ¤ ê°ì²´ ì„ ì–¸
         public static ClosedownService closedownService;
 
         protected void Application_Start(object sender, EventArgs e)
         {
-            // ÈŞÆó¾÷Á¶È¸  ¼­ºñ½º °´Ã¼ ÃÊ±âÈ­
+            // íœ´íì—…ì¡°íšŒ  ì„œë¹„ìŠ¤ ê°ì²´ ì´ˆê¸°í™”
             closedownService = new ClosedownService(LinkID, SecretKey);
 
-            // ¿¬µ¿È¯°æ ¼³Á¤°ª, °³¹ß¿ë(true), »ó¾÷¿ë(false)
+            // ì—°ë™í™˜ê²½ ì„¤ì •ê°’, ê°œë°œìš©(true), ìƒì—…ìš©(false)
             closedownService.IsTest = true;
 
-            // ÀÎÁõÅäÅ« IP Á¦ÇÑ±â´É »ç¿ë¿©ºÎ, ±ÇÀå(true)
+            // ì¸ì¦í† í° IP ì œí•œê¸°ëŠ¥ ì‚¬ìš©ì—¬ë¶€, ê¶Œì¥(true)
             closedownService.IPRestrictOnOff = true;
 
-            // ÆËºô API ¼­ºñ½º °íÁ¤ IP »ç¿ë¿©ºÎ(GA), true-»ç¿ë, false-¹Ì»ç¿ë, ±âº»°ª(false)
+            // íŒë¹Œ API ì„œë¹„ìŠ¤ ê³ ì • IP ì‚¬ìš©ì—¬ë¶€(GA), true-ì‚¬ìš©, false-ë¯¸ì‚¬ìš©, ê¸°ë³¸ê°’(false)
             closedownService.UseStaticIP = false;
 
-            // ·ÎÄÃ¼­¹ö ½Ã°£ »ç¿ë ¿©ºÎ true-»ç¿ë, false-¹Ì»ç¿ë, ±âº»°ª(false)
+            // ë¡œì»¬ì„œë²„ ì‹œê°„ ì‚¬ìš© ì—¬ë¶€ true-ì‚¬ìš©, false-ë¯¸ì‚¬ìš©, ê¸°ë³¸ê°’(false)
             closedownService.UseLocalTimeYN = true;
         }
 
