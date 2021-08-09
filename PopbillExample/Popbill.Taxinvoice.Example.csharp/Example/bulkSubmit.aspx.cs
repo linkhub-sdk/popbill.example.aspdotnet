@@ -41,7 +41,7 @@ namespace Popbill.Taxinvoice.Example
 
             // 지연발행 강제여부, 기본값 - False
             // 지연발행 세금계산서를 발행하는 경우, 가산세가 부과될 수 있습니다.
-            // 지연발행 세금계산서를 신고해야 하는 경우 forceIssue 값을 true 선언하여 발행(Issue API)을 호출할 수 있습니다.
+            // 지연발행 세금계산서를 신고해야 하는 경우 forceIssue 값을 true 선언하여 발행하실 수 있습니다.
             bool forceIssue = false;
 
             for (int i = 0; i < 100; i++)
