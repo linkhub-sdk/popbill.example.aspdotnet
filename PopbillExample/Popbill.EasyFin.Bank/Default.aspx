@@ -21,6 +21,7 @@
             <li><a href="Example/GetBankAccountMgtURL.aspx">getBankAccountMgtURL</a> - 계좌 관리 팝업 URL</li>
             <li><a href="Example/closeBankAccount.aspx">closeBankAccount</a> - 계좌 정액제 해지요청</li>
             <li><a href="Example/revokeCloseBankAccount.aspx">revokeCloseBankAccount</a> - 계좌 정액제 해지요청 취소</li>
+            <li><a href="Example/deleteBankAccount.aspx">deleteBankAccount</a> - 종량제 계좌 삭제</li>
         </ul>
     </fieldset>
     <br/>
