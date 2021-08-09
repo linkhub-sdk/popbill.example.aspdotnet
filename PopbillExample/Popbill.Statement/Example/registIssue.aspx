@@ -16,6 +16,9 @@
         <ul>
             <li>Response.code : <%= code %></li>
             <li>Response.message : <%= message %></li>
+            <% if (!String.IsNullOrEmpty(invoiceNum))      { %>
+                <li>Response.invoiceNum : <%= invoiceNum%></li>
+            <% }  %>
         </ul>
     </fieldset>
 </div>

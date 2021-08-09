@@ -18,6 +18,7 @@ namespace Popbill.Statement.Example
     {
         public String code;
         public String message;
+        public String invoiceNum = null;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -219,6 +220,7 @@ namespace Popbill.Statement.Example
                 STMIssueResponse response = Global.statementService.RegistIssue(testCorpNum, statement, memo, testUserID, emailSubject);
                 code = response.code.ToString();
                 message = response.message;
+                invoiceNum = response.invoiceNum;
             }
             catch (PopbillException ex)
             {
