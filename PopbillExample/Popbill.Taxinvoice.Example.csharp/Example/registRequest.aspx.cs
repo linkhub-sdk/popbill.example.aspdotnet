@@ -60,7 +60,7 @@ namespace Popbill.Taxinvoice.Example
             // [필수] 공급자 사업자번호, '-' 제외 10자리
             taxinvoice.invoicerCorpNum = "8888888888";
 
-            // 공급자 종사업자 식별번호. 필요시 기재. 형식은 숫자 4자리.
+            // 공급자 종사업장 식별번호. 필요시 기재. 형식은 숫자 4자리.
             taxinvoice.invoicerTaxRegID = "";
 
             // [필수] 공급자 상호

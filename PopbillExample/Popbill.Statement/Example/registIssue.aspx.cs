@@ -79,7 +79,7 @@ namespace Popbill.Statement.Example
             // [필수] 발신자 사업자번호
             statement.senderCorpNum = testCorpNum;
 
-            // 종사업자 식별번호. 필요시 기재. 형식은 숫자 4자리.
+            // 종사업장 식별번호. 필요시 기재. 형식은 숫자 4자리.
             statement.senderTaxRegID = "";
 
             // 발신자 상호
