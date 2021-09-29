@@ -22,7 +22,7 @@ namespace Popbill.Statement.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 검색조건에 해당하는 전자명세서를 조회합니다.
+             * 검색조건에 해당하는 전자명세서를 조회합니다. (조회기간 단위 : 최대 6개월)
              * - https://docs.popbill.com/statement/dotnet/api#Search
              */
 
