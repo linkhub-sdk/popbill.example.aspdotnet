@@ -33,10 +33,10 @@ namespace Popbill.Cashbill.Example
             String DType = "T";
 
             // 시작일자
-            String SDate = "20210701";
+            String SDate = "20211201";
 
             // 종료일자
-            String EDate = "20210730";
+            String EDate = "20211220";
 
             // 상태코드 배열, 2,3번째 자리에 와일드카드(*) 사용가능
             // - 상태코드에 대한 자세한 사항은 "[현금영수증 API 연동매뉴얼] >
@@ -78,10 +78,13 @@ namespace Popbill.Cashbill.Example
             // 페이지당 검색개수, 최대 1000개 
             int PerPage = 30;
 
+            // 가맹점 종사업장 번호, 다수건 검색시 콤마(",")로 구분. 예) 1234,1000
+            String FranchiseTaxRegID = "0001";
+
             try
             {
                 result = Global.cashbillService.Search(testCorpNum, DType, SDate, EDate, State, TradeType,
-                                                  TradeUsage, TaxationType, QString, Order, Page, PerPage);
+                                                  TradeUsage, TradeOpt, TaxationType, QString, Order, Page, PerPage, FranchiseTaxRegID);
             }
             catch (PopbillException ex)
             {
