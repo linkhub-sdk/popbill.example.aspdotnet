@@ -29,6 +29,7 @@
                             <li>sendNum (발신번호) : <%= faxInfo.sendNum %></li>
                             <li>receiveNum (수신번호) : <%= faxInfo.receiveNum %></li>
                             <li>receiveName (수신자명) : <%= faxInfo.receiveName %></li>
+                            <li>receiveNumType (수신번호 유형) : <%= faxInfo.receiveNumType%></li>
                             <li>sendPageCnt (전체 페이지수) : <%= faxInfo.sendPageCnt %></li>
                             <li>successPageCnt (성공 페이지수) : <%= faxInfo.successPageCnt %></li>
                             <li>failPageCnt (실패 페이지수) : <%= faxInfo.failPageCnt %></li>

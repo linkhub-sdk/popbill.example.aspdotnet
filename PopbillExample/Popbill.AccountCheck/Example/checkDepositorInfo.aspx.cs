@@ -13,31 +13,40 @@ using System.Xml.Linq;
 
 namespace Popbill.AccountCheck.Example
 {
-    public partial class getUnitCost : System.Web.UI.Page
+    public partial class checkDepositorInfo : System.Web.UI.Page
     {
         public String code;
         public String message;
-        public float unitCost;
+        public DepositorCheckInfo result;
 
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 예금주 조회시 과금되는 포인트 단가를 확인합니다.
-             * - https://docs.popbill.com/accountcheck/dotnet/api#GetUnitCost
+             * 1건의 예금주성명을 조회합니다.
+             * - https://docs.popbill.com/accountcheck/dotnet/api#CheckDepositorInfo
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
-            // 서비스 유형(성명/실명)
-            String serivceType = "성명";
-
             // 팝빌회원 아이디
             String userID = "testkorea";
 
+            // 기관코드
+            String bankCode = "0004";
+
+            // 계좌번호
+            String accountNumber = "94324511758214";
+
+            // 등록번호 유형
+            String identityNumType = "P";
+
+            // 등록번호 
+            String identityNum = "941219";
+
             try
             {
-                unitCost = Global.accountCheckService.GetUnitCost(testCorpNum, serivceType, userID);
+                result = Global.accountCheckService.CheckDepositorInfo(testCorpNum, bankCode, accountNumber, identityNumType, identityNum, userID);
             }
             catch (PopbillException ex)
             {

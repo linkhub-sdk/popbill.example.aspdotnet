@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="checkAccountInfo.aspx.cs" Inherits="Popbill.AccountCheck.Example.checkAccountInfo" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="checkDepositorInfo.aspx.cs" Inherits="Popbill.AccountCheck.Example.checkDepositorInfo" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -12,7 +12,7 @@
     <p class="heading1">Response</p>
     <br/>
     <fieldset class="fieldset1">
-        <legend>예금주조회</legend>
+        <legend>예금주실명 조회</legend>
         <ul>
             <% if (!String.IsNullOrEmpty(code)) { %>
                 <li>Response.code : <%= code %> </li>
@@ -21,6 +21,8 @@
                 <li>bankCode (기관코드) : <%= result.bankCode %></li>
                 <li>accountNumber (계좌번호) : <%= result.accountNumber %></li>
                 <li>accountName (예금주 성명) : <%= result.accountName %></li>
+                <li>identityNumType (등록번호 유형) : <%= result.identityNumType%></li>
+                <li>identityNum (등록번호) : <%= result.identityNum%></li>
                 <li>checkDate (확인일시) : <%= result.checkDate %></li>
                 <li>result (응답코드) : <%= result.result %></li>
                 <li>resultMessage (응답메시지) : <%= result.resultMessage %></li>

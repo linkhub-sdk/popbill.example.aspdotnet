@@ -11,7 +11,7 @@
 namespace Popbill.AccountCheck.Example {
     
     
-    public partial class checkAccountInfo {
+    public partial class checkDepositorInfo {
         
         /// <summary>
         /// Head1 컨트롤입니다.

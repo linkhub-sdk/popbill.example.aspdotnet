@@ -27,6 +27,8 @@
                             <li> templateName (템플릿 제목) : <%= info.templateName %></li>
                             <li> template (템플릿 내용) : <%= info.template %></li>
                             <li> plusFriendID (카카오톡 채널 아이디) : <%= info.plusFriendID %></li>
+                            <li> ads (광고 메시지) : <%= info.ads%></li>
+                            <li> appendix (부가 메시지) : <%= info.appendix%></li>
                         </ul>
                         <% if (info.btns != null)
                            { %>

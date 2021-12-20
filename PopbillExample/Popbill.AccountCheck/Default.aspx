@@ -15,6 +15,7 @@
         <legend>예금주조회</legend>
         <ul>
             <li><a href="Example/checkAccountInfo.aspx">checkAccountInfo</a> - 예금주성명 조회</li>
+            <li><a href="Example/checkDepositorInfo.aspx">checkDepositorInfo</a> - 예금주실명 조회</li>
         </ul>
     </fieldset>
     <br/>
