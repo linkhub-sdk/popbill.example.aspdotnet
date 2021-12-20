@@ -1,10 +1,10 @@
-ï»¿/**
-* íŒë¹Œ ì˜ˆê¸ˆì£¼ì¡°íšŒ API ASP.NET SDK Example
+/**
+* ÆËºô ¿¹±İÁÖÁ¶È¸ API ASP.NET SDK Example
 *
-* ASP.NET SDK ì—°ë™í™˜ê²½ ì„¤ì •ë°©ë²• ì•ˆë‚´ : https://docs.popbill.com/accountcheck/tutorial/dotnet
-* ì—…ë°ì´íŠ¸ ì¼ì : 2021-08-06
-* ì—°ë™ê¸°ìˆ ì§€ì› ì—°ë½ì²˜ : 1600-9854 / 070-4304-2991
-* ì—°ë™ê¸°ìˆ ì§€ì› ì´ë©”ì¼ : code@linkhub.co.kr
+* ASP.NET SDK ¿¬µ¿È¯°æ ¼³Á¤¹æ¹ı ¾È³» : https://docs.popbill.com/accountcheck/tutorial/dotnet
+* ¾÷µ¥ÀÌÆ® ÀÏÀÚ : 2021-08-06
+* ¿¬µ¿±â¼úÁö¿ø ¿¬¶ôÃ³ : 1600-9854 / 070-4304-2991
+* ¿¬µ¿±â¼úÁö¿ø ÀÌ¸ŞÀÏ : code@linkhub.co.kr
 *
 */
 
@@ -23,30 +23,30 @@ namespace Popbill.AccountCheck
     public class Global : System.Web.HttpApplication
     {
 
-        // ë§í¬ì•„ì´ë””
+        // ¸µÅ©¾ÆÀÌµğ
         private string LinkID = "TESTER";
 
-        // ë¹„ë°€í‚¤
+        // ºñ¹ĞÅ°
         private string SecretKey = "SwWxqU+0TErBXy/9TVjIPEnI0VTUMMSQZtJf3Ed8q3I=";
 
-        // ì˜ˆê¸ˆì£¼ì¡°íšŒ ì„œë¹„ìŠ¤ ê°ì²´ ì„ ì–¸
+        // ¿¹±İÁÖÁ¶È¸ ¼­ºñ½º °´Ã¼ ¼±¾ğ
         public static AccountCheckService accountCheckService;
 
         protected void Application_Start(object sender, EventArgs e)
         {
-            // ì˜ˆê¸ˆì£¼ì¡°íšŒ ì„œë¹„ìŠ¤ ê°ì²´ ì´ˆê¸°í™”
+            // ¿¹±İÁÖÁ¶È¸ ¼­ºñ½º °´Ã¼ ÃÊ±âÈ­
             accountCheckService = new AccountCheckService(LinkID, SecretKey);
 
-            // ì—°ë™í™˜ê²½ ì„¤ì •ê°’, ê°œë°œìš©(true), ìƒì—…ìš©(false)
+            // ¿¬µ¿È¯°æ ¼³Á¤°ª, °³¹ß¿ë(true), »ó¾÷¿ë(false)
             accountCheckService.IsTest = true;
 
-            // ì¸ì¦í† í° IP ì œí•œê¸°ëŠ¥ ì‚¬ìš©ì—¬ë¶€, ê¶Œì¥(true)
+            // ÀÎÁõÅäÅ« IP Á¦ÇÑ±â´É »ç¿ë¿©ºÎ, ±ÇÀå(true)
             accountCheckService.IPRestrictOnOff = true;
 
-            // íŒë¹Œ API ì„œë¹„ìŠ¤ ê³ ì • IP ì‚¬ìš©ì—¬ë¶€(GA), true-ì‚¬ìš©, false-ë¯¸ì‚¬ìš©, ê¸°ë³¸ê°’(false)
+            // ÆËºô API ¼­ºñ½º °íÁ¤ IP »ç¿ë¿©ºÎ, true-»ç¿ë, false-¹Ì»ç¿ë, ±âº»°ª(false)
             accountCheckService.UseStaticIP = false;
 
-            // ë¡œì»¬ì„œë²„ ì‹œê°„ ì‚¬ìš© ì—¬ë¶€ true-ì‚¬ìš©, false-ë¯¸ì‚¬ìš©, ê¸°ë³¸ê°’(false)
+            // ·ÎÄÃ¼­¹ö ½Ã°£ »ç¿ë ¿©ºÎ true-»ç¿ë, false-¹Ì»ç¿ë, ±âº»°ª(false)
             accountCheckService.UseLocalTimeYN = true;
         }
     }

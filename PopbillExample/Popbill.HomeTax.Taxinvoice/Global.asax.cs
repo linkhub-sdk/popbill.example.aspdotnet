@@ -51,7 +51,7 @@ namespace Popbill.HomeTax.Taxinvoice
             // 인증토큰 IP 제한기능 사용여부, 권장(true)
             htTaxinvoiceService.IPRestrictOnOff = true;
 
-            // 팝빌 API 서비스 고정 IP 사용여부(GA), true-사용, false-미사용, 기본값(false)
+            // 팝빌 API 서비스 고정 IP 사용여부, true-사용, false-미사용, 기본값(false)
             htTaxinvoiceService.UseStaticIP = false;
 
             // 로컬서버 시간 사용 여부 true-사용, false-미사용, 기본값(false)
