@@ -25,25 +25,37 @@
                 <li> supplyCostTotal (공급가액 합계) : <%= taxinvoice.supplyCostTotal %></li>
                 <li> taxTotal (세액 합계) : <%= taxinvoice.taxTotal %> </li>
                 <li> totalAmount (합계금액) : <%= taxinvoice.totalAmount %></li>
+                <li> cash (현금) : <%= taxinvoice.cash%></li>
+                <li> chkBill (수표) : <%= taxinvoice.chkBill%></li>
+                <li> credit (외상) : <%= taxinvoice.credit%></li>
+                <li> note (어음) : <%= taxinvoice.note%></li>
                 <li> ntsconfirmNum (국세청승인번호) : <%= taxinvoice.ntsconfirmNum %></li>
+                
 
                 <li> invoicerCorpNum (공급자 사업자번호) : <%= taxinvoice.invoicerCorpNum %></li>
+                <li> invoicerTaxRegID (공급자 종사업장 식별번호) : <%= taxinvoice.invoicerTaxRegID%></li>
                 <li> invoicerMgtKey (공급자 문서번호) : <%= taxinvoice.invoicerMgtKey %></li>
                 <li> invoicerCorpName (공급자 상호) : <%= taxinvoice.invoicerCorpName %></li>
                 <li> invoicerCEOName (공급자 대표자명) : <%= taxinvoice.invoicerCEOName %></li>
                 <li> invoicerAddr (공급자 주소) : <%= taxinvoice.invoicerAddr %></li>
+                <li> invoicerBizType (공급자 업태) : <%= taxinvoice.invoicerBizType%></li>
+                <li> invoicerBizClass (공급자 종목) : <%= taxinvoice.invoicerBizClass%></li>
                 <li> invoicerContactName (공급자 담당자명) : <%= taxinvoice.invoicerContactName %></li>
+                <li> invoicerDeptName (공급자 부서명) : <%= taxinvoice.invoicerDeptName%></li>
                 <li> invoicerTEL (공급자 담당자 연락처) : <%= taxinvoice.invoicerTEL %></li>
                 <li> invoicerHP (공급자 담당자 휴대폰) : <%= taxinvoice.invoicerHP %></li>
                 <li> invoicerEmail (공급자 담당자 메일) : <%= taxinvoice.invoicerEmail %></li>
                 <li> invoicerSMSSendYN (발행안내문자 전송여부) : <%= taxinvoice.invoicerSMSSendYN %></li>
 
                 <li> invoiceeCorpNum (공급받는자 사업자번호) : <%= taxinvoice.invoiceeCorpNum %></li>
+                <li> invoiceeTaxRegID (공급받는자 종사업장 식별번호) : <%= taxinvoice.invoiceeTaxRegID%></li>
                 <li> invoiceeType (공급받는자 구분) : <%= taxinvoice.invoiceeType %> </li>
                 <li> invoiceeMgtKey (공급받는자 문서번호) : <%= taxinvoice.invoiceeMgtKey %></li>
                 <li> invoiceeCorpName (공급받는자 상호) : <%= taxinvoice.invoiceeCorpName %></li>
                 <li> invoiceeCEOName (공급받는자 대표자명) : <%= taxinvoice.invoiceeCEOName %></li>
                 <li> invoiceeAddr (공급받는자 주소) : <%= taxinvoice.invoiceeAddr %></li>
+                <li> invoiceeBizType (공급받는자 업태) : <%= taxinvoice.invoiceeBizType%></li>
+                <li> invoiceeBizClass (공급받는자 종목) : <%= taxinvoice.invoiceeBizClass%></li>
                 <li> invoiceeContactName1 (공급받는자 담당자명) : <%= taxinvoice.invoiceeContactName1 %></li>
                 <li> invoiceeTEL1 (공급받는자 담당자 연락처) : <%= taxinvoice.invoiceeTEL1 %></li>
                 <li> invoiceeHP1 (공급받는자 담당자 휴대폰) : <%= taxinvoice.invoiceeHP1 %></li>
