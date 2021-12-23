@@ -52,6 +52,7 @@
             <legend>부가기능</legend>
             <ul>
                 <li><a href="Example/getAccessURL.aspx">getAccessURL</a> - 팝빌 로그인 URL</li>
+                <li><a href="Example/getSealURL.aspx">getSealURL</a> - 인감 및 첨부문서 등록 URL</li>
                 <li><a href="Example/attachFile.aspx">attachFile</a> - 첨부파일 추가</li>
                 <li><a href="Example/deleteFile.aspx">deleteFile</a> - 첨부파일 삭제</li>
                 <li><a href="Example/getFiles.aspx">getFiles</a> - 첨부파일 목록 확인</li>
