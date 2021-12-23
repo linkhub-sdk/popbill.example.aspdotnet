@@ -3,8 +3,8 @@
 *
 * ASP.NET SDK 연동환경 설정방법 안내 : https://docs.popbill.com/htcashbill/tutorial/dotnet#asp
 * 업데이트 일자 : 2021-08-06
-* 연동기술지원 연락처 : 1600-9854 / 070-4304-2991
-* 연동기술지원 이메일 : code@linkhub.co.kr
+* 연동기술지원 연락처 : 1600-9854
+* 연동기술지원 이메일 : code@linkhubcorp.com
 *
 *
 * <테스트 연동개발 준비사항>
