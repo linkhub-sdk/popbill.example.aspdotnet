@@ -19,7 +19,7 @@
                 <li>Response.message : <%= message %></li>
             <% } else { %>
                 <li>accountNumber (계좌번호) : <%= accountInfo.accountNumber%></li>
-                <li>bankCode (은행코드) : <%= accountInfo.bankCode%></li>
+                <li>bankCode (기관코드) : <%= accountInfo.bankCode%></li>
                 <li>accountName (계좌 별칭) : <%= accountInfo.accountName%></li>
                 <li>accountType (계좌 유형) : <%= accountInfo.accountType%></li>
                 <li>state (계좌 정액제 상태) : <%= accountInfo.state.ToString()%></li>

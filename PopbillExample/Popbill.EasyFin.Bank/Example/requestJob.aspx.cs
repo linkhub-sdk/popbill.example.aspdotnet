@@ -31,7 +31,7 @@ namespace Popbill.EasyFin.Bank.Example
             // 팝빌회원 사업자번호
             String testCorpNum = "1234567890";
 
-            // 은행코드
+            // 기관코드
             String BankCode = "0048";
 
             // 은행 계좌번호

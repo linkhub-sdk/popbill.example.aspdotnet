@@ -24,7 +24,7 @@
                         <legend>은행 계좌정보</legend>
                         <ul>
                             <li>accountNumber (계좌번호) : <%= bankAccount.accountNumber%></li>
-                            <li>bankCode (은행코드) : <%= bankAccount.bankCode%></li>
+                            <li>bankCode (기관코드) : <%= bankAccount.bankCode%></li>
                             <li>accountName (계좌 별칭) : <%= bankAccount.accountName%></li>
                             <li>accountType (계좌 유형) : <%= bankAccount.accountType%></li>
                             <li>state (계좌 정액제 상태) : <%= bankAccount.state.ToString()%></li>
