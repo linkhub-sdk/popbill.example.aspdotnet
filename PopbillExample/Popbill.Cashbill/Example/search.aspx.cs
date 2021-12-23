@@ -79,7 +79,7 @@ namespace Popbill.Cashbill.Example
             int PerPage = 30;
 
             // 가맹점 종사업장 번호, 다수건 검색시 콤마(",")로 구분. 예) 1234,1000
-            String FranchiseTaxRegID = "0001";
+            String FranchiseTaxRegID = "";
 
             try
             {

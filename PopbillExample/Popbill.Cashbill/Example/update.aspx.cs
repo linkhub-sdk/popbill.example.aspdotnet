@@ -68,6 +68,9 @@ namespace Popbill.Cashbill.Example
             // [필수] 가맹점 사업자번호
             cashbill.franchiseCorpNum = testCorpNum;
 
+            // 가맹점 종사업장 식별번호
+            cashbill.franchiseTaxRegID = "";
+
             // 가맹점 상호
             cashbill.franchiseCorpName = "발행자 상호_수정";
 
