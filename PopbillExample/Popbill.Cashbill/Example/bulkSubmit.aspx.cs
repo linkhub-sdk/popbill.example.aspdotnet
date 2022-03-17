@@ -33,10 +33,10 @@ namespace Popbill.Cashbill.Example
             // 팝빌회원 아이디
             String testUserID = "testkorea";
 
-            // 	제출아이디, 최대 36자리 영문, 숫자, '-' 조합으로 구성
+            // 제출아이디, 최대 36자리 영문, 숫자, '-' 조합으로 구성
             String submitID = "ASPDOTNET002";
 
-            // 세금계산서 객체정보 목록
+            // 현금영수증 객체정보 목록
             List<Cashbill> cashbillList = new List<Cashbill>();
 
             for (int i = 0; i < 100; i++)
