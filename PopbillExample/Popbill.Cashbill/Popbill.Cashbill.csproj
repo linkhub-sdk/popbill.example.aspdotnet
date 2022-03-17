@@ -56,6 +56,7 @@
     <Content Include="Default.aspx" />
     <Content Include="Example.css" />
     <Content Include="Example\assignMgtKey.aspx" />
+    <Content Include="Example\bulkSubmit.aspx" />
     <Content Include="Example\cancelIssue.aspx" />
     <Content Include="Example\checkID.aspx" />
     <Content Include="Example\checkIsMember.aspx" />
@@ -63,6 +64,7 @@
     <Content Include="Example\delete.aspx" />
     <Content Include="Example\getAccessURL.aspx" />
     <Content Include="Example\getBalance.aspx" />
+    <Content Include="Example\getBulkResult.aspx" />
     <Content Include="Example\getChargeInfo.aspx" />
     <Content Include="Example\getChargeURL.aspx" />
     <Content Include="Example\getContactInfo.aspx" />
@@ -121,6 +123,13 @@
     <Compile Include="Example\assignMgtKey.aspx.designer.cs">
       <DependentUpon>assignMgtKey.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Example\bulkSubmit.aspx.cs">
+      <DependentUpon>bulkSubmit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\bulkSubmit.aspx.designer.cs">
+      <DependentUpon>bulkSubmit.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Example\cancelIssue.aspx.cs">
       <DependentUpon>cancelIssue.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -169,6 +178,13 @@
     </Compile>
     <Compile Include="Example\getBalance.aspx.designer.cs">
       <DependentUpon>getBalance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getBulkResult.aspx.cs">
+      <DependentUpon>getBulkResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getBulkResult.aspx.designer.cs">
+      <DependentUpon>getBulkResult.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\getChargeInfo.aspx.cs">
       <DependentUpon>getChargeInfo.aspx</DependentUpon>
