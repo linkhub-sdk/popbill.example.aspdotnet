@@ -39,6 +39,7 @@
         <ul>
             <li><a href="Example/search.aspx">search</a> - 수집 결과 조회</li>
             <li><a href="Example/summary.aspx">summary</a> - 수집 결과 요약정보 조회</li>
+            <li><a href="Example/saveMemo.aspx">saveMemo</a> - 거래내역 메모저장</li>
         </ul>
     </fieldset>
     
