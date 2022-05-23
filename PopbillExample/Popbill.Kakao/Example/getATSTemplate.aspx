@@ -38,7 +38,10 @@
                              </ul>
                          </fieldset>
                    <% } %>
-              <% } %>
+                <% } %>
+                <li> secureYN (보안템플릿 여부) : <%= templateInfo.secureYN %></li>
+                <li> state (템플릿 상태) : <%= templateInfo.state %></li>
+                <li> stateDT (템플릿 상태 일시) : <%= templateInfo.stateDT %></li>
             <% } %>
         </ul>
     </fieldset>
