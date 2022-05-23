@@ -8,11 +8,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Popbill.HomeTax.Taxinvoice.Example {
-    
-    
+namespace Popbill.Kakao.Example {
+
+
     public partial class getChargeURL {
-        
+
         /// <summary>
         /// Head1 컨트롤입니다.
         /// </summary>
