@@ -19,7 +19,7 @@ namespace Popbill.Taxinvoice.Example
         public String code = null;
         public String message = null;
         public String url = null;
-        
+
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
@@ -40,10 +40,8 @@ namespace Popbill.Taxinvoice.Example
             List<string> MgtKeyList = new List<string>();
 
             // 인쇄할 세금계산서 문서번호, (최대 100건)
-            MgtKeyList.Add("20210704-001");
-            MgtKeyList.Add("20210704-002");
-            MgtKeyList.Add("20210704-003");
-            MgtKeyList.Add("20210704-004");
+            MgtKeyList.Add("20220525-001");
+            MgtKeyList.Add("20220525-002");
 
             try
             {
@@ -52,7 +50,7 @@ namespace Popbill.Taxinvoice.Example
             catch (PopbillException ex)
             {
                 code = ex.code.ToString();
-                message = ex.Message;                
+                message = ex.Message;
             }
         }
     }

@@ -21,7 +21,7 @@
                 <li> templateCode (템플릿 코드) : <%= templateInfo.templateCode %></li>
                 <li> templateName (템플릿 제목) : <%= templateInfo.templateName%></li>
                 <li> template (템플릿 내용) : <%= templateInfo.template%></li>
-                <li> plusFriendID (카카오톡 채널 아이디) : <%= templateInfo.plusFriendID%></li>
+                <li> plusFriendID (검색용 아이디) : <%= templateInfo.plusFriendID%></li>
                 <li> ads (광고 메시지) : <%= templateInfo.ads%></li>
                 <li> appendix (부가 메시지) : <%= templateInfo.appendix%></li>
                 <% if (templateInfo.btns != null)

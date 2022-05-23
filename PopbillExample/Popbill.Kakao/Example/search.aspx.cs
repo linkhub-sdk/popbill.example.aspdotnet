@@ -32,12 +32,14 @@ namespace Popbill.Kakao.Example
 
             // 최대 검색기한 : 6개월 이내
             // 시작일자, 날자형식(yyyyMMdd)
-            String SDate = "20210701";
+            String SDate = "20220501";
 
             // 종료일자, 날자형식(yyyyMMdd)
-            String EDate = "20210730";
+            String EDate = "20220525";
 
-            // 전송상태값 배열, 0-대기, 1-전송중, -2-성공, 3-대체, 4-실패, 5-취소
+            // 전송상태 배열 ("0" , "1" , "2" , "3" , "4" , "5" 중 선택, 다중 선택 가능)
+            // └ 0 = 전송대기 , 1 = 전송중 , 2 = 전송성공 , 3 = 대체문자 전송 , 4 = 전송실패 , 5 = 전송취소
+            // - 미입력 시 전체조회
             String[] State = new String[6];
             State[0] = "0";
             State[1] = "1";
@@ -46,16 +48,23 @@ namespace Popbill.Kakao.Example
             State[4] = "4";
             State[5] = "5";
 
-            // 검색대상 배열, ATS-알림톡, FTS-친구톡 텍스트, FMS-친구톡 이미지
+            // 검색대상 배열 ("ATS", "FTS", "FMS" 중 선택, 다중 선택 가능)
+            // └ ATS = 알림톡 , FTS = 친구톡(텍스트) , FMS = 친구톡(이미지)
+            // - 미입력 시 전체조회
             String[] Item = new String[3];
             Item[0] = "ATS";
             Item[1] = "FTS";
             Item[2] = "FMS";
 
-            // 예약여부, 공백-전체조회, 1-예약전송건 조회, 0-일반전송건 조회
+            // 전송유형별 조회 (null , "0" , "1" 중 택 1)
+            // └ null = 전체 , 0 = 즉시전송건 , 1 = 예약전송건
+            // - 미입력 시 전체조회
             String ReserveYN = "";
 
-            // 개인조회여부 true-개인조회, false-회사조회 
+            // 사용자권한별 조회 (true / false 중 택 1)
+            // └ false = 접수한 카카오톡 전체 조회 (관리자권한)
+            // └ true = 해당 담당자 계정으로 접수한 카카오톡만 조회 (개인권한)
+            // 미입력시 기본값 false 처리
             bool SenderYN = false;
 
             // 정렬방향, A-오름차순, D-내림차순
@@ -67,7 +76,8 @@ namespace Popbill.Kakao.Example
             // 페이지당 검색개수, 최대 1000건
             int PerPage = 10;
 
-            // 조회 검색어, 카카오톡 전송시 기재한 수신자명 입력
+            // 조회하고자 하는 수신자명
+            // - 미입력시 전체조회
             String QString = "";
 
             try

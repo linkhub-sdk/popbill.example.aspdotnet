@@ -35,10 +35,11 @@ namespace Popbill.Statement.Example
             int itemCode = 121;
 
             // 전자명세서 문서번호
-            String mgtKey = "20210703-001";
+            String mgtKey = "20220525-001";
 
-            // 파일아이디
-            String fileID = "2AD5E4B8-3639-4F93-A9B1-A93B097A6D96.PBF";
+            // 팝빌이 첨부파일 관리를 위해 할당하는 식별번호
+            // 첨부파일 목록 확인(getFiles API) 함수의 리턴 값 중 attachedFile 필드값 기재.
+            String fileID = "";
 
             try
             {

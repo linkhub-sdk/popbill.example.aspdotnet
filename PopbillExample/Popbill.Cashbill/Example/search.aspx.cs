@@ -33,10 +33,10 @@ namespace Popbill.Cashbill.Example
             String DType = "T";
 
             // 시작일자
-            String SDate = "20211201";
+            String SDate = "20220501";
 
             // 종료일자
-            String EDate = "20211220";
+            String EDate = "20220531";
 
             // 상태코드 배열, 2,3번째 자리에 와일드카드(*) 사용가능
             // - 상태코드에 대한 자세한 사항은 "[현금영수증 API 연동매뉴얼] >
@@ -61,12 +61,12 @@ namespace Popbill.Cashbill.Example
             TradeOpt[1] = "B";
             TradeOpt[2] = "T";
 
-            // 과세형태 배열, T-과세, N-비과세 
+            // 과세형태 배열, T-과세, N-비과세
             String[] TaxationType = new String[2];
             TaxationType[0] = "T";
             TaxationType[1] = "N";
 
-            // 식별번호 조회, 미기재시 전체조회 
+            // 식별번호 조회, 미기재시 전체조회
             String QString = "";
 
             // 정렬방향, A-오름차순, D-내림차순
@@ -75,7 +75,7 @@ namespace Popbill.Cashbill.Example
             // 페이지 번호
             int Page = 1;
 
-            // 페이지당 검색개수, 최대 1000개 
+            // 페이지당 검색개수, 최대 1000개
             int PerPage = 30;
 
             // 가맹점 종사업장 번호, 다수건 검색시 콤마(",")로 구분. 예) 1234,1000

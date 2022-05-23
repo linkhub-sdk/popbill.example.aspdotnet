@@ -32,7 +32,7 @@ namespace Popbill.Statement.Example
             int itemCode = 121;
 
             // 전자명세서 문서번호, 최대 24자리, 영문, 숫자 '-', '_'를 조합하여 사업자별로 중복되지 않도록 구성
-            String mgtKey = "20210704-001";
+            String mgtKey = "20220525-001";
 
             try
             {

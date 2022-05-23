@@ -32,7 +32,7 @@ namespace Popbill.Fax.Example
             String testUserID = "testkorea";
 
             // 팩스 전송시 기재한 요청번호
-            String requestNum = "fax20210730050509";
+            String requestNum = "";
 
             try
             {

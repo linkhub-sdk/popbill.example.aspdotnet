@@ -32,7 +32,7 @@ namespace Popbill.EasyFin.Bank.Example
             String tid = "02112181100000000120211221000001";
 
             // 메모
-            String memo = "20210701-asp 메모";
+            String memo = "memo-TEST";
 
             try
             {

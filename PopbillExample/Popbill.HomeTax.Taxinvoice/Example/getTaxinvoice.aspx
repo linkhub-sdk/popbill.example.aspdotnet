@@ -35,8 +35,7 @@
                 <li>remark2 (비고2) : <%= taxinvoiceInfo.remark2 %></li>
                 <li>remark3 (비고3) : <%= taxinvoiceInfo.remark3 %></li>
                 <li>ntsconfirmNum (국세청승인번호) : <%= taxinvoiceInfo.ntsconfirmNum %></li>
-                <li>modifyCode (수정 사유코드) : <%= taxinvoiceInfo.modifyCode %></li>
-                <li>orgNTSConfirmNum (원본 국세청승인번호) : <%= taxinvoiceInfo.orgNTSConfirmNum %></li>
+
                 <li>invoicerCorpNum (공급자 사업자번호) : <%= taxinvoiceInfo.invoicerCorpNum %></li>
                 <li>invoicerMgtKey (공급자 문서번호) : <%= taxinvoiceInfo.invoicerMgtKey %></li>
                 <li>invoicerTaxRegID (공급자 종사업장번호) : <%= taxinvoiceInfo.invoicerTaxRegID %></li>
@@ -61,6 +60,9 @@
                 <li>invoiceeContactName1 (공급받는자 담당자 성명) : <%= taxinvoiceInfo.invoiceeContactName1 %></li>
                 <li>invoiceeTEL1 (공급받는자 담당자 연락처) : <%= taxinvoiceInfo.invoiceeTEL1 %></li>
                 <li>invoiceeEmail1 (공급받는자 담당자 이메일) : <%= taxinvoiceInfo.invoiceeEmail1 %></li>
+
+                <li>modifyCode (수정 사유코드) : <%= taxinvoiceInfo.modifyCode %></li>
+                <li>orgNTSConfirmNum (원본 국세청승인번호) : <%= taxinvoiceInfo.orgNTSConfirmNum %></li>
 
                 <% foreach (Popbill.HomeTax.HTTaxinvoiceDetail detailInfo in taxinvoiceInfo.detailList)
                    { %>

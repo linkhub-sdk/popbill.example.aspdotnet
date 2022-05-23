@@ -21,8 +21,8 @@ namespace Popbill.Taxinvoice
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 국세청 전송 이전 "발행완료" 상태의 전자세금계산서를 "발행취소"하고, 해당 건은 국세청 신고 대상에서 제외됩니다.
-             * - "발행취소" 상태의 전자세금계산서를 삭제하면, 문서번호 재사용이 가능합니다.
+             * 국세청 전송 이전 "발행완료" 상태의 세금계산서를 "발행취소"하고 국세청 전송 대상에서 제외합니다.
+             * - 삭제(Delete API) 함수를 호출하여 "발행취소" 상태의 전자세금계산서를 삭제하면, 문서번호 재사용이 가능합니다.
              * - https://docs.popbill.com/taxinvoice/dotnet/api#CancelIssue
              */
 
@@ -36,7 +36,7 @@ namespace Popbill.Taxinvoice
             MgtKeyType KeyType = MgtKeyType.SELL;
 
             // 세금계산서 문서번호
-            String mgtKey = "20210701-001";
+            String mgtKey = "20220525-001";
 
             // 메모
             string memo = "발행취소 메모";

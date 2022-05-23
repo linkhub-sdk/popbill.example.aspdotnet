@@ -33,10 +33,10 @@ namespace Popbill.Cashbill.Example
             String testUserID = "testkorea";
 
             // 현금영수증 문서번호
-            String mgtKey = "20210701-001";
+            String mgtKey = "20220525-001";
 
             // 발신번호
-            String sendNum = "070-4304-2991";
+            String sendNum = "";
 
             // 수신번호
             String receiveNum = "010-111-222";

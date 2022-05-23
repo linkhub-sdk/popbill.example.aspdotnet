@@ -35,8 +35,8 @@ namespace Popbill.Message.Example
             // 팝빌회원 아이디
             String testUserID = "testkorea";
 
-            // 발신번호 
-            String senderNum = "070-4304-2991";
+            // 발신번호
+            String senderNum = "";
 
             // 동보 메시지 제목
             String subject = "동보 메시지 제목";
@@ -47,11 +47,13 @@ namespace Popbill.Message.Example
             // 예약전송일시(yyyyMMddHHmmss), null인 경우 즉시전송
             String reserveDTStr = "";
 
-            // 광고문자 여부 (기본값 false)
+            // 광고성 메시지 여부 ( true , false 중 택 1)
+            // └ true = 광고 , false = 일반
             Boolean adsYN = false;
 
-            // 전송요청번호, 파트너가 전송요청에 대한 관리번호를 직접 할당하여 관리하는 경우 기재
-            // 최대 36자리, 영문, 숫자, 언더바('_'), 하이픈('-')을 조합하여 사업자별로 중복되지 않도록 구성
+            // 전송요청번호
+            // 팝빌이 접수 단위를 식별할 수 있도록 파트너가 할당한 식별번호.
+            // 1~36자리로 구성. 영문, 숫자, 하이픈(-), 언더바(_)를 조합하여 팝빌 회원별로 중복되지 않도록 할당.
             String requestNum = "";
 
             DateTime? reserveDT = null;
@@ -63,13 +65,13 @@ namespace Popbill.Message.Example
 
             // 수신자 정보 배열 (최대 1000건)
             List<Message> messages = new List<Message>();
-            
+
             for (int i = 0; i < 100; i++)
             {
                 Message msg = new Message();
 
                 // 수신번호
-                msg.receiveNum = "010111222";
+                msg.receiveNum = "";
 
                 // 수신자명
                 msg.receiveName = "수신자명칭_" + i;

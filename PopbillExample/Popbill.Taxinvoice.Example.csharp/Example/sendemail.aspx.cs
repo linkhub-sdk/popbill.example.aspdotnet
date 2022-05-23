@@ -35,12 +35,12 @@ namespace Popbill.Taxinvoice.Example
             MgtKeyType KeyType = MgtKeyType.SELL;
 
             // 세금계산서 문서번호
-            String mgtKey = "20210701-001";
+            String mgtKey = "20220525-001";
 
             // 수신메일주소
             // 팝빌 개발환경에서 테스트하는 경우에도 안내 메일이 전송되므로,
             // 실제 거래처의 메일주소가 기재되지 않도록 주의
-            String email = "test@test.com";
+            String email = "";
 
             try
             {

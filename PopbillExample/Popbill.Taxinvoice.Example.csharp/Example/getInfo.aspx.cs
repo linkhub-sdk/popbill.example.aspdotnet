@@ -30,7 +30,7 @@ namespace Popbill.Taxinvoice.Example
             String testCorpNum = "1234567890";
 
             // 세금계산서 문서번호
-            String mgtKey = "20210701-001";
+            String mgtKey = "20220525-001";
 
             // 세금계산서 발행유형, SELL-매출, BUY-매입, TRUSTEE-위수탁
             MgtKeyType KeyType = MgtKeyType.SELL;

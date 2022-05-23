@@ -24,10 +24,10 @@ namespace Popbill.Statement
         {
             /**
              * 전자명세서를 팩스로 전송하는 함수로, 팝빌에 데이터를 저장하는 과정이 없습니다.
-             * - 팩스 전송 요청시 포인트가 차감됩니다. (전송실패시 환불처리)
              * - 팝빌 사이트 [문자·팩스] > [팩스] > [전송내역] 메뉴에서 전송결과를 확인 할 수 있습니다.
-             * - 팩스 전송결과를 확인하기 위해서는 선팩스 전송 요청 시 반환받은 접수번호를 이용하여
-             *   팩스 API의 전송결과 확인 (GetFaxDetail) API를 이용하면 됩니다.
+             * - 함수 호출시 포인트가 과금됩니다.
+             * - 선팩스 전송 요청 시 작성한 문서번호는 팩스로 전송되는 파일명에 사용됩니다.
+             * - 팩스 전송결과를 확인하기 위해서는 선팩스 전송 요청 시 반환받은 접수번호를 이용하여 팩스 API의 전송내역 확인 (GetFaxResult API) 함수를 이용하면 됩니다.
              * - https://docs.popbill.com/statement/dotnet/api#FAXSend
              */
 
@@ -44,34 +44,34 @@ namespace Popbill.Statement
             int itemCode = 121;
 
             // 전자명세서 문서번호, 최대 24자리, 영문, 숫자 '-', '_'를 조합하여 사업자별로 중복되지 않도록 구성
-            String mgtKey = "20210701-001";
+            String mgtKey = "20220525-001";
 
-            // [필수] 팩스 발신번호
-            String SendNum = "07043042991";
+            // 팩스 발신번호
+            String SendNum = "";
 
-            // [필수] 선팩스전송 수신팩스번호 
-            String ReceiveNum = "010111222";
+            // 선팩스전송 수신팩스번호
+            String ReceiveNum = "";
 
 
             // 전자명세서 객체
             Statement statement = new Statement();
 
-            // [필수], 기재상 작성일자 날짜형식(yyyyMMdd)
-            statement.writeDate = "20210701";
+            // 기재상 작성일자 날짜형식(yyyyMMdd)
+            statement.writeDate = "20220525";
 
-            // [필수], {영수, 청구} 중 기재 
+            // {영수, 청구} 중 기재
             statement.purposeType = "영수";
 
-            // [필수], 과세형태, {과세, 영세, 면세} 중 기재
+            // 과세형태, {과세, 영세, 면세} 중 기재
             statement.taxType = "과세";
 
             // 맞춤양식코드, 기본값을 공백('')으로 처리하면 기본양식으로 처리.
             statement.formCode = formCode;
 
-            // [필수] 전자명세서 양식코드
+            // 전자명세서 양식코드
             statement.itemCode = itemCode;
 
-            // [필수] 문서번호, 1~24자리 숫자, 영문, '-', '_' 조합으로 사업자별로 중복되지 않도록 구성
+            // 문서번호, 1~24자리 숫자, 영문, '-', '_' 조합으로 사업자별로 중복되지 않도록 구성
             statement.mgtKey = mgtKey;
 
 
@@ -79,7 +79,7 @@ namespace Popbill.Statement
              *                          발신자 정보                                   *
              **************************************************************************/
 
-            // [필수] 발신자 사업자번호
+            // 발신자 사업자번호
             statement.senderCorpNum = testCorpNum;
 
             // 종사업장 식별번호. 필요시 기재. 형식은 숫자 4자리.
@@ -88,29 +88,29 @@ namespace Popbill.Statement
             // 발신자 상호
             statement.senderCorpName = "발신자 상호";
 
-            // 발신자 대표자 성명 
+            // 발신자 대표자 성명
             statement.senderCEOName = "발신자 대표자 성명";
 
-            // 발신자 주소 
+            // 발신자 주소
             statement.senderAddr = "발신자 주소";
 
             // 발신자 종목
             statement.senderBizClass = "발신자 종목";
 
-            // 발신자 업태 
+            // 발신자 업태
             statement.senderBizType = "발신자 업태,업태2";
 
             // 발신자 담당자 성명
             statement.senderContactName = "발신자 담당자명";
 
-            // 발신자 메일주소 
-            statement.senderEmail = "test@test.com";
+            // 발신자 메일주소
+            statement.senderEmail = "";
 
             // 발신자 연락처
-            statement.senderTEL = "070-7070-0707";
+            statement.senderTEL = "";
 
-            // 발신자 휴대폰번호 
-            statement.senderHP = "010-000-2222";
+            // 발신자 휴대폰번호
+            statement.senderHP = "";
 
 
             /**************************************************************************
@@ -120,35 +120,35 @@ namespace Popbill.Statement
             // 수신자 사업자번호
             statement.receiverCorpNum = "8888888888";
 
-            // [필수] 수신자 상호
+            // 수신자 상호
             statement.receiverCorpName = "수신자 상호";
 
             // 수신자 대표자 성명
             statement.receiverCEOName = "수신자 대표자 성명";
 
-            // 수신자 주소 
+            // 수신자 주소
             statement.receiverAddr = "수신자 주소";
 
             // 수신자 종목
             statement.receiverBizClass = "수신자 종목";
 
-            // 수신자 업태 
+            // 수신자 업태
             statement.receiverBizType = "수신자 업태";
 
-            // 수신자 담당자 성명 
+            // 수신자 담당자 성명
             statement.receiverContactName = "수신자 담당자명";
 
-            // 수신자 메일주소 
-            statement.receiverEmail = "test@receiver.com";
+            // 수신자 메일주소
+            statement.receiverEmail = "";
 
             /**************************************************************************
              *                         전자명세서 기재항목                            *
              **************************************************************************/
 
-            // [필수] 공급가액 합계
+            // 공급가액 합계
             statement.supplyCostTotal = "200000";
 
-            // [필수] 세액 합계
+            // 세액 합계
             statement.taxTotal = "20000";
 
             // 합계금액
@@ -162,10 +162,14 @@ namespace Popbill.Statement
             statement.remark2 = "비고2";
             statement.remark3 = "비고3";
 
-            // 사업자등록증 이미지 첨부여부
+            // 사업자등록증 이미지 첨부여부 (true / false 중 택 1)
+            // └ true = 첨부 , false = 미첨부(기본값)
+            // - 팝빌 사이트 또는 인감 및 첨부문서 등록 팝업 URL (GetSealURL API) 함수를 이용하여 등록
             statement.businessLicenseYN = false;
 
-            // 통장사본 이미지 첨부여부 
+            // 통장사본 이미지 첨부여부 (true / false 중 택 1)
+            // └ true = 첨부 , false = 미첨부(기본값)
+            // - 팝빌 사이트 또는 인감 및 첨부문서 등록 팝업 URL (GetSealURL API) 함수를 이용하여 등록
             statement.bankBookYN = false;
 
             statement.detailList = new List<StatementDetail>();
@@ -173,7 +177,7 @@ namespace Popbill.Statement
             StatementDetail detail = new StatementDetail();
 
             detail.serialNum = 1; // 일련번호, 1부터 순차기재, 최대 99
-            detail.purchaseDT = "20210701"; // 거래일자
+            detail.purchaseDT = "20220525"; // 거래일자
             detail.itemName = "품목명"; // 품목명
             detail.spec = "규격"; // 규격
             detail.qty = "1"; // 수량
@@ -192,7 +196,7 @@ namespace Popbill.Statement
             detail = new StatementDetail();
 
             detail.serialNum = 2; // 일련번호, 1부터 순차기재, 최대 99
-            detail.purchaseDT = "20210701"; // 거래일자
+            detail.purchaseDT = "20220525"; // 거래일자
             detail.itemName = "품목명"; // 품목명
             detail.spec = "규격"; // 규격
             detail.qty = "1"; // 수량
@@ -209,7 +213,12 @@ namespace Popbill.Statement
             statement.detailList.Add(detail);
 
 
-            // 추가속성항목, 자세한사항은 "전자명세서 API 연동매뉴얼> 5.2 기본양식 추가속성 테이블" 참조. 
+            /************************************************************
+             * 전자명세서 추가속성
+             * - 추가속성에 관한 자세한 사항은 "[전자명세서 API 연동매뉴얼] >
+             *   5.2. 기본양식 추가속성 테이블"을 참조하시기 바랍니다.
+             * - https://docs.popbill.com/statement/propertyBag?lang=dotnet
+             ************************************************************/
             statement.propertyBag = new propertyBag();
 
             statement.propertyBag.Add("Balance", "15000"); // 전잔액

@@ -22,7 +22,8 @@ namespace Popbill.Cashbill.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 구매자가 수신하는 현금영수증 안내 메일의 하단에 버튼 URL 주소를 반환합니다.
+             * 현금영수증 안내메일의 상세보기 링크 URL을 반환합니다.
+             * - 함수 호출로 반환 받은 URL에는 유효시간이 없습니다.
              * - https://docs.popbill.com/cashbill/dotnet/api#GetMailURL
              */
 
@@ -33,7 +34,7 @@ namespace Popbill.Cashbill.Example
             String testUserID = "testkorea";
 
             // 현금영수증 문서번호
-            String mgtKey = "20210701-001";
+            String mgtKey = "20220525-001";
 
             try
             {

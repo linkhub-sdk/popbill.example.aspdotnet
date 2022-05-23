@@ -33,7 +33,7 @@ namespace Popbill.Message.Example
             String testUserID = "testkorea";
 
             // 문자전송시 할당한 요청번호
-            String requestNum = "20210703-001";
+            String requestNum = "";
 
             try
             {

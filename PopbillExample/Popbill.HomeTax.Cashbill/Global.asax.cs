@@ -2,7 +2,7 @@
 * 팝빌 홈택스 현금영수증 매입/매출 조회 API ASP.NET SDK Example
 *
 * ASP.NET SDK 연동환경 설정방법 안내 : https://docs.popbill.com/htcashbill/tutorial/dotnet#asp
-* 업데이트 일자 : 2021-08-06
+* 업데이트 일자 : 2022-05-25
 * 연동기술지원 연락처 : 1600-9854
 * 연동기술지원 이메일 : code@linkhubcorp.com
 *

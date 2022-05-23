@@ -24,6 +24,8 @@ namespace Popbill.Fax.Example
             /**
              * 팝빌에서 반환받은 접수번호를 통해 팩스 1건을 재전송합니다.
              * - 발신/수신 정보 미입력시 기존과 동일한 정보로 팩스가 전송되고, 접수일 기준 최대 60일이 경과되지 않는 건만 재전송이 가능합니다.
+             * - 팩스 재전송 요청시 포인트가 차감됩니다. (전송실패시 환불처리)
+             * - 변환실패 사유로 전송실패한 팩스 접수건은 재전송이 불가합니다.
              * - https://docs.popbill.com/fax/dotnet/api#ResendFAX
              */
 
@@ -42,11 +44,10 @@ namespace Popbill.Fax.Example
             // 발신자명, 공백으로 처리시 기존전송정보로 전송
             String senderName = "";
 
-            // 수신번호/수신자명을 공백으로 처리시 기존전송정보로 전송
-            // 수신번호
+            // 수신번호, 공백으로 처리시 기존전송정보로 전송
             String receiverNum = "";
 
-            // 수신자명 
+            // 수신자명, 공백으로 처리시 기존전송정보로 전송
             String receiverName = "";
 
             // 예약전송일시(yyyyMMddHHmmss), null인 경우 즉시전송

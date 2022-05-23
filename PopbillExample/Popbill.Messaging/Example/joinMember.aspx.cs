@@ -58,16 +58,10 @@ namespace Popbill.Message.Example
             joinInfo.ContactName = "담당자명";
 
             //담당자 이메일 (최대 20자)
-            joinInfo.ContactEmail = "test@test.com";
+            joinInfo.ContactEmail = "";
 
             //담당자 연락처 (최대 20자)
-            joinInfo.ContactTEL = "070-4304-2991";
-
-            //담당자 휴대폰번호 (최대 20자)
-            joinInfo.ContactHP = "010-111-222";
-
-            //담당자 팩스번호 (최대 20자)
-            joinInfo.ContactFAX = "02-6442-9700";
+            joinInfo.ContactTEL = "";
 
             try
             {

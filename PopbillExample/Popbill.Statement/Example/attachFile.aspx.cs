@@ -35,7 +35,7 @@ namespace Popbill.Statement.Example
             int itemCode = 121;
 
             // 전자명세서 문서번호
-            String mgtKey = "20210701-001";
+            String mgtKey = "20220525-001";
 
             // 첨부파일 경로
             String filePath = "C:/popbill.example.aspdotnet/PopbillExample/test.jpg";

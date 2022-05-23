@@ -34,14 +34,14 @@ namespace Popbill.Cashbill.Example
             // 팝빌회원 아이디
             String testUserID = "testkorea";
 
-            // [필수] 문서번호, 최대 24자리, 영문, 숫자 '-', '_'를 조합하여 사업자별로 중복되지 않도록 구성
-            String mgtKey = "20210806-RevokePart-001";
+            // 문서번호, 최대 24자리, 영문, 숫자 '-', '_'를 조합하여 사업자별로 중복되지 않도록 구성
+            String mgtKey = "20220525-001";
 
             // 원본현금영수증 승인번호, 문서정보 확인(GetInfo API)로 확인가능
             String orgConfirmNum = "TB0000027";
 
             // 원본현금영수증 거래일자, 문서정보 확인(GetInfo API)로 확인가능
-            String orgTradeDate = "20210805";
+            String orgTradeDate = "20220524";
 
             // 안내문자 전송여부
             bool smssendYN = false;
@@ -49,7 +49,7 @@ namespace Popbill.Cashbill.Example
             // 메모
             String memo = "부분취소현금영수증 발행메모";
 
-            
+
             // 부분취소여부 true-부분취소, false-전체취소
             bool isPartCancel = true;
 
@@ -71,7 +71,7 @@ namespace Popbill.Cashbill.Example
             try
             {
                 CBIssueResponse response = Global.cashbillService.RevokeRegistIssue(testCorpNum, mgtKey,
-                    orgConfirmNum, orgTradeDate, smssendYN, memo, testUserID, isPartCancel, cancelType, 
+                    orgConfirmNum, orgTradeDate, smssendYN, memo, testUserID, isPartCancel, cancelType,
                     supplyCost, tax, serviceFee, totalAmount);
 
                 code = response.code.ToString();

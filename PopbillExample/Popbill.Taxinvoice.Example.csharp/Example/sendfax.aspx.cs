@@ -22,7 +22,7 @@ namespace Popbill.Taxinvoice.Example
         {
             /**
              * 세금계산서를 팩스로 전송하는 함수로, 팝빌 사이트 [문자·팩스] > [팩스] > [전송내역] 메뉴에서 전송결과를 확인 할 수 있습니다.
-             * - 팩스 전송 요청시 포인트가 차감됩니다. (전송실패시 환불처리)
+             * - 함수 호출시 포인트가 과금됩니다.
              * - https://docs.popbill.com/taxinvoice/dotnet/api#SendFAX
              */
 
@@ -36,13 +36,13 @@ namespace Popbill.Taxinvoice.Example
             MgtKeyType KeyType = MgtKeyType.SELL;
 
             // 세금계산서 문서번호
-            String mgtKey = "20210711-001";
+            String mgtKey = "20220525-001";
 
             // 발신번호
-            String senderNum = "070-4304-2991";
+            String senderNum = "";
 
             // 수신팩스번호
-            String receiverNum = "070-111-222";
+            String receiverNum = "";
 
             try
             {

@@ -36,10 +36,10 @@ namespace Popbill.Taxinvoice.Example
             MgtKeyType KeyType = MgtKeyType.SELL;
 
             // 세금계산서 문서번호
-            String mgtKey = "20210701-001";
+            String mgtKey = "20220525-001";
 
             // 파일아이디, 첨부파일 목록(GetFileList API) 의 응답항목 중 파일아이디(AttachedFile) 값
-            String fileID = "E85CDB70-1ADF-41FB-9B2C-CDB5AC6B2139.PBF";
+            String fileID = "";
 
             try
             {

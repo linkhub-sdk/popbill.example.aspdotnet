@@ -18,8 +18,8 @@
                 <li>Response.code : <%= code %> </li>
                 <li>Response.message : <%= message %></li>
             <% } else { %>
-                <li>code (상태코드) : <%= result.code %> </li>
-                <li>message (응답메시지) : <%= result.message %> </li>
+                <li>code (코드) : <%= result.code %> </li>
+                <li>message (메시지) : <%= result.message %> </li>
                 <li>total (총 검색결과 건수) : <%= result.total %> </li>
                 <li>perPage (페이지당 검색개수) : <%= result.perPage %> </li>
                 <li>pageNum (페이지 번호) : <%= result.pageNum %> </li>

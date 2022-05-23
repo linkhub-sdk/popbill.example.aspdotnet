@@ -36,20 +36,14 @@ namespace Popbill.Kakao.Example
             // 아이디 (6자이상 50자미만)
             contactInfo.id = "testkorea";
 
-            // 담당자 성명 (최대 100자) 
+            // 담당자 성명 (최대 100자)
             contactInfo.personName = "담당자123";
 
             // 담당자 연락처 (최대 20자)
-            contactInfo.tel = "070-4304-2991";
-
-            // 담당자 휴대폰 (최대 20자)
-            contactInfo.hp = "010-1234-1234";
-
-            // 담당자 팩스 (최대 20자)
-            contactInfo.fax = "02-6442-9700";
+            contactInfo.tel = "";
 
             // 담당자 이메일 (최대 100자)
-            contactInfo.email = "code@linkhub.co.kr";
+            contactInfo.email = "";
 
             // 담당자 권한, 1 : 개인권한, 2 : 읽기권한, 3 : 회사권한
             contactInfo.searchRole = 3;

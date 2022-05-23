@@ -18,10 +18,15 @@
                 <li>Response.code : <%= code %> </li>
                 <li>Response.message : <%= message %></li>
             <% } else { %>
-                <li> writeDate (작성일자) : <%= taxinvoice.writeDate %></li>
-                <li> chargeDirection (과금방향) : <%= taxinvoice.chargeDirection %></li>
+                <li> ntsconfirmNum (국세청승인번호) : <%= taxinvoice.ntsconfirmNum %></li>
                 <li> issueType (발행형태) : <%= taxinvoice.issueType %></li>
                 <li> taxType (과세형태) : <%= taxinvoice.taxType %></li>
+                <li> chargeDirection (과금방향) : <%= taxinvoice.chargeDirection %></li>
+                <li> serialNum (일련번호) : <%= taxinvoice.serialNum %> </li>
+                <li> kwon (권) : <%= taxinvoice.kwon %></li>
+                <li> ho(호) : <%= taxinvoice.ho %></li>
+                <li> writeDate (작성일자) : <%= taxinvoice.writeDate %></li>
+                <li> purposeType (영수/청구) : <%= taxinvoice.purposeType %></li>
                 <li> supplyCostTotal (공급가액 합계) : <%= taxinvoice.supplyCostTotal %></li>
                 <li> taxTotal (세액 합계) : <%= taxinvoice.taxTotal %> </li>
                 <li> totalAmount (합계금액) : <%= taxinvoice.totalAmount %></li>
@@ -29,12 +34,14 @@
                 <li> chkBill (수표) : <%= taxinvoice.chkBill%></li>
                 <li> credit (외상) : <%= taxinvoice.credit%></li>
                 <li> note (어음) : <%= taxinvoice.note%></li>
-                <li> ntsconfirmNum (국세청승인번호) : <%= taxinvoice.ntsconfirmNum %></li>
-                
+                <li> remark1 (비고1) : <%= taxinvoice.remark1 %></li>
+                <li> remark2 (비고2) : <%= taxinvoice.remark2 %></li>
+                <li> remark3 (비고3) : <%= taxinvoice.remark3 %></li>
 
+
+                <li> invoicerMgtKey (공급자 문서번호) : <%= taxinvoice.invoicerMgtKey %></li>
                 <li> invoicerCorpNum (공급자 사업자번호) : <%= taxinvoice.invoicerCorpNum %></li>
                 <li> invoicerTaxRegID (공급자 종사업장 식별번호) : <%= taxinvoice.invoicerTaxRegID%></li>
-                <li> invoicerMgtKey (공급자 문서번호) : <%= taxinvoice.invoicerMgtKey %></li>
                 <li> invoicerCorpName (공급자 상호) : <%= taxinvoice.invoicerCorpName %></li>
                 <li> invoicerCEOName (공급자 대표자명) : <%= taxinvoice.invoicerCEOName %></li>
                 <li> invoicerAddr (공급자 주소) : <%= taxinvoice.invoicerAddr %></li>
@@ -47,30 +54,27 @@
                 <li> invoicerEmail (공급자 담당자 메일) : <%= taxinvoice.invoicerEmail %></li>
                 <li> invoicerSMSSendYN (발행안내문자 전송여부) : <%= taxinvoice.invoicerSMSSendYN %></li>
 
+                <li> invoiceeMgtKey (공급받는자 문서번호) : <%= taxinvoice.invoiceeMgtKey %></li>
+                <li> invoiceeType (공급받는자 구분) : <%= taxinvoice.invoiceeType %> </li>
                 <li> invoiceeCorpNum (공급받는자 사업자번호) : <%= taxinvoice.invoiceeCorpNum %></li>
                 <li> invoiceeTaxRegID (공급받는자 종사업장 식별번호) : <%= taxinvoice.invoiceeTaxRegID%></li>
-                <li> invoiceeType (공급받는자 구분) : <%= taxinvoice.invoiceeType %> </li>
-                <li> invoiceeMgtKey (공급받는자 문서번호) : <%= taxinvoice.invoiceeMgtKey %></li>
                 <li> invoiceeCorpName (공급받는자 상호) : <%= taxinvoice.invoiceeCorpName %></li>
                 <li> invoiceeCEOName (공급받는자 대표자명) : <%= taxinvoice.invoiceeCEOName %></li>
                 <li> invoiceeAddr (공급받는자 주소) : <%= taxinvoice.invoiceeAddr %></li>
                 <li> invoiceeBizType (공급받는자 업태) : <%= taxinvoice.invoiceeBizType%></li>
                 <li> invoiceeBizClass (공급받는자 종목) : <%= taxinvoice.invoiceeBizClass%></li>
+                <li> closeDownState (공급받는자 휴폐업상태) : <%= taxinvoice.closeDownState %></li>
+                <li> closeDownStateDate (공급받는자 휴폐업일자) : <%= taxinvoice.closeDownStateDate %></li>
+
                 <li> invoiceeContactName1 (공급받는자 담당자명) : <%= taxinvoice.invoiceeContactName1 %></li>
+                <li> invoiceeDeptName1 (공급받는자 담당자명) : <%= taxinvoice.invoiceeDeptName1 %></li>
                 <li> invoiceeTEL1 (공급받는자 담당자 연락처) : <%= taxinvoice.invoiceeTEL1 %></li>
                 <li> invoiceeHP1 (공급받는자 담당자 휴대폰) : <%= taxinvoice.invoiceeHP1 %></li>
                 <li> invoiceeEmail1 (공급받는자 담당자 메일) : <%= taxinvoice.invoiceeEmail1 %></li>
                 <li> invoiceeSMSSendYN (역발행안내문자 전송여부) : <%= taxinvoice.invoiceeSMSSendYN %></li>
-                <li> closeDownState (공급받는자 휴폐업상태) : <%= taxinvoice.closeDownState %></li>
-                <li> closeDownStateDate (공급받는자 휴폐업일자) : <%= taxinvoice.closeDownStateDate %></li>
 
-                <li> purposeType (영수/청구) : <%= taxinvoice.purposeType %></li>
-                <li> serialNum (일련번호) : <%= taxinvoice.serialNum %> </li>
-                <li> remark1 (비고1) : <%= taxinvoice.remark1 %></li>
-                <li> remark2 (비고2) : <%= taxinvoice.remark2 %></li>
-                <li> remark3 (비고3) : <%= taxinvoice.remark3 %></li>
-                <li> kwon (권) : <%= taxinvoice.kwon %></li>
-                <li> ho(호) : <%= taxinvoice.ho %></li>
+
+
                 <li> businessLicenseYN (사업자등록증 이미지 첨부여부) : <%= taxinvoice.businessLicenseYN %></li>
                 <li> bankBookYN (통장사본이미지 첨부여부) : <%= taxinvoice.bankBookYN %></li>
 
@@ -110,4 +114,3 @@
 </div>
 </body>
 </html>
-

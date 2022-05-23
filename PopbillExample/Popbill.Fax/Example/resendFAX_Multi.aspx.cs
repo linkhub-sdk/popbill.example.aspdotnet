@@ -23,8 +23,10 @@ namespace Popbill.Fax.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 동일한 팩스파일을 다수의 수신자에게 전송하기 위해 팝빌에 접수합니다. (최대 전송파일 개수: 20개) (최대 1,000건)
+             * 팝빌에서 반환받은 접수번호를 통해 다수의 수신자에게 팩스를 재전송합니다. (최대 1000건)
              * - 발신/수신 정보 미입력시 기존과 동일한 정보로 팩스가 전송되고, 접수일 기준 최대 60일이 경과되지 않는 건만 재전송이 가능합니다.
+             * - 팩스 재전송 요청시 포인트가 차감됩니다. (전송실패시 환불처리)
+             * - 변환실패 사유로 전송실패한 팩스 접수건은 재전송이 불가합니다.
              * - https://docs.popbill.com/fax/dotnet/api#ResendFAX_Same
              */
 
@@ -51,7 +53,7 @@ namespace Popbill.Fax.Example
             // 수신자정보 배열 (최대 1000건)
             //List<FaxReceiver> receivers = new List<FaxReceiver>();
 
-            /* 
+            /*
             for (int i = 0; i < 10; i++)
             {
                 FaxReceiver receiver = new FaxReceiver();

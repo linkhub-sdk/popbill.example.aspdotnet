@@ -31,11 +31,11 @@ namespace Popbill.Cashbill.Example
             // 팝빌회원 아이디
             String testUserID = "testkorea";
 
-            // 팝빌번호, 목록조회(Search) API의 반환항목중 ItemKey 참조
+            // 팝빌번호, 문서 목록조회(Search API) 함수의 반환항목 중 ItemKey 참조
             String itemKey = "020080618301000001";
 
             // 할당할 문서번호, 최대 24자리, 영문, 숫자 '-', '_'를 조합하여 사업자별로 중복되지 않도록 구성
-            String mgtKey = "20210701-03";
+            String mgtKey = "20220525-001";
 
             try
             {

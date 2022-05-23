@@ -34,10 +34,10 @@ namespace Popbill.EasyFin.Bank.Example
             String testUserID = "testkorea";
 
             // 은행코드
-            String BankCode = "0048";
+            String BankCode = "";
 
             // 은행 계좌번호
-            String AccountNumber = "131020538645";
+            String AccountNumber = "";
 
             try
             {

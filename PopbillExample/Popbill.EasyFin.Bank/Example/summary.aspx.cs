@@ -22,7 +22,8 @@ namespace Popbill.EasyFin.Bank.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * GetJobState(수집 상태 확인)를 통해 상태 정보가 확인된 작업아이디를 활용하여 계좌 거래내역의 요약 정보를 조회합니다.
+             * 수집 상태 확인(GetJobState API) 함수를 통해 상태 정보가 확인된 작업아이디를 활용하여 계좌 거래내역의 요약 정보를 조회합니다.
+             * - 요약 정보는 입·출 금액 합계, 입·출 거래 건수를 가리킵니다.
              * - https://docs.popbill.com/easyfinbank/dotnet/api#Summary
              */
 
@@ -38,7 +39,10 @@ namespace Popbill.EasyFin.Bank.Example
             // 거래유형 배열, I-입금, O-출금
             String[] TradeType = { "I", "O" };
 
-            // 조회 검색어, 거래처 사업자번호 또는 거래처명 like 검색
+            // "입·출금액" / "메모" / "비고" 중 검색하고자 하는 값 입력
+            // - 메모 = 거래내역 메모저장(SaveMemo)을 사용하여 저장한 값
+            // - 비고 = EasyFinBankSearchDetail의 remark1, remark2, remark3 값
+            // - 미입력시 전체조회
             String SearchString = "";
 
             try

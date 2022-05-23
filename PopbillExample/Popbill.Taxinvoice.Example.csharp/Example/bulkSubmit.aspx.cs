@@ -34,7 +34,7 @@ namespace Popbill.Taxinvoice.Example
             String testUserID = "testkorea";
 
             // 	제출아이디, 최대 36자리 영문, 숫자, '-' 조합으로 구성
-            String submitID = "dotnetASP003";
+            String submitID = "20220525-BULK";
 
             // 세금계산서 객체정보 목록
             List<Taxinvoice> taxinvoiceList = new List<Taxinvoice>();
@@ -49,21 +49,21 @@ namespace Popbill.Taxinvoice.Example
                 // 세금계산서 정보 객체
                 Taxinvoice taxinvoice = new Taxinvoice();
 
-                // [필수] 기재상 작성일자, 날짜형식(yyyyMMdd)
-                taxinvoice.writeDate = "20210805";
+                // 기재상 작성일자, 날짜형식(yyyyMMdd)
+                taxinvoice.writeDate = "20220525";
 
-                // [필수] 과금방향, {정과금, 역과금}중 선택
+                // 과금방향, {정과금, 역과금}중 선택
                 // - 정과금(공급자과금), 역과금(공급받는자과금)
                 // - 역과금은 역발행 세금계산서를 발행하는 경우만 가능
                 taxinvoice.chargeDirection = "정과금";
 
-                // [필수] 발행형태, {정발행, 역발행, 위수탁} 중 기재
+                // 발행형태, {정발행, 역발행, 위수탁} 중 기재
                 taxinvoice.issueType = "정발행";
 
-                // [필수] {영수, 청구} 중 기재
+                // {영수, 청구, 없음} 중 기재
                 taxinvoice.purposeType = "영수";
 
-                // [필수] 과세형태, {과세, 영세, 면세} 중 기재
+                // 과세형태, {과세, 영세, 면세} 중 기재
                 taxinvoice.taxType = "과세";
 
 
@@ -71,19 +71,19 @@ namespace Popbill.Taxinvoice.Example
                  *                         공급자 정보                           *
                  *****************************************************************/
 
-                // [필수] 공급자 사업자번호, '-' 제외 10자리
+                // 공급자 사업자번호, '-' 제외 10자리
                 taxinvoice.invoicerCorpNum = "1234567890";
 
                 // 공급자 종사업장 식별번호. 필요시 기재. 형식은 숫자 4자리.
                 taxinvoice.invoicerTaxRegID = "";
 
-                // [필수] 공급자 상호
+                // 공급자 상호
                 taxinvoice.invoicerCorpName = "공급자 상호";
 
-                // [필수] 공급자 문서번호, 최대 24자리, 영문, 숫자 '-', '_'를 조합하여 사업자별로 중복되지 않도록 구성
+                // 공급자 문서번호, 최대 24자리, 영문, 숫자 '-', '_'를 조합하여 사업자별로 중복되지 않도록 구성
                 taxinvoice.invoicerMgtKey =  submitID + "-" + i;
 
-                // [필수] 공급자 대표자 성명
+                // 공급자 대표자 성명
                 taxinvoice.invoicerCEOName = "공급자 대표자 성명";
 
                 // 공급자 주소
@@ -99,16 +99,18 @@ namespace Popbill.Taxinvoice.Example
                 taxinvoice.invoicerContactName = "공급자 담당자명";
 
                 // 공급자 담당자 메일주소
-                taxinvoice.invoicerEmail = "test@test.com";
+                taxinvoice.invoicerEmail = "";
 
                 // 공급자 담당자 연락처
-                taxinvoice.invoicerTEL = "070-4304-2991";
+                taxinvoice.invoicerTEL = "";
 
                 // 공급자 담당자 휴대폰번호
-                taxinvoice.invoicerHP = "010-000-2222";
+                taxinvoice.invoicerHP = "";
 
-                // 발행시 알림문자 전송여부
-                // - 공급받는자 담당자 휴대폰번호(invoiceeHP1)로 전송
+                // 발행 안내 문자 전송여부 (true / false 중 택 1)
+                // └ true = 전송 , false = 미전송
+                // └ 공급받는자 (주)담당자 휴대폰번호 {invoiceeHP1} 값으로 문자 전송
+                // - 전송 시 포인트 차감되며, 전송실패시 환불처리
                 taxinvoice.invoicerSMSSendYN = false;
 
 
@@ -116,19 +118,22 @@ namespace Popbill.Taxinvoice.Example
                  *                         공급받는자 정보                           *
                  *********************************************************************/
 
-                // [필수] 공급받는자 구분, {사업자, 개인, 외국인} 중 기재
+                // 공급받는자 구분, {사업자, 개인, 외국인} 중 기재
                 taxinvoice.invoiceeType = "사업자";
 
-                // [필수] 공급받는자 사업자번호, '-'제외 10자리
+                // 공급받는자 사업자번호
+                // - {invoiceeType}이 "사업자" 인 경우, 사업자번호 (하이픈 ('-') 제외 10자리)
+                // - {invoiceeType}이 "개인" 인 경우, 주민등록번호 (하이픈 ('-') 제외 13자리)
+                // - {invoiceeType}이 "외국인" 인 경우, "9999999999999" (하이픈 ('-') 제외 13자리)
                 taxinvoice.invoiceeCorpNum = "8888888888";
 
-                // [필수] 공급받는자 상호
+                // 공급받는자 상호
                 taxinvoice.invoiceeCorpName = "공급받는자 상호";
 
                 // [역발행시 필수] 공급받는자 문서번호, 최대 24자리, 영문, 숫자 '-', '_'를 조합하여 사업자별로 중복되지 않도록 구성
                 taxinvoice.invoiceeMgtKey = "";
 
-                // [필수] 공급받는자 대표자 성명
+                // 공급받는자 대표자 성명
                 taxinvoice.invoiceeCEOName = "공급받는자 대표자 성명";
 
                 // 공급받는자 주소
@@ -141,7 +146,7 @@ namespace Popbill.Taxinvoice.Example
                 taxinvoice.invoiceeBizType = "공급받는자 업태";
 
                 // 공급받는자 담당자 연락처
-                taxinvoice.invoiceeTEL1 = "070-1234-1234";
+                taxinvoice.invoiceeTEL1 = "";
 
                 // 공급받는자 담당자명
                 taxinvoice.invoiceeContactName1 = "공급받는자 담당자명";
@@ -149,10 +154,10 @@ namespace Popbill.Taxinvoice.Example
                 // 공급받는자 담당자 메일주소
                 // 팝빌 개발환경에서 테스트하는 경우에도 안내 메일이 전송되므로,
                 // 실제 거래처의 메일주소가 기재되지 않도록 주의
-                taxinvoice.invoiceeEmail1 = "test@test.com";
+                taxinvoice.invoiceeEmail1 = "";
 
                 // 공급받는자 담당자 휴대폰번호
-                taxinvoice.invoiceeHP1 = "010-111-222";
+                taxinvoice.invoiceeHP1 = "";
 
                 // 역발행시 알림문자 전송여부
                 taxinvoice.invoiceeSMSSendYN = false;
@@ -162,13 +167,13 @@ namespace Popbill.Taxinvoice.Example
                  *                          세금계산서 정보                          *
                  *********************************************************************/
 
-                // [필수] 공급가액 합계
+                // 공급가액 합계
                 taxinvoice.supplyCostTotal = "100000";
 
-                // [필수] 세액 합계
+                // 세액 합계
                 taxinvoice.taxTotal = "10000";
 
-                // [필수] 합계금액,  공급가액 합계 + 세액 합계
+                // 합계금액,  공급가액 합계 + 세액 합계
                 taxinvoice.totalAmount = "110000";
 
                 // 기재상 일련번호 항목
@@ -200,17 +205,21 @@ namespace Popbill.Taxinvoice.Example
                 taxinvoice.ho = 1;
 
 
-                // 사업자등록증 이미지 첨부여부
+                // 사업자등록증 이미지 첨부여부 (true / false 중 택 1)
+                // └ true = 첨부 , false = 미첨부(기본값)
+                // - 팝빌 사이트 또는 인감 및 첨부문서 등록 팝업 URL (GetSealURL API) 함수를 이용하여 등록
                 taxinvoice.businessLicenseYN = false;
 
-                // 통장사본 이미지 첨부여부
+                // 통장사본 이미지 첨부여부 (true / false 중 택 1)
+                // └ true = 첨부 , false = 미첨부(기본값)
+                // - 팝빌 사이트 또는 인감 및 첨부문서 등록 팝업 URL (GetSealURL API) 함수를 이용하여 등록
                 taxinvoice.bankBookYN = false;
 
 
                 /**************************************************************************
-                 *        수정세금계산서 정보 (수정세금계산서 작성시에만 기재             *
-                 * - 수정세금계산서 관련 정보는 연동매뉴얼 또는 개발가이드 링크 참조      *
-                 * - [참고] 수정세금계산서 작성방법 안내 - http://blog.linkhub.co.kr/650  *
+                 *        수정세금계산서 정보 (수정세금계산서 작성시에만 기재
+                 * - 수정세금계산서 관련 정보는 연동매뉴얼 또는 개발가이드 링크 참조
+                 * - [참고] 수정세금계산서 작성방법 안내 - https://docs.popbill.com/taxinvoice/modify?lang=dotnet
                  *************************************************************************/
 
                 // 수정사유코드, 1~6까지 선택기재.
@@ -232,7 +241,7 @@ namespace Popbill.Taxinvoice.Example
                 TaxinvoiceDetail detail = new TaxinvoiceDetail();
 
                 detail.serialNum = 1; // 일련번호, 1부터 순차기재
-                detail.purchaseDT = "20210805"; // 거래일자
+                detail.purchaseDT = "20220525"; // 거래일자
                 detail.itemName = "품목명"; // 품목명
                 detail.spec = "규격"; // 규격
                 detail.qty = "1"; // 수량
@@ -246,7 +255,7 @@ namespace Popbill.Taxinvoice.Example
                 detail = new TaxinvoiceDetail();
 
                 detail.serialNum = 2; // 일련번호, 1부터 순차기재
-                detail.purchaseDT = "20210805"; // 거래일자
+                detail.purchaseDT = "20220525"; // 거래일자
                 detail.itemName = "품목명"; // 품목명
                 detail.spec = "규격"; // 규격
                 detail.qty = "1"; // 수량
@@ -270,7 +279,7 @@ namespace Popbill.Taxinvoice.Example
                 TaxinvoiceAddContact addContact = new TaxinvoiceAddContact();
 
                 addContact.serialNum = 1; // 일련번호, 1부터 순차기재
-                addContact.email = "test2@invoicee.com"; // 추가담당자 메일주소
+                addContact.email = ""; // 추가담당자 메일주소
                 addContact.contactName = "추가담당자명"; // 추가담당자 성명
 
                 taxinvoice.addContactList.Add(addContact);
@@ -278,7 +287,7 @@ namespace Popbill.Taxinvoice.Example
                 TaxinvoiceAddContact addContact2 = new TaxinvoiceAddContact();
 
                 addContact2.serialNum = 2; // 일련번호, 1부터 순차기재
-                addContact2.email = "test2@invoicee.com"; // 추가담당자 메일주소
+                addContact2.email = ""; // 추가담당자 메일주소
                 addContact2.contactName = "추가담당자명"; // 추가담당자 성명
 
                 taxinvoice.addContactList.Add(addContact2);

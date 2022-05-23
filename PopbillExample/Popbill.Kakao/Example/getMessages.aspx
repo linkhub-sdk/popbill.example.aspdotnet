@@ -36,32 +36,6 @@
                         <li> altCnt (대체문자 건수) : <%= sentResult.altCnt %></li>
                         <li> cancelCnt (취소건수) : <%= sentResult.cancelCnt %></li>
                     </ul>
-                    <% if (sentResult.msgs != null)
-                       { %>
-                        <% foreach (Popbill.Kakao.KakaoSentDetail detailInfo in sentResult.msgs)
-                           { %>
-                            <fieldset class="fieldset3">
-                                <legend>전송결과 정보</legend>
-                                <ul>
-                                    <li> state (전송상태 코드) : <%= detailInfo.state %></li>
-                                    <li> sendDT (전송일시) : <%= detailInfo.sendDT %></li>
-                                    <li> receiveNum (수신번호) : <%= detailInfo.receiveNum %></li>
-                                    <li> receiveName (수신자명) : <%= detailInfo.receiveName %></li>
-                                    <li> content (알림톡/친구톡 내용) : <%= detailInfo.content %></li>
-                                    <li> result (알림톡/친구톡 전송결과 코드) : <%= detailInfo.result %></li>
-                                    <li> resultDT (알림톡/친구톡 전송결과 수신일시) : <%= detailInfo.resultDT %></li>
-                                    <li> altContent (대체문자 내용) : <%= detailInfo.altContent %></li>
-                                    <li> altContentType (대체문자 전송유형) : <%= detailInfo.altContentType %></li>
-                                    <li> altSendDT (대체문자 전송일시) : <%= detailInfo.altSendDT %></li>
-                                    <li> altResult (대체문자 전송결과 코드) : <%= detailInfo.altResult %></li>
-                                    <li> altResultDT (대체문자 전송결과 수신일시) : <%= detailInfo.altResultDT %></li>
-                                    <li> receiptNum (접수번호) : <%= detailInfo.receiptNum %></li>
-                                    <li> requestNum (요청번호) : <%= detailInfo.requestNum %></li>
-                                    <li> interOPRefKey (파트너 지정키) : <%= detailInfo.interOPRefKey %></li>
-                                </ul>
-                            </fieldset>
-                        <% } %>
-                    <% } %>
                     <% if (sentResult.btns != null)
                        { %>
                         <% foreach (Popbill.Kakao.KakaoButton btnInfo in sentResult.btns)
@@ -77,8 +51,34 @@
                             </fieldset>
                         <% } %>
                     <% } %>
+                    <% if (sentResult.msgs != null)
+                       { %>
+                        <% foreach (Popbill.Kakao.KakaoSentDetail detailInfo in sentResult.msgs)
+                           { %>
+                            <fieldset class="fieldset3">
+                                <legend>전송결과 정보</legend>
+                                <ul>
+                                    <li> state (전송상태 코드) : <%= detailInfo.state %></li>
+                                    <li> sendDT (전송일시) : <%= detailInfo.sendDT %></li>
+                                    <li> result (알림톡/친구톡 전송결과 코드) : <%= detailInfo.result %></li>
+                                    <li> resultDT (알림톡/친구톡 전송결과 수신일시) : <%= detailInfo.resultDT %></li>
+                                    <li> contentType (카카오톡 유형) : <%= detailInfo.contentType %></li>
+                                    <li> receiveNum (수신번호) : <%= detailInfo.receiveNum %></li>
+                                    <li> receiveName (수신자명) : <%= detailInfo.receiveName %></li>
+                                    <li> content (알림톡/친구톡 내용) : <%= detailInfo.content %></li>
+                                    <li> altContent (대체문자 내용) : <%= detailInfo.altContent %></li>
+                                    <li> altContentType (대체문자 전송유형) : <%= detailInfo.altContentType %></li>
+                                    <li> altSendDT (대체문자 전송일시) : <%= detailInfo.altSendDT %></li>
+                                    <li> altResult (대체문자 전송결과 코드) : <%= detailInfo.altResult %></li>
+                                    <li> altResultDT (대체문자 전송결과 수신일시) : <%= detailInfo.altResultDT %></li>
+                                    <li> receiptNum (접수번호) : <%= detailInfo.receiptNum %></li>
+                                    <li> requestNum (요청번호) : <%= detailInfo.requestNum %></li>
+                                    <li> interOPRefKey (파트너 지정키) : <%= detailInfo.interOPRefKey %></li>
+                                </ul>
+                            </fieldset>
+                        <% } %>
+                    <% } %>
                 </fieldset>
-
             <% } %>
         </ul>
     </fieldset>

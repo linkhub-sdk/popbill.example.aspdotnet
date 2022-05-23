@@ -30,7 +30,7 @@ namespace Popbill.Kakao.Example
             String testCorpNum = "1234567890";
 
             // 카카오톡 전송시 기재한 요청번호
-            String requestNum = "20210701-001";
+            String requestNum = "";
 
             try
             {

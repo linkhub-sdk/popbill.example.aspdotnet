@@ -37,7 +37,7 @@ namespace Popbill.Statement
             int itemCode = 121;
 
             // 전자명세서 문서번호
-            String mgtKey = "20210703-001";
+            String mgtKey = "20220525-001";
 
             try
             {
@@ -46,7 +46,7 @@ namespace Popbill.Statement
             catch (PopbillException ex)
             {
                 code = ex.code.ToString();
-                message = ex.Message;                
+                message = ex.Message;
             }
         }
     }

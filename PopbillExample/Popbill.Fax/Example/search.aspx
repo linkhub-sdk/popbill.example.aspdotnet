@@ -18,7 +18,7 @@
                 <li>Response.code : <%= code %> </li>
                 <li>Response.message : <%= message %></li>
             <% } else { %>
-                <li>code (상태코드) : <%= result.code %> </li>
+                <li>code (응답코드) : <%= result.code %> </li>
                 <li>message (응답메시지) : <%= result.message %> </li>
                 <li>total (총 검색결과 건수) : <%= result.total %> </li>
                 <li>perPage (페이지당 검색개수) : <%= result.perPage %> </li>
@@ -39,7 +39,6 @@
                             <li>sendPageCnt (전체 페이지수) : <%= faxInfo.sendPageCnt %></li>
                             <li>successPageCnt (성공 페이지수) : <%= faxInfo.successPageCnt %></li>
                             <li>failPageCnt (실패 페이지수) : <%= faxInfo.failPageCnt %></li>
-                            <li>refundPageCnt (환불 페이지수) : <%= faxInfo.refundPageCnt %></li>
                             <li>cancelPageCnt (취소 페이지수) : <%= faxInfo.cancelPageCnt %></li>
                             <li>reserveDT (예약시간) : <%= faxInfo.reserveDT %></li>
                             <li>receiptDT (접수시간) : <%= faxInfo.receiptDT %></li>
@@ -55,6 +54,7 @@
                             <li>receiptNum (접수번호) : <%= faxInfo.receiptNum %></li>
                             <li>requestNum (요청번호) : <%= faxInfo.requestNum %></li>
                             <li>chargePageCnt (과금 페이지수) : <%= faxInfo.chargePageCnt %></li>
+                            <li>refundPageCnt (환불 페이지수) : <%= faxInfo.refundPageCnt %></li>
                             <li>tiffFileSize (변환파일용량(단위 : byte)) : <%= faxInfo.tiffFileSize %></li>
                         </ul>
                     </fieldset>

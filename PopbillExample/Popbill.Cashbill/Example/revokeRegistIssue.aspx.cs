@@ -31,14 +31,14 @@ namespace Popbill.Cashbill.Example
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
-            // [필수] 문서번호, 최대 24자리, 영문, 숫자 '-', '_'를 조합하여 사업자별로 중복되지 않도록 구성
-            String mgtKey = "20210806-Revoke001";
+            // 문서번호, 최대 24자리, 영문, 숫자 '-', '_'를 조합하여 사업자별로 중복되지 않도록 구성
+            String mgtKey = "20220525-001";
 
             // 원본현금영수증 승인번호, 문서정보 확인(GetInfo API)로 확인가능
             String orgConfirmNum = "TB0000027";
 
             // 원본현금영수증 거래일자, 문서정보 확인(GetInfo API)로 확인가능
-            String orgTradeDate = "20210805";
+            String orgTradeDate = "20220501";
 
             try
             {

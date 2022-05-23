@@ -43,16 +43,10 @@ namespace Popbill.EasyFin.Bank.Example
             contactInfo.personName = "담당자명";
 
             // 담당자 연락처 (최대 20자)
-            contactInfo.tel = "070-4304-2992";
-
-            // 담당자 휴대폰번호 (최대 20자)
-            contactInfo.hp = "010-222-111";
-
-            // 담당자 팩스 (최대 20자)
-            contactInfo.fax = "02-222-1110";
+            contactInfo.tel = "";
 
             // 담당자 이메일 (최대 100자)
-            contactInfo.email = "aspnetcore@popbill.co.kr";
+            contactInfo.email = "";
 
             // 담당자 권한, 1 : 개인권한, 2 : 읽기권한, 3 : 회사권한
             contactInfo.searchRole = 3;

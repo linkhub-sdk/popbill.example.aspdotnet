@@ -19,11 +19,13 @@ namespace Popbill.Cashbill.Example
         public String code;
         public String message;
         public List<CashbillInfo> cashbillInfoList;
-        
+
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
              * 다수건의 현금영수증 상태 및 요약 정보를 확인합니다. (1회 호출 시 최대 1,000건 확인 가능)
+             * - 리턴값 'CashbillInfo'의 변수 'stateCode'를 통해 현금영수증의 상태코드를 확인합니다.
+             * - 현금영수증 상태코드 [https://docs.popbill.com/cashbill/stateCode?lang=dotnet]
              * - https://docs.popbill.com/cashbill/dotnet/api#GetInfos
              */
 
@@ -33,8 +35,8 @@ namespace Popbill.Cashbill.Example
             List<string> MgtKeyList = new List<string>();
 
             // 현금영수증 문서번호 배열, 최대 1000건.
-            MgtKeyList.Add("20210701-001");
-            MgtKeyList.Add("20210701-002");
+            MgtKeyList.Add("20220525-001");
+            MgtKeyList.Add("20220525-002");
 
             try
             {

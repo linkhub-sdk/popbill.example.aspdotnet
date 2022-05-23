@@ -37,13 +37,13 @@ namespace Popbill.Statement
             int itemcode = 121;
 
             // 전자명세서 문서번호
-            String mgtKey = "20210703-001";
+            String mgtKey = "20220525-001";
 
-            // 발신번호 
-            String senderNum = "07043042991";
+            // 발신번호
+            String senderNum = "";
 
             // 수신번호
-            String receiverNum = "000111222";
+            String receiverNum = "";
 
             try
             {

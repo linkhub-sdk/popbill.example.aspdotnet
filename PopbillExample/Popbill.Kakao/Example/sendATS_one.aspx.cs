@@ -24,18 +24,21 @@ namespace Popbill.Kakao.Example
         {
             /**
              * 승인된 템플릿의 내용을 작성하여 1건의 알림톡 전송을 팝빌에 접수합니다.
-             * - 전송실패시 사전에 지정한 변수 'altSendType' 값으로 대체문자를 전송할 수 있고, 이 경우 문자(SMS/LMS) 요금이 과금됩니다.
+             * - 사전에 승인된 템플릿의 내용과 알림톡 전송내용(content)이 다를 경우 전송실패 처리됩니다.
+             * - 전송실패 시 사전에 지정한 변수 'altSendType' 값으로 대체문자를 전송할 수 있고 이 경우 문자(SMS/LMS) 요금이 과금됩니다.
              * - https://docs.popbill.com/kakao/dotnet/api#SendATS
              */
 
             // 팝빌회원 사업자번호
             String testCorpNum = "1234567890";
 
-            // 알림톡 템플릿 코드, ListATSTemplate API의 templateCode 확인
+            // 승인된 알림톡 템플릿코드
+            // └ 알림톡 템플릿 관리 팝업 URL(GetATSTemplateMgtURL API) 함수, 알림톡 템플릿 목록 확인(ListATStemplate API) 함수를 호출하거나
+            //   팝빌사이트에서 승인된 알림톡 템플릿 코드를  확인 가능.
             String templateCode = "019020000163";
 
             // 팝빌에 사전 등록된 발신번호
-            String senderNum = "07043042991";
+            String senderNum = "";
 
             // 알림톡 템플릿 내용, 최대 1000자
             String content = "[ 팝빌 ]\n";
@@ -45,14 +48,16 @@ namespace Popbill.Kakao.Example
             content += "팝빌 파트너센터 : 1600-8536\n";
             content += "support@linkhub.co.kr".Replace("\n", Environment.NewLine);
 
-            // 대체문자 메시지 내용 
+            // 대체문자 유형(altSendType)이 "A"일 경우, 대체문자로 전송할 내용 (최대 2000byte)
+            // └ 팝빌이 메시지 길이에 따라 단문(90byte 이하) 또는 장문(90byte 초과)으로 전송처리
             String altContent = "대체문자 메시지 내용";
-            
-            // 대체문자 유형, 공백-미전송, C-알림톡 내용, A-대체문자 내용
+
+            // 대체문자 유형 (null , "C" , "A" 중 택 1)
+            // null = 미전송, C = 알림톡과 동일 내용 전송 , A = 대체문자 내용(altContent)에 입력한 내용 전송
             String altSendType = "A";
 
             // 수신번호
-            String receiverNum = "010111222";
+            String receiverNum = "";
 
             // 수신자명
             String receiverName = "수신자명";
@@ -60,8 +65,9 @@ namespace Popbill.Kakao.Example
             // 예약전송일시(yyyyMMddHHmmss), null인 경우 즉시전송
             String reserveDTStr = "";
 
-            // 전송요청번호, 파트너가 전송요청에 대한 관리번호를 직접 할당하여 관리하는 경우 기재
-            // 최대 36자리, 영문, 숫자, 언더바('_'), 하이픈('-')을 조합하여 사업자별로 중복되지 않도록 구성
+            // 전송요청번호
+            // 팝빌이 접수 단위를 식별할 수 있도록 파트너가 할당한 식별번호.
+            // 1~36자리로 구성. 영문, 숫자, 하이픈(-), 언더바(_)를 조합하여 팝빌 회원별로 중복되지 않도록 할당.
             String requestNum = "";
 
             DateTime? reserveDT = null;
@@ -77,7 +83,7 @@ namespace Popbill.Kakao.Example
             // 버튼링크 URL 에 #{템플릿변수}를 기재하여 승인받은경우 URL 수정하여 전송
             /*
             List<KakaoButton> buttons = new List<KakaoButton>();
-            
+
             KakaoButton btnInfo = new KakaoButton();
             // 버튼명
             btnInfo.n = "템플릿 안내";

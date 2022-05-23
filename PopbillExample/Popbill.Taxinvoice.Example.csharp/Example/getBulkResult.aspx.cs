@@ -30,7 +30,7 @@ namespace Popbill.Taxinvoice.Example
             String testCorpNum = "1234567890";
 
             // 초대량 발행 접수시 기재한 제출아이디
-            String submitID = "dotnetASP003";
+            String submitID = "20220525-BULK";
 
             // 팝빌회원 아이디
             String testUserID = "testkorea";

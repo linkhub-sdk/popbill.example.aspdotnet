@@ -36,11 +36,8 @@ namespace Popbill.Statement.Example
             List<string> MgtKeyList = new List<string>();
 
             //문서번호 배열, 최대 1000건
-            MgtKeyList.Add("20210703-001");
-            MgtKeyList.Add("20210703-001");
-            MgtKeyList.Add("20210703-003");
-            MgtKeyList.Add("20210703-004");
-            MgtKeyList.Add("20210703-005");
+            MgtKeyList.Add("20220525-001");
+            MgtKeyList.Add("20220525-002");
 
             try
             {

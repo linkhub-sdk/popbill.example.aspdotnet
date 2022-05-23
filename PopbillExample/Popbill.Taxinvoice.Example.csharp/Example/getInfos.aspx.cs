@@ -36,9 +36,8 @@ namespace Popbill.Taxinvoice.Example
             List<string> MgtKeyList = new List<string>();
 
             //  조회할 세금계산서 문서번호 배열, (최대 1000건)
-            MgtKeyList.Add("20210701-001");
-            MgtKeyList.Add("20210701-002");
-            MgtKeyList.Add("20210701-003");
+            MgtKeyList.Add("20220525-001");
+            MgtKeyList.Add("20220525-002");
 
             try
             {

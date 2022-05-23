@@ -22,7 +22,8 @@ namespace Popbill.HomeTax.Taxinvoice.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 함수 (GetJobState – 수집 상태 확인)를 통해 상태 정보가 확인된 작업아이디를 활용하여 수집된 전자세금계산서 매입/매출 내역의 요약 정보를 조회합니다.
+             * 수집 상태 확인(GetJobState API) 함수를 통해 상태 정보가 확인된 작업아이디를 활용하여 수집된 전자세금계산서 매입/매출 내역의 요약 정보를 조회합니다.
+             * - 요약 정보 : 전자세금계산서 수집 건수, 공급가액 합계, 세액 합계, 합계 금액
              * - https://docs.popbill.com/httaxinvoice/dotnet/api#Summary
              */
 
@@ -34,26 +35,38 @@ namespace Popbill.HomeTax.Taxinvoice.Example
             // 수집 요청(requestJob API)시 반환반은 작업아이디(jobID)
             String jobID = "019102318000000002";
 
-
-            // 문서형태 배열, N-일반 전자세금계산서, M-수정 전자세금계산서
+            // 문서형태 배열 ("N" 와 "M" 중 선택, 다중 선택 가능)
+            // └ N = 일반 , M = 수정
+            // - 미입력 시 전체조회
             String[] Type = { "N", "M" };
 
-            // 과세형태, T-과세, N-면세, Z-영세 
+            // 과세형태 배열 ("T" , "N" , "Z" 중 선택, 다중 선택 가능)
+            // └ T = 과세, N = 면세, Z = 영세
+            // - 미입력 시 전체조회
             String[] TaxType = { "T", "N", "Z" };
 
-            // 영수/청구, R-영수, C-청구, N-없음
+            // 발행목적 배열 ("R" , "C", "N" 중 선택, 다중 선택 가능)
+            // └ R = 영수, C = 청구, N = 없음
+            // - 미입력 시 전체조회
             String[] PurposeType = { "R", "C", "N" };
 
-            // 종사업장유무, 공백-전체조회 0-종사업장번호 없는 경우 조회, 1-종사업장번호 조건에 따라 조회
+            // 종사업장번호 유무 (null , "0" , "1" 중 택 1)
+            // - null = 전체 , 0 = 없음, 1 = 있음
             String TaxRegIDYN = "";
 
-            // 종사업장번호 사업자 유형, S-공급자, B-공급받는자, T-수탁자
+            // 종사업장번호의 주체 ("S" , "B" , "T" 중 택 1)
+            // └ S = 공급자 , B = 공급받는자 , T = 수탁자
+            // - 미입력시 전체조회
             String TaxRegIDType = "S";
 
-            // 종사업장번호, 콤마(",")로 구분하여 구성 ex) "0001,1234"
+            // 종사업장번호
+            // 다수기재시 콤마(",")로 구분하여 구성 ex ) "0001,0002"
+            // - 미입력시 전체조회
             String TaxRegID = "";
 
-            // 조회 검색어, 거래처 사업자번호 또는 거래처명 like 검색
+            // 거래처 상호 / 사업자번호 (사업자) / 주민등록번호 (개인) / "9999999999999" (외국인) 중 검색하고자 하는 정보 입력
+            // - 사업자번호 / 주민등록번호는 하이픈('-')을 제외한 숫자만 입력
+            // - 미입력시 전체조회
             String SearchString = "";
 
             try
@@ -67,7 +80,7 @@ namespace Popbill.HomeTax.Taxinvoice.Example
             {
                 code = ex.code.ToString();
                 message = ex.Message;
-            }     
+            }
         }
     }
 }

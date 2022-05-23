@@ -22,6 +22,7 @@ namespace Popbill.Cashbill.Example
         {
             /**
              * 파트너가 현금영수증 관리 목적으로 할당하는 문서번호 사용여부를 확인합니다.
+              * - 이미 사용 중인 문서번호는 중복 사용이 불가하고, 현금영수증이 삭제된 경우에만 문서번호의 재사용이 가능합니다.
              * - https://docs.popbill.com/cashbill/dotnet/api#CheckMgtKeyInUse
              */
 
@@ -29,7 +30,7 @@ namespace Popbill.Cashbill.Example
             String testCorpNum = "1234567890";
 
             // 현금영수증 문서번호, 최대 24자리, 영문, 숫자 '-', '_'를 조합하여 사업자별로 중복되지 않도록 구성
-            String mgtKey = "20210701-001";
+            String mgtKey = "20220525-001";
 
             try
             {
@@ -40,7 +41,7 @@ namespace Popbill.Cashbill.Example
             catch (PopbillException ex)
             {
                 code = ex.code.ToString();
-                message = ex.Message;                
+                message = ex.Message;
             }
         }
     }

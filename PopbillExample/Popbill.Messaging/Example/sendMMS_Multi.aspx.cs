@@ -24,8 +24,8 @@ namespace Popbill.Message.Example
         {
             /**
              * 최대 2,000byte의 메시지와 이미지로 구성된 포토문자(MMS) 다수건 전송을 팝빌에 접수합니다. (최대 1,000건)
-             * - 이미지 파일의 크기는 최대 300Kbtye (JPEG), 가로/세로 1000px 이하 권장
              * - 모든 수신자에게 동일한 내용을 전송하거나(동보전송), 수신자마다 개별 내용을 전송할 수 있습니다(대량전송).
+             * - 이미지 파일 포맷/규격 : 최대 300Kbyte(JPEG), 가로/세로 1,000px 이하 권장
              *  - https://docs.popbill.com/message/dotnet/api#SendMMS_Same
              */
 
@@ -36,12 +36,12 @@ namespace Popbill.Message.Example
             String testUserID = "testkorea";
 
             // 발신번호
-            String senderNum = "070-4304-2991";
+            String senderNum = "";
 
             // 메시지 제목
             String subject = "동보메시지 제목";
 
-            // 메시지 내용, 포토(MMS) 메시지는 2000byte초과된 내용은 삭제되어 전송됨. 
+            // 메시지 내용, 포토(MMS) 메시지는 2000byte초과된 내용은 삭제되어 전송됨.
             String contents = "동보 문자 메시지 내용, 최대 2000byte";
 
             // 포토 메시지 파일경로, JPG 파일포맷, 300KByte 이하 전송 가능
@@ -50,11 +50,13 @@ namespace Popbill.Message.Example
             // 예약전송일시(yyyyMMddHHmmss), null인 경우 즉시전송
             String reserveDTStr = "";
 
-            // 전송요청번호, 파트너가 전송요청에 대한 관리번호를 직접 할당하여 관리하는 경우 기재
-            // 최대 36자리, 영문, 숫자, 언더바('_'), 하이픈('-')을 조합하여 사업자별로 중복되지 않도록 구성
+            // 전송요청번호
+            // 팝빌이 접수 단위를 식별할 수 있도록 파트너가 할당한 식별번호.
+            // 1~36자리로 구성. 영문, 숫자, 하이픈(-), 언더바(_)를 조합하여 팝빌 회원별로 중복되지 않도록 할당.
             String requestNum = "";
 
-            // 광고문자 여부 (기본값 false)
+            // 광고성 메시지 여부 ( true , false 중 택 1)
+            // └ true = 광고 , false = 일반
             Boolean adsYN = false;
 
             DateTime? reserveDT = null;

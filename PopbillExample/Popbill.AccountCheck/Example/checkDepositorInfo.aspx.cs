@@ -33,10 +33,10 @@ namespace Popbill.AccountCheck.Example
             String userID = "testkorea";
 
             // 기관코드
-            String bankCode = "0004";
+            String bankCode = "";
 
             // 계좌번호
-            String accountNumber = "94324511758214";
+            String accountNumber = "";
 
             // 등록번호 유형, P-개인, B-사업자
             String identityNumType = "P";
@@ -44,7 +44,7 @@ namespace Popbill.AccountCheck.Example
             // 등록번호
             // └ 등록번호 유형 값이 "B"인 경우 사업자번호(10 자리)입력 ('-' 제외)
             // └ 등록번호 유형 값이 "P"인 경우 생년월일(6 자리)입력 (형식 : YYMMDD) 
-            String identityNum = "941219";
+            String identityNum = "";
 
             try
             {

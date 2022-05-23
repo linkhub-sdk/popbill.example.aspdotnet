@@ -36,13 +36,13 @@ namespace Popbill.Statement.Example
             int itemcode = 121;
 
             // 전자명세서 문서번호
-            String mgtKey = "20210701-001";
+            String mgtKey = "20220525-001";
 
             // 발신번호
-            String senderNum = "07043042991";
+            String senderNum = "";
 
             // 수신번호
-            String receiverNum = "010111222";
+            String receiverNum = "";
 
             // 문자메시지 내용,이 90Byte초과하는경우 길이가 조정되어 전송됨
             String msgContents = "ASP.NET 전자명세서 문자전송 테스트";
@@ -52,7 +52,7 @@ namespace Popbill.Statement.Example
                 Response response = Global.statementService.SendSMS(testCorpNum, itemcode, mgtKey, senderNum, receiverNum, msgContents, testUserID);
                 code = response.code.ToString();
                 message = response.message;
-                
+
             }
             catch (PopbillException ex)
             {

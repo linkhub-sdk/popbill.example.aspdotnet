@@ -32,16 +32,16 @@ namespace Popbill.EasyFin.Bank.Example
             String testCorpNum = "1234567890";
 
             // 기관코드
-            String BankCode = "0048";
+            String BankCode = "";
 
             // 은행 계좌번호
-            String AccountNumber = "131020538645";
+            String AccountNumber = "";
 
             // 시작일자, 표시형식(yyyyMMdd)
-            String SDate = "20210701";
+            String SDate = "20220501";
 
             // 종료일자, 표시형식(yyyyMMdd)
-            String EDate = "20210730";
+            String EDate = "20220525";
 
             try
             {

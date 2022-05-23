@@ -12,7 +12,7 @@
     <p class="heading1">Response</p>
     <br/>
     <fieldset class="fieldset1">
-        <legend>예약문자 전송취소 (요청번호할당)</legend>
+        <legend>예약문자 전송취소 (요청번호)</legend>
         <ul>
             <li>Response.code : <%= code %></li>
             <li>Response.message : <%= message %></li>

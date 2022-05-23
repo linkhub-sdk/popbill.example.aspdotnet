@@ -32,13 +32,13 @@ namespace Popbill.Taxinvoice.Example
             MgtKeyType KeyType = MgtKeyType.SELL;
 
             // 세금계산서 문서번호
-            String mgtKey = "20210701-05";
+            String mgtKey = "20220525-001";
 
             // 첨부해제 할 명세서 종류 코드
             int DocItemCode = 121;
 
             // 첨부해제 할 명세서 문서번호
-            String DocMgtKey = "20210701-S01";
+            String DocMgtKey = "20220525-001";
 
             try
             {

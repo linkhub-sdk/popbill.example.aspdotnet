@@ -30,24 +30,31 @@ namespace Popbill.Fax.Example
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
-            // 최대 검색기간 : 2개월 이내 
+            // 최대 검색기간 : 2개월 이내
             // 시작일자, 날짜형식(yyyyMMdd)
-            String SDate = "20211201";
+            String SDate = "20220501";
 
             // 종료일자, 날짜형식(yyyyMMdd)
-            String EDate = "20211220";
+            String EDate = "20220531";
 
-            //전송상태 배열 1-대기, 2-성공, 3-실패, 4-취소
+            // 전송상태 배열 ("1" , "2" , "3" , "4" 중 선택, 다중 선택 가능)
+            // └ 1 = 대기 , 2 = 성공 , 3 = 실패 , 4 = 취소
+            // - 미입력 시 전체조회
             String[] State = new String[4];
             State[0] = "1";
             State[1] = "2";
             State[2] = "3";
             State[3] = "4";
 
-            // 예약여부, True-예약전송건 검색, False-즉시전송건 검색
+            // 예약여부 (false , true 중 택 1)
+            // false = 전체조회, true = 예약전송건 조회
+            // 미입력시 기본값 false 처리
             bool ReserveYN = false;
 
-            // 개인조회여부, True-개인조회, False-회사조회
+            // 개인조회 여부 (false , true 중 택 1)
+            // false = 접수한 팩스 전체 조회 (관리자권한)
+            // true = 해당 담당자 계정으로 접수한 팩스만 조회 (개인권한)
+            // 미입력시 기본값 false 처리
             bool SenderOnly = false;
 
             // 정렬방향, A-오름차순, D-내림차순
@@ -59,7 +66,8 @@ namespace Popbill.Fax.Example
             // 페이지당 검색개수, 최대 1000개
             int PerPage = 10;
 
-            // 조회 검색어, 팩스 전송시 기재한 발신자명 또는 수신자명 기재
+            // 조회하고자 하는 발신자명 또는 수신자명
+            // - 미입력시 전체조회
             String QString = "";
 
             try

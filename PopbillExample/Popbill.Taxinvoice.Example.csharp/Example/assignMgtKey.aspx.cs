@@ -38,7 +38,7 @@ namespace Popbill.Taxinvoice.Example
             String itemKey = "021041823580800001";
 
             // 할당할 문서관호, 최대 24자리, 영문, 숫자 '-', '_'를 조합하여 사업자별로 중복되지 않도록 구성
-            String mgtKey = "20210701-001";
+            String mgtKey = "20220525-001";
 
             try
             {

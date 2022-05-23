@@ -40,11 +40,8 @@ namespace Popbill.Statement
             List<string> mgtKeyList = new List<string>();
 
             // 문서번호 배열, 최대 100건
-            mgtKeyList.Add("20210703-001");
-            mgtKeyList.Add("20210703-002");
-            mgtKeyList.Add("20210703-003");
-            mgtKeyList.Add("20210703-004");
-            mgtKeyList.Add("20210703-005");
+            mgtKeyList.Add("20220525-001");
+            mgtKeyList.Add("20220525-002");
 
             try
             {
@@ -53,7 +50,7 @@ namespace Popbill.Statement
             catch (PopbillException ex)
             {
                 code = ex.code.ToString();
-                message = ex.Message;                
+                message = ex.Message;
             }
         }
     }

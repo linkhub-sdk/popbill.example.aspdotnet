@@ -30,10 +30,10 @@ namespace Popbill.AccountCheck.Example
             String testCorpNum = "1234567890";
 
             // 기관코드
-            String bankCode = "0004";
+            String bankCode = "";
 
             // 계좌번호
-            String accountNumber = "94324511758214";
+            String accountNumber = "";
 
             try
             {

@@ -26,7 +26,8 @@
                             <li>docLogType (로그타입) : <%= logInfo.docLogType %></li>
                             <li>log (이력정보) : <%= logInfo.log %></li>
                             <li>procType (처리형태) : <%= logInfo.procType %></li>
-                            <li>procCorpName (처리담당자) : <%= logInfo.procCorpName %></li>
+                            <li>procCorpName (처리회사명) : <%= logInfo.procCorpName %></li>
+                            <li>procContactName (처리담당자) : <%= logInfo.procContactName %></li>
                             <li>procMemo (처리메모) : <%= logInfo.procMemo %></li>
                             <li>regDT (등록일시) : <%= logInfo.regDT %></li>
                             <li>ip (아이피) : <%= logInfo.ip %></li>

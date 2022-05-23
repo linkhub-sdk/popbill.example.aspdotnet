@@ -24,7 +24,6 @@ namespace Popbill.Fax.Example
         {
             /**
              * 동일한 팩스파일을 다수의 수신자에게 전송하기 위해 팝빌에 접수합니다. (최대 전송파일 개수 : 20개) (최대 1,000건)
-             * - 팩스전송 문서 파일포맷 안내 : https://docs.popbill.com/fax/format?lang=dotnet
              * - https://docs.popbill.com/fax/dotnet/api#SendFAX_Same
              */
 
@@ -35,7 +34,7 @@ namespace Popbill.Fax.Example
             String testUserID = "testkorea";
 
             // 발신번호
-            String senderNum = "07043042991";
+            String senderNum = "";
 
             // 수신자정보 배열 (최대 1000건)
             List<FaxReceiver> receivers = new List<FaxReceiver>();
@@ -45,14 +44,14 @@ namespace Popbill.Fax.Example
                 FaxReceiver receiver = new FaxReceiver();
 
                 // 수신번호
-                receiver.receiveNum = "111-2222-3333";
+                receiver.receiveNum = "";
 
                 // 수신자명
                 receiver.receiveName = "수신자명칭_" + i;
                 receivers.Add(receiver);
             }
 
-            // 팩스전송 파일경로, 전송파일 최대 20개 
+            // 팩스전송 파일경로, 전송파일 최대 20개
             List<String> filePath = new List<String>();
             filePath.Add("C:/popbill.example.aspdotnet/PopbillExample/test.jpg");
             filePath.Add("C:/popbill.example.aspdotnet/PopbillExample/test03.jpg");
@@ -67,15 +66,17 @@ namespace Popbill.Fax.Example
                 reserveDT = DateTime.ParseExact(reserveDTStr, "yyyyMMddHHmmss", System.Globalization.CultureInfo.InvariantCulture);
             }
 
-            // 광고팩스 전송여부
+            // 광고팩스 전송여부 , true / false 중 택 1
+            // └ true = 광고 , false = 일반
+            // └ 미입력 시 기본값 false 처리
             bool adsYN = false;
 
             // 팩스제목
             String title = "팩스전송 제목";
 
-
-            // 전송요청번호, 파트너가 전송요청에 대한 관리번호를 직접 할당하여 관리하는 경우 기재
-            // 최대 36자리, 영문, 숫자, 언더바('_'), 하이픈('-')을 조합하여 사업자별로 중복되지 않도록 구성
+            // 전송요청번호
+            // 파트너가 전송 건에 대해 관리번호를 구성하여 관리하는 경우 사용.
+            // 1~36자리로 구성. 영문, 숫자, 하이픈(-), 언더바(_)를 조합하여 팝빌 회원별로 중복되지 않도록 할당.
             String requestNum = "";
 
             try
