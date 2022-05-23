@@ -37,12 +37,15 @@
                             <li>receiveNum (수신번호) : <%= sentInfo.receiveNum %></li>
                             <li>receiveName (수신자명) : <%= sentInfo.receiveName %></li>
                             <li>content (알림톡/친구톡 내용) : <%= sentInfo.content %></li>
+                            <li>altSubject (대체문자 제목) : <%= sentInfo.altSubject %></li>
+                            <li>altContent (대체문자 내용) : <%= sentInfo.altContent %></li>
                             <li>altContentType (대체문자 전송타입) : <%= sentInfo.altContentType %></li>
                             <li>altSendDT (대체문자 전송일시) : <%= sentInfo.altSendDT %></li>
                             <li>altResult (대체문자 전송결과 코드) : <%= sentInfo.altResult %></li>
                             <li>altResultDT (대체문자 전송결과 수신일시) : <%= sentInfo.altResultDT %></li>
                             <li>receiptNum (접수번호) : <%= sentInfo.receiptNum %></li>
                             <li>requestNum (요청번호) : <%= sentInfo.requestNum %></li>
+                            <li>interOPRefKey (파트너 지정 키) : <%= sentInfo.interOPRefKey %></li>
                         </ul>
                     </fieldset>
                 <% } %>

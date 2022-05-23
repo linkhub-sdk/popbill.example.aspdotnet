@@ -51,6 +51,9 @@ namespace Popbill.Kakao.Example
             content += "팝빌 파트너센터 : 1600-8536\n";
             content += "support@linkhub.co.kr".Replace("\n", Environment.NewLine);
 
+            // 대체문자 제목
+            String altSubject = "대체문자 제목";
+
             // 대체문자 유형(altSendType)이 "A"일 경우, 대체문자로 전송할 내용 (최대 2000byte)
             // └ 팝빌이 메시지 길이에 따라 단문(90byte 이하) 또는 장문(90byte 초과)으로 전송처리
             String altContent = "대체문자 메시지 내용";
@@ -114,7 +117,7 @@ namespace Popbill.Kakao.Example
             try
             {
                 receiptNum = Global.kakaoService.SendATS(testCorpNum, templateCode, senderNum, content,
-                    altContent, altSendType, reserveDT, receivers, testUserID, requestNum, buttons);
+                    altSubject, altContent, altSendType, reserveDT, receivers, testUserID, requestNum, buttons);
             }
             catch (PopbillException ex)
             {

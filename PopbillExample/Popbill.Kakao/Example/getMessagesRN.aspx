@@ -25,6 +25,7 @@
                         <li> templateCode (템플릿 코드) : <%= sentResult.templateCode %></li>
                         <li> plusFriendID (카카오톡 채널 아이디) : <%= sentResult.plusFriendID %></li>
                         <li> sendNum (발신번호) : <%= sentResult.sendNum %></li>
+                        <li> altSubject (대체문자 제목) : <%= sentResult.altSubject %></li>
                         <li> altContent (대체문자 내용) : <%= sentResult.altContent %></li>
                         <li> altSendType (대체문자 유형) : <%= sentResult.altSendType %></li>
                         <li> reserveDT (예약일시) : <%= sentResult.reserveDT %></li>
@@ -66,6 +67,7 @@
                                     <li> receiveNum (수신번호) : <%= detailInfo.receiveNum %></li>
                                     <li> receiveName (수신자명) : <%= detailInfo.receiveName %></li>
                                     <li> content (알림톡/친구톡 내용) : <%= detailInfo.content %></li>
+                                    <li> altSubject (대체문자 제목) : <%= detailInfo.altSubject %></li>
                                     <li> altContent (대체문자 내용) : <%= detailInfo.altContent %></li>
                                     <li> altContentType (대체문자 전송유형) : <%= detailInfo.altContentType %></li>
                                     <li> altSendDT (대체문자 전송일시) : <%= detailInfo.altSendDT %></li>

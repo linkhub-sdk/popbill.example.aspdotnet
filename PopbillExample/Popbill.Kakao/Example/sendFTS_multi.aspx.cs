@@ -35,7 +35,7 @@ namespace Popbill.Kakao.Example
             // 팝빌회원 아이디
             String testUserID = "testkorea";
 
-            // 카카오톡 채널 아이디, ListPlusFriendID API 의 plusFriendID 참고
+            // 카카오톡 검색용 아이디, ListPlusFriendID API 의 plusFriendID 참고
             String plusFriendID = "@팝빌";
 
             // 팝빌에 사전 등록된 발신번호
@@ -72,6 +72,7 @@ namespace Popbill.Kakao.Example
                 receiverInfo.rcv = "" + i;                        // 수신번호
                 receiverInfo.rcvnm = "수신자명" + i.ToString();           // 수신자명
                 receiverInfo.msg = "개별 친구톡 내용" + i.ToString();     // 친구톡 내용 (최대 400자)
+                receiverInfo.altsjt = "대체문자 제목" + i.ToString();     // 대체문자 제목
                 receiverInfo.altmsg = "대체문자 전송내용" + i.ToString(); // 대체문자 내용 (최대 2000byte)
                 receiverInfo.interOPRefKey = "20220525-" + i.ToString();  // 파트너 지정키, 대량전송시, 수신자 구별용 메모
 

@@ -35,7 +35,7 @@ namespace Popbill.Kakao.Example
             // 팝빌회원 아이디
             String testUserID = "testkorea";
 
-            // 카카오톡 채널 아이디, ListPlusFriendID API 의 plusFriendID 참고
+            // 카카오톡 검색용 아이디, ListPlusFriendID API 의 plusFriendID 참고
             String plusFriendID = "@팝빌";
 
             // 팝빌에 사전 등록된 발신번호
@@ -49,6 +49,9 @@ namespace Popbill.Kakao.Example
 
             // 수신자명
             String receiverName = "수신자명";
+
+            // 대체문자 제목
+            String altSubject = "대체문자 제목";
 
             // 대체문자 유형(altSendType)이 "A"일 경우, 대체문자로 전송할 내용 (최대 2000byte)
             // └ 팝빌이 메시지 길이에 따라 단문(90byte 이하) 또는 장문(90byte 초과)으로 전송처리
@@ -89,7 +92,7 @@ namespace Popbill.Kakao.Example
 
             try
             {
-                receiptNum = Global.kakaoService.SendFTS(testCorpNum, plusFriendID, senderNum, content, altContent, altSendType, receiverNum,
+                receiptNum = Global.kakaoService.SendFTS(testCorpNum, plusFriendID, senderNum, content, altSubject, altContent, altSendType, receiverNum,
                     receiverName, adsYN, reserveDT, buttons, testUserID, requestNum);
             }
             catch (PopbillException ex)
