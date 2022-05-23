@@ -29,9 +29,15 @@ namespace Popbill.Fax.Example
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
+            // 서비스 유형, 일반 / 지능 중 택 1
+            String receiveNumType = "지능";
+
+            // 팝빌회원 아이디
+            String testUserID = "testkorea";
+
             try
             {
-                chrgInfo = Global.faxService.GetChargeInfo(testCorpNum);
+                chrgInfo = Global.faxService.GetChargeInfo(testCorpNum, receiveNumType, testUserID);
             }
             catch (PopbillException ex)
             {

@@ -29,14 +29,17 @@ namespace Popbill.Fax.Example
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
+            // 서비스 유형, 일반 / 지능 중 택 1
+            String receiveNumType = "지능";
+
             try
             {
-                unitCost = Global.faxService.GetUnitCost(testCorpNum);
+                unitCost = Global.faxService.GetUnitCost(testCorpNum, receiveNumType);
             }
             catch (PopbillException ex)
             {
                 code = ex.code.ToString();
-                message = ex.Message;                
+                message = ex.Message;
             }
         }
     }
