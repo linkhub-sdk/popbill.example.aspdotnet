@@ -44,7 +44,7 @@
                 <li> senderTEL(발신자 연락처) : <%= statement.senderTEL %> </li>
                 <li> senderHP(발신자 휴대폰번호) : <%= statement.senderHP %> </li>
                 <li> senderEmail(발신자 메일주소) : <%= statement.senderEmail %> </li>
-                <li> senderFax(발신자 팩스번호) : <%= statement.senderFax %> </li>
+                <li> senderFAX(발신자 팩스번호) : <%= statement.senderFAX %> </li>
                 <li> receiverCorpNum(수신자 사업자번호) : <%= statement.receiverCorpNum %> </li>
                 <li> receiverTaxRegID(수신자 종사업장번호) : <%= statement.receiverTaxRegID %> </li>
                 <li> receiverCorpName(수신자 상호) : <%= statement.receiverCorpName %> </li>
@@ -57,7 +57,7 @@
                 <li> receiverTEL(수신자 연락처) : <%= statement.receiverTEL %> </li>
                 <li> receiverHP(수신자 휴대폰번호) : <%= statement.receiverHP %> </li>
                 <li> receiverEmail(수신자 메일주소) : <%= statement.receiverEmail %> </li>
-                <li> receiverFax(수신자 팩스번호) : <%= statement.receiverFax %> </li>
+                <li> receiverFAX(수신자 팩스번호) : <%= statement.receiverFAX %> </li>
                 <li> businessLicenseYN(사업자등록증 첨부여부) : <%= statement.businessLicenseYN %> </li>
                 <li> bankBookYN(통장사본 첨부여부) : <%= statement.bankBookYN %> </li>
                 <li> smssendYN(알림문자 전송여부) : <%= statement.smssendYN %> </li>
