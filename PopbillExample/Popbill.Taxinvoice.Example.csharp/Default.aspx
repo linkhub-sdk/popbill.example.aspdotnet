@@ -86,11 +86,12 @@
         </fieldset>
         <br/>
         <fieldset class="fieldset1">
-            <legend>공인인증서 관리</legend>
+            <legend>인증서 관리</legend>
             <ul>
-                <li><a href="Example/getTaxCertURL.aspx">getTaxCertURL</a> - 공인인증서 등록 URL</li>
-                <li><a href="Example/getCertificateExpireDate.aspx">getCertificateExpireDate</a> - 공인인증서 만료일 확인</li>
-                <li><a href="Example/checkCertValidation.aspx">checkCertValidation</a> - 공인인증서 유효성 확인</li>
+                <li><a href="Example/getTaxCertURL.aspx">getTaxCertURL</a> - 인증서 등록 URL</li>
+                <li><a href="Example/getCertificateExpireDate.aspx">getCertificateExpireDate</a> - 인증서 만료일 확인</li>
+                <li><a href="Example/checkCertValidation.aspx">checkCertValidation</a> - 인증서 유효성 확인</li>
+                <li><a href="Example/getTaxCertInfo.aspx">getTaxCertInfo</a> - 인증서 정보 확인</li>
             </ul>
         </fieldset>
         <br/>
