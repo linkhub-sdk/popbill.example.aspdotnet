@@ -27,15 +27,15 @@
                 <% foreach (Popbill.Fax.FaxResult faxInfo in result.list)
                    { %>
                     <fieldset class="fieldset2">
-                        <legend>팩스전송 상태정보</legend>
+                        <legend>팩스 전송 상태정보</legend>
                         <ul>
                             <li>state (전송상태 코드) : <%= faxInfo.state %></li>
                             <li>result (전송결과 코드) : <%= faxInfo.result %></li>
                             <li>title (팩스제목) : <%= faxInfo.title %></li>
                             <li>sendNum (발신번호) : <%= faxInfo.sendNum %></li>
                             <li>receiveNum (수신번호) : <%= faxInfo.receiveNum %></li>
-                            <li>receiveName (수신자명) : <%= faxInfo.receiveName %></li>
                             <li>receiveNumType (수신번호 유형) : <%= faxInfo.receiveNumType%></li>
+                            <li>receiveName (수신자명) : <%= faxInfo.receiveName %></li>
                             <li>sendPageCnt (전체 페이지수) : <%= faxInfo.sendPageCnt %></li>
                             <li>successPageCnt (성공 페이지수) : <%= faxInfo.successPageCnt %></li>
                             <li>failPageCnt (실패 페이지수) : <%= faxInfo.failPageCnt %></li>
@@ -53,6 +53,7 @@
                             </li>
                             <li>receiptNum (접수번호) : <%= faxInfo.receiptNum %></li>
                             <li>requestNum (요청번호) : <%= faxInfo.requestNum %></li>
+                            <li>interOPRefKey (파트너 지정키) : <%= faxInfo.interOPRefKey %></li>
                             <li>chargePageCnt (과금 페이지수) : <%= faxInfo.chargePageCnt %></li>
                             <li>refundPageCnt (환불 페이지수) : <%= faxInfo.refundPageCnt %></li>
                             <li>tiffFileSize (변환파일용량(단위 : byte)) : <%= faxInfo.tiffFileSize %></li>

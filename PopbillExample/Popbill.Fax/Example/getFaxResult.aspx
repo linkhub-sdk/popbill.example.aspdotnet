@@ -47,6 +47,7 @@
                             </li>
                             <li>receiptNum (접수번호) : <%= faxInfo.receiptNum %></li>
                             <li>requestNum (요청번호) : <%= faxInfo.requestNum %></li>
+                            <li>interOPRefKey (파트너 지정키) : <%= faxInfo.interOPRefKey %></li>
                             <li>chargePageCnt (과금 페이지수) : <%= faxInfo.chargePageCnt %></li>
                             <li>refundPageCnt (환불 페이지수) : <%= faxInfo.refundPageCnt %></li>
                             <li>tiffFileSize (변환파일용량(단위 : byte)) : <%= faxInfo.tiffFileSize %></li>

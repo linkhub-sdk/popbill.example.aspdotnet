@@ -67,6 +67,10 @@ namespace Popbill.Fax.Example
 
                 // 수신자명
                 receiver.receiveName = "수신자명칭_" + i;
+
+                // 파트너 지정키, 대량전송시, 수신자 구별용 메모
+                receiver.interOPRefKey = "20220525-" + i;
+
                 receivers.Add(receiver);
             }
             */

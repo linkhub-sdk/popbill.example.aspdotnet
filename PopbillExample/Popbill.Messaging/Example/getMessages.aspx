@@ -39,6 +39,7 @@
                             <li>tranNet (전송처리 이동통신사명) : <%= msgInfo.tranNet %></li>
                             <li>receiptNum (접수번호) : <%= msgInfo.receiptNum %></li>
                             <li>requestNum (요청번호) : <%= msgInfo.requestNum %></li>
+                            <li>interOPRefKey (파트너 지정키) : <%= msgInfo.interOPRefKey %></li>
                         </ul>
                     </fieldset>
                 <% } %>
