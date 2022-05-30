@@ -34,7 +34,7 @@ namespace Popbill.Taxinvoice.Example
 
             try
             {
-                expiration = Global.taxinvoiceService.GetCertificateExpireDate(testCorpNum, userID);
+                expiration = Global.taxinvoiceService.GetCertificateExpireDate(testCorpNum);
             }
             catch (PopbillException ex)
             {

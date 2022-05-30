@@ -37,12 +37,9 @@ namespace Popbill.Closedown.Example
             CorpNumList.Add("1231212312");
             CorpNumList.Add("6798700433");
 
-            // 팝빌회원 아이디
-            String userID = "testkorea";
-
             try
             {
-                corpStateList = Global.closedownService.checkCorpNums(testCorpNum, CorpNumList, userID);
+                corpStateList = Global.closedownService.checkCorpNums(testCorpNum, CorpNumList);
             }
             catch (PopbillException ex)
             {

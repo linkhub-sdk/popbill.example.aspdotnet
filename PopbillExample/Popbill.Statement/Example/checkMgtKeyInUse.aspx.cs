@@ -36,7 +36,7 @@ namespace Popbill.Statement.Example
 
             try
             {
-                bool InUse = Global.statementService.CheckMgtKeyInUse(testCorpNum, itemCode, mgtKey);
+                bool InUse = Global.statementService.CheckMgtKeyInuse(testCorpNum, itemCode, mgtKey);
 
                 message = InUse ? "사용중" : "미사용중";
             }
