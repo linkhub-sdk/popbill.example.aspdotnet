@@ -37,9 +37,12 @@ namespace Popbill.EasyFin.Bank.Example
             // 계좌번호, 하이픈('-') 제외
             String AccountNumber = "";
 
+            // 팝빌회원 아이디
+            String userID = "testkorea";
+
             try
             {
-                Response response = Global.easyFinBankService.RevokeCloseBankAccount(testCorpNum, BankCode, AccountNumber);
+                Response response = Global.easyFinBankService.RevokeCloseBankAccount(testCorpNum, BankCode, AccountNumber, userID);
 
                 code = response.code.ToString();
                 message = response.message;

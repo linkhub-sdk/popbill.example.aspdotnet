@@ -38,9 +38,12 @@ namespace Popbill.EasyFin.Bank.Example
             // 수집 요청(requestJob API)시 반환반은 작업아이디(jobID)
             String jobID = "019123013000000002";
 
+            // 팝빌회원 아이디
+            String userID = "testkorea";
+
             try
             {
-                result = Global.easyFinBankService.GetJobState(testCorpNum, jobID);
+                result = Global.easyFinBankService.GetJobState(testCorpNum, jobID, userID);
             }
             catch (PopbillException ex)
             {

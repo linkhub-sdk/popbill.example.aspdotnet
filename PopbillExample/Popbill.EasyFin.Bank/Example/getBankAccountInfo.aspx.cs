@@ -38,9 +38,12 @@ namespace Popbill.EasyFin.Bank.Example
             // 계좌번호, 하이픈('-') 제외
             String AccountNumber = "";
 
+            // 팝빌회원 아이디
+            String userID = "testkorea";
+
             try
             {
-                accountInfo = Global.easyFinBankService.GetBankAccountInfo(testCorpNum, BankCode, AccountNumber);
+                accountInfo = Global.easyFinBankService.GetBankAccountInfo(testCorpNum, BankCode, AccountNumber, userID);
 
             }
             catch (PopbillException ex)

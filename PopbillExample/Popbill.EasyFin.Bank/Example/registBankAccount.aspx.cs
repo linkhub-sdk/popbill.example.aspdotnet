@@ -70,9 +70,12 @@ namespace Popbill.EasyFin.Bank.Example
             // 메모
             info.Memo = "";
 
+            // 팝빌회원 아이디
+            String userID = "testkorea";
+
             try
             {
-                Response response = Global.easyFinBankService.RegistBankAccount(testCorpNum, info);
+                Response response = Global.easyFinBankService.RegistBankAccount(testCorpNum, info, userID);
 
                 code = response.code.ToString();
                 message = response.message;

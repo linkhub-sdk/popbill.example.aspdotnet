@@ -32,9 +32,12 @@ namespace Popbill.Kakao.Example
             // 카카오톡 전송시 기재한 요청번호
             String requestNum = "";
 
+            // 팝빌회원 아이디
+            String userID = "testkorea";
+
             try
             {
-                sentResult = Global.kakaoService.GetMessagesRN(testCorpNum, requestNum);
+                sentResult = Global.kakaoService.GetMessagesRN(testCorpNum, requestNum, userID);
             }
             catch (PopbillException ex)
             {

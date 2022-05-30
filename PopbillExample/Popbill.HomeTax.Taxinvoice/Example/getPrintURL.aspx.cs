@@ -33,9 +33,12 @@ namespace Popbill.HomeTax.Taxinvoice.Example
             // 조회할 전자세금계산서 국세청승인번호
             String NTSConfirmNum = "202110314100020300002777";
 
+            // 팝빌회원 아이디
+            String userID = "testkorea";
+
             try
             {
-                url = Global.htTaxinvoiceService.GetPrintURL(testCorpNum, NTSConfirmNum);
+                url = Global.htTaxinvoiceService.GetPrintURL(testCorpNum, NTSConfirmNum, userID);
             }
             catch (PopbillException ex)
             {

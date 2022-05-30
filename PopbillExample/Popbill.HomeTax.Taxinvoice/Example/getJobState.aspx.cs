@@ -38,9 +38,12 @@ namespace Popbill.HomeTax.Taxinvoice.Example
             // 수집 요청(requestJob API)시 반환반은 작업아이디(jobID)
             String jobID = "021032021000000003";
 
+            // 팝빌회원 아이디
+            String userID = "testkorea";
+
             try
             {
-                result = Global.htTaxinvoiceService.GetJobState(testCorpNum, jobID);
+                result = Global.htTaxinvoiceService.GetJobState(testCorpNum, jobID, userID);
             }
             catch (PopbillException ex)
             {

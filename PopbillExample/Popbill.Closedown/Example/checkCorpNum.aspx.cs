@@ -32,9 +32,12 @@ namespace Popbill.Closedown.Example
             // 조회할 사업자 등록번호
             String targetCorpNum = "6798700433";
 
+            // 팝빌회원 아이디
+            String userID = "testkorea";
+
             try
             {
-                result = Global.closedownService.checkCorpNum(testCorpNum, targetCorpNum);
+                result = Global.closedownService.checkCorpNum(testCorpNum, targetCorpNum, userID);
             }
             catch (PopbillException ex)
             {

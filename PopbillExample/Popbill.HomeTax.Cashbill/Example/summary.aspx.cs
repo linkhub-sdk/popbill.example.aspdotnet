@@ -43,9 +43,12 @@ namespace Popbill.HomeTax.Cashbill.Example
             // └ 미입력시 전체조회
             String[] TradeUsage = { "P", "C" };
 
+            // 팝빌회원 아이디
+            String userID = "testkorea";
+
             try
             {
-                summaryInfo = Global.htCashbillService.Summary(testCorpNum, jobID, TradeType, TradeUsage);
+                summaryInfo = Global.htCashbillService.Summary(testCorpNum, jobID, TradeType, TradeUsage, userID);
             }
             catch (PopbillException ex)
             {

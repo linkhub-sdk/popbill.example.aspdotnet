@@ -35,6 +35,9 @@ namespace Popbill.Taxinvoice.Example
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
+            // 팝빌회원 아이디
+            String userID = "testkorea";
+
             // 세금계산서 문서번호, 최대 24자리, 영문, 숫자 '-', '_'를 조합하여 사업자별로 중복되지 않도록 구성
             String mgtKey = "20220525-001";
 
@@ -310,7 +313,7 @@ namespace Popbill.Taxinvoice.Example
 
             try
             {
-                IssueResponse response = Global.taxinvoiceService.RegistIssue(testCorpNum, taxinvoice, forceIssue, memo, writeSpecification, dealInvoiceMgtkey, emailSubject);
+                IssueResponse response = Global.taxinvoiceService.RegistIssue(testCorpNum, taxinvoice, forceIssue, memo, writeSpecification, dealInvoiceMgtkey, emailSubject, userID);
 
                 code = response.code.ToString();
                 message = response.message;

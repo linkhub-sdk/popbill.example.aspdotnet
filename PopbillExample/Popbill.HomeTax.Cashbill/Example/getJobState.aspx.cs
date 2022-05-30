@@ -38,9 +38,12 @@ namespace Popbill.HomeTax.Cashbill.Example
             // 수집 요청(requestJob API)시 반환반은 작업아이디(jobID)
             String jobID = "021032114000000005";
 
+            // 팝빌회원 아이디
+            String userID = "testkorea";
+
             try
             {
-                jobState = Global.htCashbillService.GetJobState(testCorpNum, jobID);
+                jobState = Global.htCashbillService.GetJobState(testCorpNum, jobID, userID);
             }
             catch (PopbillException ex)
             {

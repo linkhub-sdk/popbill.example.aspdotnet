@@ -33,6 +33,9 @@ namespace Popbill.Taxinvoice.Example
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
+            // 팝빌회원 아이디
+            String userID = "testkorea";
+
             // 세금계산서 정보 객체
             Taxinvoice taxinvoice = new Taxinvoice();
 
@@ -261,7 +264,7 @@ namespace Popbill.Taxinvoice.Example
 
             try
             {
-                Response response = Global.taxinvoiceService.RegistRequest(testCorpNum, taxinvoice, memo);
+                Response response = Global.taxinvoiceService.RegistRequest(testCorpNum, taxinvoice, memo, userID);
 
                 code = response.code.ToString();
                 message = response.message;

@@ -43,9 +43,12 @@ namespace Popbill.EasyFin.Bank.Example
             // 종료일자, 표시형식(yyyyMMdd)
             String EDate = "20220525";
 
+            // 팝빌회원 아이디
+            String userID = "testkorea";
+
             try
             {
-                jobID = Global.easyFinBankService.RequestJob(testCorpNum, BankCode, AccountNumber, SDate, EDate);
+                jobID = Global.easyFinBankService.RequestJob(testCorpNum, BankCode, AccountNumber, SDate, EDate, userID);
             }
             catch (PopbillException ex)
             {

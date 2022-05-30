@@ -21,7 +21,7 @@ namespace Popbill.Taxinvoice.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 팝빌 사이트를 통해 발행하였지만 문서번호가 존재하지 않는 세금계산서에 문서번호를 할당합니다.
+             * 팝빌 사이트를 통해 발행하여 문서번호가 부여되지 않은 세금계산서에 문서번호를 할당합니다.
              * - https://docs.popbill.com/taxinvoice/dotnet/api#AssignMgtKey
              */
 

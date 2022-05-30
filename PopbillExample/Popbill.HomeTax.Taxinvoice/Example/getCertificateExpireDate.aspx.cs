@@ -29,9 +29,12 @@ namespace Popbill.HomeTax.Taxinvoice
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
+            // 팝빌회원 아이디
+            String userID = "testkorea";
+
             try
             {
-                DateTime expiration = Global.htTaxinvoiceService.GetCertificateExpireDate(testCorpNum);
+                DateTime expiration = Global.htTaxinvoiceService.GetCertificateExpireDate(testCorpNum, userID);
 
                 expireDate = expiration.ToString();
 

@@ -76,6 +76,9 @@ namespace Popbill.Kakao.Example
             // 페이지당 검색개수, 최대 1000건
             int PerPage = 10;
 
+            // 팝빌회원 아이디
+            String userID = "testkorea";
+
             // 조회하고자 하는 수신자명
             // - 미입력시 전체조회
             String QString = "";
@@ -83,7 +86,7 @@ namespace Popbill.Kakao.Example
             try
             {
                 result = Global.kakaoService.Search(testCorpNum, SDate, EDate, State,
-                    Item, ReserveYN, SenderYN, Order, Page, PerPage, QString);
+                    Item, ReserveYN, SenderYN, Order, Page, PerPage, userID, QString);
             }
             catch (PopbillException ex)
             {
