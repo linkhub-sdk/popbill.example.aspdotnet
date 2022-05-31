@@ -29,9 +29,6 @@ namespace Popbill.EasyFin.Bank.Example
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
-            // 팝빌회원 아이디
-            String testUserID = "testkorea";
-
             // 수집 요청(requestJob API)시 반환반은 작업아이디(jobID)
             String jobID = "020080618000000001";
 
@@ -58,7 +55,7 @@ namespace Popbill.EasyFin.Bank.Example
             try
             {
                 result = Global.easyFinBankService.Search(testCorpNum, jobID,
-                    TradeType, SearchString, Page, PerPage, Order, testUserID);
+                    TradeType, SearchString, Page, PerPage, Order);
             }
             catch (PopbillException ex)
             {

@@ -32,12 +32,9 @@ namespace Popbill.Message.Example
             // 확인할 담당자 아아디
             String contactID = "checkContact";
 
-            // 팝빌회원 아이디
-            String testUserID = "testkorea";
-
             try
             {
-                contactInfo = Global.messageService.GetContactInfo(testCorpNum, contactID, testUserID);
+                contactInfo = Global.messageService.GetContactInfo(testCorpNum, contactID);
             }
             catch (PopbillException ex)
             {

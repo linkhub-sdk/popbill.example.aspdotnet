@@ -39,12 +39,9 @@ namespace Popbill.EasyFin.Bank.Example
             // 계좌번호, 하이픈('-') 제외
             String AccountNumber = "";
 
-            // 팝빌회원 아이디
-            String userID = "testkorea";
-
             try
             {
-                Response response = Global.easyFinBankService.DeleteBankAccount(testCorpNum, BankCode, AccountNumber, userID);
+                Response response = Global.easyFinBankService.DeleteBankAccount(testCorpNum, BankCode, AccountNumber);
 
                 code = response.code.ToString();
                 message = response.message;

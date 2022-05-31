@@ -32,11 +32,9 @@ namespace Popbill.Message.Example
             // 확인할 발신번호
             String SenderNumber = "";
 
-            String UserID = "testkorea";
-
             try
             {
-                Response response = Global.messageService.CheckSenderNumber(testCorpNum, SenderNumber, UserID);
+                Response response = Global.messageService.CheckSenderNumber(testCorpNum, SenderNumber);
 
                 code = response.code.ToString();
                 message = response.message;

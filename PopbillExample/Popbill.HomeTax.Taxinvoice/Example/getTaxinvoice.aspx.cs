@@ -32,12 +32,9 @@ namespace Popbill.HomeTax.Taxinvoice.Example
             // 조회할 전자세금계산서 국세청 승인번호
             String ntsConfirmNum = "20210717410002030000017f";
 
-            // 팝빌회원 아이디
-            String testUserID = "testkorea";
-
             try
             {
-                taxinvoiceInfo = Global.htTaxinvoiceService.GetTaxinvoice(testCorpNum, ntsConfirmNum, testUserID);
+                taxinvoiceInfo = Global.htTaxinvoiceService.GetTaxinvoice(testCorpNum, ntsConfirmNum);
             }
             catch (PopbillException ex)
             {

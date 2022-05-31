@@ -29,9 +29,6 @@ namespace Popbill.AccountCheck.Example
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
-            // 팝빌회원 아이디
-            String userID = "testkorea";
-
             // 기관코드
             String bankCode = "";
 
@@ -43,12 +40,12 @@ namespace Popbill.AccountCheck.Example
 
             // 등록번호
             // └ 등록번호 유형 값이 "B"인 경우 사업자번호(10 자리)입력 ('-' 제외)
-            // └ 등록번호 유형 값이 "P"인 경우 생년월일(6 자리)입력 (형식 : YYMMDD) 
+            // └ 등록번호 유형 값이 "P"인 경우 생년월일(6 자리)입력 (형식 : YYMMDD)
             String identityNum = "";
 
             try
             {
-                result = Global.accountCheckService.CheckDepositorInfo(testCorpNum, bankCode, accountNumber, identityNumType, identityNum, userID);
+                result = Global.accountCheckService.CheckDepositorInfo(testCorpNum, bankCode, accountNumber, identityNumType, identityNum);
             }
             catch (PopbillException ex)
             {

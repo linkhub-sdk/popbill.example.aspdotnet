@@ -32,12 +32,9 @@ namespace Popbill.Kakao.Example
             // 카카오톡 전송 요청시 발급받은 접수번호
             String receiptNum = "021080618024000001";
 
-            // 팝빌회원 아이디
-            String userID = "testkorea";
-
             try
             {
-                sentResult = Global.kakaoService.GetMessages(testCorpNum, receiptNum, userID);
+                sentResult = Global.kakaoService.GetMessages(testCorpNum, receiptNum);
             }
             catch (PopbillException ex)
             {

@@ -34,12 +34,9 @@ namespace Popbill.EasyFin.Bank.Example
             // 메모
             String memo = "memo-TEST";
 
-            // 팝빌회원 아이디
-            String userID = "testkorea";
-
             try
             {
-                Response response = Global.easyFinBankService.SaveMemo(testCorpNum, tid, memo, userID);
+                Response response = Global.easyFinBankService.SaveMemo(testCorpNum, tid, memo);
 
                 code = response.code.ToString();
                 message = response.message;

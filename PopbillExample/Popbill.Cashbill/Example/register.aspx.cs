@@ -28,9 +28,6 @@ namespace Popbill.Cashbill.Example
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
-            // 팝빌회원 아이디
-            String testUserID = "testkorea";
-
             // 현금영수증 문서번호
             String mgtKey = "20220525-011";
 
@@ -52,7 +49,7 @@ namespace Popbill.Cashbill.Example
             // [필수] 과세형태, { 과세, 비과세 } 중 기재
             cashbill.taxationType = "과세";
 
-            // [필수] 거래금액 ( 공급가액 + 세액 + 봉사료 ) 
+            // [필수] 거래금액 ( 공급가액 + 세액 + 봉사료 )
             cashbill.totalAmount = "11000";
 
             // [필수] 공급가액
@@ -83,10 +80,10 @@ namespace Popbill.Cashbill.Example
             cashbill.franchiseTEL = "070-1234-1234";
 
             // [필수] 식별번호
-            // 거래구분(tradeUsage) - '소득공제용' 인 경우 
+            // 거래구분(tradeUsage) - '소득공제용' 인 경우
             // - 주민등록/휴대폰/카드번호 기재 가능
             // 거래구분(tradeUsage) - '지출증빙용' 인 경우
-            // - 사업자번호/주민등록/휴대폰/카드번호 기재 가능 
+            // - 사업자번호/주민등록/휴대폰/카드번호 기재 가능
             cashbill.identityNum = "0101112222";
 
             // 주문자명
@@ -114,7 +111,7 @@ namespace Popbill.Cashbill.Example
 
             try
             {
-                Response response = Global.cashbillService.Register(testCorpNum, cashbill, testUserID);
+                Response response = Global.cashbillService.Register(testCorpNum, cashbill);
 
                 code = response.code.ToString();
                 message = response.message;

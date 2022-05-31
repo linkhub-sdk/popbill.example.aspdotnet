@@ -28,15 +28,12 @@ namespace Popbill.Message.Example
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
-            // 팝빌회원 아이디
-            String testUserID = "testkorea";
-
             // 문자전송 요청시 발급받은 접수번호
             String receiptNum = "021010716000000004";
 
             try
             {
-                Response response = Global.messageService.CancelReserve(testCorpNum, receiptNum, testUserID);
+                Response response = Global.messageService.CancelReserve(testCorpNum, receiptNum);
 
                 code = response.code.ToString();
                 message = response.message;

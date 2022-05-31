@@ -32,12 +32,9 @@ namespace Popbill.EasyFin.Bank.Example
             // 확인할 담당자 아아디
             String contactID = "checkContact";
 
-            // 팝빌회원 아이디
-            String testUserID = "testkorea";
-
             try
             {
-                contactInfo = Global.easyFinBankService.GetContactInfo(testCorpNum, contactID, testUserID);
+                contactInfo = Global.easyFinBankService.GetContactInfo(testCorpNum, contactID);
             }
             catch (PopbillException ex)
             {

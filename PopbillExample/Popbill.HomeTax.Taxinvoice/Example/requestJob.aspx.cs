@@ -42,12 +42,9 @@ namespace Popbill.HomeTax.Taxinvoice.Example
             // 종료일자, 표시형식(yyyyMMdd)
             String EDate = "20220525";
 
-            // 팝빌회원 아이디
-            String userID = "testkorea";
-
             try
             {
-                jobID = Global.htTaxinvoiceService.RequestJob(testCorpNum, tiKeyType, DType, SDate, EDate, userID);
+                jobID = Global.htTaxinvoiceService.RequestJob(testCorpNum, tiKeyType, DType, SDate, EDate);
             }
             catch (PopbillException ex)
             {

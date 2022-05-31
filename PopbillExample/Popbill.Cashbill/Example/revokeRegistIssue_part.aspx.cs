@@ -31,9 +31,6 @@ namespace Popbill.Cashbill.Example
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
-            // 팝빌회원 아이디
-            String testUserID = "testkorea";
-
             // 문서번호, 최대 24자리, 영문, 숫자 '-', '_'를 조합하여 사업자별로 중복되지 않도록 구성
             String mgtKey = "20220525-001";
 
@@ -71,7 +68,7 @@ namespace Popbill.Cashbill.Example
             try
             {
                 CBIssueResponse response = Global.cashbillService.RevokeRegistIssue(testCorpNum, mgtKey,
-                    orgConfirmNum, orgTradeDate, smssendYN, memo, testUserID, isPartCancel, cancelType,
+                    orgConfirmNum, orgTradeDate, smssendYN, memo, isPartCancel, cancelType,
                     supplyCost, tax, serviceFee, totalAmount);
 
                 code = response.code.ToString();

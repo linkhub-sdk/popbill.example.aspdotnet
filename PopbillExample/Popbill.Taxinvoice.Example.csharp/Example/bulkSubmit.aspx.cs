@@ -30,9 +30,6 @@ namespace Popbill.Taxinvoice.Example
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
-            // 팝빌회원 아이디
-            String testUserID = "testkorea";
-
             // 	제출아이디, 최대 36자리 영문, 숫자, '-' 조합으로 구성
             String submitID = "20220525-BULK";
 
@@ -296,8 +293,7 @@ namespace Popbill.Taxinvoice.Example
             }
             try
             {
-                BulkResponse response = Global.taxinvoiceService.BulkSubmit(testCorpNum, submitID, taxinvoiceList, forceIssue,
-                    testUserID);
+                BulkResponse response = Global.taxinvoiceService.BulkSubmit(testCorpNum, submitID, taxinvoiceList, forceIssue);
 
                 code = response.code.ToString();
                 message = response.message;

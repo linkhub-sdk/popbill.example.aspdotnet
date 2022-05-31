@@ -32,11 +32,9 @@ namespace Popbill.Fax.Example
             // 확인할 발신번호
             String SenderNumber = "";
 
-            String UserID = "testkorea";
-
             try
             {
-                Response response = Global.faxService.CheckSenderNumber(testCorpNum, SenderNumber, UserID);
+                Response response = Global.faxService.CheckSenderNumber(testCorpNum, SenderNumber);
 
                 code = response.code.ToString();
                 message = response.message;

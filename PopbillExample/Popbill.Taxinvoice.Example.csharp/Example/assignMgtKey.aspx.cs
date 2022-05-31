@@ -27,10 +27,6 @@ namespace Popbill.Taxinvoice.Example
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
-
-            // 팝빌회원 아이디
-            String testUserID = "testkorea";
-
             // 세금계산서 유형 SELL-매출, BUY-매입, TRUSTEE-위수탁
             MgtKeyType KeyType = MgtKeyType.SELL;
 
@@ -42,7 +38,7 @@ namespace Popbill.Taxinvoice.Example
 
             try
             {
-                Response response = Global.taxinvoiceService.AssignMgtKey(testCorpNum, KeyType, itemKey, mgtKey, testUserID);
+                Response response = Global.taxinvoiceService.AssignMgtKey(testCorpNum, KeyType, itemKey, mgtKey);
 
                 code = response.code.ToString();
                 message = response.message;

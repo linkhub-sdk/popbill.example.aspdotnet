@@ -43,12 +43,9 @@ namespace Popbill.EasyFin.Bank.Example
             // └ 중도일 경우, 정액제 잔여기간은 일할로 계산되어 포인트 환불 (무료 이용기간 중 해지하면 전액 환불)
             String CloseType = "중도";
 
-            // 팝빌회원 아이디
-            String userID = "testkorea";
-
             try
             {
-                Response response = Global.easyFinBankService.CloseBankAccount(testCorpNum, BankCode, AccountNumber, CloseType, userID);
+                Response response = Global.easyFinBankService.CloseBankAccount(testCorpNum, BankCode, AccountNumber, CloseType);
 
                 code = response.code.ToString();
                 message = response.message;

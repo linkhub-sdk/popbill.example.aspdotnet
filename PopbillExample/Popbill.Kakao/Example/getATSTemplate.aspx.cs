@@ -32,12 +32,9 @@ namespace Popbill.Kakao.Example
             // 확인할 템플릿 코드
             String templateCode = "021010000076";
 
-            // 팝빌회원 아이디
-            String testUserID = "testkorea";
-
             try
             {
-                templateInfo = Global.kakaoService.GetATSTemplate(testCorpNum, templateCode, testUserID);
+                templateInfo = Global.kakaoService.GetATSTemplate(testCorpNum, templateCode);
             }
             catch (PopbillException ex)
             {

@@ -32,12 +32,9 @@ namespace Popbill.Kakao.Example
             // 확인할 발신번호
             String SenderNumber = "";
 
-            // 팝빌회원 아이디
-            String UserID = "testkorea";
-
             try
             {
-                Response response = Global.kakaoService.CheckSenderNumber(testCorpNum, SenderNumber, UserID);
+                Response response = Global.kakaoService.CheckSenderNumber(testCorpNum, SenderNumber);
 
                 code = response.code.ToString();
                 message = response.message;

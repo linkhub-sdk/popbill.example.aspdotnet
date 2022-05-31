@@ -28,12 +28,9 @@ namespace Popbill.HomeTax.Taxinvoice.Example
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
-            // 팝빌회원 아이디
-            String userID = "testkorea";
-
             try
             {
-                Response response = Global.htTaxinvoiceService.DeleteDeptUser(testCorpNum, userID);
+                Response response = Global.htTaxinvoiceService.DeleteDeptUser(testCorpNum);
 
                 code = response.code.ToString();
                 message = response.message;

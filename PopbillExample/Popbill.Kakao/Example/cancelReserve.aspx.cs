@@ -28,15 +28,12 @@ namespace Popbill.Kakao.Example
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
-            // 팝빌회원 아이디
-            String testUserID = "testkorea";
-
             // 카카오톡 전송 요청시 발급받은 접수번호
             String receiptNum = "018031311564800001";
 
             try
             {
-                Response response = Global.kakaoService.CancelReserve(testCorpNum, receiptNum, testUserID);
+                Response response = Global.kakaoService.CancelReserve(testCorpNum, receiptNum);
 
                 code = response.code.ToString();
                 message = response.message;

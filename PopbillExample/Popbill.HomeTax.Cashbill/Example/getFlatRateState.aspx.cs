@@ -29,12 +29,9 @@ namespace Popbill.HomeTax.Cashbill.Example
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
-            // 팝빌회원 아이디
-            String testUserID = "testkorea";
-
             try
             {
-                flatRateInfo = Global.htCashbillService.GetFlatRateState(testCorpNum, testUserID);
+                flatRateInfo = Global.htCashbillService.GetFlatRateState(testCorpNum);
             }
             catch (PopbillException ex)
             {

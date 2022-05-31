@@ -29,9 +29,6 @@ namespace Popbill.HomeTax.Cashbill.Example
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
-            // 팝빌회원 아이디
-            String testUserID = "testkorea";
-
             // 수집 요청(requestJob API)시 반환반은 작업아이디(jobID)
             String jobID = "021032114000000005";
 
@@ -52,12 +49,12 @@ namespace Popbill.HomeTax.Cashbill.Example
 
             try
             {
-                result = Global.htCashbillService.Search(testCorpNum, jobID, TradeType, TradeUsage, Page, PerPage, Order, testUserID);
+                result = Global.htCashbillService.Search(testCorpNum, jobID, TradeType, TradeUsage, Page, PerPage, Order);
             }
             catch (PopbillException ex)
             {
                 code = ex.code.ToString();
-                message = ex.Message;                
+                message = ex.Message;
             }
         }
     }

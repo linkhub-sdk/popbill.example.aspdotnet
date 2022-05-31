@@ -36,12 +36,9 @@ namespace Popbill.Taxinvoice.Example
             // 세금계산서 문서번호
             String mgtKey = "20220525-001";
 
-            // 팝빌회원 아이디
-            String userID = "testkorea";
-
             try
             {
-                Response response = Global.taxinvoiceService.Delete(testCorpNum, KeyType, mgtKey, userID);
+                Response response = Global.taxinvoiceService.Delete(testCorpNum, KeyType, mgtKey);
 
                 code = response.code.ToString();
                 message = response.message;

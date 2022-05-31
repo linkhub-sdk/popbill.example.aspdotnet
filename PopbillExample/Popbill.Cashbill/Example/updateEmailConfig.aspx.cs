@@ -32,9 +32,6 @@ namespace Popbill.Cashbill.Example
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
-            // 팝빌회원 아이디
-            String testUserID = "testkorea";
-
             //메일전송유형
             String emailType = "CSH_ISSUE";
 
@@ -43,7 +40,7 @@ namespace Popbill.Cashbill.Example
 
             try
             {
-                Response response = Global.cashbillService.UpdateEmailConfig(testCorpNum, emailType, sendYN, testUserID);
+                Response response = Global.cashbillService.UpdateEmailConfig(testCorpNum, emailType, sendYN);
                 code = response.code.ToString();
                 message = response.message;
             }

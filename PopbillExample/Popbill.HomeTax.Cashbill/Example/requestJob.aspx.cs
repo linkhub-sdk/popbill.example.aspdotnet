@@ -38,12 +38,9 @@ namespace Popbill.HomeTax.Cashbill.Example
             // 종료일자, 표시형식(yyyyMMdd)
             String EDate = "20220525";
 
-            // 팝빌회원 아이디
-            String userID = "testkorea";
-
             try
             {
-                jobID = Global.htCashbillService.RequestJob(testCorpNum, tiKeyType, SDate, EDate, userID);
+                jobID = Global.htCashbillService.RequestJob(testCorpNum, tiKeyType, SDate, EDate);
             }
             catch (PopbillException ex)
             {

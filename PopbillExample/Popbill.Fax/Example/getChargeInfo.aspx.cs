@@ -32,12 +32,9 @@ namespace Popbill.Fax.Example
             // 서비스 유형, 일반 / 지능 중 택 1
             String receiveNumType = "지능";
 
-            // 팝빌회원 아이디
-            String testUserID = "testkorea";
-
             try
             {
-                chrgInfo = Global.faxService.GetChargeInfo(testCorpNum, receiveNumType, testUserID);
+                chrgInfo = Global.faxService.GetChargeInfo(testCorpNum, receiveNumType);
             }
             catch (PopbillException ex)
             {

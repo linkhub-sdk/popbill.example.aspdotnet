@@ -28,9 +28,6 @@ namespace Popbill.Cashbill.Example
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
-            // 팝빌회원 아이디
-            String testUserID = "testkorea";
-
             // 팝빌번호, 문서 목록조회(Search API) 함수의 반환항목 중 ItemKey 참조
             String itemKey = "020080618301000001";
 
@@ -39,7 +36,7 @@ namespace Popbill.Cashbill.Example
 
             try
             {
-                Response response = Global.cashbillService.AssignMgtKey(testCorpNum, itemKey, mgtKey, testUserID);
+                Response response = Global.cashbillService.AssignMgtKey(testCorpNum, itemKey, mgtKey);
 
                 code = response.code.ToString();
                 message = response.message;

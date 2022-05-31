@@ -30,9 +30,6 @@ namespace Popbill.Cashbill.Example
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
-            // 팝빌회원 아이디
-            String testUserID = "testkorea";
-
             // 제출아이디, 대량 발행 접수를 구별하는 식별키
             // └ 최대 36자리 영문, 숫자, '-' 조합으로 구성
             String submitID = "20220525-BULK";
@@ -132,7 +129,7 @@ namespace Popbill.Cashbill.Example
 
             try
             {
-                BulkResponse response = Global.cashbillService.BulkSubmit(testCorpNum, submitID, cashbillList, testUserID);
+                BulkResponse response = Global.cashbillService.BulkSubmit(testCorpNum, submitID, cashbillList);
 
                 code = response.code.ToString();
                 message = response.message;

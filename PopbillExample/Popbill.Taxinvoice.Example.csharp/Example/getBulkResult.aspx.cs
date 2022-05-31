@@ -32,12 +32,9 @@ namespace Popbill.Taxinvoice.Example
             // 초대량 발행 접수시 기재한 제출아이디
             String submitID = "20220525-BULK";
 
-            // 팝빌회원 아이디
-            String testUserID = "testkorea";
-
             try
             {
-                result = Global.taxinvoiceService.GetBulkResult(testCorpNum, submitID, testUserID);
+                result = Global.taxinvoiceService.GetBulkResult(testCorpNum, submitID);
             }
             catch (PopbillException ex)
             {
