@@ -34,7 +34,7 @@ namespace Popbill.EasyFin.Bank.Example
 
             try
             {
-                jobStateList = Global.easyFinBankService.ListActiveJob(testCorpNum);
+                jobStateList = Global.easyFinBankService.ListACtiveJob(testCorpNum);
             }
             catch (PopbillException ex)
             {
