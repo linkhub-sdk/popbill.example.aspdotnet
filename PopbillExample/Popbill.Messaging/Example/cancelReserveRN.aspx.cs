@@ -29,6 +29,9 @@ namespace Popbill.Message.Example
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
+            // 문자전송시 할당한 요청번호
+            String requestNum = "";
+
             try
             {
                 Response response = Global.messageService.CancelReserveRN(testCorpNum, requestNum);
