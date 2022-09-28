@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Popbill.EasyFin.Bank", "Pop
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Popbill.AccountCheck", "PopbillExample\Popbill.AccountCheck\Popbill.AccountCheck.csproj", "{28A11070-A086-4489-B2F4-C0CAD6C0CED5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Popbill.BizInfoCheck", "PopbillExample\Popbill.BizInfoCheck\Popbill.BizInfoCheck.csproj", "{EC4B39BF-D643-4F7A-BE97-00DA3CEA5600}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|.NET = Debug|.NET
@@ -167,6 +169,16 @@ Global
 		{28A11070-A086-4489-B2F4-C0CAD6C0CED5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{28A11070-A086-4489-B2F4-C0CAD6C0CED5}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{28A11070-A086-4489-B2F4-C0CAD6C0CED5}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{EC4B39BF-D643-4F7A-BE97-00DA3CEA5600}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{EC4B39BF-D643-4F7A-BE97-00DA3CEA5600}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC4B39BF-D643-4F7A-BE97-00DA3CEA5600}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC4B39BF-D643-4F7A-BE97-00DA3CEA5600}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{EC4B39BF-D643-4F7A-BE97-00DA3CEA5600}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{EC4B39BF-D643-4F7A-BE97-00DA3CEA5600}.Release|.NET.ActiveCfg = Release|Any CPU
+		{EC4B39BF-D643-4F7A-BE97-00DA3CEA5600}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC4B39BF-D643-4F7A-BE97-00DA3CEA5600}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC4B39BF-D643-4F7A-BE97-00DA3CEA5600}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{EC4B39BF-D643-4F7A-BE97-00DA3CEA5600}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
