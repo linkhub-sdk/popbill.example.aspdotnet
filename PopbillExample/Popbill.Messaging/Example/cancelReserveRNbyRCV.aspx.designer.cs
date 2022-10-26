@@ -8,10 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Popbill.Messaging {
+namespace Popbill.Message.Example {
     
     
-    public partial class _Default {
+    public partial class cancelReserveRNbyRCV {
         
         /// <summary>
         /// Head1 컨트롤입니다.

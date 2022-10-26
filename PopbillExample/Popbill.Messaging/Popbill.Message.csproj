@@ -92,6 +92,8 @@
     <Content Include="Example\updateCorpInfo.aspx" />
     <Content Include="Example\getSentListURL.aspx" />
     <Content Include="Example\getSenderNumberMgtURL.aspx" />
+    <Content Include="Example\cancelReservebyRCV.aspx" />
+    <Content Include="Example\cancelReserveRNbyRCV.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -361,6 +363,20 @@
     </Compile>
     <Compile Include="Example\getSenderNumberMgtURL.aspx.designer.cs">
       <DependentUpon>getSenderNumberMgtURL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\cancelReservebyRCV.aspx.cs">
+      <DependentUpon>cancelReservebyRCV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\cancelReservebyRCV.aspx.designer.cs">
+      <DependentUpon>cancelReservebyRCV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\cancelReserveRNbyRCV.aspx.cs">
+      <DependentUpon>cancelReserveRNbyRCV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\cancelReserveRNbyRCV.aspx.designer.cs">
+      <DependentUpon>cancelReserveRNbyRCV.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

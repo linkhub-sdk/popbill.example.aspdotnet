@@ -33,6 +33,8 @@
             <li><a href="Example/sendXMS_Multi.aspx">sendXMS</a> - 단문/장문 자동인식 전송 [대량]</li>
             <li><a href="Example/cancelReserve.aspx">cancelReserve</a> - 예약전송 취소</li>
             <li><a href="Example/cancelReserveRN.aspx">cancelReserveRN</a> - 예약전송 취소 (요청번호 할당)</li>
+            <li><a href="Example/cancelReservebyRCV.aspx">cancelReservebyRCV</a> - 예약전송 취소(접수번호, 수신번호)</li>
+            <li><a href="Example/cancelReserveRNbyRCV.aspx">cancelReserveRNbyRCV</a> - 예약전송 취소 (요청번호, 수신번호)</li>
         </ul>
     </fieldset>
     <br/>
