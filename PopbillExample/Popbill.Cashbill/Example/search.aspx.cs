@@ -43,7 +43,6 @@ namespace Popbill.Cashbill.Example
             //   5.1. 현금영수증 상태코드"를 참고하시기 바랍니다.
             String[] State = new String[2];
             State[0] = "3**";
-            State[1] = "4**";
 
             // 문서형태 배열, N-일반 현금영수증, C-취소 현금영수증
             String[] TradeType = new String[2];
