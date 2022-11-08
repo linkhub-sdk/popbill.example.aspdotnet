@@ -19,6 +19,7 @@ namespace Popbill.Cashbill.Example
         public String message;
         public String confirmNum;
         public String tradeDate;
+        public String tradeDT;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -46,6 +47,8 @@ namespace Popbill.Cashbill.Example
             // 메모
             String memo = "부분취소현금영수증 발행메모";
 
+            // 팝빌회원 아이디
+            String userId = "testkorea";
 
             // 부분취소여부 true-부분취소, false-전체취소
             bool isPartCancel = true;
@@ -65,16 +68,24 @@ namespace Popbill.Cashbill.Example
             // [취소] 합계금액
             String totalAmount = "3300";
 
+            // 안내메일 제목, 공백처리시 기본양식으로 전송
+            String emailSubject = "메일제목 테스트";
+
+            // 거래일시, 날짜(yyyyMMddHHmmss)
+            // 당일, 전일만 가능
+            String tradeDT = "20221108000000";
+
             try
             {
                 CBIssueResponse response = Global.cashbillService.RevokeRegistIssue(testCorpNum, mgtKey,
-                    orgConfirmNum, orgTradeDate, smssendYN, memo, isPartCancel, cancelType,
-                    supplyCost, tax, serviceFee, totalAmount);
+                    orgConfirmNum, orgTradeDate, smssendYN, memo, userId ,isPartCancel, cancelType,
+                    supplyCost, tax, serviceFee, totalAmount, emailSubject, tradeDT);
 
                 code = response.code.ToString();
                 message = response.message;
                 confirmNum = response.confirmNum;
                 tradeDate = response.tradeDate;
+                tradeDT = response.tradeDT;
             }
             catch (PopbillException ex)
             {

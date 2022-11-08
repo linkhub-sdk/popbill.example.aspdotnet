@@ -19,6 +19,7 @@ namespace Popbill.Cashbill.Example
         public String message;
         public String confirmNum;
         public String tradeDate;
+        public String tradeDT;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -35,7 +36,7 @@ namespace Popbill.Cashbill.Example
             String testUserID = "testkorea";
 
             // 현금영수증 문서번호
-            String mgtKey = "20220525-001";
+            String mgtKey = "20221108_ASP_001";
 
             // 메모
             String memo = "즉시발행 메모";
@@ -123,6 +124,10 @@ namespace Popbill.Cashbill.Example
             // 발행시 알림문자 전송여부
             cashbill.smssendYN = false;
 
+            // 거래일시, 날짜(yyyyMMddHHmmss)
+            // 당일, 전일만 가능
+            cashbill.tradeDT = "20221108000000";
+
             try
             {
                 CBIssueResponse response = Global.cashbillService.RegistIssue(testCorpNum, cashbill, memo, testUserID, emailSubject);
@@ -131,6 +136,7 @@ namespace Popbill.Cashbill.Example
                 message = response.message;
                 confirmNum = response.confirmNum;
                 tradeDate = response.tradeDate;
+                tradeDT = response.tradeDT;
             }
             catch (PopbillException ex)
             {

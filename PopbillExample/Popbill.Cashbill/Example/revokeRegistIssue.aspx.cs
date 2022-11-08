@@ -19,6 +19,7 @@ namespace Popbill.Cashbill.Example
         public String message;
         public String confirmNum;
         public String tradeDate;
+        public String tradeDT;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -32,13 +33,13 @@ namespace Popbill.Cashbill.Example
             String testCorpNum = "1234567890";
 
             // 문서번호, 최대 24자리, 영문, 숫자 '-', '_'를 조합하여 사업자별로 중복되지 않도록 구성
-            String mgtKey = "20220525-001";
+            String mgtKey = "20221108_ASP_BULK_001";
 
             // 원본현금영수증 승인번호, 문서정보 확인(GetInfo API)로 확인가능
-            String orgConfirmNum = "TB0000027";
+            String orgConfirmNum = "TB0000130";
 
             // 원본현금영수증 거래일자, 문서정보 확인(GetInfo API)로 확인가능
-            String orgTradeDate = "20220501";
+            String orgTradeDate = "20221103";
 
             try
             {
@@ -48,6 +49,7 @@ namespace Popbill.Cashbill.Example
                 message = response.message;
                 confirmNum = response.confirmNum;
                 tradeDate = response.tradeDate;
+                tradeDT = response.tradeDT;
             }
             catch (PopbillException ex)
             {

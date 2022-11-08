@@ -32,12 +32,12 @@ namespace Popbill.Cashbill.Example
 
             // 제출아이디, 대량 발행 접수를 구별하는 식별키
             // └ 최대 36자리 영문, 숫자, '-' 조합으로 구성
-            String submitID = "20220525-BULK";
+            String submitID = "20221108-BULK";
 
             // 현금영수증 객체정보 목록
             List<Cashbill> cashbillList = new List<Cashbill>();
 
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < 5; i++)
             {
                 // 현금영수증 객체 생성
                 Cashbill cashbill = new Cashbill();
@@ -123,6 +123,10 @@ namespace Popbill.Cashbill.Example
 
                 // 발행시 알림문자 전송여부
                 cashbill.smssendYN = false;
+
+                // 거래일시, 날짜(yyyyMMddHHmmss)
+                // 당일, 전일만 가능
+                cashbill.tradeDT = "20221108000000";
 
                 cashbillList.Add(cashbill);
             }

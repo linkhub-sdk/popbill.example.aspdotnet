@@ -20,6 +20,7 @@
                {%>
                <li>Response.confirmNum : <%= confirmNum %></li>
                <li>Response.tradeDate : <%= tradeDate%></li>
+               <li>Response.tradeDT : <%= tradeDT%></li>
             <% } %>
         </ul>
     </fieldset>

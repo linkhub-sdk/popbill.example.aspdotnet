@@ -57,7 +57,6 @@
     <Content Include="Example.css" />
     <Content Include="Example\assignMgtKey.aspx" />
     <Content Include="Example\bulkSubmit.aspx" />
-    <Content Include="Example\cancelIssue.aspx" />
     <Content Include="Example\checkID.aspx" />
     <Content Include="Example\checkIsMember.aspx" />
     <Content Include="Example\checkMgtKeyInUse.aspx" />
@@ -85,25 +84,20 @@
     <Content Include="Example\getURL.aspx" />
     <Content Include="Example\getUseHistoryURL.aspx" />
     <Content Include="Example\getViewURL.aspx" />
-    <Content Include="Example\issue.aspx" />
     <Content Include="Example\joinMember.aspx" />
     <Content Include="Example\listContact.aspx" />
     <Content Include="Example\listEmailConfig.aspx" />
     <Content Include="Example\registContact.aspx" />
-    <Content Include="Example\register.aspx" />
     <Content Include="Example\registIssue.aspx" />
-    <Content Include="Example\revokeRegister.aspx" />
     <Content Include="Example\revokeRegistIssue.aspx" />
     <Content Include="Example\search.aspx" />
     <Content Include="Example\sendEmail.aspx" />
     <Content Include="Example\sendFAX.aspx" />
     <Content Include="Example\sendSMS.aspx" />
-    <Content Include="Example\update.aspx" />
     <Content Include="Example\updateContact.aspx" />
     <Content Include="Example\updateCorpInfo.aspx" />
     <Content Include="Example\getPartnerURL.aspx" />
     <Content Include="Example\revokeRegistIssue_part.aspx" />
-    <Content Include="Example\revokeRegister_part.aspx" />
     <Content Include="Example\updateEmailConfig.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
@@ -129,13 +123,6 @@
     </Compile>
     <Compile Include="Example\bulkSubmit.aspx.designer.cs">
       <DependentUpon>bulkSubmit.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Example\cancelIssue.aspx.cs">
-      <DependentUpon>cancelIssue.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Example\cancelIssue.aspx.designer.cs">
-      <DependentUpon>cancelIssue.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\checkID.aspx.cs">
       <DependentUpon>checkID.aspx</DependentUpon>
@@ -326,13 +313,6 @@
     <Compile Include="Example\getViewURL.aspx.designer.cs">
       <DependentUpon>getViewURL.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Example\issue.aspx.cs">
-      <DependentUpon>issue.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Example\issue.aspx.designer.cs">
-      <DependentUpon>issue.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Example\joinMember.aspx.cs">
       <DependentUpon>joinMember.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -361,26 +341,12 @@
     <Compile Include="Example\registContact.aspx.designer.cs">
       <DependentUpon>registContact.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Example\register.aspx.cs">
-      <DependentUpon>register.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Example\register.aspx.designer.cs">
-      <DependentUpon>register.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Example\registIssue.aspx.cs">
       <DependentUpon>registIssue.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Example\registIssue.aspx.designer.cs">
       <DependentUpon>registIssue.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Example\revokeRegister.aspx.cs">
-      <DependentUpon>revokeRegister.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Example\revokeRegister.aspx.designer.cs">
-      <DependentUpon>revokeRegister.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\revokeRegistIssue.aspx.cs">
       <DependentUpon>revokeRegistIssue.aspx</DependentUpon>
@@ -417,13 +383,6 @@
     <Compile Include="Example\sendSMS.aspx.designer.cs">
       <DependentUpon>sendSMS.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Example\update.aspx.cs">
-      <DependentUpon>update.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Example\update.aspx.designer.cs">
-      <DependentUpon>update.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Example\updateContact.aspx.cs">
       <DependentUpon>updateContact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -451,13 +410,6 @@
     </Compile>
     <Compile Include="Example\revokeRegistIssue_part.aspx.designer.cs">
       <DependentUpon>revokeRegistIssue_part.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Example\revokeRegister_part.aspx.cs">
-      <DependentUpon>revokeRegister_part.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Example\revokeRegister_part.aspx.designer.cs">
-      <DependentUpon>revokeRegister_part.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\updateEmailConfig.aspx.cs">
       <DependentUpon>updateEmailConfig.aspx</DependentUpon>

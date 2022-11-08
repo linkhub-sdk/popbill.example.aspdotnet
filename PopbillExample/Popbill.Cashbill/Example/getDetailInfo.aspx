@@ -22,6 +22,7 @@
                 <li>orgConfirmNum (원본 현금영수증 국세청승인번호) : <%= cashbill.orgConfirmNum %></li>
                 <li>orgTradeDate (원본 현금영수증 거래일자) : <%= cashbill.orgTradeDate %></li>
                 <li>tradeDate (거래일자) : <%= cashbill.tradeDate %></li>
+                <li>tradeDT (거래일시) : <%= cashbill.tradeDT %></li>
                 <li>tradeType (문서형태) : <%= cashbill.tradeType %></li>
                 <li>tradeUsage (거래구분) : <%= cashbill.tradeUsage %></li>
                 <li>tradeOpt (거래유형) : <%= cashbill.tradeOpt %></li>
