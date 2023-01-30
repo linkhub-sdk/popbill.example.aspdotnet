@@ -22,7 +22,7 @@ namespace Popbill.Statement.Example
         {
             /**
              * "임시저장" 상태의 명세서에 1개의 파일을 첨부합니다. (최대 5개)
-             * - https://docs.popbill.com/statement/dotnet/api#AttachFile
+             * - https://developers.popbill.com/reference/statement/dotnet/api/etc#AttachFile
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

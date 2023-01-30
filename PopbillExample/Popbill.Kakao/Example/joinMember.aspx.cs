@@ -22,7 +22,7 @@ namespace Popbill.Kakao.Example
         {
             /**
              * 사용자를 연동회원으로 가입처리합니다.
-             * - https://docs.popbill.com/kakao/dotnet/api#JoinMember
+             * - https://developers.popbill.com/reference/kakaotalk/dotnet/api/member#JoinMember
              */
 
             JoinForm joinInfo = new JoinForm();

@@ -22,7 +22,7 @@ namespace Popbill.Taxinvoice.Example
         {
             /**
              * 세금계산서에 첨부된 전자명세서를 해제합니다.
-             * - https://docs.popbill.com/taxinvoice/dotnet/api#DetachStatement
+             * - https://developers.popbill.com/reference/taxinvoice/dotnet/api/etc#DetachStatement
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

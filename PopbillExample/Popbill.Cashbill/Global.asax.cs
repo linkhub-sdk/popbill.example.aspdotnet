@@ -1,15 +1,15 @@
 /**
-* ÆËºô Çö±Ý¿µ¼öÁõ API ASP.NET SDK Example
+* ï¿½Ëºï¿½ ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½ï¿½ï¿½ï¿½ API ASP.NET SDK Example
 *
-* ASP.NET SDK ¿¬µ¿È¯°æ ¼³Á¤¹æ¹ý ¾È³» : https://docs.popbill.com/cashbill/tutorial/dotnet#asp
-* ¾÷µ¥ÀÌÆ® ÀÏÀÚ : 2022-11-08
-* ¿¬µ¿±â¼úÁö¿ø ¿¬¶ôÃ³ : 1600-9854
-* ¿¬µ¿±â¼úÁö¿ø ÀÌ¸ÞÀÏ : code@linkhubcorp.com
+* ASP.NET SDK ï¿½ï¿½ï¿½ï¿½È¯ï¿½ï¿½ ï¿½ï¿½https://developers.popbill.com/guide/cashbill/dotnet/getting-started/tutorial?fwn=asp
+* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ : 2022-11-08
+* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ã³ : 1600-9854
+* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ : code@linkhubcorp.com
 *
-* <Å×½ºÆ® ¿¬µ¿°³¹ß ÁØºñ»çÇ×>
-* 1) 30, 33¹ø ¶óÀÎ¿¡ ¼±¾ðµÈ ¸µÅ©¾ÆÀÌµð(LinkID)¿Í ºñ¹ÐÅ°(SecretKey)¸¦
-*    ¸µÅ©Çãºê °¡ÀÔ½Ã ¸ÞÀÏ·Î ¹ß±Þ¹ÞÀº ÀÎÁõÁ¤º¸¸¦ ÂüÁ¶ÇÏ¿© º¯°æÇÕ´Ï´Ù.
-* 2) ÆËºô °³¹ß¿ë »çÀÌÆ®(test.popbill.com)¿¡ ¿¬µ¿È¸¿øÀ¸·Î °¡ÀÔÇÕ´Ï´Ù.
+* <ï¿½×½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Øºï¿½ï¿½ï¿½ï¿½>
+* 1) 30, 33ï¿½ï¿½ ï¿½ï¿½ï¿½Î¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å©ï¿½ï¿½ï¿½Ìµï¿½(LinkID)ï¿½ï¿½ ï¿½ï¿½ï¿½Å°(SecretKey)ï¿½ï¿½
+*    ï¿½ï¿½Å©ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ô½ï¿½ ï¿½ï¿½ï¿½Ï·ï¿½ ï¿½ß±Þ¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.
+* 2) ï¿½Ëºï¿½ ï¿½ï¿½ï¿½ß¿ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®(test.popbill.com)ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½È¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.
 */
 
 using System;
@@ -26,30 +26,30 @@ namespace Popbill.Cashbill
 {
     public class Global : System.Web.HttpApplication
     {
-        // ¸µÅ©¾ÆÀÌµð
+        // ï¿½ï¿½Å©ï¿½ï¿½ï¿½Ìµï¿½
         private string LinkID = "TESTER";
 
-        // ºñ¹ÐÅ°
+        // ï¿½ï¿½ï¿½Å°
         private string SecretKey = "SwWxqU+0TErBXy/9TVjIPEnI0VTUMMSQZtJf3Ed8q3I=";
 
-        // Çö±Ý¿µ¼öÁõ ¼­ºñ½º °´Ã¼ ¼±¾ð
+        // ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½
         public static CashbillService cashbillService;
 
         protected void Application_Start(object sender, EventArgs e)
         {
-            // Çö±Ý¿µ¼öÁõ ¼­ºñ½º °´Ã¼ ÃÊ±âÈ­
+            // ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ ï¿½Ê±ï¿½È­
             cashbillService = new CashbillService(LinkID, SecretKey);
 
-            // ¿¬µ¿È¯°æ ¼³Á¤°ª, °³¹ß¿ë(true), »ó¾÷¿ë(false)
+            // ï¿½ï¿½ï¿½ï¿½È¯ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ß¿ï¿½(true), ï¿½ï¿½ï¿½ï¿½ï¿½(false)
             cashbillService.IsTest = true;
 
-            // ÀÎÁõÅäÅ« IP Á¦ÇÑ±â´É »ç¿ë¿©ºÎ, ±ÇÀå(true)
+            // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å« IP ï¿½ï¿½ï¿½Ñ±ï¿½ï¿½ ï¿½ï¿½ë¿©ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½(true)
             cashbillService.IPRestrictOnOff = true;
 
-            // ÆËºô API ¼­ºñ½º °íÁ¤ IP »ç¿ë¿©ºÎ, true-»ç¿ë, false-¹Ì»ç¿ë, ±âº»°ª(false)
+            // ï¿½Ëºï¿½ API ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ IP ï¿½ï¿½ë¿©ï¿½ï¿½, true-ï¿½ï¿½ï¿½, false-ï¿½Ì»ï¿½ï¿½, ï¿½âº»ï¿½ï¿½(false)
             cashbillService.UseStaticIP = false;
 
-            // ·ÎÄÃ¼­¹ö ½Ã°£ »ç¿ë ¿©ºÎ true-»ç¿ë, false-¹Ì»ç¿ë, ±âº»°ª(false)
+            // ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ true-ï¿½ï¿½ï¿½, false-ï¿½Ì»ï¿½ï¿½, ï¿½âº»ï¿½ï¿½(false)
             cashbillService.UseLocalTimeYN = true;
         }
     }

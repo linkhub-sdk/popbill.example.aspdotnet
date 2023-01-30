@@ -22,7 +22,7 @@ namespace Popbill.HomeTax.Cashbill.Example
         {
             /**
              * 팝빌에 등록된 홈택스 현금영수증 자료조회 부서사용자 계정을 삭제합니다.
-             * - https://docs.popbill.com/htcashbill/dotnet/api#DeleteDeptUser
+             * - https://developers.popbill.com/reference/htcashbill/dotnet/api/cert#DeleteDeptUser
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

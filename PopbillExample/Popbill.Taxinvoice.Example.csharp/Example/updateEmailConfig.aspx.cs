@@ -20,7 +20,7 @@ namespace Popbill.Taxinvoice.Example
 
         /**
          * 세금계산서 관련 메일 항목에 대한 발송설정을 수정합니다.
-         * - https://docs.popbill.com/taxinvoice/dotnet/api#UpdateEmailConfig
+         * - https://developers.popbill.com/reference/taxinvoice/dotnet/api/etc#UpdateEmailConfig
          *
          * 메일전송유형
          * [정발행]

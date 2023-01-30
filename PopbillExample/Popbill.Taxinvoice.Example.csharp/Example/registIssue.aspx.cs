@@ -24,12 +24,12 @@ namespace Popbill.Taxinvoice.Example
         {
             /**
              * 작성된 세금계산서 데이터를 팝빌에 저장과 동시에 발행(전자서명)하여 "발행완료" 상태로 처리합니다.
-             * - 세금계산서 국세청 전송 정책 [https://docs.popbill.com/taxinvoice/ntsSendPolicy?lang=dotnet]
+             * - 세금계산서 국세청 전송 정책 [https://developers.popbill.com/guide/taxinvoice/dotnet/introduction/policy-of-send-to-nts]
              * - "발행완료"된 전자세금계산서는 국세청 전송 이전에 발행취소(CancelIssue API) 함수로 국세청 신고 대상에서 제외할 수 있습니다.
              * - 임시저장(Register API) 함수와 발행(Issue API) 함수를 한 번의 프로세스로 처리합니다.
              * - 세금계산서 발행을 위해서 공급자의 인증서가 팝빌 인증서버에 사전등록 되어야 합니다.
              *   └ 위수탁발행의 경우, 수탁자의 인증서 등록이 필요합니다.
-             * - https://docs.popbill.com/taxinvoice/dotnet/api#RegistIssue
+             * - https://developers.popbill.com/reference/taxinvoice/dotnet/api/issue#RegistIssue
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
@@ -216,7 +216,7 @@ namespace Popbill.Taxinvoice.Example
             /**************************************************************************
              *        수정세금계산서 정보 (수정세금계산서 작성시에만 기재
              * - 수정세금계산서 관련 정보는 연동매뉴얼 또는 개발가이드 링크 참조
-             * - [참고] 수정세금계산서 작성방법 안내 - https://docs.popbill.com/taxinvoice/modify?lang=dotnet
+             * - [참고] 수정세금계산서 작성방법 안내 - https://developers.popbill.com/guide/taxinvoice/dotnet/introduction/modified-taxinvoice
              *************************************************************************/
 
             // 수정사유코드, 1~6까지 선택기재.

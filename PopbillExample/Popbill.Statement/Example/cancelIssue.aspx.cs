@@ -23,7 +23,7 @@ namespace Popbill.Statement.Example
             /**
              * 발신자가 발행한 전자명세서를 발행취소합니다.
              * - "발행취소" 상태의 전자명세서를 삭제(Delete API) 함수를 이용하면, 전자명세서 관리를 위해 부여했던 문서번호를 재사용 할 수 있습니다.
-             * - https://docs.popbill.com/statement/dotnet/api#CancelIssue
+             * - https://developers.popbill.com/reference/statement/dotnet/api/issue#CancelIssue
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

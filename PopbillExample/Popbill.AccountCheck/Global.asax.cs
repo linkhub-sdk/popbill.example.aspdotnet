@@ -1,10 +1,10 @@
 /**
-* ÆËºô ¿¹±ÝÁÖÁ¶È¸ API ASP.NET SDK Example
+* ï¿½Ëºï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¸ API ASP.NET SDK Example
 *
-* ASP.NET SDK ¿¬µ¿È¯°æ ¼³Á¤¹æ¹ý ¾È³» : https://docs.popbill.com/accountcheck/tutorial/dotnet
-* ¾÷µ¥ÀÌÆ® ÀÏÀÚ : 2022-05-25
-* ¿¬µ¿±â¼úÁö¿ø ¿¬¶ôÃ³ : 1600-9854
-* ¿¬µ¿±â¼úÁö¿ø ÀÌ¸ÞÀÏ : code@linkhubcorp.com
+* ASP.NET SDK ï¿½ï¿½ï¿½ï¿½È¯ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½È³ï¿½ : https://developers.popbill.com/guide/taxinvoice/dotnet/getting-started/tutorial?fwn=asp
+* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ : 2022-05-25
+* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ã³ : 1600-9854
+* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ : code@linkhubcorp.com
 *
 */
 
@@ -23,30 +23,30 @@ namespace Popbill.AccountCheck
     public class Global : System.Web.HttpApplication
     {
 
-        // ¸µÅ©¾ÆÀÌµð
+        // ï¿½ï¿½Å©ï¿½ï¿½ï¿½Ìµï¿½
         private string LinkID = "TESTER";
 
-        // ºñ¹ÐÅ°
+        // ï¿½ï¿½ï¿½Å°
         private string SecretKey = "SwWxqU+0TErBXy/9TVjIPEnI0VTUMMSQZtJf3Ed8q3I=";
 
-        // ¿¹±ÝÁÖÁ¶È¸ ¼­ºñ½º °´Ã¼ ¼±¾ð
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¸ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½
         public static AccountCheckService accountCheckService;
 
         protected void Application_Start(object sender, EventArgs e)
         {
-            // ¿¹±ÝÁÖÁ¶È¸ ¼­ºñ½º °´Ã¼ ÃÊ±âÈ­
+            // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¸ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ ï¿½Ê±ï¿½È­
             accountCheckService = new AccountCheckService(LinkID, SecretKey);
 
-            // ¿¬µ¿È¯°æ ¼³Á¤°ª, °³¹ß¿ë(true), »ó¾÷¿ë(false)
+            // ï¿½ï¿½ï¿½ï¿½È¯ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ß¿ï¿½(true), ï¿½ï¿½ï¿½ï¿½ï¿½(false)
             accountCheckService.IsTest = true;
 
-            // ÀÎÁõÅäÅ« IP Á¦ÇÑ±â´É »ç¿ë¿©ºÎ, ±ÇÀå(true)
+            // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å« IP ï¿½ï¿½ï¿½Ñ±ï¿½ï¿½ ï¿½ï¿½ë¿©ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½(true)
             accountCheckService.IPRestrictOnOff = true;
 
-            // ÆËºô API ¼­ºñ½º °íÁ¤ IP »ç¿ë¿©ºÎ, true-»ç¿ë, false-¹Ì»ç¿ë, ±âº»°ª(false)
+            // ï¿½Ëºï¿½ API ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ IP ï¿½ï¿½ë¿©ï¿½ï¿½, true-ï¿½ï¿½ï¿½, false-ï¿½Ì»ï¿½ï¿½, ï¿½âº»ï¿½ï¿½(false)
             accountCheckService.UseStaticIP = false;
 
-            // ·ÎÄÃ¼­¹ö ½Ã°£ »ç¿ë ¿©ºÎ true-»ç¿ë, false-¹Ì»ç¿ë, ±âº»°ª(false)
+            // ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ true-ï¿½ï¿½ï¿½, false-ï¿½Ì»ï¿½ï¿½, ï¿½âº»ï¿½ï¿½(false)
             accountCheckService.UseLocalTimeYN = true;
         }
     }

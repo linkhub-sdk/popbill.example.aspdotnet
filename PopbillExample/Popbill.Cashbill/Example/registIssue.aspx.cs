@@ -25,8 +25,8 @@ namespace Popbill.Cashbill.Example
         {
             /**
              * 현금영수증 데이터를 팝빌에 전송하여 발행합니다.
-             * - 현금영수증 국세청 전송 정책 : https://docs.popbill.com/cashbill/ntsSendPolicy?lang=dotnet
-             * - https://docs.popbill.com/cashbill/dotnet/api#RegistIssue
+             * - 현금영수증 국세청 전송 정책 : https://developers.popbill.com/guide/cashbill/dotnet/introduction/policy-of-send-to-nts
+             * - https://developers.popbill.com/reference/cashbill/dotnet/api/issue#RegistIssue
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

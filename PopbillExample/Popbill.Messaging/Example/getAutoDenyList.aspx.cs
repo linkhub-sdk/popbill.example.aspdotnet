@@ -24,7 +24,7 @@ namespace Popbill.Message.Example
         {
             /**
              * 전용 080 번호에 등록된 수신거부 목록을 반환합니다.
-             * - https://docs.popbill.com/message/dotnet/api#GetAutoDenyList
+             * - https://developers.popbill.com/reference/sms/dotnet/api/info#GetAutoDenyList
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

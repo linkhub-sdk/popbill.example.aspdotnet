@@ -23,7 +23,7 @@ namespace Popbill.Taxinvoice.Example
             /**
              * "임시저장" 상태의 세금계산서에 첨부된 1개의 파일을 삭제합니다.
              * - 파일을 식별하는 파일아이디는 첨부파일 목록(GetFiles API) 를 호출하여 확인합니다.
-             * - https://docs.popbill.com/taxinvoice/dotnet/api#DeleteFile
+             * - https://developers.popbill.com/reference/taxinvoice/dotnet/api/etc#DeleteFile
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

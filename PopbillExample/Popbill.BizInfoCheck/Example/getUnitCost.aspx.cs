@@ -23,7 +23,7 @@ namespace Popbill.BizInfoCheck.Example
         {
             /**
              * 기업정보조회시 과금되는 포인트 단가를 확인합니다.
-             * - https://docs.popbill.com/bizinfocheck/dotnet/api#GetUnitCost
+             * - https://developers.popbill.com/reference/bizinfocheck/dotnet/api/point#GetUnitCost
              */
 
             String testCorpNum = "1234567890";

@@ -22,7 +22,7 @@ namespace Popbill.Taxinvoice.Example
         {
             /**
              * 팝빌 전자명세서 API를 통해 발행한 전자명세서를 세금계산서에 첨부합니다.
-             * - https://docs.popbill.com/taxinvoice/dotnet/api#AttachStatement
+             * - https://developers.popbill.com/reference/taxinvoice/dotnet/api/etc#AttachStatement
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

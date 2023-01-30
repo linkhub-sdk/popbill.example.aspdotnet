@@ -28,7 +28,7 @@ namespace Popbill.Statement
              * - 함수 호출시 포인트가 과금됩니다.
              * - 선팩스 전송 요청 시 작성한 문서번호는 팩스로 전송되는 파일명에 사용됩니다.
              * - 팩스 전송결과를 확인하기 위해서는 선팩스 전송 요청 시 반환받은 접수번호를 이용하여 팩스 API의 전송내역 확인 (GetFaxResult API) 함수를 이용하면 됩니다.
-             * - https://docs.popbill.com/statement/dotnet/api#FAXSend
+             * - https://developers.popbill.com/reference/statement/dotnet/api/etc#FAXSend
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
@@ -217,7 +217,7 @@ namespace Popbill.Statement
              * 전자명세서 추가속성
              * - 추가속성에 관한 자세한 사항은 "[전자명세서 API 연동매뉴얼] >
              *   5.2. 기본양식 추가속성 테이블"을 참조하시기 바랍니다.
-             * - https://docs.popbill.com/statement/propertyBag?lang=dotnet
+             * - https://developers.popbill.com/guide/statement/dotnet/introduction/statement-form#propertybag-table
              ************************************************************/
             statement.propertyBag = new propertyBag();
 

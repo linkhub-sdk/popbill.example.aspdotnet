@@ -24,8 +24,8 @@ namespace Popbill.Taxinvoice
             /**
              * "임시저장" 또는 "(역)발행대기" 상태의 세금계산서를 발행(전자서명)하며, "발행완료" 상태로 처리합니다.
              * - "발행완료"된 전자세금계산서는 국세청 전송 이전에 (CancelIssue API)함수로 국세청 신고 대상에서 제외할 수 있습니다.
-             * - 세금계산서 국세청 전송 정책 : https://docs.popbill.com/taxinvoice/ntsSendPolicy?lang=dotnet
-             * - https://docs.popbill.com/taxinvoice/dotnet/api#TIIssue
+             * - 세금계산서 국세청 전송 정책 : https://developers.popbill.com/guide/taxinvoice/dotnet/introduction/policy-of-send-to-nts
+             * - https://developers.popbill.com/reference/taxinvoice/dotnet/api/issue#Issue
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

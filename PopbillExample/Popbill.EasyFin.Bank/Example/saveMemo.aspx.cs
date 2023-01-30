@@ -22,7 +22,7 @@ namespace Popbill.EasyFin.Bank.Example
         {
             /**
              * 한 건의 거래 내역에 메모를 저장합니다.
-             * - https://docs.popbill.com/easyfinbank/dotnet/api#SaveMemo
+             * - https://developers.popbill.com/reference/easyfinbank/dotnet/api/search#SaveMemo
              */
 
             // 팝빌회원 사업자번호

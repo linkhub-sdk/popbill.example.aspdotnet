@@ -23,7 +23,7 @@ namespace Popbill.EasyFin.Bank.Example
         {
             /**
              * 팝빌에 등록된 계좌정보 목록을 반환합니다.
-             * - https://docs.popbill.com/easyfinbank/dotnet/api#ListBankAccount
+             * - https://developers.popbill.com/reference/easyfinbank/dotnet/api/manage#ListBankAccount
              */
 
 

@@ -23,7 +23,7 @@ namespace Popbill.Taxinvoice.Example
         {
             /**
              * 팝빌 인증서버에 등록된 공동인증서의 정보를 확인합니다.
-             * - https://docs.popbill.com/taxinvoice/dotnet/api#GetTaxCertInfo
+             * - https://developers.popbill.com/reference/taxinvoice/dotnet/api/cert#GetTaxCertInfo
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

@@ -23,7 +23,7 @@ namespace Popbill.AccountCheck.Example
         {
             /**
              * 1건의 예금주성명을 조회합니다.
-             * - https://docs.popbill.com/accountcheck/dotnet/api#CheckAccountInfo
+             * - https://developers.popbill.com/reference/accountcheck/dotnet/api/check#CheckAccountInfo
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

@@ -23,7 +23,7 @@ namespace Popbill.Statement.Example
         {
             /**
              * 전자명세서 발행시 과금되는 포인트 단가를 확인합니다.
-             * - https://docs.popbill.com/statement/dotnet/api#GetUnitCost
+             * - https://developers.popbill.com/reference/statement/dotnet/api/point#GetUnitCost
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

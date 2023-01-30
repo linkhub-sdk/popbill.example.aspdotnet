@@ -25,8 +25,8 @@ namespace Popbill.Cashbill.Example
         {
             /**
              * 취소 현금영수증을 발행하며 취소 현금영수증의 금액은 원본 금액을 넘을 수 없습니다.
-             * - 현금영수증 국세청 전송 정책 : https://docs.popbill.com/cashbill/ntsSendPolicy?lang=dotnet
-             * - https://docs.popbill.com/cashbill/dotnet/api#RevokeRegistIssue
+             * - 현금영수증 국세청 전송 정책 : https://developers.popbill.com/guide/cashbill/dotnet/introduction/policy-of-send-to-nts
+             * - https://developers.popbill.com/reference/cashbill/dotnet/api/issue#RevokeRegistIssue
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

@@ -22,7 +22,7 @@ namespace Popbill.Statement.Example
         {
             /**
              * 삭제 가능한 상태의 전자명세서를 삭제합니다.
-             * - https://docs.popbill.com/statement/dotnet/api#DeleteFile
+             * - https://developers.popbill.com/reference/statement/dotnet/api/etc#DeleteFile
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

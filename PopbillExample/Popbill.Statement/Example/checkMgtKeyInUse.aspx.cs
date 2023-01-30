@@ -22,7 +22,7 @@ namespace Popbill.Statement.Example
         {
             /**
              * 파트너가 전자명세서 관리 목적으로 할당하는 문서번호의 사용여부를 확인합니다.
-             * - https://docs.popbill.com/statement/dotnet/api#CheckMgtKeyInUse
+             * - https://developers.popbill.com/reference/statement/dotnet/api/info#CheckMgtKeyInUse
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

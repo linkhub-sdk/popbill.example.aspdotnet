@@ -22,7 +22,7 @@ namespace Popbill.Cashbill.Example
         {
             /**
              * 팝빌 사이트를 통해 발행하여 문서번호가 부여되지 않은 세금계산서에 문서번호를 할당합니다.
-             * - https://docs.popbill.com/cashbill/dotnet/api#AssignMgtKey
+             * - https://developers.popbill.com/reference/cashbill/dotnet/api/etc#AssignMgtKey
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

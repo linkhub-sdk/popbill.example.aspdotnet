@@ -23,7 +23,7 @@ namespace Popbill.Statement.Example
         {
             /**
              * "임시저장" 상태의 전자명세서를 수정합니다.
-             * - https://docs.popbill.com/statement/dotnet/api#Update
+             * - https://developers.popbill.com/reference/statement/dotnet/api/issue#Update
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
@@ -208,7 +208,7 @@ namespace Popbill.Statement.Example
              * 전자명세서 추가속성
              * - 추가속성에 관한 자세한 사항은 "[전자명세서 API 연동매뉴얼] >
              *   5.2. 기본양식 추가속성 테이블"을 참조하시기 바랍니다.
-             * - https://docs.popbill.com/statement/propertyBag?lang=dotnet
+             * - https://developers.popbill.com/guide/statement/dotnet/introduction/statement-form#propertybag-table
              ************************************************************/
             statement.propertyBag = new propertyBag();
 

@@ -25,7 +25,7 @@ namespace Popbill.Statement.Example
             /**
              * 작성된 전자명세서 데이터를 팝빌에 저장과 동시에 발행하여, "발행완료" 상태로 처리합니다.
              * - 팝빌 사이트 [전자명세서] > [환경설정] > [전자명세서 관리] 메뉴의 발행시 자동승인 옵션 설정을 통해 전자명세서를 "발행완료" 상태가 아닌 "승인대기" 상태로 발행 처리 할 수 있습니다.
-             * - https://docs.popbill.com/statement/dotnet/api#RegistIssue
+             * - https://developers.popbill.com/reference/statement/dotnet/api/issue#RegistIssue
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
@@ -216,7 +216,7 @@ namespace Popbill.Statement.Example
              * 전자명세서 추가속성
              * - 추가속성에 관한 자세한 사항은 "[전자명세서 API 연동매뉴얼] >
              *   5.2. 기본양식 추가속성 테이블"을 참조하시기 바랍니다.
-             * - https://docs.popbill.com/statement/propertyBag?lang=dotnet
+             * - https://developers.popbill.com/guide/statement/dotnet/introduction/statement-form#propertybag-table
              ************************************************************/
             statement.propertyBag = new propertyBag();
 

@@ -22,7 +22,7 @@ namespace Popbill.Fax.Example
         {
             /**
              * 연동회원 사업자번호에 담당자(팝빌 로그인 계정)를 추가합니다.\
-             * - https://docs.popbill.com/fax/dotnet/api#RegistContact
+             * - https://developers.popbill.com/reference/fax/dotnet/api/member#RegistContact
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

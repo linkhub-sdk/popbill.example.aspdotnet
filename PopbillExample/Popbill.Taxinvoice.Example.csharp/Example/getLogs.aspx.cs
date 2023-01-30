@@ -24,7 +24,7 @@ namespace Popbill.Taxinvoice
         {
             /**
              * 세금계산서의 상태에 대한 변경이력을 확인합니다.
-             * - https://docs.popbill.com/taxinvoice/dotnet/api#GetLogs
+             * - https://developers.popbill.com/reference/taxinvoice/dotnet/api/info#GetLogs
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

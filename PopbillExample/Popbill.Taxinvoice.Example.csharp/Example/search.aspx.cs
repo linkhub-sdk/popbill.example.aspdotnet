@@ -23,7 +23,7 @@ namespace Popbill.Taxinvoice
         {
             /**
              * 검색조건에 해당하는 세금계산서를 조회합니다. (조회기간 단위 : 최대 6개월)
-             * - https://docs.popbill.com/taxinvoice/dotnet/api#Search
+             * - https://developers.popbill.com/reference/taxinvoice/dotnet/api/info#Search
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

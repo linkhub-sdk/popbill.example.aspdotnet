@@ -23,7 +23,7 @@ namespace Popbill.BizInfoCheck.Example
         {
             /**
              * 사업자번호 1건에 대한 기업정보정보를 확인합니다.
-             * - https://docs.popbill.com/bizinfocheck/dotnet/api#CheckBizInfo
+             * - https://developers.popbill.com/reference/bizinfocheck/dotnet/api/check#CheckBizInfo
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

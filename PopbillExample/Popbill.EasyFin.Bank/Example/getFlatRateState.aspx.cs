@@ -23,7 +23,7 @@ namespace Popbill.EasyFin.Bank.Example
         {
             /**
              * 계좌조회 정액제 서비스 상태를 확인합니다.
-             * - https://docs.popbill.com/easyfinbank/dotnet/api#GetFlatRateState
+             * - https://developers.popbill.com/reference/easyfinbank/dotnet/api/point#GetFlatRateState
              */
 
 

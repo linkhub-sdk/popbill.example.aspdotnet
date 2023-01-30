@@ -24,7 +24,7 @@ namespace Popbill.Taxinvoice.Example
         {
             /**
              * 다수건의 세금계산서 상태 및 요약 정보를 확인합니다. (1회 호출 시 최대 1,000건 확인 가능)
-             * - https://docs.popbill.com/taxinvoice/dotnet/api#GetInfos
+             * - https://developers.popbill.com/reference/taxinvoice/dotnet/api/info#GetInfos
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

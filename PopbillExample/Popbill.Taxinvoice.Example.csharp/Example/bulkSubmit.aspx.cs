@@ -24,7 +24,7 @@ namespace Popbill.Taxinvoice.Example
         {
             /*
              * 최대 100건의 세금계산서 발행을 한번의 요청으로 접수합니다.
-             * - https://docs.popbill.com/taxinvoice/dotnet/api#BulkSubmit
+             * - https://developers.popbill.com/reference/taxinvoice/dotnet/api/issue#BulkSubmit
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
@@ -216,7 +216,7 @@ namespace Popbill.Taxinvoice.Example
                 /**************************************************************************
                  *        수정세금계산서 정보 (수정세금계산서 작성시에만 기재
                  * - 수정세금계산서 관련 정보는 연동매뉴얼 또는 개발가이드 링크 참조
-                 * - [참고] 수정세금계산서 작성방법 안내 - https://docs.popbill.com/taxinvoice/modify?lang=dotnet
+                 * - [참고] 수정세금계산서 작성방법 안내 - https://developers.popbill.com/guide/taxinvoice/dotnet/introduction/modified-taxinvoice
                  *************************************************************************/
 
                 // 수정사유코드, 1~6까지 선택기재.

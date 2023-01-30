@@ -22,7 +22,7 @@ namespace Popbill.Cashbill.Example
         {
             /**
              * 현금영수증과 관련된 안내 메일을 재전송 합니다.
-             * - https://docs.popbill.com/cashbill/dotnet/api#SendEmail
+             * - https://developers.popbill.com/reference/cashbill/dotnet/api/etc#SendEmail
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

@@ -23,7 +23,7 @@ namespace Popbill.Taxinvoice.Example
         {
             /**
              * 세금계산서 1건의 상세정보를 확인합니다.
-             * - https://docs.popbill.com/taxinvoice/dotnet/api#GetDetailInfo
+             * - https://developers.popbill.com/reference/taxinvoice/dotnet/api/info#GetDetailInfo
              */
 
 

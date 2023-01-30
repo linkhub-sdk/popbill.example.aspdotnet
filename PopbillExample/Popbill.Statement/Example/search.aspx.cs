@@ -23,7 +23,7 @@ namespace Popbill.Statement.Example
         {
             /**
              * 검색조건에 해당하는 전자명세서를 조회합니다. (조회기간 단위 : 최대 6개월)
-             * - https://docs.popbill.com/statement/dotnet/api#Search
+             * - https://developers.popbill.com/reference/statement/dotnet/api/info#Search
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

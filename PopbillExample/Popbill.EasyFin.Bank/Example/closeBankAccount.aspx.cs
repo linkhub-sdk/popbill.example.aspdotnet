@@ -22,7 +22,7 @@ namespace Popbill.EasyFin.Bank.Example
         {
             /**
              * 계좌의 정액제 해지를 요청합니다.
-             * - https://docs.popbill.com/easyfinbank/dotnet/api#CloseBankAccount
+             * - https://developers.popbill.com/reference/easyfinbank/dotnet/api/manage#CloseBankAccount
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

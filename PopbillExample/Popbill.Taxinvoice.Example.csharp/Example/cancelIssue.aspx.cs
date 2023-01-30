@@ -23,7 +23,7 @@ namespace Popbill.Taxinvoice
             /**
              * 국세청 전송 이전 "발행완료" 상태의 세금계산서를 "발행취소"하고 국세청 전송 대상에서 제외합니다.
              * - 삭제(Delete API) 함수를 호출하여 "발행취소" 상태의 전자세금계산서를 삭제하면, 문서번호 재사용이 가능합니다.
-             * - https://docs.popbill.com/taxinvoice/dotnet/api#CancelIssue
+             * - https://developers.popbill.com/reference/taxinvoice/dotnet/api/issue#CancelIssue
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

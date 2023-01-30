@@ -22,7 +22,7 @@ namespace Popbill.Fax.Example
         {
             /**
              * 팝빌에서 반환받은 접수번호를 통해 예약접수된 팩스 전송을 취소합니다. (예약시간 10분 전까지 가능)
-             * - https://docs.popbill.com/fax/dotnet/api#CancelReserve
+             * - https://developers.popbill.com/reference/fax/dotnet/api/send#CancelReserve
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

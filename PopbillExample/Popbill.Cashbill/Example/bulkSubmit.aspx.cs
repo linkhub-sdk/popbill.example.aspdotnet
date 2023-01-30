@@ -24,7 +24,7 @@ namespace Popbill.Cashbill.Example
         {
             /*
              * 최대 100건의 현금영수증 발행을 한번의 요청으로 접수합니다.
-             * - https://docs.popbill.com/cashbill/dotnet/api#BulkSubmit
+             * - https://developers.popbill.com/reference/cashbill/dotnet/api/issue#BulkSubmit
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
