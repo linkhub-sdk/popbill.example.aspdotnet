@@ -24,7 +24,7 @@ namespace Popbill.Fax.Example
         {
             /**
              * 팩스 1건을 전송합니다. (최대 전송파일 개수: 20개)
-             * - https://developers.popbill.com/reference/fax/dotnet/api/send#SendFAXOne
+             * - https://developers.popbill.com/reference/fax/dotnet/api/send#SendFAX
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
