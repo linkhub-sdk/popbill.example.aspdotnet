@@ -37,7 +37,6 @@
             <li><a href="Example/getInfos.aspx">getInfos</a> - 상태 대량 확인</li>
             <li><a href="Example/getDetailInfo.aspx">getDetailInfo</a> - 상세정보 확인</li>
             <li><a href="Example/search.aspx">search</a> - 목록 조회</li>
-            <li><a href="Example/getLogs.aspx">getLogs</a> - 상태 변경이력 확인</li>
             <li><a href="Example/getURL.aspx">getURL</a> - 현금영수증 문서함 관련 URL</li>
         </ul>
     </fieldset>
