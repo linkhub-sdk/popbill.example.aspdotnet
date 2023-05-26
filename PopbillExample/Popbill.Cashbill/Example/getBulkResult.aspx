@@ -41,7 +41,7 @@
                             <li>confirmNum (국세청승인번호) : <%= issueResult.confirmNum%></li>
                             <li>mgtKey (문서번호) : <%= issueResult.mgtKey%></li>
                             <li>tradeDate (거래일자) : <%= issueResult.tradeDate%></li>
-                            <li>tradeDT (거래일시) : <%= issueResult.tradeDT%></li>
+                            <li>issueDT (발행일시) : <%= issueResult.issueDT%></li>
                         </ul>
                     </fieldset>
                     <% i++; %>

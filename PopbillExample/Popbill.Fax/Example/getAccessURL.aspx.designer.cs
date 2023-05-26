@@ -12,6 +12,7 @@ namespace Popbill.Fax.Example {
     
     
     public partial class getAccessURL {
-        
+        protected global::System.Web.UI.HtmlControls.HtmlHead Head1;
+
     }
 }

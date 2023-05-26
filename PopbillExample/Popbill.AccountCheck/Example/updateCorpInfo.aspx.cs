@@ -15,8 +15,8 @@ namespace Popbill.AccountCheck.Example
 {
     public partial class updateCorpInfo : System.Web.UI.Page
     {
-        public String code = null;
-        public String message = null;
+        public String code;
+        public String message;
 
         protected void Page_Load(object sender, EventArgs e)
         {

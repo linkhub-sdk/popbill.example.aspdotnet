@@ -11,7 +11,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-namespace Popbill.HomeTax.Cashbill.Example
+namespace Popbill.HomeTax.cashbill.Example
 {
     public partial class getCertificateExpireDate : System.Web.UI.Page
     {
@@ -31,7 +31,7 @@ namespace Popbill.HomeTax.Cashbill.Example
 
             try
             {
-                DateTime expiration = Global.htCashbillService.GetCertificateExpireDate(testCorpNum);
+                DateTime expiration = Global.htcashbillService.GetCertificateExpireDate(testCorpNum);
 
                 expireDate = expiration.ToString();
             }

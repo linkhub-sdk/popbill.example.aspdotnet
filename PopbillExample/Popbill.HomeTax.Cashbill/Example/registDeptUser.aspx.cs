@@ -11,12 +11,12 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-namespace Popbill.HomeTax.Cashbill.Example
+namespace Popbill.HomeTax.cashbill.Example
 {
     public partial class registDeptUser : System.Web.UI.Page
     {
-        public String code = null;
-        public String message = null;
+        public String code;
+        public String message;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -36,7 +36,7 @@ namespace Popbill.HomeTax.Cashbill.Example
 
             try
             {
-                Response response = Global.htCashbillService.RegistDeptUser(testCorpNum, deptUserID, deptUserPWD);
+                Response response = Global.htcashbillService.RegistDeptUser(testCorpNum, deptUserID, deptUserPWD);
 
                 code = response.code.ToString();
                 message = response.message;

@@ -11,12 +11,12 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-namespace Popbill.HomeTax.Cashbill.Example
+namespace Popbill.HomeTax.cashbill.Example
 {
     public partial class getPaymentURL : System.Web.UI.Page
     {
-        public String code = null;
-        public String message = null;
+        public String code;
+        public String message;
         public String url = null;
 
         protected void Page_Load(object sender, EventArgs e)
@@ -35,7 +35,7 @@ namespace Popbill.HomeTax.Cashbill.Example
 
             try
             {
-                url = Global.htCashbillService.GetPaymentURL(testCorpNum, testUserID);
+                url = Global.htcashbillService.GetPaymentURL(testCorpNum, testUserID);
             }
             catch (PopbillException ex)
             {

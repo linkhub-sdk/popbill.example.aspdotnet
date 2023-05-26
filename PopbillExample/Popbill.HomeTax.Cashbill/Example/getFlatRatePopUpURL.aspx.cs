@@ -11,7 +11,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-namespace Popbill.HomeTax.Cashbill.Example
+namespace Popbill.HomeTax.cashbill.Example
 {
     public partial class getFlatRatePopUpURL : System.Web.UI.Page
     {
@@ -35,7 +35,7 @@ namespace Popbill.HomeTax.Cashbill.Example
 
             try
             {
-                url = Global.htCashbillService.GetFlatRatePopUpURL(testCorpNum, testUserID);
+                url = Global.htcashbillService.GetFlatRatePopUpURL(testCorpNum, testUserID);
             }
             catch (PopbillException ex)
             {

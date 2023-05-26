@@ -16,8 +16,8 @@ namespace Popbill.EasyFin.Bank.Example
     public partial class registBankAccount : System.Web.UI.Page
     {
 
-        public String code = null;
-        public String message = null;
+        public String code;
+        public String message;
 
         protected void Page_Load(object sender, EventArgs e)
         {

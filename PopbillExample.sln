@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Popbill.Taxinvoice", "PopbillExample\Popbill.Taxinvoice.Example.csharp\Popbill.Taxinvoice.csproj", "{708F0B07-2A02-45D0-B341-AB8CC325B976}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Popbill.Taxinvoice", "PopbillExample\Popbill.Taxinvoice\Popbill.Taxinvoice.csproj", "{708F0B07-2A02-45D0-B341-AB8CC325B976}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linkhub", "Linkhub\Linkhub.csproj", "{F960F70D-9C37-46F8-A1D4-938A81BE9855}"
 EndProject

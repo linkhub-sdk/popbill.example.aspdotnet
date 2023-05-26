@@ -13,7 +13,7 @@ using System.Xml.Linq;
 
 namespace Popbill.BizInfoCheck.Example
 {
-    public partial class checkCorpNum : System.Web.UI.Page
+    public partial class checkBizInfo : System.Web.UI.Page
     {
         public String code;
         public String message;

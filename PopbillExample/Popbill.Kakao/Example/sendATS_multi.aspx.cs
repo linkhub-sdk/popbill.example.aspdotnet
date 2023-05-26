@@ -35,13 +35,14 @@ namespace Popbill.Kakao.Example
             // 팝빌회원 아이디
             String testUserID = "testkorea";
 
-            // 승인된 알림톡 템플릿코드 
+            // 승인된 알림톡 템플릿코드
             // └ 알림톡 템플릿 관리 팝업 URL(GetATSTemplateMgtURL API) 함수, 알림톡 템플릿 목록 확인(ListATStemplate API) 함수를 호출하거나
             //   팝빌사이트에서 승인된 알림톡 템플릿 코드를  확인 가능.
             String templateCode = "019020000163";
 
             // 팝빌에 사전 등록된 발신번호
-            String senderNum = "";
+            // ※ 대체문자를 전송하는 경우에는 사전에 등록된 발신번호 입력 필수
+            String senderNum = "07043042991";
 
             // 대체문자 유형 (null , "C" , "A" 중 택 1)
             // null = 미전송, C = 알림톡과 동일 내용 전송 , A = 대체문자 내용(altContent)에 입력한 내용 전송

@@ -39,7 +39,8 @@ namespace Popbill.Kakao.Example
             String plusFriendID = "@팝빌";
 
             // 팝빌에 사전 등록된 발신번호
-            String senderNum = "";
+            // ※ 대체문자를 전송하는 경우에는 사전에 등록된 발신번호 입력 필수
+            String senderNum = "07043042991";
 
             // 대체문자 유형 (null , "C" , "A" 중 택 1)
             // null = 미전송, C = 알림톡과 동일 내용 전송 , A = 대체문자 내용(altContent)에 입력한 내용 전송

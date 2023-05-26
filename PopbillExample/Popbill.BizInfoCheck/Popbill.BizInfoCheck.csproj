@@ -74,6 +74,15 @@
     <Content Include="Example\registContact.aspx" />
     <Content Include="Example\updateContact.aspx" />
     <Content Include="Example\updateCorpInfo.aspx" />
+    <Content Include="Example\getRefundableBalance.aspx" />
+    <Content Include="Example\getRefundHistory.aspx" />
+    <Content Include="Example\getRefundInfo.aspx" />
+    <Content Include="Example\getSettleResult.aspx" />
+    <Content Include="Example\getUseHistory.aspx" />
+    <Content Include="Example\paymentRequest.aspx" />
+    <Content Include="Example\quitMember.aspx" />
+    <Content Include="Example\refund.aspx" />
+    <Content Include="Example\getRefundableBalance.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -217,6 +226,69 @@
     </Compile>
     <Compile Include="Example\updateCorpInfo.aspx.designer.cs">
       <DependentUpon>updateCorpInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getPaymentHistory.aspx.cs">
+      <DependentUpon>getPaymentHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getPaymentHistory.aspx.designer.cs">
+      <DependentUpon>getPaymentHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getRefundableBalance.aspx.cs">
+      <DependentUpon>getRefundableBalance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getRefundableBalance.aspx.designer.cs">
+      <DependentUpon>getRefundableBalance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getRefundHistory.aspx.cs">
+      <DependentUpon>getRefundHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getRefundHistory.aspx.designer.cs">
+      <DependentUpon>getRefundHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getRefundInfo.aspx.cs">
+      <DependentUpon>getRefundInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getRefundInfo.aspx.designer.cs">
+      <DependentUpon>getRefundInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getSettleResult.aspx.cs">
+      <DependentUpon>getSettleResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getSettleResult.aspx.designer.cs">
+      <DependentUpon>getSettleResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getUseHistory.aspx.cs">
+      <DependentUpon>getUseHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getUseHistory.aspx.designer.cs">
+      <DependentUpon>getUseHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\paymentRequest.aspx.cs">
+      <DependentUpon>paymentRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\paymentRequest.aspx.designer.cs">
+      <DependentUpon>paymentRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\quitMember.aspx.cs">
+      <DependentUpon>quitMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\quitMember.aspx.designer.cs">
+      <DependentUpon>quitMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\refund.aspx.cs">
+      <DependentUpon>refund.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\refund.aspx.designer.cs">
+      <DependentUpon>refund.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

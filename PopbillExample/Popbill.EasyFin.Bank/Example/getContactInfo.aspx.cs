@@ -15,8 +15,8 @@ namespace Popbill.EasyFin.Bank.Example
 {
     public partial class getContactInfo : System.Web.UI.Page
     {
-        public String code = null;
-        public String message = null;
+        public String code;
+        public String message;
         public Contact contactInfo = null;
 
         protected void Page_Load(object sender, EventArgs e)

@@ -57,6 +57,14 @@
             <li><a href="Example/getChargeInfo.aspx">getChargeInfo</a> - 과금정보 확인</li>
             <li><a href="Example/getFlatRatePopUpURL.aspx">getFlatRatePopUpURL</a> - 정액제 서비스 신청 URL</li>
             <li><a href="Example/getFlatRateState.aspx">getFlatRateState</a> - 정액제 서비스 상태 확인</li>
+            <li><a href="Example/paymentRequest.aspx">paymentRequest</a> - 연동회원 무통장 입금신청</li>
+            <li><a href="Example/getSettleResult.aspx">getSettleResult</a> - 연동회원 무통장 입금신청 정보확인</li>
+            <li><a href="Example/getPaymentHistory.aspx">getPaymentHistory</a> - 연동회원 포인트 결제내역 확인</li>
+            <li><a href="Example/getUseHistory.aspx">getUseHistory</a> - 연동회원 포인트 사용내역 확인</li>
+            <li><a href="Example/refund.aspx">refund</a> - 연동회원 포인트 환불신청</li>
+            <li><a href="Example/getRefundHistory.aspx">getRefundHistory</a> - 연동회원 포인트 환불내역 확인</li>
+            <li><a href="Example/getRefundInfo.aspx">getRefundInfo</a> - 환불 신청 상태 조회</li>
+            <li><a href="Example/getRefundableBalance.aspx">getRefundableBalance</a> - 환불 가능 포인트 조회</li>
         </ul>
     </fieldset>
     <br/>
@@ -73,6 +81,7 @@
             <li><a href="Example/getContactInfo.aspx">getContactInfo</a> - 담당자 정보 확인</li>
             <li><a href="Example/listContact.aspx">listContact</a> - 담당자 목록 확인</li>
             <li><a href="Example/updateContact.aspx">updateContact</a> - 담당자 정보 수정</li>
+            <li><a href="Example/quitMember.aspx">quitMember</a> - 팝빌 회원 탈퇴</li>
         </ul>
     </fieldset>
 </div>

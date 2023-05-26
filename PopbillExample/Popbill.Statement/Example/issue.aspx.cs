@@ -41,9 +41,13 @@ namespace Popbill.Statement.Example
             //메모
             String memo = "발행 메모";
 
+            // 전자명세서 발행 안내메일 제목
+            String EmailSubject = "발행 안내메일";
+
             try
             {
-                Response response = Global.statementService.Issue(testCorpNum, itemCode, mgtKey, memo, testUserID);
+                Response response =
+                    Global.statementService.Issue(testCorpNum, itemCode, mgtKey, memo, testUserID, EmailSubject);
 
                 code = response.code.ToString();
                 message = response.message;

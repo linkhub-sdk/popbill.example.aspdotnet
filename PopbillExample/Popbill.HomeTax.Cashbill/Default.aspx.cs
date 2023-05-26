@@ -11,7 +11,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-namespace Popbill.HomeTax.Cashbill
+namespace Popbill.HomeTax.cashbill
 {
     public partial class _Default : System.Web.UI.Page
     {

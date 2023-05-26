@@ -15,8 +15,8 @@ namespace Popbill.Fax.Example
 {
     public partial class getUseHistoryURL : System.Web.UI.Page
     {
-        public String code = null;
-        public String message = null;
+        public String code;
+        public String message;
         public String url = null;
 
         protected void Page_Load(object sender, EventArgs e)

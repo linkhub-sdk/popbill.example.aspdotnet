@@ -8,11 +8,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Popbill.HomeTax.Cashbill.Example {
-    
-    
+namespace Popbill.HomeTax.cashbill.Example {
+
+
     public partial class getContactInfo {
-        
+
         /// <summary>
         /// Head1 컨트롤입니다.
         /// </summary>

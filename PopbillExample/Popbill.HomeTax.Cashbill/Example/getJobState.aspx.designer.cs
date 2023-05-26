@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Popbill.HomeTax.Cashbill.Example {
-    
-    
+namespace Popbill.HomeTax.cashbill.Example {
+
+
     public partial class getJobState {
     }
 }

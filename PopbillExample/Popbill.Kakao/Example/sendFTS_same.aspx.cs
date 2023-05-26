@@ -39,7 +39,8 @@ namespace Popbill.Kakao.Example
             String plusFriendID = "@팝빌";
 
             // 팝빌에 사전 등록된 발신번호
-            String senderNum = "";
+            // ※ 대체문자를 전송하는 경우에는 사전에 등록된 발신번호 입력 필수
+            String senderNum = "07043042991";
 
             // 친구톡 내용, 최대 1000자
             String content = "친구톡 내용";

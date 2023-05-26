@@ -15,8 +15,8 @@ namespace Popbill.HomeTax.Taxinvoice.Example
 {
     public partial class listContact : System.Web.UI.Page
     {
-        public String code = null;
-        public String message = null;
+        public String code;
+        public String message;
         public List<Contact> contactList = null;
 
         protected void Page_Load(object sender, EventArgs e)

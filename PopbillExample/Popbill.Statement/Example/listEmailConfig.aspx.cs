@@ -16,8 +16,8 @@ namespace Popbill.Statement.Example
 {
     public partial class listEmailConfig : System.Web.UI.Page
     {
-        public String code = null;
-        public String message = null;
+        public String code;
+        public String message;
         public List<EmailConfig> emailConfigList = null;
 
         protected void Page_Load(object sender, EventArgs e)
