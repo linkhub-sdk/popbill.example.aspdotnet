@@ -39,7 +39,7 @@ namespace Popbill.Kakao.Example
 
             try
             {
-                Response response = Global.kakaoService.CancelReserveRNbyRCV(testCorpNum, requestNum, receiveNum,UserID);
+                Response response = Global.kakaoService.CancelReserveRNbyRCV(testCorpNum, requestNum, receiveNum, UserID);
 
                 code = response.code.ToString();
                 message = response.message;

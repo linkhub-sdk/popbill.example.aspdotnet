@@ -60,6 +60,9 @@ namespace Popbill.Kakao.Example
             try
             {
                 result = Global.kakaoService.Refund(CorpNum, refundForm, UserID);
+                code = result.code.ToString();
+                message = result.message;
+                refundCode = result.refundCode;
             }
             catch (PopbillException ex)
             {

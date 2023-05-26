@@ -68,6 +68,8 @@
             <ul>
                 <li><a href="Example/cancelReserve.aspx">cancelReserve</a> - 예약전송 취소</li>
                 <li><a href="Example/cancelReserveRN.aspx">cancelReserveRN</a> - 예약전송 취소 (요청번호 할당)</li>
+                <li><a href="Example/cancelReservebyRCV.aspx">cancelReservebyRCV</a> - 예약전송 일부 취소 (접수 번호)</li>
+                <li><a href="Example/cancelReserveRNbyRCV.aspx">cancelReserveRNbyRCV</a> - 예약전송 취소 (전송 요청번호)</li>
             </ul>
         </fieldset>
     </fieldset>

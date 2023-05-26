@@ -46,6 +46,7 @@
             <li><a href="Example/search.aspx">search</a> - 전송내역 목록 조회</li>
             <li><a href="Example/getSentListURL.aspx">getSentListURL</a> - 문자 전송내역 팝업 URL</li>
             <li><a href="Example/getAutoDenyList.aspx">getAutoDenyList</a> - 080 수신거부 목록 확인</li>
+            <li><a href="Example/checkAutoDenyNumber.aspx">checkAutoDenyNumber</a> - 080 번호 확인</li>
         </ul>
     </fieldset>
     <br/>

@@ -60,6 +60,10 @@ namespace Popbill.HomeTax.Cashbill.Example
             try
             {
                 result = Global.htCashbillService.Refund(CorpNum, refundForm, UserID);
+
+                code = result.code.ToString();
+                message = result.message;
+                refundCode = result.refundCode;
             }
             catch (PopbillException ex)
             {

@@ -60,6 +60,10 @@ namespace Popbill.Closedown.Example
             try
             {
                 result = Global.closedownService.Refund(CorpNum, refundForm, UserID);
+
+                code = result.code.ToString();
+                message = result.message;
+                refundCode = result.refundCode;
             }
             catch (PopbillException ex)
             {

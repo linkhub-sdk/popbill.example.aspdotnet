@@ -50,6 +50,10 @@ namespace Popbill.BizInfoCheck.Example
             try
             {
                 result = Global.bizInfoCheckService.Refund(CorpNum, refundForm, UserID);
+
+                code = result.code.ToString();
+                message = result.message;
+                refundCode = result.refundCode;
             }
             catch (PopbillException ex)
             {

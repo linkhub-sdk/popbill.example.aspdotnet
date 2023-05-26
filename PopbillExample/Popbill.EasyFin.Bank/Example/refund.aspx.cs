@@ -60,6 +60,10 @@ namespace Popbill.EasyFin.Bank.Example
             try
             {
                 result = Global.easyFinBankService.Refund(CorpNum, refundForm, UserID);
+
+                code = result.code.ToString();
+                message = result.message;
+                refundCode = result.refundCode;
             }
             catch (PopbillException ex)
             {

@@ -60,6 +60,10 @@ namespace Popbill.Message.Example
             try
             {
                 result = Global.messageService.Refund(CorpNum, refundForm, UserID);
+
+                code = result.code.ToString();
+                message = result.message;
+                refundCode = result.refundCode;
             }
             catch (PopbillException ex)
             {

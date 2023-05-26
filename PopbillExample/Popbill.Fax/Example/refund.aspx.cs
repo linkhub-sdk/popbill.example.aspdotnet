@@ -60,6 +60,11 @@ namespace Popbill.Fax.Example
             try
             {
                 result = Global.faxService.Refund(CorpNum, refundForm, UserID);
+
+
+                code = result.code.ToString();
+                message = result.message;
+                refundCode = result.refundCode;
             }
             catch (PopbillException ex)
             {
