@@ -11,7 +11,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-namespace Popbill.HomeTax.cashbill.Example
+namespace Popbill.HomeTax.Cashbill.Example
 {
     public partial class updateContact : System.Web.UI.Page
     {
@@ -50,7 +50,7 @@ namespace Popbill.HomeTax.cashbill.Example
 
             try
             {
-                Response response = Global.htcashbillService.UpdateContact(testCorpNum, contactInfo, testUserID);
+                Response response = Global.htCashbillService.UpdateContact(testCorpNum, contactInfo, testUserID);
                 code = response.code.ToString();
                 message = response.message;
             }

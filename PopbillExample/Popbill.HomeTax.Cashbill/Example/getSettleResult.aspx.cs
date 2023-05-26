@@ -11,7 +11,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-namespace Popbill.HomeTax.cashbill.Example
+namespace Popbill.HomeTax.Cashbill.Example
 {
     public partial class getSettleResult : System.Web.UI.Page
     {
@@ -37,7 +37,7 @@ namespace Popbill.HomeTax.cashbill.Example
 
             try
             {
-                result = Global.htcashbillService.GetSettleResult(CorpNum, SettleCode, UserID);
+                result = Global.htCashbillService.GetSettleResult(CorpNum, SettleCode, UserID);
             }
             catch (PopbillException ex)
             {

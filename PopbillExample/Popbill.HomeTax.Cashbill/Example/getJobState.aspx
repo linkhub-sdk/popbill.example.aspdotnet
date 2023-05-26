@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="getJobState.aspx.cs" Inherits="Popbill.HomeTax.cashbill.Example.getJobState" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="getJobState.aspx.cs" Inherits="Popbill.HomeTax.Cashbill.Example.getJobState" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 

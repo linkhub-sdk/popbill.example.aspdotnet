@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Popbill.HomeTax.cashbill.Example {
+namespace Popbill.HomeTax.Cashbill.Example {
 
 
     public partial class quitMember {

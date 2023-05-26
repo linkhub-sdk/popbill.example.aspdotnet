@@ -11,7 +11,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-namespace Popbill.HomeTax.cashbill.Example
+namespace Popbill.HomeTax.Cashbill.Example
 {
     public partial class getPaymentHistory : System.Web.UI.Page
     {
@@ -46,7 +46,7 @@ namespace Popbill.HomeTax.cashbill.Example
 
             try
             {
-                result = Global.htcashbillService.GetPaymentHistory(CorpNum, SDate, EDate, Page, PerPage, UserID);
+                result = Global.htCashbillService.GetPaymentHistory(CorpNum, SDate, EDate, Page, PerPage, UserID);
             }
             catch (PopbillException ex)
             {

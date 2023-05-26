@@ -11,7 +11,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-namespace Popbill.HomeTax.cashbill.Example
+namespace Popbill.HomeTax.Cashbill.Example
 {
     public partial class getChargeInfo : System.Web.UI.Page
     {
@@ -31,7 +31,7 @@ namespace Popbill.HomeTax.cashbill.Example
 
             try
             {
-                chrgInfo = Global.htcashbillService.GetChargeInfo(testCorpNum);
+                chrgInfo = Global.htCashbillService.GetChargeInfo(testCorpNum);
             }
             catch (PopbillException ex)
             {

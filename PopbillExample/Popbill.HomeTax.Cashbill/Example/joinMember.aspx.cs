@@ -11,7 +11,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-namespace Popbill.HomeTax.cashbill.Example
+namespace Popbill.HomeTax.Cashbill.Example
 {
     public partial class joinMember : System.Web.UI.Page
     {
@@ -65,7 +65,7 @@ namespace Popbill.HomeTax.cashbill.Example
 
             try
             {
-                Response response = Global.htcashbillService.JoinMember(joinInfo);
+                Response response = Global.htCashbillService.JoinMember(joinInfo);
 
                 code = response.code.ToString();
                 message = response.message;

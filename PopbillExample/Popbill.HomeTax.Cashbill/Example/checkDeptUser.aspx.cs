@@ -11,7 +11,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-namespace Popbill.HomeTax.cashbill.Example
+namespace Popbill.HomeTax.Cashbill.Example
 {
     public partial class checkDeptUser : System.Web.UI.Page
     {
@@ -30,7 +30,7 @@ namespace Popbill.HomeTax.cashbill.Example
 
             try
             {
-                Response response = Global.htcashbillService.CheckDeptUser(testCorpNum);
+                Response response = Global.htCashbillService.CheckDeptUser(testCorpNum);
 
                 code = response.code.ToString();
                 message = response.message;

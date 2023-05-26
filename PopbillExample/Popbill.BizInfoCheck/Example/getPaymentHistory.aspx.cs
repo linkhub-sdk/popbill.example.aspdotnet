@@ -15,50 +15,38 @@ namespace Popbill.BizInfoCheck.Example
 {
     public partial class getPaymentHistory : System.Web.UI.Page
     {
+        public PaymentHistoryResult result = null;
         public String code;
         public String message;
-        public String settleCode;
 
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 연동회원 포인트 충전을 위해 무통장입금을 신청합니다.
-             * - https://developers.popbill.com/reference/bizinfocheck/dotnet/api/point#PaymentRequest
+             * 연동회원의 포인트 결제내역을 확인합니다.
+             * - https://developers.popbill.com/reference/bizinfocheck/dotnet/api/point#GetPaymentHistory
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String CorpNum = "1234567890";
 
-            // 입금신청 객체정보
-            PaymentForm paymentForm = new PaymentForm();
+            // 조회 기간의 시작일자 (형식 : yyyyMMdd)
+            String SDate = "20230501";
 
-            // 담당자명
-            paymentForm.settlerName = "테스트_담당자명";
+            // 조회 기간의 종료일자 (형식 : yyyyMMdd)
+            String EDate = "20230530";
 
-            // 담당자 이메일
-            paymentForm.settlerEmail = "테스트_담당자 이메일";
+            // 목록 페이지번호 (기본값 1)
+            int Page = 1;
 
-            // 담당자 휴대폰
-            paymentForm.notifyHP = "테스트_담당자 휴대폰";
-
-            // 입금자명
-            paymentForm.paymentName = "테스트_입금자명";
-
-            // 결제금액
-            paymentForm.settleCost = "1000";
+            // 페이지당 표시할 목록 개수 (기본값 500, 최대 1,000)
+            int PerPage = 500;
 
             // 팝빌회원 아이디
             String UserID = "testkorea";
 
-
-
             try
             {
-                PaymentResponse result = Global.bizInfoCheckService.PaymentRequest(CorpNum, paymentForm, UserID);
-
-                code = result.code.ToString();
-                message = result.message;
-                settleCode = result.settleCode;
+                result = Global.bizInfoCheckService.GetPaymentHistory(CorpNum, SDate, EDate, Page, PerPage, UserID);
             }
             catch (PopbillException ex)
             {

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="getUseHistory.aspx.cs" Inherits="Popbill.HomeTax.cashbill.Example.getUseHistory" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="getUseHistory.aspx.cs" Inherits="Popbill.HomeTax.Cashbill.Example.getUseHistory" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 

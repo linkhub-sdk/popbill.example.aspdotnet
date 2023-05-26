@@ -11,7 +11,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-namespace Popbill.HomeTax.cashbill.Example
+namespace Popbill.HomeTax.Cashbill.Example
 {
     public partial class search : System.Web.UI.Page
     {
@@ -49,7 +49,7 @@ namespace Popbill.HomeTax.cashbill.Example
 
             try
             {
-                result = Global.htcashbillService.Search(testCorpNum, jobID, TradeType, TradeUsage, Page, PerPage, Order);
+                result = Global.htCashbillService.Search(testCorpNum, jobID, TradeType, TradeUsage, Page, PerPage, Order);
             }
             catch (PopbillException ex)
             {

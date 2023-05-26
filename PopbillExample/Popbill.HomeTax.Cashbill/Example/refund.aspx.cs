@@ -11,7 +11,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-namespace Popbill.HomeTax.cashbill.Example
+namespace Popbill.HomeTax.Cashbill.Example
 {
     public partial class refund : System.Web.UI.Page
     {
@@ -59,7 +59,7 @@ namespace Popbill.HomeTax.cashbill.Example
 
             try
             {
-                result = Global.htcashbillService.Refund(CorpNum, refundForm, UserID);
+                result = Global.htCashbillService.Refund(CorpNum, refundForm, UserID);
             }
             catch (PopbillException ex)
             {

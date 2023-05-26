@@ -12,7 +12,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-namespace Popbill.HomeTax.cashbill.Example
+namespace Popbill.HomeTax.Cashbill.Example
 {
     public partial class listActiveJob : System.Web.UI.Page
     {
@@ -33,7 +33,7 @@ namespace Popbill.HomeTax.cashbill.Example
 
             try
             {
-                jobStateList = Global.htcashbillService.ListActiveJob(testCorpNum);
+                jobStateList = Global.htCashbillService.ListActiveJob(testCorpNum);
             }
             catch (PopbillException ex)
             {

@@ -11,7 +11,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-namespace Popbill.HomeTax.cashbill.Example
+namespace Popbill.HomeTax.Cashbill.Example
 {
     public partial class summary : System.Web.UI.Page
     {
@@ -45,7 +45,7 @@ namespace Popbill.HomeTax.cashbill.Example
 
             try
             {
-                summaryInfo = Global.htcashbillService.Summary(testCorpNum, jobID, TradeType, TradeUsage);
+                summaryInfo = Global.htCashbillService.Summary(testCorpNum, jobID, TradeType, TradeUsage);
             }
             catch (PopbillException ex)
             {

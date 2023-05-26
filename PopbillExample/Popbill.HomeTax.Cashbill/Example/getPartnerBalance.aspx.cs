@@ -11,7 +11,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-namespace Popbill.HomeTax.cashbill.Example
+namespace Popbill.HomeTax.Cashbill.Example
 {
     public partial class getPartnerBalance : System.Web.UI.Page
     {
@@ -32,7 +32,7 @@ namespace Popbill.HomeTax.cashbill.Example
 
             try
             {
-                double response = Global.htcashbillService.GetPartnerBalance(testCorpNum);
+                double response = Global.htCashbillService.GetPartnerBalance(testCorpNum);
 
                 remainPoint = response.ToString();
             }

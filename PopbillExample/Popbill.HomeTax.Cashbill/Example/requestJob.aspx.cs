@@ -11,7 +11,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-namespace Popbill.HomeTax.cashbill.Example
+namespace Popbill.HomeTax.Cashbill.Example
 {
     public partial class requestJob : System.Web.UI.Page
     {
@@ -40,7 +40,7 @@ namespace Popbill.HomeTax.cashbill.Example
 
             try
             {
-                jobID = Global.htcashbillService.RequestJob(testCorpNum, tiKeyType, SDate, EDate);
+                jobID = Global.htCashbillService.RequestJob(testCorpNum, tiKeyType, SDate, EDate);
             }
             catch (PopbillException ex)
             {

@@ -11,7 +11,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-namespace Popbill.HomeTax.cashbill.Example
+namespace Popbill.HomeTax.Cashbill.Example
 {
     public partial class paymentRequest : System.Web.UI.Page
     {
@@ -54,7 +54,7 @@ namespace Popbill.HomeTax.cashbill.Example
 
             try
             {
-                PaymentResponse result = Global.htcashbillService.PaymentRequest(CorpNum, paymentForm, UserID);
+                PaymentResponse result = Global.htCashbillService.PaymentRequest(CorpNum, paymentForm, UserID);
 
                 code = result.code.ToString();
                 message = result.message;

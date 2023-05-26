@@ -11,7 +11,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-namespace Popbill.HomeTax.cashbill.Example
+namespace Popbill.HomeTax.Cashbill.Example
 {
     public partial class getFlatRateState : System.Web.UI.Page
     {
@@ -31,7 +31,7 @@ namespace Popbill.HomeTax.cashbill.Example
 
             try
             {
-                flatRateInfo = Global.htcashbillService.GetFlatRateState(testCorpNum);
+                flatRateInfo = Global.htCashbillService.GetFlatRateState(testCorpNum);
             }
             catch (PopbillException ex)
             {

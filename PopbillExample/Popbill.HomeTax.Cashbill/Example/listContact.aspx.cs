@@ -11,7 +11,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-namespace Popbill.HomeTax.cashbill.Example
+namespace Popbill.HomeTax.Cashbill.Example
 {
     public partial class listContact : System.Web.UI.Page
     {
@@ -34,7 +34,7 @@ namespace Popbill.HomeTax.cashbill.Example
 
             try
             {
-                contactList = Global.htcashbillService.ListContact(testCorpNum, testUserID);
+                contactList = Global.htCashbillService.ListContact(testCorpNum, testUserID);
             }
             catch (PopbillException ex)
             {

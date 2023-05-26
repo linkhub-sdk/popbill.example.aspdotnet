@@ -11,7 +11,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-namespace Popbill.HomeTax.cashbill.Example
+namespace Popbill.HomeTax.Cashbill.Example
 {
     public partial class getAccessURL : System.Web.UI.Page
     {
@@ -35,7 +35,7 @@ namespace Popbill.HomeTax.cashbill.Example
 
             try
             {
-                url = Global.htcashbillService.GetAccessURL(testCorpNum, testUserID);
+                url = Global.htCashbillService.GetAccessURL(testCorpNum, testUserID);
             }
             catch (PopbillException ex)
             {
