@@ -2,7 +2,7 @@
 * 팝빌 카카오톡 API ASP.NET SDK Example
 *
 * ASP.NET SDK 연동환경 설정방법 안내 : https://developers.popbill.com/guide/kakaotalk/dotnet/getting-started/tutorial?fwn=asp
-* 업데이트 일자 : 2022-05-25
+* 업데이트 일자 : 2023-05-30
 * 연동기술지원 연락처 : 1600-9854
 * 연동기술지원 이메일 : code@linkhubcorp.com
 *
