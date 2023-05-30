@@ -19,7 +19,7 @@
                 <li>Response.code : <%= code %> </li>
                 <li>Response.message : <%= message %></li>
             <% } else { %>
-                <li>refundableBalance : <%= refundableBalance %></li>
+                <li>refundableBalance(환불 가능 포인트) : <%= refundableBalance %></li>
             <% } %>
         </ul>
     </fieldset>

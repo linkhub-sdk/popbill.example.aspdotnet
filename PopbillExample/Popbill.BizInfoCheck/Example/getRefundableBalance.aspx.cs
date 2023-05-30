@@ -5,7 +5,7 @@ namespace Popbill.BizInfoCheck.Example
 {
     public partial class getRefundableBalance : Page
     {
-        public double refundableBalance;
+        public Double refundableBalance;
         public String code;
         public String message;
 
