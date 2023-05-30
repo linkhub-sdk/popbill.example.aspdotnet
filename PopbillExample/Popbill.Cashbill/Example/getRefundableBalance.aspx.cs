@@ -15,7 +15,7 @@ namespace Popbill.Cashbill.Example
 {
     public partial class getRefundableBalance : System.Web.UI.Page
     {
-        public double refundableBalance;
+        public Double refundableBalance;
         public String code;
         public String message;
 

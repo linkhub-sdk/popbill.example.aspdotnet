@@ -107,7 +107,6 @@
     <Content Include="Example\paymentRequest.aspx" />
     <Content Include="Example\quitMember.aspx" />
     <Content Include="Example\refund.aspx" />
-    <Content Include="Example\getRefundableBalance.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
