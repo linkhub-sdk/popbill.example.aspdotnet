@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head id="Head1" runat="server">
-    <title>팝빌 예금주조회 SDK ASP.NET Example</title>
+    <title>팝빌 휴폐업조회 SDK ASP.NET Example</title>
     <link href="../Example.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
@@ -18,13 +18,13 @@
                 <li>Response.code : <%= code %> </li>
                 <li>Response.message : <%= message %></li>
             <% } else { %>
-                <li>reqDT : <%= result.reqDT %></li>
-                <li>requestPoint : <%= result.requestPoint %></li>
-                <li>accountBank : <%= result.accountBank %></li>
-                <li>accountNum : <%= result.accountNum %></li>
-                <li>accountName : <%= result.accountName %></li>
-                <li>state : <%= result.state %></li>
-                <li>reason : <%= result.reason %></li>
+                <li>reqDT(신청일시) : <%= result.reqDT %></li>
+                <li>requestPoint(환불 신청포인트) : <%= result.requestPoint %></li>
+                <li>accountBank(환불계좌 은행명) : <%= result.accountBank %></li>
+                <li>accountNum(환불계좌번호) : <%= result.accountNum %></li>
+                <li>accountName(환불계좌 예금주명) : <%= result.accountName %></li>
+                <li>state(상태) : <%= result.state %></li>
+                <li>reason(환불사유) : <%= result.reason %></li>
             <% } %>
         </ul>
     </fieldset>
