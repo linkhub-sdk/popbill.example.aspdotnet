@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head id="Head1" runat="server">
-    <title>팝빌 예금주조회 SDK ASP.NET Example</title>
+    <title>팝빌 문자 SDK ASP.NET Example</title>
     <link href="../Example.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
@@ -18,9 +18,9 @@
                 <li>Response.code : <%= code %> </li>
                 <li>Response.message : <%= message %></li>
             <% } else { %>
-                <li>code : <%= code %></li>
-                <li>message : <%= message %></li>
-                <li>refundCode : <%= refundCode %></li>
+                <li>code(응답코드) : <%= code %></li>
+                <li>message(응답메시지) : <%= message %></li>
+                <li>refundCode(환불코드) : <%= refundCode %></li>
             <% } %>
         </ul>
     </fieldset>
