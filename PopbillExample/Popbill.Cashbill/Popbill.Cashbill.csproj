@@ -80,6 +80,7 @@
     <Content Include="Example\getPDFURL.aspx" />
     <Content Include="Example\getPopUpURL.aspx" />
     <Content Include="Example\getPrintURL.aspx" />
+    <Content Include="Example\getRefundableBalance.aspx" />
     <Content Include="Example\getUnitCost.aspx" />
     <Content Include="Example\getURL.aspx" />
     <Content Include="Example\getUseHistoryURL.aspx" />
@@ -99,7 +100,6 @@
     <Content Include="Example\getPartnerURL.aspx" />
     <Content Include="Example\revokeRegistIssue_part.aspx" />
     <Content Include="Example\updateEmailConfig.aspx" />
-    <Content Include="Example\getRefundableBalance.aspx" />
     <Content Include="Example\getRefundHistory.aspx" />
     <Content Include="Example\getRefundInfo.aspx" />
     <Content Include="Example\getSettleResult.aspx" />
@@ -293,6 +293,13 @@
     <Compile Include="Example\getPrintURL.aspx.designer.cs">
       <DependentUpon>getPrintURL.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Example\getRefundableBalance.aspx.cs">
+      <DependentUpon>getRefundableBalance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getRefundableBalance.aspx.designer.cs">
+      <DependentUpon>getRefundableBalance.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Example\getUnitCost.aspx.cs">
       <DependentUpon>getUnitCost.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -425,13 +432,6 @@
     </Compile>
     <Compile Include="Example\updateEmailConfig.aspx.designer.cs">
       <DependentUpon>updateEmailConfig.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Example\getRefundableBalance.aspx.cs">
-      <DependentUpon>getRefundableBalance.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Example\getRefundableBalance.aspx.designer.cs">
-      <DependentUpon>getRefundableBalance.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\getRefundHistory.aspx.cs">
       <DependentUpon>getRefundHistory.aspx</DependentUpon>

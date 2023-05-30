@@ -1,15 +1,15 @@
 /**
-* �˺� ���ݿ����� API ASP.NET SDK Example
+* 팝빌 현금영수증 API ASP.NET SDK Example
 *
-* ASP.NET SDK ����ȯ�� ��https://developers.popbill.com/guide/cashbill/dotnet/getting-started/tutorial?fwn=asp
-* ������Ʈ ���� : 2022-11-08
-* ����������� ����ó : 1600-9854
-* ����������� �̸��� : code@linkhubcorp.com
+* ASP.NET SDK 연동환경 설정방법 안내 : https://docs.popbill.com/cashbill/tutorial/dotnet#asp
+* 업데이트 일자 : 2023-05-30
+* 연동기술지원 연락처 : 1600-9854
+* 연동기술지원 이메일 : code@linkhubcorp.com
 *
-* <�׽�Ʈ �������� �غ����>
-* 1) 30, 33�� ���ο� ����� ��ũ���̵�(LinkID)�� ���Ű(SecretKey)��
-*    ��ũ��� ���Խ� ���Ϸ� �߱޹��� ���������� �����Ͽ� �����մϴ�.
-* 2) �˺� ���߿� ����Ʈ(test.popbill.com)�� ����ȸ������ �����մϴ�.
+* <테스트 연동개발 준비사항>
+* 1) 30, 33번 라인에 선언된 링크아이디(LinkID)와 비밀키(SecretKey)를
+*    링크허브 가입시 메일로 발급받은 인증정보를 참조하여 변경합니다.
+* 2) 팝빌 개발용 사이트(test.popbill.com)에 연동회원으로 가입합니다.
 */
 
 using System;
@@ -26,30 +26,30 @@ namespace Popbill.Cashbill
 {
     public class Global : System.Web.HttpApplication
     {
-        // ��ũ���̵�
+        // 링크아이디
         private string LinkID = "TESTER";
 
-        // ���Ű
+        // 비밀키
         private string SecretKey = "SwWxqU+0TErBXy/9TVjIPEnI0VTUMMSQZtJf3Ed8q3I=";
 
-        // ���ݿ����� ���� ��ü ����
+        // 현금영수증 서비스 객체 선언
         public static CashbillService cashbillService;
 
         protected void Application_Start(object sender, EventArgs e)
         {
-            // ���ݿ����� ���� ��ü �ʱ�ȭ
+            // 현금영수증 서비스 객체 초기화
             cashbillService = new CashbillService(LinkID, SecretKey);
 
-            // ����ȯ�� ������, ���߿�(true), �����(false)
+            // 연동환경 설정값, 개발용(true), 상업용(false)
             cashbillService.IsTest = true;
 
-            // ������ū IP ���ѱ�� ��뿩��, ����(true)
+            // 인증토큰 IP 제한기능 사용여부, 권장(true)
             cashbillService.IPRestrictOnOff = true;
 
-            // �˺� API ���� ���� IP ��뿩��, true-���, false-�̻��, �⺻��(false)
+            // 팝빌 API 서비스 고정 IP 사용여부, true-사용, false-미사용, 기본값(false)
             cashbillService.UseStaticIP = false;
 
-            // ���ü��� �ð� ��� ���� true-���, false-�̻��, �⺻��(false)
+            // 로컬서버 시간 사용 여부 true-사용, false-미사용, 기본값(false)
             cashbillService.UseLocalTimeYN = true;
         }
     }

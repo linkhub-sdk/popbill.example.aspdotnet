@@ -9,10 +9,10 @@
 //------------------------------------------------------------------------------
 
 namespace Popbill.Cashbill.Example {
-
-
+    
+    
     public partial class getRefundableBalance {
-
+        
         /// <summary>
         /// Head1 컨트롤입니다.
         /// </summary>
