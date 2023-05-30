@@ -29,17 +29,17 @@ namespace Popbill.Kakao.Example
             String testCorpNum = "1234567890";
 
             // 카카오톡 예약전송 접수시 파트너가 할당한 전송 요청번호
-            String requestNum = "01011112222";
+            String requestNum = "test_request_Num";
 
             // 카카오톡 예약전송 접수시 팝빌로 요청한 수신번호
-            String receiveNum = "01012341234";
+            String receiverNum = "01012341234";
 
             // 팝빌회원 아이디
             String UserID = "testkorea";
 
             try
             {
-                Response response = Global.kakaoService.CancelReserveRNbyRCV(testCorpNum, requestNum, receiveNum, UserID);
+                Response response = Global.kakaoService.CancelReserveRNbyRCV(testCorpNum, requestNum, receiverNum, UserID);
 
                 code = response.code.ToString();
                 message = response.message;
