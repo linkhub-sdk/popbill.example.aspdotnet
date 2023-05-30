@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head id="Head1" runat="server">
-    <title>팝빌 예금주조회 SDK ASP.NET Example</title>
+    <title>팝빌 세금계산서 SDK ASP.NET Example</title>
     <link href="../Example.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
@@ -30,7 +30,7 @@
                         <legend>사용 내역</legend>
                         <ul>
                             <li>productType (결제 내용) : <%= paymentHistory.productType %> </li>
-                            <li>productName (포인트 증감 유형) : <%= paymentHistory.productName %> </li>
+                            <li>productName (정액제 상품명) : <%= paymentHistory.productName %> </li>
                             <li>settleType (결제유형) : <%= paymentHistory.settleType %> </li>
                             <li>settlerName (담당자명) : <%= paymentHistory.settlerName %> </li>
                             <li>settlerEmail (담당자메일) : <%= paymentHistory.settlerEmail %> </li>

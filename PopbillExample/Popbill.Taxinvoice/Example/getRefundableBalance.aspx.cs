@@ -15,7 +15,7 @@ namespace Popbill.Taxinvoice.Example
 {
     public partial class getRefundableBalance : System.Web.UI.Page
     {
-        public double refundableBalance;
+        public Double refundableBalance;
         public String code;
         public String message;
 
@@ -34,7 +34,7 @@ namespace Popbill.Taxinvoice.Example
 
             try
             {
-                refundableBalance = Global.taxinvoiceService.GetRefundableBalance(CorpNum, UserID);
+                refundableBalance = Global.taxinvoiceService.GetRefundableBalance(CorpNum, UserID);                
             }
             catch (PopbillException ex)
             {

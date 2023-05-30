@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head id="Head1" runat="server">
-    <title>팝빌 예금주조회 SDK ASP.NET Example</title>
+    <title>팝빌 세금계산서 SDK ASP.NET Example</title>
     <link href="../Example.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
@@ -12,7 +12,7 @@
     <p class="heading1">Response</p>
     <br/>
     <fieldset class="fieldset1">
-        <legend>연동회원 무통장 입금신청 정보확인</legend>
+        <legend>연동회원 무통장 입금신청</legend>
         <ul>
             <% if (!String.IsNullOrEmpty(code)) { %>
                 <li>Response.code : <%= code %> </li>
