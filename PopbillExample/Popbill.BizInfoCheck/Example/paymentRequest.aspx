@@ -13,7 +13,7 @@
     <p class="heading1">Response</p>
     <br/>
     <fieldset class="fieldset1">
-        <legend>연동회원 무통장 입금신청 정보확인</legend>
+        <legend>연동회원 무통장 입금신청</legend>
         <ul>
             <% if (!String.IsNullOrEmpty(code)) { %>
                 <li>Response.code : <%= code %> </li>
