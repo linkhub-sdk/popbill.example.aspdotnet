@@ -80,11 +80,7 @@
     <Content Include="Example\getRefundHistory.aspx" />
     <Content Include="Example\getRefundInfo.aspx" />
     <Content Include="Example\getSettleResult.aspx" />
-    <Content Include="Example\getUnitCost.aspx" />
     <Content Include="Example\getUseHistory.aspx" />
-    <Content Include="Example\getUseHistoryURL.aspx" />
-    <Content Include="Example\joinMember.aspx" />
-    <Content Include="Example\listContact.aspx" />
     <Content Include="Example\paymentRequest.aspx" />
     <Content Include="Example\quitMember.aspx" />
     <Content Include="Example\refund.aspx" />

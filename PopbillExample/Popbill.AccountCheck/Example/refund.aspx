@@ -18,9 +18,9 @@
                 <li>Response.code : <%= code %> </li>
                 <li>Response.message : <%= message %></li>
             <% } else { %>
-                <li>code : <%= code %></li>
-                <li>message : <%= message %></li>
-                <li>refundCode : <%= refundCode %></li>
+                <li>code(응답코드) : <%= code %></li>
+                <li>message(응답메시지) : <%= message %></li>
+                <li>refundCode(환불코드) : <%= refundCode %></li>
             <% } %>
         </ul>
     </fieldset>

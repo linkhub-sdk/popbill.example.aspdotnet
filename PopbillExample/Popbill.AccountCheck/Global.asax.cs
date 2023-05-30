@@ -1,10 +1,10 @@
 /**
-* �˺� ��������ȸ API ASP.NET SDK Example
+* 팝빌 예금주조회 API ASP.NET SDK Example
 *
-* ASP.NET SDK ����ȯ�� ������� �ȳ� : https://developers.popbill.com/guide/taxinvoice/dotnet/getting-started/tutorial?fwn=asp
-* ������Ʈ ���� : 2022-05-25
-* ����������� ����ó : 1600-9854
-* ����������� �̸��� : code@linkhubcorp.com
+* ASP.NET SDK 연동환경 설정방법 안내 : https://developers.popbill.com/guide/taxinvoice/dotnet/getting-started/tutorial?fwn=asp
+* 업데이트 일자 : 2023-05-30
+* 연동기술지원 연락처 : 1600-9854
+* 연동기술지원 이메일 : code@linkhubcorp.com
 *
 */
 
@@ -23,30 +23,30 @@ namespace Popbill.AccountCheck
     public class Global : System.Web.HttpApplication
     {
 
-        // ��ũ���̵�
+        // 링크아이디
         private string LinkID = "TESTER";
 
-        // ���Ű
+        // 비밀키
         private string SecretKey = "SwWxqU+0TErBXy/9TVjIPEnI0VTUMMSQZtJf3Ed8q3I=";
 
-        // ��������ȸ ���� ��ü ����
+        // 예금주조회 서비스 객체 선언
         public static AccountCheckService accountCheckService;
 
         protected void Application_Start(object sender, EventArgs e)
         {
-            // ��������ȸ ���� ��ü �ʱ�ȭ
+            // 예금주조회 서비스 객체 초기화
             accountCheckService = new AccountCheckService(LinkID, SecretKey);
 
-            // ����ȯ�� ������, ���߿�(true), �����(false)
+            // 연동환경 설정값, 개발용(true), 상업용(false)
             accountCheckService.IsTest = true;
 
-            // ������ū IP ���ѱ�� ��뿩��, ����(true)
+            // 인증토큰 IP 제한기능 사용여부, 권장(true)
             accountCheckService.IPRestrictOnOff = true;
 
-            // �˺� API ���� ���� IP ��뿩��, true-���, false-�̻��, �⺻��(false)
+            // 팝빌 API 서비스 고정 IP 사용여부, true-사용, false-미사용, 기본값(false)
             accountCheckService.UseStaticIP = false;
 
-            // ���ü��� �ð� ��� ���� true-���, false-�̻��, �⺻��(false)
+            // 로컬서버 시간 사용 여부 true-사용, false-미사용, 기본값(false)
             accountCheckService.UseLocalTimeYN = true;
         }
     }
