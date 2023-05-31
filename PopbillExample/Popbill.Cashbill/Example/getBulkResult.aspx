@@ -38,11 +38,21 @@
                         <legend>발행결과 [<%= i %>/<%= result.issueResult.Count %>]</legend>
                         <ul>
                             <li>code (응답코드) : <%= issueResult.code%></li>
-                            <li>confirmNum (국세청승인번호) : <%= issueResult.confirmNum%></li>
                             <li>mgtKey (문서번호) : <%= issueResult.mgtKey%></li>
-                            <li>message (응답메시지) : <%= issueResult.message %></li>
+                            
+                            <% if (Convert.ToInt32(issueResult.code) < 0)
+                               { %>
+                               <li>message (응답메시지) : <%= issueResult.message%></li>
+                            <% }
+                               else
+                               { %>                            
+                            <li>confirmNum (국세청승인번호) : <%= issueResult.confirmNum%></li>
                             <li>tradeDate (거래일자) : <%= issueResult.tradeDate%></li>
                             <li>issueDT (발행일시) : <%= issueResult.issueDT%></li>
+                            <% } %>
+                            
+                  
+                            
                         </ul>
                     </fieldset>
                     <% i++; %>
