@@ -15,12 +15,10 @@
     <fieldset class="fieldset1">
         <legend>연동회원 포인트 환불신청</legend>
         <ul>
-            <% if (!String.IsNullOrEmpty(code)) { %>
-                <li>Response.code : <%= code %> </li>
-                <li>Response.message : <%= message %></li>
-            <% } else { %>
-                <li>code(응답코드) : <%= code %></li>
-                <li>message(응답메시지) : <%= message %></li>
+            <li>code(응답코드) : <%= code %></li>
+            <li>message(응답메시지) : <%= message %></li>
+            <% if (!String.IsNullOrEmpty(refundCode))
+               { %>
                 <li>refundCode(환불코드) : <%= refundCode %></li>
             <% } %>
         </ul>

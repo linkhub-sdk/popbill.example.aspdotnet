@@ -36,7 +36,7 @@ namespace Popbill.Statement.Example
             int itemCode = 121;
 
             // 전자명세서 문서번호
-            String mgtKey = "202203z28_1100411";
+            String mgtKey = "20220525-001";
 
             //메모
             String memo = "발행 메모";

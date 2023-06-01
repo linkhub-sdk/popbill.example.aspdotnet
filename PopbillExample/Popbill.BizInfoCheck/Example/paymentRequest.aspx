@@ -15,13 +15,11 @@
     <fieldset class="fieldset1">
         <legend>연동회원 무통장 입금신청</legend>
         <ul>
-            <% if (!String.IsNullOrEmpty(code)) { %>
-                <li>Response.code : <%= code %> </li>
-                <li>Response.message : <%= message %></li>
-            <% } else { %>
-                <li>code (응답코드) : <%= code %> </li>
-                <li>message (응답메시지) : <%= message %> </li>
-                <li>settleCode (정산코드) : <%= settleCode %> </li>
+            <li>code (응답코드) : <%= code %> </li>
+            <li>message (응답메시지) : <%= message %> </li>
+            <% if (!String.IsNullOrEmpty(settleCode))
+               { %>
+                   <li>settleCode (정산코드) : <%= settleCode %> </li>
             <% } %>
         </ul>
     </fieldset>
