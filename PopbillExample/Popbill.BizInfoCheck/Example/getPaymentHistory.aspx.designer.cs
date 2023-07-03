@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Popbill.AccountCheck.Example {
+namespace Popbill.BizInfoCheck.Example {
     
     
     public partial class getPaymentHistory {

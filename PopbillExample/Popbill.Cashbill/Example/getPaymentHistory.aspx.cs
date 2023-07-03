@@ -13,7 +13,7 @@ using System.Xml.Linq;
 
 namespace Popbill.Cashbill.Example
 {
-    public partial class getPaymentHistory1 : System.Web.UI.Page
+    public partial class getPaymentHistory : System.Web.UI.Page
     {
         public PaymentHistoryResult result;
         public String code;
