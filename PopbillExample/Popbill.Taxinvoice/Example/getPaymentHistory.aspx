@@ -27,10 +27,10 @@
                 <% foreach (Popbill.PaymentHistory paymentHistory in result.list)
                 { %>
                     <fieldset class="fieldset2">
-                        <legend>사용 내역</legend>
+                        <legend>결제 내역</legend>
                         <ul>
                             <li>productType (결제 내용) : <%= paymentHistory.productType %> </li>
-                            <li>productName (정액제 상품명) : <%= paymentHistory.productName %> </li>
+                            <li>productName (결제제 상품명) : <%= paymentHistory.productName %> </li>
                             <li>settleType (결제유형) : <%= paymentHistory.settleType %> </li>
                             <li>settlerName (담당자명) : <%= paymentHistory.settlerName %> </li>
                             <li>settlerEmail (담당자메일) : <%= paymentHistory.settlerEmail %> </li>
