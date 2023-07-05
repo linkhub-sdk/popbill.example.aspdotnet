@@ -31,7 +31,7 @@ namespace Popbill.Cashbill.Example
             String testCorpNum = "1234567890";
 
             // 초대량 발행 접수시 기재한 제출아이디
-            String submitID = "20221108-BULK";
+            String submitID = "my-ddtes1t-asdfsdf";
 
             try
             {

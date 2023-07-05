@@ -85,7 +85,6 @@ namespace Popbill.Cashbill.Example
                 message = response.message;
                 confirmNum = response.confirmNum;
                 tradeDate = response.tradeDate;
-                tradeDT = response.tradeDT;
             }
             catch (PopbillException ex)
             {
