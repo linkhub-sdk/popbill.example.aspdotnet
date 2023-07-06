@@ -1,9 +1,19 @@
 ﻿using System;
+using System.Collections;
+using System.Configuration;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.Security;
 using System.Web.UI;
+using System.Web.UI.HtmlControls;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Xml.Linq;
 
 namespace Popbill.BizInfoCheck.Example
 {
-    public partial class quitMember : Page
+    public partial class quitMember : System.Web.UI.Page
     {
         public String code;
         public String message;
@@ -21,6 +31,7 @@ namespace Popbill.BizInfoCheck.Example
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String CorpNum = "1234567890";
 
+            // 탈퇴 사유
             String QuitReason = "탈퇴 사유";
 
             // 팝빌회원 아이디
