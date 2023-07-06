@@ -13,7 +13,7 @@
     <p class="heading1">Response</p>
     <br/>
     <fieldset class="fieldset1">
-        <legend>팝빌</legend>
+        <legend>환불 가능 포인트 조회</legend>
         <ul>
             <% if (!String.IsNullOrEmpty(code)) { %>
                 <li>Response.code : <%= code %> </li>
