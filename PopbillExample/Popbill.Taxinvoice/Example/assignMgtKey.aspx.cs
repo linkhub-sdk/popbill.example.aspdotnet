@@ -21,7 +21,7 @@ namespace Popbill.Taxinvoice.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 팝빌 사이트를 통해 발행하여 문서번호가 부여되지 않은 세금계산서에 문서번호를 할당합니다.
+             * 팝빌 사이트를 통해 발행하여 문서번호가 할당되지 않은 세금계산서에 문서번호를 할당합니다.
              * - https://developers.popbill.com/reference/taxinvoice/dotnet/api/etc#AssignMgtKey
              */
 
@@ -33,7 +33,7 @@ namespace Popbill.Taxinvoice.Example
             // 세금계산서 팝빌번호, 목록조회(Search) API의 반환항목중 ItemKey 참조
             String itemKey = "021041823580800001";
 
-            // 할당할 문서관호, 최대 24자리, 영문, 숫자 '-', '_'를 조합하여 사업자별로 중복되지 않도록 구성
+            // 할당할 문서번호, 최대 24자리, 영문, 숫자 '-', '_'를 조합하여 사업자별로 중복되지 않도록 구성
             String mgtKey = "20220525-001";
 
             try
