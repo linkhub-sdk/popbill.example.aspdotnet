@@ -23,7 +23,7 @@ namespace Popbill.Closedown.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 다수건의 사업자번호에 대한 휴폐업정보를 확인합니다. (최대 1,000건)
+             * 다수건의 사업자번호에 대한 사업자등록상태조회 (휴폐업조회) 를 확인합니다. (최대 1,000건)
              * - https://developers.popbill.com/reference/closedown/dotnet/api/check#CheckCorpNums
              */
 

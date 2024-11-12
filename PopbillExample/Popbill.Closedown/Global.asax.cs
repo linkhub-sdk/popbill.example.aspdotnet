@@ -1,8 +1,8 @@
 ﻿/**
-* 팝빌 휴폐업조회 API .NET SDK ASP.NET Example
+* 팝빌 사업자등록상태조회 (휴폐업조회) API .NET SDK ASP.NET Example
 * ASP.NET 연동 튜토리얼 안내 : https://developers.popbill.com/guide/closedown/dotnet/getting-started/tutorial?fwn=asp
 *
-* 업데이트 일자 : 2024-02-26
+* 업데이트 일자 : 2024-11-12
 * 연동기술지원 연락처 : 1600-9854
 * 연동기술지원 이메일 : code@linkhubcorp.com
 *         
@@ -37,12 +37,12 @@ namespace Popbill.Closedown
         // 비밀키
         private string SecretKey = "SwWxqU+0TErBXy/9TVjIPEnI0VTUMMSQZtJf3Ed8q3I=";
 
-        // 휴폐업조회 서비스 객체 선언
+        // 사업자등록상태조회 (휴폐업조회) 서비스 객체 선언
         public static ClosedownService closedownService;
 
         protected void Application_Start(object sender, EventArgs e)
         {
-            // 휴폐업조회  서비스 객체 초기화
+            // 사업자등록상태조회 (휴폐업조회)  서비스 객체 초기화
             closedownService = new ClosedownService(LinkID, SecretKey);
 
             // 연동환경 설정, true-테스트, false-운영(Production), (기본값:true)

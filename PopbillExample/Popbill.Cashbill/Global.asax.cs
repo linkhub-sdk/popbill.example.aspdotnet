@@ -2,7 +2,7 @@
 * 팝빌 현금영수증 API .NET SDK ASP.NET Example
 * ASP.NET 연동 튜토리얼 안내 : https://developers.popbill.com/guide/cashbill/dotnet/getting-started/tutorial?fwn=asp
 *
-* 업데이트 일자 : 2024-02-26
+* 업데이트 일자 : 2024-11-12
 * 연동기술지원 연락처 : 1600-9854
 * 연동기술지원 이메일 : code@linkhubcorp.com
 *         

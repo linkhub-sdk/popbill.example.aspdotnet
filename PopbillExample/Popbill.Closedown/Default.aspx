@@ -4,18 +4,18 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head id="Head1" runat="server">
-    <title>팝빌 휴폐업조회 API SDK ASP.NET Example</title>
+    <title>팝빌 사업자등록상태조회 (휴폐업조회) API SDK ASP.NET Example</title>
     <link href="./Example.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div id="content">
-    <p class="heading1">팝빌 휴폐업조회 SDK ASP.NET Example.</p>
+    <p class="heading1">팝빌 사업자등록상태조회 (휴폐업조회) SDK ASP.NET Example.</p>
     <br/>
     <fieldset class="fieldset1">
-        <legend>휴폐업조회</legend>
+        <legend>사업자등록상태조회 (휴폐업조회)</legend>
         <ul>
-            <li><a href="Example/checkCorpNum.aspx">checkCorpNum</a> - 휴폐업 단건조회</li>
-            <li><a href="Example/checkCorpNums.aspx">checkCorpNums</a> - 휴폐업 대량조회</li>
+            <li><a href="Example/checkCorpNum.aspx">checkCorpNum</a> - 사업자등록상태조회 (휴폐업조회) - 단건</li>
+            <li><a href="Example/checkCorpNums.aspx">checkCorpNums</a> - 사업자등록상태조회 (휴폐업조회) - 대량</li>
         </ul>
     </fieldset>
     <br/>

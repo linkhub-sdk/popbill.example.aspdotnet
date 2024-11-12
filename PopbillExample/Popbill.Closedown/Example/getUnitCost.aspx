@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
-    <title>팝빌 휴폐업조회 API SDK ASP.NET Example</title>
+    <title>팝빌 사업자등록상태조회 (휴폐업조회) API SDK ASP.NET Example</title>
     <link href="../Example.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
@@ -12,13 +12,16 @@
     <p class="heading1">Response</p>
     <br/>
     <fieldset class="fieldset1">
-        <legend>휴폐업 조회단가 확인</legend>
+        <legend>사업자등록상태 (휴폐업) 조회단가 확인</legend>
         <ul>
-            <% if (!String.IsNullOrEmpty(code)) { %>
-                <li>Response.code : <%= code %> </li>
-                <li>Response.message : <%= message %></li>
-            <% } else { %>
-                <li>unitCost(조회단가) : <%= unitCost %></li>
+            <% if (!String.IsNullOrEmpty(code))
+               { %>
+                <li>Response.code : <%= code%> </li>
+                <li>Response.message : <%= message%></li>
+            <% }
+               else
+               { %>
+                <li>unitCost(조회단가) : <%= unitCost%></li>
             <% } %>
         </ul>
     </fieldset>

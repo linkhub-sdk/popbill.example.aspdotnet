@@ -22,7 +22,7 @@ namespace Popbill.HomeTax.Taxinvoice.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 팝빌 홈택스연동(세금) API 서비스 과금정보를 확인합니다.
+             * 팝빌 홈택스수집(세금) API 서비스 과금정보를 확인합니다.
              * - https://developers.popbill.com/reference/httaxinvoice/dotnet/api/point#GetChargeInfo
              */
 

@@ -22,7 +22,7 @@ namespace Popbill.HomeTax.Cashbill.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 팝빌 홈택스연동(현금) API 서비스 과금정보를 확인합니다.
+             * 팝빌 홈택스수집(현금) API 서비스 과금정보를 확인합니다.
              * - https://developers.popbill.com/reference/htcashbill/dotnet/api/point#GetChargeInfo
              */
 
