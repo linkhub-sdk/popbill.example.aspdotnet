@@ -39,7 +39,7 @@ namespace Popbill.Kakao.Example
 
             // 팝빌에 사전 등록된 발신번호
             // ※ 대체문자를 전송하는 경우에는 사전에 등록된 발신번호 입력 필수
-            String senderNum = "07043042991";
+            String senderNum = "";
 
             // 알림톡 템플릿 내용, 최대 1000자
             String content = "[ 팝빌 ]\n";
@@ -58,7 +58,7 @@ namespace Popbill.Kakao.Example
 
             // 대체문자 유형 (null , "C" , "A" 중 택 1)
             // null = 미전송, C = 알림톡과 동일 내용 전송 , A = 대체문자 내용(altContent)에 입력한 내용 전송
-            String altSendType = "A";
+            String altSendType = "";
 
             // 수신번호
             String receiverNum = "";
@@ -91,12 +91,14 @@ namespace Popbill.Kakao.Example
             KakaoButton btnInfo = new KakaoButton();
             // 버튼명
             btnInfo.n = "템플릿 안내";
-            // 버튼유형 DS(-배송조회 / WL - 웹링크 / AL - 앱링크 / MD - 메시지전달 / BK - 봇키워드)
+            // 버튼유형 (DS-배송조회 / WL - 웹링크 / AL - 앱링크 / MD - 메시지전달 / BK - 봇키워드)
             btnInfo.t = "WL";
             // 버튼링크1 [앱링크] iOS / [웹링크] Mobile
             btnInfo.u1 = "https://www.popbill.com";
             // 버튼링크2 [앱링크] Android / [웹링크] PC URL
             btnInfo.u2 = "http://test.popbill.com";
+            // 아웃링크 - (공백-카카오톡 인앱 브라우저, "out"-디바이스 기본 브라우저)
+            btnInfo.tg = "out";
             buttons.Add(btnInfo);
             */
 

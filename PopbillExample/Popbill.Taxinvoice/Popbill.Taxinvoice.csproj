@@ -75,7 +75,6 @@
     <Content Include="Example\getContactInfo.aspx" />
     <Content Include="Example\getCorpInfo.aspx" />
     <Content Include="Example\getDetailInfo.aspx" />
-    <Content Include="Example\getEmailPublicKeys.aspx" />
     <Content Include="Example\getEPrintURL.aspx" />
     <Content Include="Example\getFiles.aspx" />
     <Content Include="Example\getInfo.aspx" />
@@ -279,13 +278,6 @@
     </Compile>
     <Compile Include="Example\getDetailInfo.aspx.designer.cs">
       <DependentUpon>getDetailInfo.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Example\getEmailPublicKeys.aspx.cs">
-      <DependentUpon>getEmailPublicKeys.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Example\getEmailPublicKeys.aspx.designer.cs">
-      <DependentUpon>getEmailPublicKeys.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\getEPrintURL.aspx.cs">
       <DependentUpon>getEPrintURL.aspx</DependentUpon>

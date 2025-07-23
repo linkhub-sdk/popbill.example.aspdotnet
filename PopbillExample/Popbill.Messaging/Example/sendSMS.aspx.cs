@@ -35,6 +35,9 @@ namespace Popbill.Message.Example
             // 발신번호
             String senderNum = "";
 
+            // 발신자명
+            String senderName = "";
+
             // 수신번호
             String receiver = "";
 
@@ -64,7 +67,7 @@ namespace Popbill.Message.Example
 
             try
             {
-                receiptNum = Global.messageService.SendSMS(testCorpNum, senderNum, receiver,
+                receiptNum = Global.messageService.SendSMS(testCorpNum, senderNum, senderName, receiver,
                                             receiverName, contents, reserveDT, testUserID, requestNum, adsYN);
             }
             catch (PopbillException ex)

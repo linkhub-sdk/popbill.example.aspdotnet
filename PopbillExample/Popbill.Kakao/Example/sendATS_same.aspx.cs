@@ -42,7 +42,7 @@ namespace Popbill.Kakao.Example
 
             // 팝빌에 사전 등록된 발신번호
             // ※ 대체문자를 전송하는 경우에는 사전에 등록된 발신번호 입력 필수
-            String senderNum = "07043042991";
+            String senderNum = "";
 
             // 알림톡 템플릿 내용, 최대 1000자
             String content = "[ 팝빌 ]\n";

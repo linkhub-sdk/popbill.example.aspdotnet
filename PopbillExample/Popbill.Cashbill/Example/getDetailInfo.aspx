@@ -19,8 +19,8 @@
                 <li>Response.message : <%= message %></li>
             <% } else { %>
                 <li>mgtKey (문서번호) : <%= cashbill.mgtKey %></li>
-                <li>orgConfirmNum (원본 현금영수증 국세청승인번호) : <%= cashbill.orgConfirmNum %></li>
-                <li>orgTradeDate (원본 현금영수증 거래일자) : <%= cashbill.orgTradeDate %></li>
+                <li>orgConfirmNum (당초 승인 현금영수증 국세청승인번호) : <%= cashbill.orgConfirmNum %></li>
+                <li>orgTradeDate (당초 승인 현금영수증 거래일자) : <%= cashbill.orgTradeDate %></li>
                 <li>tradeDate (거래일자) : <%= cashbill.tradeDate %></li>
                 <li>tradeDT (거래일시) : <%= cashbill.tradeDT %></li>
                 <li>tradeType (문서형태) : <%= cashbill.tradeType %></li>
