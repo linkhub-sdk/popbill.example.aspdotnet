@@ -41,7 +41,7 @@
             <li><a href="Example/getFaxResultRN.aspx">getFaxResultRN</a> - 전송내역 및 전송상태 확인 (요청번호 할당)</li>
             <li><a href="Example/search.aspx">search</a> - 전송내역 목록 조회</li>
             <li><a href="Example/getSentListURL.aspx">getSentListURL</a> - 팩스 전송내역 팝업 URL</li>
-            <li><a href="Example/getPreviewURL.aspx">getPreviewURL</a> - 팩스 미리보기 팝업 URL</li>
+            <li><a href="Example/getPreviewURL.aspx">getPreviewURL</a> - 팩스 변환결과 확인 팝업 URL</li>
         </ul>
     </fieldset>
     <br/>
