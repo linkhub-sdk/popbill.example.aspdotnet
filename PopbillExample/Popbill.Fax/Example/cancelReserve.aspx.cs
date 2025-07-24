@@ -21,7 +21,7 @@ namespace Popbill.Fax.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 팝빌에서 반환받은 접수번호를 통해 예약접수된 팩스 전송을 취소합니다. (예약시간 10분 전까지 가능)
+             * 팝빌에서 반환받은 접수번호로 예약된 팩스를 전송 취소합니다. (예약시간 10분 전까지 가능)
              * - https://developers.popbill.com/reference/fax/dotnet/api/send#CancelReserve
              */
 

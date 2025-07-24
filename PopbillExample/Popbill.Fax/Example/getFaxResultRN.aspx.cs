@@ -23,7 +23,7 @@ namespace Popbill.Fax.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 파트너가 할당한 전송요청 번호를 통해 팩스 전송상태 및 결과를 확인합니다.
+             * 파트너가 할당한 요청번호를 통해 팩스 전송상태 및 결과를 확인합니다.
              * - https://developers.popbill.com/reference/fax/dotnet/api/info#GetFaxResultRN
              */
 

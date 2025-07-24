@@ -21,7 +21,7 @@ namespace Popbill.Fax.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 파트너가 할당한 전송요청 번호를 통해 예약접수된 팩스 전송을 취소합니다. (예약시간 10분 전까지 가능)
+             * 파트너가 할당한 요청번호로 예약된 팩스를 전송 취소합니다. (예약시간 10분 전까지 가능)
              * - https://developers.popbill.com/reference/fax/dotnet/api/send#CancelReserveRN
              */
 
