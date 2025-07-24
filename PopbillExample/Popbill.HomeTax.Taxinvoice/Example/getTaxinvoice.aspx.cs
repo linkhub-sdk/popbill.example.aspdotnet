@@ -22,7 +22,7 @@ namespace Popbill.HomeTax.Taxinvoice.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 국세청 승인번호를 통해 수집한 전자세금계산서 1건의 상세정보를 반환합니다.
+             * 홈택스에서 수집된 전자세금계산서 1건의 상세정보를 제공합니다.
              * - https://developers.popbill.com/reference/httaxinvoice/dotnet/api/search#GetTaxinvoice
              */
 

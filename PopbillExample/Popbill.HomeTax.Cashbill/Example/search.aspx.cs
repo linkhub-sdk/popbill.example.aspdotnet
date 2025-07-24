@@ -22,7 +22,7 @@ namespace Popbill.HomeTax.Cashbill.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 홈택스에서 수집된 전자세금계산서 매입/매출 내역을 확인합니다.
+             * 홈택스에서 수집된 현금영수증 매입/매출 내역을 확인합니다.
              * - https://developers.popbill.com/reference/htcashbill/dotnet/api/search#Search
              */
 
