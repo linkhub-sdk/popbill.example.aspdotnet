@@ -23,7 +23,7 @@ namespace Popbill.Fax.Example
         {
             /**
              * 환불 가능한 포인트를 확인합니다. (보너스 포인트는 환불가능포인트에서 제외됩니다.)
-             * - https://developers.popbill.com/reference/fax/dotnet/api/point#GetRefundableBalance
+             * - https://developers.popbill.com/reference/fax/dotnet/common-api/point#GetRefundableBalance
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

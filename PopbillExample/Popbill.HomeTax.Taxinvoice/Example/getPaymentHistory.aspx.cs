@@ -23,7 +23,7 @@ namespace Popbill.HomeTax.Taxinvoice.Example
         {
             /**
              * 연동회원의 포인트 결제내역을 확인합니다.
-             * - https://developers.popbill.com/reference/httaxinvoice/dotnet/api/point#GetPaymentHistory
+             * - https://developers.popbill.com/reference/httaxinvoice/dotnet/common-api/point#GetPaymentHistory
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

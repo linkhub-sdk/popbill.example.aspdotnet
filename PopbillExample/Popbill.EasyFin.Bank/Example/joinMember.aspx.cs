@@ -22,7 +22,7 @@ namespace Popbill.EasyFin.Bank.Example
         {
             /**
              * 사용자를 연동회원으로 가입처리합니다.
-             * - https://developers.popbill.com/reference/easyfinbank/dotnet/api/member#JoinMember
+             * - https://developers.popbill.com/reference/easyfinbank/dotnet/common-api/member#JoinMember
             */
 
             JoinForm joinInfo = new JoinForm();

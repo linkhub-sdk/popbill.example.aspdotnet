@@ -24,7 +24,7 @@ namespace Popbill.Kakao.Example
         {
             /**
              * 카카오톡 전송시 과금되는 포인트 단가를 확인합니다.
-             * - https://developers.popbill.com/reference/kakaotalk/dotnet/api/point#GetUnitCost
+             * - https://developers.popbill.com/reference/kakaotalk/dotnet/common-api/point#GetUnitCost
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

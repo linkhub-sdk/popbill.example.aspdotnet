@@ -24,7 +24,7 @@ namespace Popbill.HomeTax.Taxinvoice.Example
         {
             /**
              * 연동회원 포인트를 환불 신청합니다.
-             * - https://developers.popbill.com/reference/httaxinvoice/dotnet/api/point#Refund
+             * - https://developers.popbill.com/reference/httaxinvoice/dotnet/common-api/point#Refund
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

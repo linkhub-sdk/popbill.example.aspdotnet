@@ -23,7 +23,7 @@ namespace Popbill.HomeTax.Taxinvoice.Example
         {
             /**
              * 홈택스수집 정액제 서비스 상태를 확인합니다.
-             * - https://developers.popbill.com/reference/httaxinvoice/dotnet/api/point#GetFlatRateState
+             * - https://developers.popbill.com/reference/httaxinvoice/dotnet/common-api/point#GetFlatRateState
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

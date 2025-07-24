@@ -23,7 +23,7 @@ namespace Popbill.Closedown.Example
         {
             /**
              * 팝빌 사업자등록상태조회 (휴폐업조회) API 서비스 과금정보를 확인합니다.
-             * - https://developers.popbill.com/reference/closedown/dotnet/api/point#GetChargeInfo
+             * - https://developers.popbill.com/reference/closedown/dotnet/common-api/point#GetChargeInfo
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리

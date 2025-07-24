@@ -62,6 +62,7 @@
     <Content Include="Example\checkIsMember.aspx" />
     <Content Include="Example\checkMgtKeyInUse.aspx" />
     <Content Include="Example\delete.aspx" />
+    <Content Include="Example\deleteContact.aspx" />
     <Content Include="Example\deleteFile.aspx" />
     <Content Include="Example\detachStatement.aspx" />
     <Content Include="Example\getAccessURL.aspx" />
@@ -172,6 +173,13 @@
     </Compile>
     <Compile Include="Example\delete.aspx.designer.cs">
       <DependentUpon>delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\deleteContact.aspx.cs">
+      <DependentUpon>deleteContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\deleteContact.aspx.designer.cs">
+      <DependentUpon>deleteContact.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\deleteFile.aspx.cs">
       <DependentUpon>deleteFile.aspx</DependentUpon>

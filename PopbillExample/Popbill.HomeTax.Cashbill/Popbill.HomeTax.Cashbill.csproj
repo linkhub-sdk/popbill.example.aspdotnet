@@ -60,6 +60,7 @@
     <Content Include="Example\checkID.aspx" />
     <Content Include="Example\checkIsMember.aspx" />
     <Content Include="Example\checkLoginDeptUser.aspx" />
+    <Content Include="Example\deleteContact.aspx" />
     <Content Include="Example\deleteDeptUser.aspx" />
     <Content Include="Example\getAccessURL.aspx" />
     <Content Include="Example\getBalance.aspx" />
@@ -140,6 +141,13 @@
     </Compile>
     <Compile Include="Example\checkLoginDeptUser.aspx.designer.cs">
       <DependentUpon>checkLoginDeptUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\deleteContact.aspx.cs">
+      <DependentUpon>deleteContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\deleteContact.aspx.designer.cs">
+      <DependentUpon>deleteContact.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\deleteDeptUser.aspx.cs">
       <DependentUpon>deleteDeptUser.aspx</DependentUpon>

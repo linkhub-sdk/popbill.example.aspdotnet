@@ -22,7 +22,7 @@ namespace Popbill.Statement.Example
         {
             /**
             * 사업자번호를 조회하여 연동회원 가입여부를 확인합니다.
-            * - https://developers.popbill.com/reference/statement/dotnet/api/member#CheckIsMember
+            * - https://developers.popbill.com/reference/statement/dotnet/common-api/member#CheckIsMember
             */
 
             // 조회할 사업자번호

@@ -75,6 +75,7 @@
             <li><a href="Example/joinMember.aspx">joinMember</a> - 연동회원 신규가입</li>
             <li><a href="Example/getAccessURL.aspx">getAccessURL</a> - 팝빌 로그인 URL</li>
             <li><a href="Example/registContact.aspx">registContact</a> - 담당자 등록</li>
+            <li><a href="Example/deleteContact.aspx">deleteContact</a> - 담당자 삭제</li>
             <li><a href="Example/getContactInfo.aspx">getContactInfo</a> - 담당자 정보 확인</li>
             <li><a href="Example/listContact.aspx">listContact</a> - 담당자 목록 확인</li>
             <li><a href="Example/updateContact.aspx">updateContact</a> - 담당자 정보 수정</li>

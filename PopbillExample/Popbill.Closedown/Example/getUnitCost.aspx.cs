@@ -23,7 +23,7 @@ namespace Popbill.Closedown.Example
         {
             /**
              * 사업자등록상태(휴폐업) 조회시 과금되는 포인트 단가를 확인합니다.
-             * - https://developers.popbill.com/reference/closedown/dotnet/api/point#GetUnitCost
+             * - https://developers.popbill.com/reference/closedown/dotnet/common-api/point#GetUnitCost
              */
 
             String testCorpNum = "1234567890";

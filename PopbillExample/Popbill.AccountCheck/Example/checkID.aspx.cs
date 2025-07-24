@@ -22,7 +22,7 @@ namespace Popbill.AccountCheck.Example
         {
             /**
              * 사용하고자 하는 아이디의 중복여부를 확인합니다.
-             * - https://developers.popbill.com/reference/accountcheck/dotnet/api/member#CheckID
+             * - https://developers.popbill.com/reference/accountcheck/dotnet/common-api/member#CheckID
              */
 
             // 조회할 아이디
