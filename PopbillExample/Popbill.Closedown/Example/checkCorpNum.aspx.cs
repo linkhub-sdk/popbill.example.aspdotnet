@@ -22,7 +22,7 @@ namespace Popbill.Closedown.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 사업자번호 1건에 대한 사업자등록상태조회 (휴폐업조회) 를 확인합니다.
+             * 사업자번호 1건에 대해 실시간으로 사업자등록상태를 확인합니다.
              * - https://developers.popbill.com/reference/closedown/dotnet/api/check#CheckCorpNum
              */
 

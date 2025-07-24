@@ -22,9 +22,7 @@ namespace Popbill.EasyFin.Bank.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 계좌 거래내역을 확인하기 위해 팝빌에 수집요청을 합니다. (조회기간 단위 : 최대 1개월)
-             * - 조회일로부터 최대 3개월 이전 내역까지 조회할 수 있습니다.
-             * - 반환 받은 작업아이디는 함수 호출 시점부터 1시간 동안 유효합니다.
+             * 계좌 거래내역 수집을 팝빌에 요청합니다.
              * - https://developers.popbill.com/reference/easyfinbank/dotnet/api/job#RequestJob
              */
 

@@ -21,7 +21,7 @@ namespace Popbill.EasyFin.Bank.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 계좌의 정액제 해지를 요청합니다.
+             * 팝빌에 등록된 계좌의 정액제 해지를 요청합니다.
              * - https://developers.popbill.com/reference/easyfinbank/dotnet/api/manage#CloseBankAccount
              */
 
@@ -34,11 +34,9 @@ namespace Popbill.EasyFin.Bank.Example
             // 계좌번호, 하이픈('-') 제외
             String AccountNumber = "";
 
-            // 해지유형, "일반", "중도" 중 택 1
+            // 해지유형
             // 일반(일반해지) – 이용중인 정액제 기간 만료 후 해지
-            // 중도(중도해지) – 해지 요청일 기준으로 정지되고 팝빌 담당자가 승인시 해지
-            // └ 중도일 경우, 정액제 잔여기간은 일할로 계산되어 포인트 환불 (무료 이용기간 중 해지하면 전액 환불)
-            String CloseType = "중도";
+            String CloseType = "일반";
 
             try
             {

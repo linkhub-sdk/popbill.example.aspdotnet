@@ -22,8 +22,6 @@ namespace Popbill.EasyFin.Bank.Example
         {
             /**
             * 등록된 계좌를 삭제합니다.
-            * - 정액제가 아닌 종량제 이용 시에만 등록된 계좌를 삭제할 수 있습니다.
-            * - 정액제 이용 시 정액제 해지요청(CloseBankAccount API) 함수를 사용하여 정액제를 해제할 수 있습니다.
              * - https://developers.popbill.com/reference/easyfinbank/dotnet/api/manage#DeleteBankAccount
              */
 
