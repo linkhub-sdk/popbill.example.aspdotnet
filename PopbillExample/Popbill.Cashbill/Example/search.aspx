@@ -38,7 +38,12 @@
                             <li>tradeUsage (거래구분) : <%= cashbillInfo.tradeUsage %></li>
                             <li>tradeOpt (거래유형) : <%= cashbillInfo.tradeOpt %></li>
                             <li>taxationType (과세형태) : <%= cashbillInfo.taxationType %></li>
+                            
                             <li>totalAmount (거래금액) : <%= cashbillInfo.totalAmount %></li>
+                            <li>supplyCost (공급가액) : <%= cashbillInfo.supplyCost %></li>
+                            <li>tax (부가세) : <%= cashbillInfo.tax %></li>
+                            <li>serviceFee (봉사료) : <%= cashbillInfo.serviceFee %></li>
+                            
                             <li>issueDT (발행일시) : <%= cashbillInfo.issueDT %></li>
                             <li>regDT (등록일시) : <%= cashbillInfo.regDT %></li>
                             <li>stateMemo (상태메모) : <%= cashbillInfo.stateMemo %></li>
@@ -46,7 +51,11 @@
                             <li>stateDT (상태변경 일시) : <%= cashbillInfo.stateDT %></li>
                             <li>identityNum (식별번호) : <%= cashbillInfo.identityNum %></li>
                             <li>itemName (주문상품명) : <%= cashbillInfo.itemName %></li>
-                            <li>customerName (주문자명) : <%= cashbillInfo.customerName %></li>
+
+                            <li>customerName (구매자명) : <%= cashbillInfo.customerName %></li>
+                            <li>email (구매자 이메일) : <%= cashbillInfo.email%></li>
+                            <li>hp (구매자 휴대폰번호) : <%= cashbillInfo.hp%></li>
+                                                        
                             <li>confirmNum (국세청승인번호) : <%= cashbillInfo.confirmNum %></li>
                             <li>orgConfirmNum (당초 승인 현금영수증 국세청승인번호) : <%= cashbillInfo.orgConfirmNum %></li>
                             <li>orgTradeDate (당초 승인 현금영수증 거래일자) : <%= cashbillInfo.orgTradeDate %></li>

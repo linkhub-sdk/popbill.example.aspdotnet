@@ -126,7 +126,7 @@ namespace Popbill.Cashbill.Example
 
             // 거래일시, 날짜(yyyyMMddHHmmss)
             // 당일, 전일만 가능, 미입력시 기본값 발행일시 처리
-            cashbill.tradeDT = "20221108000000";
+            cashbill.tradeDT = "";
 
             try
             {

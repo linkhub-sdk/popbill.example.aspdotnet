@@ -12,7 +12,7 @@
     <p class="heading1">Response</p>
     <br/>
     <fieldset class="fieldset1">
-        <legend>계좌실명조회</legend>
+        <legend>예금주실명조회</legend>
         <ul>
             <% if (!String.IsNullOrEmpty(code)) { %>
                 <li>Response.code : <%= code %> </li>
@@ -25,7 +25,7 @@
                 <li>accountNumber (계좌번호) : <%= result.accountNumber %></li>
                 <li>identityNumType (등록번호 유형) : <%= result.identityNumType%></li>
                 <li>identityNum (등록번호) : <%= result.identityNum%></li>
-                <li>checkDate (확인일시) : <%= result.checkDate %></li>
+                <li>checkDT (확인일시) : <%= result.checkDT %></li>
             <% } %>
         </ul>
     </fieldset>
