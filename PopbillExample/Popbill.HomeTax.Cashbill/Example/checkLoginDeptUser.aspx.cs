@@ -21,7 +21,7 @@ namespace Popbill.HomeTax.Cashbill.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 팝빌에 등록된 현금영수증 자료조회 부서사용자 계정 정보로 홈택스 로그인 가능 여부를 확인합니다.
+             * 팝빌에 등록된 부서사용자로 홈택스 로그인 가능 여부를 확인합니다.
              * - https://developers.popbill.com/reference/htcashbill/dotnet/api/cert#CheckLoginDeptUser
              */
 

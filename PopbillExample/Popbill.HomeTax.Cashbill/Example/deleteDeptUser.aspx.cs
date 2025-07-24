@@ -21,7 +21,7 @@ namespace Popbill.HomeTax.Cashbill.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 팝빌에 등록된 홈택스 현금영수증 자료조회 부서사용자 계정을 삭제합니다.
+             * 팝빌에 등록된 부서사용자 계정을 삭제합니다.
              * - https://developers.popbill.com/reference/htcashbill/dotnet/api/cert#DeleteDeptUser
              */
 

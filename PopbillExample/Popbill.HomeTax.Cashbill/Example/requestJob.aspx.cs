@@ -22,7 +22,7 @@ namespace Popbill.HomeTax.Cashbill.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 홈택스에 신고된 현금영수증 매입/매출 내역 수집을 팝빌에 요청합니다. (조회기간 단위 : 최대 3개월)
+             * 홈택스에 신고된 전자세금계산서 매입/매출 내역 수집을 팝빌에 요청합니다.
              * - https://developers.popbill.com/reference/htcashbill/dotnet/api/job#RequestJob
              */
 

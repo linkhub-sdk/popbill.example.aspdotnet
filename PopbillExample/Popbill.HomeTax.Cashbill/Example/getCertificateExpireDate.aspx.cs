@@ -22,7 +22,7 @@ namespace Popbill.HomeTax.Cashbill.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 팝빌에 등록된 인증서 만료일자를 확인합니다.
+             * 팝빌에 등록된 인증서의 만료일자를 확인합니다.
              * - https://developers.popbill.com/reference/htcashbill/dotnet/api/cert#GetCertificateExpireDate
              */
 
