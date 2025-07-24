@@ -24,8 +24,7 @@ namespace Popbill.Cashbill.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 취소 현금영수증을 발행하며 취소 현금영수증의 금액은 원본 금액을 넘을 수 없습니다.
-             * - 현금영수증 국세청 전송 정책 : https://developers.popbill.com/guide/cashbill/dotnet/introduction/policy-of-send-to-nts
+             * 당초 승인 현금영수증의 취소거래 발행 API 입니다.
              * - https://developers.popbill.com/reference/cashbill/dotnet/api/issue#RevokeRegistIssue
              */
 

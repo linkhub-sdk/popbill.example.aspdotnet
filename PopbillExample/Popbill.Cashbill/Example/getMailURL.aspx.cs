@@ -22,8 +22,7 @@ namespace Popbill.Cashbill.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 현금영수증 안내메일의 상세보기 링크 URL을 반환합니다.
-             * - 함수 호출로 반환 받은 URL에는 유효시간이 없습니다.
+             * 현금영수증 발행 안내 메일의 '보기' 버튼 URL을 반환합니다.
              * - https://developers.popbill.com/reference/cashbill/dotnet/api/view#GetMailURL
              */
 

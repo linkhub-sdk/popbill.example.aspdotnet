@@ -22,7 +22,7 @@ namespace Popbill.Cashbill.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 검색조건에 해당하는 현금영수증을 조회합니다. (조회기간 단위 : 최대 6개월)
+             * 검색조건에 해당하는 현금영수증을 조회합니다. (최대 조회기간 : 6개월)
              * - https://developers.popbill.com/reference/cashbill/dotnet/api/info#Search
              */
 

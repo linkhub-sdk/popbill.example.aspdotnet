@@ -23,8 +23,7 @@ namespace Popbill.Cashbill.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 다수건의 현금영수증 상태 및 요약 정보를 확인합니다. (1회 호출 시 최대 1,000건 확인 가능)
-             * - 리턴값 'CashbillInfo'의 변수 'stateCode'를 통해 현금영수증의 상태코드를 확인합니다.
+             * 다수건의 현금영수증 상태 및 요약 정보를 확인합니다. (1회 호출에 최대 1,000건 확인 가능)
              * - https://developers.popbill.com/reference/cashbill/dotnet/api/info#GetInfos
              */
 

@@ -24,8 +24,7 @@ namespace Popbill.Cashbill.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 현금영수증 데이터를 팝빌에 전송하여 발행합니다.
-             * - 현금영수증 국세청 전송 정책 : https://developers.popbill.com/guide/cashbill/dotnet/introduction/policy-of-send-to-nts
+             * 작성된 현금영수증 데이터를 팝빌에 저장과 동시에 발행하여 "발행완료" 상태로 처리합니다. 
              * - https://developers.popbill.com/reference/cashbill/dotnet/api/issue#RegistIssue
              */
 
