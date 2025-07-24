@@ -20,7 +20,6 @@
             <% } else {	%>
                 <% foreach (Popbill.EmailConfig info in emailConfigList) { %>
                     <%if (info.emailType == "CSH_ISSUE") { %> <li> CSH_ISSUE (고객에게 현금영수증이 발행 되었음을 알려주는 메일) : <%= info.sendYN%></li> <%} %>
-                    <%if (info.emailType == "CSH_CANCEL") { %> <li> CSH_CANCEL (고객에게 현금영수증이 발행취소 되었음을 알려주는 메일) : <%= info.sendYN%></li> <%} %>
                 <% } %>
             <% } %>
         </ul>
