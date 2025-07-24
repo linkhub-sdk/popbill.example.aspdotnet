@@ -23,7 +23,7 @@ namespace Popbill.Kakao.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 팝빌에 등록한 연동회원의 카카오톡 채널 목록을 확인합니다.
+             * 팝빌에 등록한 연동회원의 비즈니스 채널 목록을 확인합니다.
              * - https://developers.popbill.com/reference/kakaotalk/dotnet/api/channel#ListPlusFriendID
              */
 

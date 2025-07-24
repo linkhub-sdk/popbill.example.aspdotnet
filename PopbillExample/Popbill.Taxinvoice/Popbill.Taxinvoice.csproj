@@ -82,7 +82,6 @@
     <Content Include="Example\getInfos.aspx" />
     <Content Include="Example\getMailURL.aspx" />
     <Content Include="Example\getMassPrintURL.aspx" />
-    <Content Include="Example\getOldPrintURL.aspx" />
     <Content Include="Example\getPartnerBalance.aspx" />
     <Content Include="Example\getPartnerURL.aspx" />
     <Content Include="Example\getPaymentURL.aspx" />
@@ -328,13 +327,6 @@
     </Compile>
     <Compile Include="Example\getMassPrintURL.aspx.designer.cs">
       <DependentUpon>getMassPrintURL.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Example\getOldPrintURL.aspx.cs">
-      <DependentUpon>getOldPrintURL.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Example\getOldPrintURL.aspx.designer.cs">
-      <DependentUpon>getOldPrintURL.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\getPartnerBalance.aspx.cs">
       <DependentUpon>getPartnerBalance.aspx</DependentUpon>
