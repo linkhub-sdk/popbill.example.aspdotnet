@@ -23,7 +23,6 @@ namespace Popbill.Statement.Example
         {
             /**
              * 작성된 전자명세서 데이터를 팝빌에 저장합니다.
-             * - 임시저장후 발행(Issue API)를 호출해야 수신자에게 메일로 전달됩니다.
              * - https://developers.popbill.com/reference/statement/dotnet/api/issue#Register
              */
 

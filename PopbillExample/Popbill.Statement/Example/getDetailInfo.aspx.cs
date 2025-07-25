@@ -22,7 +22,7 @@ namespace Popbill.Statement.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 전자명세서 1건의 상세정보 확인합니다.
+             * 전자명세서 1건의 상세정보를 확인합니다.
              * - https://developers.popbill.com/reference/statement/dotnet/api/info#GetDetailInfo
              */
 

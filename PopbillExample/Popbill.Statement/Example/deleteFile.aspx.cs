@@ -21,7 +21,7 @@ namespace Popbill.Statement.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 삭제 가능한 상태의 전자명세서를 삭제합니다.
+             * "임시저장" 상태의 전자명세서에 첨부된 1개의 파일을 삭제합니다.
              * - https://developers.popbill.com/reference/statement/dotnet/api/etc#DeleteFile
              */
 
