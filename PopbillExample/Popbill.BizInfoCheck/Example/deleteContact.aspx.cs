@@ -21,7 +21,8 @@ namespace Popbill.BizInfoCheck.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 연동회원 사업자번호에 담당자(팝빌 로그인 계정)를 삭제합니다.
+             * 연동회원에 추가된 담당자를 삭제합니다.
+             * - https://developers.popbill.com/reference/taxinvoice/java/common-api/member#DeleteContact
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
