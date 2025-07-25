@@ -22,7 +22,7 @@ namespace Popbill.Statement.Example
         {
             /**
              * 연동회원에 추가된 담당자를 삭제합니다.
-             * - https://developers.popbill.com/reference/statement/java/common-api/member#DeleteContact
+             * - https://developers.popbill.com/reference/statement/dotnet/common-api/member#DeleteContact
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
