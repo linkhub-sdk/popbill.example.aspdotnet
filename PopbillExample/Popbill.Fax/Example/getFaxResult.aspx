@@ -23,8 +23,8 @@
                     <fieldset class="fieldset2">
                         <legend>팩스 전송 상태정보</legend>
                         <ul>
-                            <li>state (전송상태 코드) : <%= faxInfo.state %></li>
-                            <li>result (전송결과 코드) : <%= faxInfo.result %></li>
+                            <li>state (상태코드) : <%= faxInfo.state %></li>
+                            <li>result (결과코드) : <%= faxInfo.result %></li>
                             <li>title (팩스제목) : <%= faxInfo.title %></li>
                             <li>sendNum (발신번호) : <%= faxInfo.sendNum %></li>
                             <li>receiveNum (수신번호) : <%= faxInfo.receiveNum %></li>
@@ -34,10 +34,10 @@
                             <li>successPageCnt (성공 페이지수) : <%= faxInfo.successPageCnt %></li>
                             <li>failPageCnt (실패 페이지수) : <%= faxInfo.failPageCnt %></li>
                             <li>cancelPageCnt (취소 페이지수) : <%= faxInfo.cancelPageCnt %></li>
-                            <li>reserveDT (예약시간) : <%= faxInfo.reserveDT %></li>
-                            <li>receiptDT (접수시간) : <%= faxInfo.receiptDT %></li>
-                            <li>sendDT (발송시간) : <%= faxInfo.sendDT %></li>
-                            <li>resultDT (전송결과 수신시간) : <%= faxInfo.resultDT %></li>
+                            <li>reserveDT (예약일시) : <%= faxInfo.reserveDT %></li>
+                            <li>receiptDT (접수일시) : <%= faxInfo.receiptDT %></li>
+                            <li>sendDT (전송일시) : <%= faxInfo.sendDT %></li>
+                            <li>resultDT (전송결과 수신일시) : <%= faxInfo.resultDT %></li>
                             <li>
                                 fileNames (전송 파일명 리스트) :
                                 <% foreach (String fileName in faxInfo.fileNames)

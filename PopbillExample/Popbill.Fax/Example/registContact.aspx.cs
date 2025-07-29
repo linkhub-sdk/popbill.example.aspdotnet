@@ -28,9 +28,8 @@ namespace Popbill.Fax.Example
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
-            // 팝빌회원 아이디
-            String testUserID = "testkorea";
-
+            
+            // 담당자 정보 객체
             Contact contactInfo = new Contact();
 
             // 담당자 아이디, 6자 이상 50자 미만
@@ -42,14 +41,18 @@ namespace Popbill.Fax.Example
             // 담당자 성명 (최대 100자)
             contactInfo.personName = "담당자명";
 
-            // 담당자 연락처 (최대 20자)
+            // 담당자 휴대폰 (최대 20자)
             contactInfo.tel = "";
 
-            // 담당자 이메일 (최대 100자)
+            // 담당자 메일 (최대 100자)
             contactInfo.email = "";
 
-            // 담당자 권한, 1 : 개인권한, 2 : 읽기권한, 3 : 회사권한
+            // 권한, 1 : 개인권한, 2 : 읽기권한, 3 : 회사권한
             contactInfo.searchRole = 3;
+
+            // 팝빌회원 아이디
+            String testUserID = "testkorea";
+
             try
             {
                 Response response = Global.faxService.RegistContact(testCorpNum, contactInfo, testUserID);
