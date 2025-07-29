@@ -28,21 +28,24 @@ namespace Popbill.Statement.Example
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
-            // 팝빌회원 아이디
-            String testUserID = "testkorea";
-
-            // 명세서 종류 코드 - 121(거래명세서), 122(청구서), 123(견적서), 124(발주서), 125(입금표), 126(영수증)
+            // 전자명세서 문서 유형 - 121(거래명세서), 122(청구서), 123(견적서), 124(발주서), 125(입금표), 126(영수증)
             int itemCode = 121;
 
             // 전자명세서 문서번호
             String mgtKey = "20220525-001";
 
+            // 파일명
+            String displayName = "test.jpg";
+
             // 첨부파일 경로
             String filePath = "C:/popbill.example.aspdotnet/PopbillExample/test.jpg";
 
+            // 팝빌회원 아이디
+            String testUserID = "testkorea";
+
             try
             {
-                Response response = Global.statementService.AttachFile(testCorpNum, itemCode, mgtKey, filePath, testUserID);
+                Response response = Global.statementService.AttachFile(testCorpNum, itemCode, mgtKey, displayName, filePath, testUserID);
 
                 code = response.code.ToString();
                 message = response.message;

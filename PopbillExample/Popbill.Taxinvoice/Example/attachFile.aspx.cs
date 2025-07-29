@@ -34,6 +34,9 @@ namespace Popbill.Taxinvoice.Example
             // 세금계산서 문서번호
             String mgtKey = "20220525-001";
 
+            // 파일명
+            String displayName = "test.jpg";
+
             // 첨부파일 경로
             String filePath = "C:/popbill.example.aspdotnet/PopbillExample/test.jpg";
 
@@ -42,7 +45,7 @@ namespace Popbill.Taxinvoice.Example
 
             try
             {
-                Response response = Global.taxinvoiceService.AttachFile(testCorpNum, KeyType, mgtKey, filePath, testUserID);
+                Response response = Global.taxinvoiceService.AttachFile(testCorpNum, KeyType, mgtKey, displayName, filePath, testUserID);
 
                 code = response.code.ToString();
                 message = response.message;

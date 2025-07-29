@@ -29,10 +29,7 @@ namespace Popbill.Statement.Example
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
-            // 팝빌회원 아이디
-            String testUserID = "testkorea";
-
-            // 명세서 종류 코드 - 121(거래명세서), 122(청구서), 123(견적서), 124(발주서), 125(입금표), 126(영수증)
+            // 전자명세서 문서 유형 - 121(거래명세서), 122(청구서), 123(견적서), 124(발주서), 125(입금표), 126(영수증)
             int itemcode = 121;
 
             // 전자명세서 문서번호
@@ -46,6 +43,9 @@ namespace Popbill.Statement.Example
 
             // 문자메시지 내용,이 90Byte초과하는경우 길이가 조정되어 전송됨
             String msgContents = "ASP.NET 전자명세서 문자전송 테스트";
+
+            // 팝빌회원 아이디
+            String testUserID = "testkorea";
 
             try
             {
