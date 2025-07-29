@@ -30,7 +30,7 @@ namespace Popbill.Message.Example
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
-            // 문자 전송유형 MessageType.SMS(단문), MessageType.LMS(장문), MessageType.MMS(포토)
+            // 문자 전송유형, MessageType.SMS(단문), MessageType.LMS(장문), MessageType.MMS(포토)
             MessageType msgType = MessageType.SMS;
 
             try

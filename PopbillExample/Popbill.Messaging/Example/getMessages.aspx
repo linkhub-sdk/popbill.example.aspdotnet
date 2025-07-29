@@ -29,12 +29,14 @@
                             <li>senderName (발신자명) : <%= msgInfo.senderName %></li>
                             <li>receiveNum (수신번호) : <%= msgInfo.receiveNum %></li>
                             <li>receiveName (수신자명) : <%= msgInfo.receiveName %></li>
-                            <li>receiptDT (접수시간) : <%= msgInfo.receiptDT %></li>
-                            <li>sendDT (발송시간) : <%= msgInfo.sendDT %></li>
-                            <li>resultDT (전송결과 수신시간) : <%= msgInfo.resultDT %></li>
+                            
+                            <li>receiptDT (접수일시) : <%= msgInfo.receiptDT %></li>
+                            <li>sendDT (전송일시) : <%= msgInfo.sendDT %></li>
+                            <li>resultDT (전송결과 수신일시) : <%= msgInfo.resultDT %></li>
                             <li>reserveDT (예약일시) : <%= msgInfo.reserveDT %></li>
-                            <li>state (전송 상태코드) : <%= msgInfo.state %></li>
-                            <li>result (전송 결과코드) : <%= msgInfo.result %></li>
+                            
+                            <li>state (상태코드) : <%= msgInfo.state %></li>
+                            <li>result (결과코드) : <%= msgInfo.result %></li>
                             <li>type (메시지 타입) : <%= msgInfo.type %></li>
                             <li>tranNet (전송처리 이동통신사명) : <%= msgInfo.tranNet %></li>
                             <li>receiptNum (접수번호) : <%= msgInfo.receiptNum %></li>

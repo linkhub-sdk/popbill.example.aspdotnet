@@ -29,8 +29,9 @@ namespace Popbill.Message.Example
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
-            //메시지 타입,SMS-단문, LMS-장문, MMS-포토
+            // 문자 유형,SMS-단문, LMS-장문, MMS-포토
             MessageType msgType = MessageType.SMS; 
+
             try
             {
                 chrgInfo = Global.messageService.GetChargeInfo(testCorpNum, msgType);

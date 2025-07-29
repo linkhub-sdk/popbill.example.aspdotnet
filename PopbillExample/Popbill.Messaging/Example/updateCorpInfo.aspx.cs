@@ -31,6 +31,7 @@ namespace Popbill.Message.Example
             // 팝빌회원 아이디
             String testUserID = "testkorea";
 
+            // 회사정보 객체
             CorpInfo corpInfo = new CorpInfo();
 
             // 대표자성명(최대 100자)
