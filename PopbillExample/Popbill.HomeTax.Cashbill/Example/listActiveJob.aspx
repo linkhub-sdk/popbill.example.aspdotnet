@@ -25,11 +25,11 @@
                         <ul>
                             <li>jobID (작업 아이디) : <%= jobState.jobID %></li>
                             <li>jobState (수집상태) : <%= jobState.jobState %></li>
-                            <li>queryType (수집유형) : <%= jobState.queryType %></li>
+                            <li>queryType (현금영수증 유형) : <%= jobState.queryType %></li>
                             <li>queryDateType (일자유형) : <%= jobState.queryDateType %></li>
                             <li>queryStDate (시작일자) : <%= jobState.queryStDate %></li>
                             <li>queryEnDate (종료일자) : <%= jobState.queryEnDate %></li>
-                            <li>errorCode (오류코드) : <%= jobState.errorCode %></li>
+                            <li>errorCode (수집 결과코드) : <%= jobState.errorCode %></li>
                             <li>errorReason (오류메시지) : <%= jobState.errorReason %></li>
                             <li>jobStartDT (작업 시작일시) : <%= jobState.jobStartDT %></li>
                             <li>jobEndDT (작업 종료일시) : <%= jobState.jobEndDT %></li>
