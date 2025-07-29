@@ -18,13 +18,13 @@
                 <li>Response.code : <%= code %> </li>
                 <li>Response.message : <%= message %></li>
             <% } else { %>
-                <li>result (응답코드) : <%= result.result %></li>
-                <li>resultMessage (응답메시지) : <%= result.resultMessage %></li>
+                <li>result (상태코드) : <%= result.result %></li>
+                <li>resultMessage (상태메시지) : <%= result.resultMessage %></li>
                 <li>accountName (예금주 성명) : <%= result.accountName %></li>
                 <li>bankCode (기관코드) : <%= result.bankCode %></li>
                 <li>accountNumber (계좌번호) : <%= result.accountNumber %></li>
-                <li>identityNumType (등록번호 유형) : <%= result.identityNumType%></li>
-                <li>identityNum (등록번호) : <%= result.identityNum%></li>
+                <li>identityNumType (실명번호 유형) : <%= result.identityNumType%></li>
+                <li>identityNum (실명번호) : <%= result.identityNum%></li>
                 <li>checkDT (확인일시) : <%= result.checkDT %></li>
             <% } %>
         </ul>
