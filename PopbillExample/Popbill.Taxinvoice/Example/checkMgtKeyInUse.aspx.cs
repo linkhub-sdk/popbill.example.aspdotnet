@@ -29,11 +29,11 @@ namespace Popbill.Taxinvoice.Example
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
+            // 문서번호 유형, SELL-매출, BUY-매입, TRUSTEE-위수탁
+            MgtKeyType KeyType = MgtKeyType.SELL;
+
             // 조회할 세금계산서 문서번호, 최대 24자리, 영문, 숫자 '-', '_'를 조합하여 사업자별로 중복되지 않도록 구성
             String mgtKey = "20220525-001";
-
-            // 세금계산서 발행유형, SELL-매출, BUY-매입, TRUSTEE-위수탁
-            MgtKeyType KeyType = MgtKeyType.SELL;
 
             try
             {

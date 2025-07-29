@@ -34,7 +34,7 @@ namespace Popbill.Taxinvoice.Example
             // 팝빌회원 아이디
             String testUserID = "testkorea";
 
-            // 세금계산서 발행유형, SELL-매출, BUY-매입, TRUSTEE-위수탁
+            // 문서번호 유형, SELL-매출, BUY-매입, TRUSTEE-위수탁
             MgtKeyType KeyType = MgtKeyType.SELL;
 
             List<string> MgtKeyList = new List<string>();

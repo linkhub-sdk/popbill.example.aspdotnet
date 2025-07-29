@@ -20,8 +20,8 @@
             <% } else { %>
                 <li> regDT (등록일시) : <%= TaxinvoiceCertificate.regDT %></li>
                 <li> expireDT (만료일시) : <%= TaxinvoiceCertificate.expireDT %></li>
-                <li> issuerDN (인증서 발급자 DN) : <%= TaxinvoiceCertificate.issuerDN %></li>
-                <li> subjectDN (등록된 인증서 DN) : <%= TaxinvoiceCertificate.subjectDN %></li>
+                <li> issuerDN (발급자 DN) : <%= TaxinvoiceCertificate.issuerDN %></li>
+                <li> subjectDN (인증서 DN) : <%= TaxinvoiceCertificate.subjectDN %></li>
                 <li> issuerName (인증서 종류) : <%= TaxinvoiceCertificate.issuerName %></li>
                 <li> oid (OID) : <%= TaxinvoiceCertificate.oid %></li>
                 <li> regContactName (등록 담당자 성명) : <%= TaxinvoiceCertificate.regContactName %></li>

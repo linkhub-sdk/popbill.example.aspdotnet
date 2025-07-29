@@ -27,6 +27,7 @@
                 <li> ho(호) : <%= taxinvoice.ho %></li>
                 <li> writeDate (작성일자) : <%= taxinvoice.writeDate %></li>
                 <li> purposeType (영수/청구) : <%= taxinvoice.purposeType %></li>
+                
                 <li> supplyCostTotal (공급가액 합계) : <%= taxinvoice.supplyCostTotal %></li>
                 <li> taxTotal (세액 합계) : <%= taxinvoice.taxTotal %> </li>
                 <li> totalAmount (합계금액) : <%= taxinvoice.totalAmount %></li>
@@ -73,8 +74,8 @@
                 <li> invoiceeEmail1 (공급받는자 담당자 메일) : <%= taxinvoice.invoiceeEmail1 %></li>
                 <li> invoiceeSMSSendYN (역발행안내문자 전송여부) : <%= taxinvoice.invoiceeSMSSendYN %></li>
 
-
-
+                <li> modifyCode (수정 사유코드) : <%= taxinvoice.modifyCode %></li>
+                <li> orgNTSConfirmNum (당초 국세청승인번호) : <%= taxinvoice.orgNTSConfirmNum %></li>
                 <li> businessLicenseYN (사업자등록증 이미지 첨부여부) : <%= taxinvoice.businessLicenseYN %></li>
                 <li> bankBookYN (통장사본이미지 첨부여부) : <%= taxinvoice.bankBookYN %></li>
 

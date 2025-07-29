@@ -29,17 +29,17 @@ namespace Popbill.Taxinvoice.Example
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
-            // 팝빌회원 아이디
-            String testUserID = "testkorea";
-
-            // 세금계산서 발행유형, SELL-매출, BUY-매입, TRUSTEE-위수탁
+            // 문서번호 유형, SELL-매출, BUY-매입, TRUSTEE-위수탁
             MgtKeyType KeyType = MgtKeyType.SELL;
 
             // 세금계산서 문서번호
             String mgtKey = "20220525-001";
 
-            // 파일아이디, 첨부파일 목록(GetFileList API) 의 응답항목 중 파일아이디(AttachedFile) 값
+            // 파일 식별번호, 첨부파일 목록(GetFileList API) 의 응답항목 중 파일아이디(AttachedFile) 값
             String fileID = "";
+
+            // 팝빌회원 아이디
+            String testUserID = "testkorea";
 
             try
             {

@@ -28,10 +28,7 @@ namespace Popbill.Taxinvoice.Example
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
-            // 팝빌회원 아이디
-            String testUserID = "testkorea";
-
-            // 세금계산서 발행유형
+            // 문서번호 유형
             MgtKeyType KeyType = MgtKeyType.SELL;
 
             // 세금계산서 문서번호
@@ -41,6 +38,9 @@ namespace Popbill.Taxinvoice.Example
             // 팝빌 테스트 환경에서 테스트하는 경우에도 안내 메일이 전송되므로,
             // 실제 거래처의 메일주소가 기재되지 않도록 주의
             String email = "";
+
+            // 팝빌회원 아이디
+            String testUserID = "testkorea";
 
             try
             {

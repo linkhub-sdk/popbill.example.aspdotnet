@@ -29,24 +29,24 @@ namespace Popbill.Taxinvoice.Example
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
-
-            // 팝빌회원 아이디
-            String testUserID = "testkorea";
-
-            // 세금계산서 발행유형, SELL-매출, BUY-매입, TRUSTEE-위수탁
+            
+            // 문서번호 유형, SELL-매출, BUY-매입, TRUSTEE-위수탁
             MgtKeyType KeyType = MgtKeyType.SELL;
 
             // 세금계산서 문서번호
             String mgtKey = "20220525-001";
 
             // 발신번호
-            string senderNum = "";
+            String senderNum = "";
 
             // 수신번호
-            string receiverNum = "";
+            String receiverNum = "";
 
             // 문자메시지 내용, 90byte 초과시 길이가 조정되어 전송됨
-            string contents = "알림문자 전송내용, 90byte 초과된 내용은 삭제되어 전송됨";
+            String contents = "알림문자 전송내용, 90byte 초과된 내용은 삭제되어 전송됨";
+
+            // 팝빌회원 아이디
+            String testUserID = "testkorea";
 
             try
             {

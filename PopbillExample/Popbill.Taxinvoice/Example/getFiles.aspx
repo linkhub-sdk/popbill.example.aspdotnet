@@ -24,8 +24,8 @@
                         <legend>첨부파일 정보</legend>
                         <ul>
                             <li>serialNum (일련번호) : <%= fileInfo.serialNum %></li>
-                            <li>attachedFile (파일아이디) : <%= fileInfo.attachedFile %></li>
-                            <li>displayName (첨부파일명) : <%= fileInfo.displayName %></li>
+                            <li>attachedFile (파일 식별번호) : <%= fileInfo.attachedFile %></li>
+                            <li>displayName (파일명) : <%= fileInfo.displayName %></li>
                             <li>regDT (첨부일시) : <%= fileInfo.regDT %></li>
                         </ul>
                     </fieldset>
