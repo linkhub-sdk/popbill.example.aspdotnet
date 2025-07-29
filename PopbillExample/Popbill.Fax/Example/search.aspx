@@ -45,7 +45,7 @@
                             <li>reserveDT (예약일시) : <%= faxInfo.reserveDT %></li>
                             <li>receiptDT (접수일시) : <%= faxInfo.receiptDT %></li>
                             <li>sendDT (전송일시) : <%= faxInfo.sendDT %></li>
-                            <li>resultDT (전송결과 수신일시) : <%= faxInfo.resultDT %></li>
+                            <li>resultDT (전송결과 수신일시) : <%= faxInfo.resultDT%></li>
                             <li>
                                 fileNames (전송 파일명 리스트) :
                                 <% foreach (String fileName in faxInfo.fileNames)
