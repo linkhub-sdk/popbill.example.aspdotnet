@@ -20,7 +20,7 @@
             <% } else { %>
                 <li>응답코드 : <%= taxinvoiceXML.ResultCode %></li>
                 <li>국세청승인번호 : <%= taxinvoiceXML.Message %></li>
-                <li>xml 데이터 : <%= taxinvoiceXML.retObject %></li>
+                <li>전자세금계산서 XML 문서 : <%= taxinvoiceXML.retObject %></li>
             <% } %>
         </ul>
     </fieldset>

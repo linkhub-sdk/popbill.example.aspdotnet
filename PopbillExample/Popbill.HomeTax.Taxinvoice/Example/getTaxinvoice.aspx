@@ -18,13 +18,15 @@
                 <li>Response.code : <%= code %> </li>
                 <li>Response.message : <%= message %></li>
             <% } else { %>
+            
                 <li>writeDate (작성일자) : <%= taxinvoiceInfo.writeDate %></li>
                 <li>issueDT (발행일시) : <%= taxinvoiceInfo.issueDT %></li>
-                <li>invoiceType (세금계산서 종류) : <%= taxinvoiceInfo.invoiceType %></li>
+                <li>invoiceType (전자세금계산서 종류) : <%= taxinvoiceInfo.invoiceType %></li>
                 <li>taxType (과세형태) : <%= taxinvoiceInfo.taxType %></li>
                 <li>taxTotal (세액 합계) : <%= taxinvoiceInfo.taxTotal %></li>
                 <li>supplyCostTotal (공급가액 합계) : <%= taxinvoiceInfo.supplyCostTotal %></li>
                 <li>totalAmount (합계금액) : <%= taxinvoiceInfo.totalAmount %></li>
+                
                 <li>purposeType (영수/청구) : <%= taxinvoiceInfo.purposeType %></li>
                 <li>serialNum (일련번호) : <%= taxinvoiceInfo.serialNum %></li>
                 <li>cash (현금) : <%= taxinvoiceInfo.cash %></li>
@@ -62,7 +64,7 @@
                 <li>invoiceeEmail1 (공급받는자 담당자 이메일) : <%= taxinvoiceInfo.invoiceeEmail1 %></li>
 
                 <li>modifyCode (수정 사유코드) : <%= taxinvoiceInfo.modifyCode %></li>
-                <li>orgNTSConfirmNum (원본 국세청승인번호) : <%= taxinvoiceInfo.orgNTSConfirmNum %></li>
+                <li>orgNTSConfirmNum (당초 국세청승인번호) : <%= taxinvoiceInfo.orgNTSConfirmNum %></li>
 
                 <% foreach (Popbill.HomeTax.HTTaxinvoiceDetail detailInfo in taxinvoiceInfo.detailList)
                    { %>

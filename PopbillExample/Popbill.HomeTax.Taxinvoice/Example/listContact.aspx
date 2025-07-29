@@ -23,14 +23,14 @@
                     <fieldset class="fieldset2">
                         <legend>담당자 정보</legend>
                         <ul>
-                            <li> id (담당자 아이디) : <%= contactInfo.id %></li>
-                            <li> personName (담당자명) : <%= contactInfo.personName %></li>
-                            <li> tel (연락처) : <%= contactInfo.tel %></li>
-                            <li> email (이메일) : <%= contactInfo.email %></li>
+                            <li> id (아이디) : <%= contactInfo.id %></li>
+                            <li> personName (담당자 성명) : <%= contactInfo.personName %></li>
+                            <li> tel (담당자 휴대푠) : <%= contactInfo.tel %></li>
+                            <li> email (담당자 메일) : <%= contactInfo.email %></li>
                             <li> regDT (등록일시) : <%= contactInfo.regDT %></li>
-                            <li> searchRole (담당자 권한) : <%= contactInfo.searchRole %></li>
-                            <li> mgrYN (관리자여부) : <%= contactInfo.mgrYN %></li>
-                            <li> state (상태) : <%= contactInfo.state %></li>
+                            <li> searchRole (권한) : <%= contactInfo.searchRole %></li>
+                            <li> mgrYN (역할) : <%= contactInfo.mgrYN %></li>
+                            <li> state (계정상태) : <%= contactInfo.state %></li>
                         </ul>
                     </fieldset>
                 <% } %>

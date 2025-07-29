@@ -28,10 +28,7 @@ namespace Popbill.HomeTax.Taxinvoice.Example
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
-
-            // 팝빌회원 아이디
-            String testUserID = "";
-
+           
             // 수집 요청(requestJob API)시 반환반은 작업아이디(jobID)
             String jobID = "019102318000000002";
 
@@ -73,10 +70,15 @@ namespace Popbill.HomeTax.Taxinvoice.Example
             // 정렬방향 D-내림차순, A-오름차순
             String Order = "D";
 
+            // 팝빌회원 아이디
+            String testUserID = "";
+
             // 거래처 상호 / 사업자번호 (사업자) / 주민등록번호 (개인) / "9999999999999" (외국인) 중 검색하고자 하는 정보 입력
             // - 사업자번호 / 주민등록번호는 하이픈('-')을 제외한 숫자만 입력
             // - 미입력시 전체조회
             String SearchString = "";
+
+            
 
             try
             {

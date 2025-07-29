@@ -20,15 +20,17 @@
             <% } else { %>
                 <li>jobID (작업 아이디) : <%= result.jobID %></li>
                 <li>jobState (수집상태) : <%= result.jobState %></li>
-                <li>queryType (수집유형) : <%= result.queryType %></li>
+                <li>queryType (전자세금계산서 유형) : <%= result.queryType %></li>
+                
                 <li>queryDateType (일자유형) : <%= result.queryDateType %></li>
                 <li>queryStDate (시작일자) : <%= result.queryStDate %></li>
                 <li>queryEnDate (종료일자) : <%= result.queryEnDate %></li>
-                <li>errorCode (오류코드) : <%= result.errorCode %></li>
+                
+                <li>errorCode (수집 결과코드) : <%= result.errorCode %></li>
                 <li>errorReason (오류메시지) : <%= result.errorReason %></li>
                 <li>jobStartDT (작업 시작일시) : <%= result.jobStartDT %></li>
                 <li>jobEndDT (작업 종료일시) : <%= result.jobEndDT %></li>
-                <li>collectCount (수집개수) : <%= result.collectCount %></li>
+                <li>collectCount (수집건수) : <%= result.collectCount %></li>
                 <li>regDT (수집 요청일시) : <%= result.regDT %></li>
             <% } %>
         </ul>

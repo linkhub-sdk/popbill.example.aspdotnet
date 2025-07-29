@@ -29,17 +29,17 @@ namespace Popbill.HomeTax.Taxinvoice.Example
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
-            // 전자(세금)계산서 유형 SELL-매출, BUY-매입, TRUSTEE-수탁
+            // 전자세금계산서 유형 SELL-매출, BUY-매입, TRUSTEE-수탁
             KeyType tiKeyType = KeyType.SELL;
 
             // 일자유형, W-작성일자, I-발행일자, S-전송일자
             String DType = "S";
 
             // 시작일자, 표시형식(yyyyMMdd)
-            String SDate = "20220501";
+            String SDate = "20250701";
 
             // 종료일자, 표시형식(yyyyMMdd)
-            String EDate = "20220525";
+            String EDate = "20250731";
 
             try
             {

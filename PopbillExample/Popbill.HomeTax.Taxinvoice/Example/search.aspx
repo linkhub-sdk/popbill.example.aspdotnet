@@ -40,8 +40,10 @@
                             <li>taxTotal (세액 합계) : <%= taxinvoiceInfo.taxTotal %></li>
                             <li>totalAmount (합계금액) : <%= taxinvoiceInfo.taxTotal %></li>
                             <li>remark1 (비고) : <%= taxinvoiceInfo.remark1 %></li>
+                            
                             <li>modifyYN (수정 전자세금계산서 여부) : <%= taxinvoiceInfo.modifyYN %></li>
                             <li>orgNTSConfirmNum (원본 전자세금계산서 국세청 승인번호) : <%= taxinvoiceInfo.orgNTSConfirmNum %></li>
+                            
                             <li>purchaseDate (거래일자) : <%= taxinvoiceInfo.purchaseDate %></li>
                             <li>itemName (품명) : <%= taxinvoiceInfo.itemName %></li>
                             <li>spec (규격) : <%= taxinvoiceInfo.spec %></li>
