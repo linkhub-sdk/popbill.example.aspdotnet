@@ -36,10 +36,10 @@ namespace Popbill.EasyFin.Bank.Example
             String AccountNumber = "";
 
             // 시작일자, 표시형식(yyyyMMdd)
-            String SDate = "20220501";
+            String SDate = "20250701";
 
             // 종료일자, 표시형식(yyyyMMdd)
-            String EDate = "20220525";
+            String EDate = "20250731";
 
             try
             {
