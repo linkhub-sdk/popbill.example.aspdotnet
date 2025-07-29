@@ -51,6 +51,10 @@ namespace Popbill.Cashbill.Example
                 //// [취소거래시 필수] 당초 승인 현금영수증 거래일자
                 //cashbill.orgTradeDate = "";
 
+                // 거래일시, 날짜(yyyyMMddHHmmss)
+                // 당일, 전일만 가능, 미입력시 기본값 발행일시 처리
+                cashbill.tradeDT = "";
+
                 // 문서형태, { 승인거래, 취소거래 } 중 기재
                 cashbill.tradeType = "승인거래";
 
@@ -100,7 +104,7 @@ namespace Popbill.Cashbill.Example
                 // └ 주민등록번호 13자리, 휴대폰번호 10~11자리, 카드번호 13~19자리, 사업자번호 10자리 입력 가능
                 cashbill.identityNum = "0100001234";
 
-                // 주문자명
+                // 구매자 성명
                 cashbill.customerName = "주문자명";
 
                 // 주문상품명
@@ -109,24 +113,22 @@ namespace Popbill.Cashbill.Example
                 // 주문번호
                 cashbill.orderNumber = "주문번호";
 
-                // 주문자 이메일
+                // 구매자 이메일
                 // 팝빌 테스트 환경에서 테스트하는 경우에도 안내 메일이 전송되므로,
                 // 실제 거래처의 메일주소가 기재되지 않도록 주의
                 cashbill.email = "";
 
-                // 주문자 휴대폰
+                // 구매자 휴대폰
                 // - {smssendYN} 의 값이 true 인 경우 아래 휴대폰번호로 안내 문자 전송
                 cashbill.hp = "";
 
-                // 주문자 팩스번호
+                // 구매자 팩스번호
                 cashbill.fax = "";
 
-                // 발행시 알림문자 전송여부
+                // 구매자 알림문자 전송여부
                 cashbill.smssendYN = false;
 
-                // 거래일시, 날짜(yyyyMMddHHmmss)
-                // 당일, 전일만 가능, 미입력시 기본값 발행일시 처리
-                cashbill.tradeDT = "20221108000000";
+                
 
                 cashbillList.Add(cashbill);
             }

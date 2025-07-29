@@ -31,24 +31,16 @@ namespace Popbill.Cashbill.Example
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
-            // 팝빌회원 아이디
-            String testUserID = "testkorea";
-
-            // 현금영수증 문서번호
-            String mgtKey = "20221108_ASP_001";
-
-            // 메모
-            String memo = "즉시발행 메모";
-
-            // 안내메일 제목, 공백처리시 기본양식으로 전송
-            String emailSubject = "";
-
-
+            
             // 현금영수증 정보 객체
             Cashbill cashbill = new Cashbill();
 
             // 문서번호, 최대 24자리, 영문, 숫자 '-', '_'를 조합하여 사업자별로 중복되지 않도록 구성
-            cashbill.mgtKey = mgtKey;
+            cashbill.mgtKey = "20221108_ASP_001";
+
+            // 거래일시, 날짜(yyyyMMddHHmmss)
+            // 당일, 전일만 가능, 미입력시 기본값 발행일시 처리
+            cashbill.tradeDT = "";
 
             // 문서형태, {승인거래, 취소거래} 중 기재
             cashbill.tradeType = "승인거래";
@@ -99,7 +91,7 @@ namespace Popbill.Cashbill.Example
             // └ 주민등록번호 13자리, 휴대폰번호 10~11자리, 카드번호 13~19자리, 사업자번호 10자리 입력 가능
             cashbill.identityNum = "0100001234";
 
-            // 주문자명
+            // 구매자 성명
             cashbill.customerName = "고객명";
 
             // 주문상품명
@@ -108,24 +100,30 @@ namespace Popbill.Cashbill.Example
             // 주문번호
             cashbill.orderNumber = "주문번호";
 
-            // 주문자 메일
+            // 구매자 메일
             // 팝빌 테스트 환경에서 테스트하는 경우에도 안내 메일이 전송되므로,
             // 실제 거래처의 메일주소가 기재되지 않도록 주의
             cashbill.email = "";
 
-            // 주문자 휴대폰
+            // 구매자 휴대폰
             // - {smssendYN} 의 값이 true 인 경우 아래 휴대폰번호로 안내 문자 전송
             cashbill.hp = "";
 
-            // 주문자 팩스번호
+            // 구매자 팩스번호
             cashbill.fax = "";
 
-            // 발행시 알림문자 전송여부
+            // 구매자 알림문자 전송여부
             cashbill.smssendYN = false;
 
-            // 거래일시, 날짜(yyyyMMddHHmmss)
-            // 당일, 전일만 가능, 미입력시 기본값 발행일시 처리
-            cashbill.tradeDT = "";
+            
+            // 메모
+            String memo = "즉시발행 메모";
+            
+            // 팝빌회원 아이디
+            String testUserID = "testkorea";
+
+            // 안내메일 제목, 공백처리시 기본양식으로 전송
+            String emailSubject = "";
 
             try
             {

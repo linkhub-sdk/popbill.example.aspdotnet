@@ -30,14 +30,15 @@ namespace Popbill.Cashbill.Example
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
+            // 현금영수증 문서번호 배열, 최대 100건.
+            List<string> MgtKeyList = new List<string>();
+
+            MgtKeyList.Add("20220525-001");
+            MgtKeyList.Add("20220525-002");
+
             // 팝빌회원 아이디
             String testUserID = "testkorea";
 
-            List<string> MgtKeyList = new List<string>();
-
-            // 현금영수증 문서번호 배열, 최대 100건.
-            MgtKeyList.Add("20220525-001");
-            MgtKeyList.Add("20220525-002");
 
             try
             {

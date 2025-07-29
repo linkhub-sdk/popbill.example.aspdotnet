@@ -21,16 +21,19 @@
                 <li>mgtKey (문서번호) : <%= cashbill.mgtKey %></li>
                 <li>orgConfirmNum (당초 승인 현금영수증 국세청승인번호) : <%= cashbill.orgConfirmNum %></li>
                 <li>orgTradeDate (당초 승인 현금영수증 거래일자) : <%= cashbill.orgTradeDate %></li>
+                
                 <li>tradeDate (거래일자) : <%= cashbill.tradeDate %></li>
                 <li>tradeDT (거래일시) : <%= cashbill.tradeDT %></li>
                 <li>tradeType (문서형태) : <%= cashbill.tradeType %></li>
                 <li>tradeUsage (거래구분) : <%= cashbill.tradeUsage %></li>
                 <li>tradeOpt (거래유형) : <%= cashbill.tradeOpt %></li>
+                
                 <li>taxationType (과세형태) : <%= cashbill.taxationType %></li>
                 <li>totalAmount (거래금액) : <%= cashbill.totalAmount %></li>
                 <li>supplyCost (공급가액) : <%= cashbill.supplyCost %></li>
                 <li>tax (부가세) : <%= cashbill.tax %></li>
                 <li>serviceFee (봉사료) : <%= cashbill.serviceFee %></li>
+                
                 <li>franchiseCorpNum (가맹점 사업자번호) : <%= cashbill.franchiseCorpNum %></li>
                 <li>franchiseTaxRegID (가맹점 종사업장 식별번호) : <%= cashbill.franchiseTaxRegID%></li>
                 <li>franchiseCorpName (가맹점 상호) : <%= cashbill.franchiseCorpName %></li>
@@ -38,12 +41,12 @@
                 <li>franchiseAddr (가맹점 주소) : <%= cashbill.franchiseAddr %></li>
                 <li>franchiseTEL (가맹점 전화번호) : <%= cashbill.franchiseTEL %></li>
                 <li>identityNum (식별번호) : <%= cashbill.identityNum %></li>
-                <li>customerName (주문자명) : <%= cashbill.customerName %></li>
+                <li>customerName (구매자 성명) : <%= cashbill.customerName %></li>
                 <li>itemName (주문상품명) : <%= cashbill.itemName %></li>
                 <li>orderNumber (주문번호) : <%= cashbill.orderNumber %></li>
-                <li>email (주문자 이메일) : <%= cashbill.email %></li>
-                <li>hp (주문자 휴대폰번호) : <%= cashbill.hp %></li>
-                <li>smssendYN (알림문자 전송여부) : <%= cashbill.smssendYN %></li>
+                <li>email (구매자 이메일) : <%= cashbill.email %></li>
+                <li>hp (구매자 휴대폰번호) : <%= cashbill.hp %></li>
+                <li>smssendYN (구매자 알림문자 전송여부) : <%= cashbill.smssendYN %></li>
                 <li>cancelType (취소사유) : <%= cashbill.cancelType %></li>
             <% } %>
         </ul>

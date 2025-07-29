@@ -28,9 +28,6 @@ namespace Popbill.Cashbill.Example
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
-            // 팝빌회원 아이디
-            String testUserID = "testkorea";
-
             // 현금영수증 문서번호
             String mgtKey = "20220525-001";
 
@@ -42,6 +39,9 @@ namespace Popbill.Cashbill.Example
 
             // 메시지 내용, 90byte 초과시 길이가 조정되어 전송됨
             String contents = "문자 메시지 내용은 90byte초과시 길이가 조정되어 전송됩니다.";
+
+            // 팝빌회원 아이디
+            String testUserID = "testkorea";
 
             try
             {
