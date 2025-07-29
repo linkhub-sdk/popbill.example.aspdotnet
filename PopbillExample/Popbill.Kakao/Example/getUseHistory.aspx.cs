@@ -30,10 +30,10 @@ namespace Popbill.Kakao.Example
             String CorpNum = "1234567890";
 
             // 조회 기간의 시작일자 (형식 : yyyyMMdd)
-            String SDate = "20230501";
+            String SDate = "20250701";
 
             // 조회 기간의 종료일자 (형식 : yyyyMMdd)
-            String EDate = "20230530";
+            String EDate = "20250731";
 
             // 목록 페이지번호 (기본값 1)
             int Page = 1;

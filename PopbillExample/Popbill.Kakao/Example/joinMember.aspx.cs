@@ -57,10 +57,10 @@ namespace Popbill.Kakao.Example
             //담당자 성명 (최대 100자)
             joinInfo.ContactName = "담당자명";
 
-            //담당자 이메일 (최대 20자)
+            //담당자 메일 (최대 20자)
             joinInfo.ContactEmail = "";
 
-            //담당자 연락처 (최대 20자)
+            //담당자 휴대폰 (최대 20자)
             joinInfo.ContactTEL = "";
 
             try
