@@ -47,6 +47,7 @@ namespace Popbill.Closedown.Example
             // 결제금액
             paymentForm.settleCost = "1000";
 
+
             // 팝빌회원 아이디
             String UserID = "testkorea";
 

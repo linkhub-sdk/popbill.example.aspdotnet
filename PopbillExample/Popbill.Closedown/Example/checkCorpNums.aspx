@@ -19,8 +19,6 @@
                 <li>Response.message : <%= message %></li>
             </ul>
         <% } else { %>
-            <p class="info">> state (휴폐업상태) : null-알수없음, 0-등록되지 않은 사업자번호, 1-사업중, 2-폐업, 3-휴업</p>
-            <p class="info">> taxType (사업자 과세유형) : null-알수없음, 10-일반과세자, 20-면세과세자, 30-간이과세자, 31-간이과세자(세금계산서 발급사업자), 40-비영리법인, 국가기관</p>
             <% foreach (Popbill.Closedown.CorpState result in corpStateList)
                { %>
                 <fieldset class="fieldset2">
