@@ -21,22 +21,28 @@ namespace Popbill.HomeTax.Taxinvoice.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-             * 팝빌에 부서사용자를 등록합니다.
+             * 팝빌에 전자세금계산서 전용 부서사용자를 등록합니다.
              * - https://developers.popbill.com/reference/httaxinvoice/dotnet/api/cert#RegistDeptUser
              */
 
             // 팝빌회원 사업자번호, '-' 제외 10자리
             String testCorpNum = "1234567890";
 
-            // 홈택스에서 생성한 전자세금계산서 부서사용자 아이디
-            String deptUserID = "userid_test";
+            // 부서사용자 아이디
+            String deptUserID = "userid";
 
-            // 홈택스에서 생성한 전자세금계산서 부서사용자 비밀번호
-            String deptUserPWD = "passwd_test";
+            // 부서사용자 비밀번호
+            String deptUserPWD = "passwd";
+
+            // 부서사용자 대표자 주민번호
+            String identityNum = "";
+
+            // 팝빌회원 아이디
+            String userID = "testkorea";
 
             try
             {
-                Response response = Global.htTaxinvoiceService.RegistDeptUser(testCorpNum, deptUserID, deptUserPWD);
+                Response response = Global.htTaxinvoiceService.RegistDeptUser(testCorpNum, deptUserID, deptUserPWD, identityNum, userID);
 
                 code = response.code.ToString();
                 message = response.message;
